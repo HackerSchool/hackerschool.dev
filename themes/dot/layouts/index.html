@@ -1,0 +1,42 @@
+{{ define "main" }}
+  {{ "<!-- projetos -->" | safeHTML }}
+  <section class="section bg-gray">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 text-center">
+              <h2 class="section-title">Projetos</h2>
+            </div>
+            {{ "<!-- projeto -->" | safeHTML }}
+            {{ range .Site.Data.projetos.projeto }}
+            <div class="col-lg-4 col-sm-6 mb-4">
+              <a href="{{ .Permalink }}" class="px-4 py-5 bg-white shadow text-center d-block">
+                <i class="{{ .Params.Icon }} icon text-dark d-block mb-4"></i>
+                <h3 class="mb-3">{{ .title }}</h3>
+                <p class="mb-0">{{ .description }}</p>
+              </a>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+  </section>
+  {{ "<!-- /projetos -->" | safeHTML }}
+
+  {{ if .Site.Params.cta.enable }}
+  {{ "<!-- call to action -->" | safeHTML }}
+  <section class="bg-gray">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="section bg-white shadow text-center">
+          {{ with .Site.Params.cta.title }} <h2 class="mb-4">{{ . }}</h2> {{ end }}
+          {{ with .Site.Params.cta.description }} <p class="mb-4">{{ . }}</p> {{ end }}
+          <a href="{{ with .Site.Params.cta.btnURL}}{{ . | absURL }}{{ end }}" class="btn btn-primary">{{ with .Site.Params.cta.btnText}}{{ . }}{{ end }}</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  {{ "<!-- /call to action -->" | safeHTML }}
+  {{ end }}
+
+{{ end }}

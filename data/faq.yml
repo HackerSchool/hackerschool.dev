@@ -1,0 +1,17 @@
+faqItem:
+  - ID : collapseOne
+    title : O que é um Hacker?
+    content : >
+      Segundo Richard Stallman, um hacker é alguém que gosta de explorar o que é possível, impelido pela inteligência e um espírito lúdico. As actividades de um hacker não têm necessariamente que ter utilidade. É este o conceito de hacker que a HackerSchool segue.
+      <br>Por volta dos anos 80, os meios de comunicação social notaram a existência dos hackers. Focaram-se num pequeno grupo que fazia experiências relacionadas com segurança. O termo hacker passou a ter uma conotação negativa, incorrecta. O termo que deve ser usado para indivíduos que quebram segurança é cracker.
+      <br>Se quiseres saber mais sobre o movimento hacker podes por exemplo assistir à palestra The Hackerspace Movement.
+    
+  - ID : collapseTwo
+    title : Não sou aluno de MEEC/LEIC, posso ser colaborador?
+    content : >
+      Claro que sim: basta seres aluno do Instituto Superior Técnico e teres algum tempo livre e motivação!
+
+  - ID : collapseThree
+    title : Quanto pago para ser colaborador?
+    content : >
+      Começando com o ano lectivo de 2015/2016 não há qualquer custo associado.

@@ -1,0 +1,70 @@
+baseURL = "https://hackerschool.io/novosite/"
+languageCode = "en-us"
+title = "HackerSchool"
+theme = "dot"
+
+[params]
+primaryColor = "#6dba83"
+secondaryColor = "#f9f9f9"
+textColor = "#636363"
+textColorDark = "#6dba83"
+whiteColor = "#ffffff"
+
+#lista de imagens que aparecem no carousel da pagina principal
+carouselImagens=["images/caroussel_1_small.jpg", "images/caroussel_2_small.jpg"]
+
+
+[Languages]
+
+  # English Language
+  [Languages.en]
+  languageName = "En"
+  weight = 1
+  languageCode = "en-us"
+
+  title = "HackerSchool - IST"
+  dateFormat = "2 January 2006"
+  home = "Home"
+  logo = "HackerSchool"
+  copyright = "Site baseado em https://themes.gohugo.io/dot-hugo-documentation-theme/"
+
+    # navigation
+    [Languages.en.menu]
+    
+      [[Languages.en.menu.main]]
+        weight = 2
+        name = "Sobre nós"
+        url = "/sobre"
+        
+      [[Languages.en.menu.main]]
+        weight = 2
+        name = "FAQ"
+        url = "/faq"
+      
+      [[Languages.en.menu.main]]
+        weight = 2
+        name = "Projetos"
+        url = "/projetos"
+
+    # banner
+    [Languages.en.params.banner]
+      title = "HackerSchool"
+      description = "Break. Learn. Build.<br>Partimos o mundo em pequenos pedaços, descobrimos o que cada parte tem para dar e (re)construímo-lo. Trabalhamos juntos para partilhar o nosso conhecimento contigo."
+
+    # footer social icon
+    [[Languages.en.socialIcon]]
+      icon = "ti-facebook"
+      URL = "https://www.facebook.com/hackerschoolist"
+      
+    [[Languages.en.socialIcon]]
+      icon = "ti-vimeo-alt"
+      URL = "/#"
+      
+    [[Languages.en.socialIcon]]
+      icon = "ti-instagram"
+      URL = "https://www.instagram.com/hackerschool_ist/"
+
+    [[Languages.en.socialIcon]]
+      icon = "ti-twitter"
+      URL = "https://twitter.com/hackerschoolist"
+

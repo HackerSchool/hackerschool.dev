@@ -1,0 +1,82 @@
+{{ define "main" }}
+
+{{ "<!-- sobre -->" | safeHTML }}
+<section class="section sec-about fs-large">
+  <div class="container">
+      <div class="row justify-content-center">
+          <div class="col-12 text-center">
+            <h1 class="section-title">A HackerSchool</h1>
+            <p class="sec-about">A HackerSchool é uma associação académica, fundada em 2012, que desenvolve actividades num ambiente multidisciplinar, de learn-by-doing e de aprendizagem entre pares, inspirado nos valores da cultura hacker.
+              <br>Aqui, independentemente da formação de base, aprende-se a criar novos produtos e serviços sobre tecnologias emergentes como a internet das coisas ou a web semântica, utilizando soluções de baixo custo assentes em open electronics, open materials, open fabrication, entre outros.
+            </p>
+          </div>
+      </div>
+  </div>
+</section>
+{{ "<!-- /sobre -->" | safeHTML }}
+
+{{ "<!-- projetos -->" | safeHTML }}
+<section class="section sec-projetos shadow">
+  <div class="container">
+      <div class="row justify-content-center">
+          <div class="col-12 text-center">
+            <h2 class="section-title">Projetos</h2>
+          </div>
+          {{ "<!-- projeto -->" | safeHTML }}
+          {{ range where .Pages "Type" "projeto" }}
+          <div class="col-lg-4 col-sm-6 mb-4">
+            <a href="{{ .Permalink }}" class="px-4 py-2 bg-white shadow text-center d-block">
+              <i class="{{ .Params.Icon }} icon text-dark d-block mb-4"></i>
+              <h3 class="mb-3">{{ .Title }}</h3>
+              <div class="projeto-foto"><img src="{{ .Params.Photo  | absURL  }}" /></div>
+              <p class="mb-0">{{ .Description }}</p>
+            </a>
+          </div>
+          {{ end }}
+      </div>
+      <div style="text-align: center;">
+        <a href='{{ "projetos" | absURL }}' class="btn btn-primary">Vê mais projetos</a>
+      </div>
+      <br>
+  </div>
+</section>
+{{ "<!-- /projetos -->" | safeHTML }}
+
+{{ "<!-- membros -->" | safeHTML }}
+  <section class="section sec-membros">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 text-center">
+              <h2 class="section-title">Membros</h2>
+            </div>
+            {{ "<!-- membro -->" | safeHTML }}
+            {{ range .Site.Data.membros.membro }}
+            <div class="col-lg-3 col-sm-6 col-6 mb-4">
+              <a href="{{ .Permalink }}" class="px-4 bg-white shadow text-center d-block">
+                <h3 class="mb-3" style="padding-top: 15px;">{{ .nome }}</h3>
+                <p class="mb-0">{{ .cargo }}</p>
+                <img src="person-icon.png">
+              </a>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+  </section>
+{{ "<!-- /membros -->" | safeHTML }}
+
+{{ "<!-- contactos -->" | safeHTML }}
+<section class="section sec-contactos fs-large">
+  <div class="container">
+      <div class="row justify-content-center">
+          <div class="col-12 text-center">
+            <h2 class="section-title">Contacta-nos</h2>
+            <p class="sec-contactos">Envia-nos um email para: hackerschool@tecnico.ulisboa.pt</p>
+          </div>
+      </div>
+  </div>
+</section>
+{{ "<!-- /contactos -->" | safeHTML }}
+
+{{ end }}
+
+
