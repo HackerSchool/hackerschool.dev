@@ -1,4 +1,4 @@
-baseURL = "https://hackerschool.io/novosite/"
+baseURL = "http://hackerschool.tecnico.ulisboa.pt/"
 languageCode = "en-us"
 title = "HackerSchool"
 theme = "dot"

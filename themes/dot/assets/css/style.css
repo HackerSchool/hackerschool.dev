@@ -458,6 +458,12 @@ pre {
   }
 }
 
+@media (max-width: 640px) {
+  #bannerTitle {
+    display: none;
+  }
+}
+
 /* /navigation */
 .form-control {
   height: 50px;
