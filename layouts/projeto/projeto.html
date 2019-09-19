@@ -17,6 +17,7 @@
         {{ range .Params.DescricaoCompleta }}
         <p style="text-align: justify;">{{ . }}</p>
         {{ end }}
+        {{ .Params.ExtraHTML | safeHTML }}
     </div>
   </div>
 </section>

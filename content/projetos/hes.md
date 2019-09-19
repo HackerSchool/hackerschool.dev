@@ -11,6 +11,8 @@ DescricaoCompleta = ["O HES é um controlador de jogos para computador inspirado
     "Queres fazer o teu? Fala connosco ou simplesmente tira os modelos 3D, os ficheiros da PCB e o código se te sentires confiante e tiveres acesso ao material necessário!"
 ]
 
+ExtraHTML = "<a href=\"https://github.com/HackerSchool/HES-V2\">https://github.com/HackerSchool/HES-V2</a>"
+
 equipa = ["João Oliveira (Design e fabrico da caixa)",
     "Pedro Roque (Design de PCB)",
     "Ricardo Amendoeira (Programação da driver e do micro-controlador)"]
