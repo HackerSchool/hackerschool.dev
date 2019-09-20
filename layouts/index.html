@@ -69,6 +69,7 @@
           </div>
           {{ "<!-- projeto -->" | safeHTML }}
           {{ range where .Pages "Type" "projeto" }}
+          {{ if .Params.destacado }}
           <div class="col-lg-4 col-sm-6 mb-4">
             <a href="{{ .Permalink }}" class="px-4 py-2 bg-white shadow text-center d-block">
               <i class="{{ .Params.Icon }} icon text-dark d-block mb-4"></i>
@@ -77,6 +78,7 @@
               <p class="mb-0">{{ .Description }}</p>
             </a>
           </div>
+          {{ end }}
           {{ end }}
       </div>
       <div style="text-align: center;">

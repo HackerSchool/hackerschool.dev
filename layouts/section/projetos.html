@@ -10,25 +10,24 @@
 
 <!-- details page -->
 <section class="single pt-5 bg-gray">
-        <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-12 text-center">
-                        <h2 class="section-title">Alguns projetos</h2>
-						<h3>Esta página não está completa!!</h3>
-                    </div>
-                    {{ "<!-- projeto -->" | safeHTML }}
-                    {{ range where .Pages "Type" "projeto" }}
-                    <div class="col-lg-4 col-sm-6 mb-4">
-                        <a href="{{ .Permalink }}" class="px-4 py-2 bg-white shadow text-center d-block">
-                        <i class="{{ .Params.Icon }} icon text-dark d-block mb-4"></i>
-                        <h3 class="mb-3">{{ .Title }}</h3>
-                        <div class="projeto-foto"><img src="{{ .Params.Photo | absURL }}" /></div>
-                        <p class="mb-0">{{ .Description }}</p>
-                        </a>
-                    </div>
-                    {{ end }}
-                </div>
-            </div>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 text-center">
+        <h2 class="section-title">Alguns projetos</h2>
+      </div>
+      {{ "<!-- projeto -->" | safeHTML }}
+      {{ range (where .Pages.ByDate "Type" "projeto").Reverse }}
+      <div class="col-lg-4 col-sm-6 mb-4">
+        <a href="{{ .Permalink }}" class="px-4 py-2 bg-white shadow text-center d-block">
+          <i class="{{ .Params.Icon }} icon text-dark d-block mb-4"></i>
+          <h3 class="mb-3">{{ .Title }}</h3>
+          <div class="projeto-foto"><img src="{{ .Params.Photo | absURL }}" /></div>
+          <p class="mb-0">{{ .Description }}</p>
+        </a>
+      </div>
+      {{ end }}
+    </div>
+  </div>
 </section>
 <!-- /details page -->
 

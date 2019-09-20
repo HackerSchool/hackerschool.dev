@@ -3,7 +3,7 @@ title = "Hacker Entertainment System (HES)"
 description = "O HES é um controlador de jogos para computador inspirado no clássico comando da NES, desenhado completamente de raíz pela HackerSchool para servir de tema comum aos 6 workshops do 2º semestre de 2015/2016."
 
 date = "2019-01-01"
-
+Destacado=true
 DescricaoCompleta = ["O HES é um controlador de jogos para computador inspirado no clássico comando da NES, desenhado completamente de raíz pela HackerSchool para servir de tema comum aos 6 workshops do 2º semestre de 2015/2016.",
     "A caixa é feita de aglomerado de madeira (MDF) cortado a laser, os botões são imprimidos numa impressora 3D. Ambos foram desenhados no programa de modelação 3D OnShape.",
     "A PCB foi desenhada no software open-source KiCad.",

@@ -18,6 +18,14 @@
         <p style="text-align: justify;">{{ . }}</p>
         {{ end }}
         {{ .Params.ExtraHTML | safeHTML }}
+        <br>
+        Equipa:<br>
+        <ul>
+          {{ range .Params.equipa }}
+          <li>{{ . }}</li>
+          {{ end }}
+        </ul>
+
     </div>
   </div>
 </section>
