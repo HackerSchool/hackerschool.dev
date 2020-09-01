@@ -46,6 +46,11 @@ carouselImagens=["images/caroussel_1_small.jpg", "images/caroussel_2_small.jpg"]
         name = "Projetos"
         url = "/projetos"
 
+      [[Languages.en.menu.main]]
+        weight = 2
+        name = "recrutamento"
+        url = "/recrutamento"
+
     # banner
     [Languages.en.params.banner]
       title = "HackerSchool"

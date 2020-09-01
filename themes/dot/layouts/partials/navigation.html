@@ -18,6 +18,8 @@
         </a>
         <div class="dropdown-menu" >
           {{ range .Children }}
+
+          {{ printf "%#v" .URL }} {{ printf "%#v" .Permalink }}
           <a class="dropdown-item" href="{{ .URL }}">{{ .Name }}</a>
           {{ end }}
         </div>

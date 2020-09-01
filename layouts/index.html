@@ -30,11 +30,15 @@
 			<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
 				<span class="carousel-control-next-icon" aria-hidden="true"></span>
 				<span class="sr-only">Next</span>
-			</a>
+      </a>
+      
 		<div class="col-md-6 offset-md-3 text-center vertical-center">
 			{{ with .Site.Params.banner.title }} <h1 id="bannerTitle" class="text-white mb-3">{{ . }}</h1> {{ end }}
-			{{ with .Site.Params.banner.description | safeHTML }} <p class="text-white mb-4">{{ . }}</p> {{ end }}
-		</div>
+      {{ with .Site.Params.banner.description | safeHTML }} <p class="text-white mb-4">{{ . }}</p> {{ end }}
+      
+      <a href='{{ "recrutamento" | absURL }}' class="btn btn-primary">Recrutamento</a>
+
+    </div>
 	</div>
 	<div class="main-text hidden-xshidden-xs">
 		<div class="container mb-100">
