@@ -1,24 +1,55 @@
 membro:
-  - nome: Sargento
+  - nome:  Miguel Fazenda       
+    cargo: Tesoureiro
+    imagem: 
+  - nome:  Pedro Direita        
+    cargo: Membro
+    imagem: 
+  - nome:  Filipe Varela        
     cargo: Presidente
-    imagem:
-
-  - nome: Pessoa 2
-    cargo: Maker
-    imagem:
-
-  - nome: Pessoa 3
-    cargo: Maker
-    imagem:
-  - nome: Pessoa 4
-    cargo: Maker
-    imagem:
-  - nome: Pessoa 5
-    cargo: Maker
-    imagem:
-  - nome: Pessoa 6
-    cargo: Maker
-    imagem:
-  - nome: Pessoa 7
-    cargo: Maker
-    imagem:
+    imagem: 
+  - nome:  João Góis            
+    cargo: Membro
+    imagem: 
+  - nome:  Catarina Bento      
+    cargo: Membro
+    imagem: 
+  - nome:  Cármen Fonseca      
+    cargo: Membro
+    imagem: 
+  - nome:  Hugo Marques        
+    cargo: Vice-presidente
+    imagem: 
+  - nome:  Henrique Guerra     
+    cargo: Desenvolvimento
+    imagem: 
+  - nome:  Afonso Certo        
+    cargo: Membro
+    imagem: 
+  - nome:  Pedro Taborda       
+    cargo: Membro
+    imagem: 
+  - nome:  Francisco Rodrigues 
+    cargo: Membro
+    imagem: 
+  - nome:  Daniel Leitão       
+    cargo: Membro
+    imagem: 
+  - nome:  Duarte Oliveira     
+    cargo: Marketing
+    imagem: 
+  - nome:  João Palma          
+    cargo: Desenvolvimento
+    imagem: 
+  - nome:  Margarida Oliveira  
+    cargo: RecursosHumanos
+    imagem: 
+  - nome:  Tiago Almeida       
+    cargo: RecursosHumanos
+    imagem: 
+  - nome:  Bernardo Esteves    
+    cargo: Membro
+    imagem: 
+  - nome:  Inês Magessi        
+    cargo: Membro
+    imagem: 
