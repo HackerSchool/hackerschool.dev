@@ -1,7 +1,7 @@
 {{ partial "head.html" . }}
 
 {{ "<!-- navigation -->" | safeHTML }}
-<header class="shadow-bottom sticky-top bg-white">
+<header class="shadow-bottom sticky-top bg-gray">
   <div class="container">
     {{ partial "navigation.html" . }}
   </div>
@@ -9,28 +9,99 @@
 {{ "<!-- /navigation -->" | safeHTML }}
 
 <!-- details page -->
-<section class="single pt-5 bg-gray">
-  <div class="container">
-    <div class="p-5 bg-white">
-        <h2>Sobre nós</h2>
-        
-        <h4>Quem somos?</h4>
-        <p style="text-align: justify;">Somos um grupo de alunos de várias áreas da engenharia, entusiasmados por conceber as nossas ideias e projectos, e transmitir os nossos conhecimentos!</p>
-        <h4 style="text-align: justify;">O que é a HackerSchool?</h4>
-        <p style="text-align: justify;">A HackerSchool é uma associação académica, fundada em 2012, que desenvolve actividades num ambiente multidisciplinar, de <em>learn-by-doing</em> e de aprendizagem entre pares, inspirado nos valores da cultura <a href="http://stallman.org/articles/on-hacking.html" title="What is Hacking?" target="_blank"><em>hacker</em></a>.</p>
-        <p style="text-align: justify;">Aqui, independentemente da formação de base, aprende-se a criar novos produtos e serviços sobre tecnologias emergentes como a internet das coisas ou a web semântica, utilizando soluções de baixo custo assentes em <em>open electronics</em>, <em>open materials</em>, <em>open fabrication</em>, entre outros.</p>
-        <h4 style="text-align: justify;">Como funciona?</h4>
-        <p style="text-align: justify;">A HackerSchool funciona em ciclos semestrais com Workshops, HackDays e o maior evento do semestre, o LX Reactor.</p>
-        <ul>
-        <li style="text-align: justify;"><strong>HackDay</strong>: Um dia de convívio entre os participantes, no qual se concebem projectos temáticos de curta duração.</li>
-        <li style="text-align: justify;"><strong>Workshop</strong>: Um evento em que é dada&nbsp;formação base acerca de um determinado tema, sendo dado acesso aos participantes ferramentas que podem utilizar para aplicarem os conhecimentos adquiridos na concretização das suas ideias.</li>
-        </ul>
-        <h4 style="text-align: justify;">Objectivos</h4>
-        <p style="text-align: justify;">O objectivo prioritário da HackerSchool é criar um espaço de colaboração que estimule alunos apaixonados por tecnologia a realizar os seus projectos e, dessa forma, ajudá-los a encontrar a sua vocação e atingir o seu potencial máximo, tanto como indivíduos como empreendedores, através de uma interacção hands-on com tecnologia, engenharia e ciência.</p>
-        <p style="text-align: justify;">Pretende-se ter uma geração de alunos com ideias novas e um modo diferente de pensar sobre o mundo, que criem produtos e soluções inovadoras.</p>
-        <p style="text-align: justify;">Mais, a HackerSchool pretende afirmar-se como um centro de convergência multidisciplinar onde alunos e professores de cursos diferentes se juntam para experimentar e partilhar ideias diferentes mas complementares.</p>
-       
-    </div>
+<section style="text-align: justify;
+min-height: 100%;
+/* equal to footer height */ " class="single pt-5 sec-membros">
+    <h1 style="text-align: center;">Junta-te a nós</h2>
+	
+	<div class="container" style="background-color: 0xfff">
+		<!-- fix url -->
+		<a href='{{ "recrutamento" | absURL }}' class="btn btn-primary"> Clica aqui se quiseres saltar já á ação </a>
+
+		<section class="section sec-about fs-large">
+		<p> 
+			Boas cibernauta! Se estás a começar o teu curso de engenharia e gostavas 
+			de colocar as mãos na massa para ganhares experiência num certo ramo da
+			tecnologia, este é o sítio certo para ti. Somos um grupo de alunos de várias
+			áreas da engenharia, entusiasmados por conceber as nossas ideias e projectos,
+			e transmitir os nossos conhecimentos promovendo a entreajuda e inovação! 
+			A HackerSchool está a recrutar novos membros de 14 de Setembro a 19 de 
+			Outubro.
+		</p>
+		</section>
+
+		<section class="section sec-projetos shadow">
+		<p> 
+			Como membro da HackerSchool, para além de te poderes chamar
+			Hacker e meter respeito a qualquer utilizador de computador
+			ou smartphone, terás sempre perto de ti: 
+		</p>
+
+		<ul>
+			<li>
+				Uma equipa exploradora e interessada em aprender e ajudar; 
+			</li>
+			<li>
+				Atividades e apoio para te manter no caminho certo e motivado; 
+			</li>
+			<li>
+				Várias oportunidades para aprender matéria nova ou até mesmo melhorar 
+				a que já souberes - novo ou velho Hacker, aprender não tem idade; 
+			</li>
+			<li>
+				Um mundo de ideias e inovações que podem mudar a maneira como 
+				vias as tecnologias à tua volta - podes começar a
+				questionar como o microondas funciona.
+			</li>
+		</ul>
+
+		<p>
+			Ao mesmo tempo, como membro esperamos que tenhas imensa vontade e iniciativa 
+			para todos estes desafios e eventos (mesmo com ou sem COVID-19). 
+			Achas que aguentas?
+		</p>
+		</section>
+		
+		<section class="section sec-about fs-large">
+		<ol>
+			<ul>
+				Terás uma reunião inicial que serve para debater ideias e formar grupos,
+				desenvolvendo a tua parte social e trabalho em equipa
+			</ul>
+			<ul>
+				Para alem disso, todos os semestres sao planeados varios workshops em
+				varias areas que consideramos importantes para desenvolver a tua cultura hacker.
+			</ul>
+			<ul>
+				Para o caso de te sentires sozinho nesta jornada de fazer o teu
+				projeto acontecer, não te preocupes!
+			</ul>
+		</ol>
+
+		<!-- insert clipart here -->
+		</section>
+		
+		<section class="section sec-projetos shadow">
+		<!-- fix url -->
+		<a href='{{ "recrutamento" | absURL }}' class="btn btn-primary"> Clica aqui se quiseres saltar já á ação </a>
+		</section>
+		<!--
+		<p style="text-align: justify;">Somos um grupo de alunos de várias áreas da engenharia, entusiasmados por conceber as nossas ideias e projectos, e transmitir os nossos conhecimentos!</p>
+		<h4 style="text-align: justify;">O que é a HackerSchool?</h4>
+		<p style="text-align: justify;">A HackerSchool é uma associação académica, fundada em 2012, que desenvolve actividades num ambiente multidisciplinar, de <em>learn-by-doing</em> e de aprendizagem entre pares, inspirado nos valores da cultura <a href="http://stallman.org/articles/on-hacking.html" title="What is Hacking?" target="_blank"><em>hacker</em></a>.</p>
+		<p style="text-align: justify;">Aqui, independentemente da formação de base, aprende-se a criar novos produtos e serviços sobre tecnologias emergentes como a internet das coisas ou a web semântica, utilizando soluções de baixo custo assentes em <em>open electronics</em>, <em>open materials</em>, <em>open fabrication</em>, entre outros.</p>
+		<h4 style="text-align: justify;">Como funciona?</h4>
+		<p style="text-align: justify;">A HackerSchool funciona em ciclos semestrais com Workshops, HackDays e o maior evento do semestre, o LX Reactor.</p>
+		<ul>
+		<li style="text-align: justify;"><strong>HackDay</strong>: Um dia de convívio entre os participantes, no qual se concebem projectos temáticos de curta duração.</li>
+		<li style="text-align: justify;"><strong>Workshop</strong>: Um evento em que é dada&nbsp;formação base acerca de um determinado tema, sendo dado acesso aos participantes ferramentas que podem utilizar para aplicarem os conhecimentos adquiridos na concretização das suas ideias.</li>
+		</ul>
+		<h4 style="text-align: justify;">Objectivos</h4>
+		<p style="text-align: justify;">O objectivo prioritário da HackerSchool é criar um espaço de colaboração que estimule alunos apaixonados por tecnologia a realizar os seus projectos e, dessa forma, ajudá-los a encontrar a sua vocação e atingir o seu potencial máximo, tanto como indivíduos como empreendedores, através de uma interacção hands-on com tecnologia, engenharia e ciência.</p>
+		<p style="text-align: justify;">Pretende-se ter uma geração de alunos com ideias novas e um modo diferente de pensar sobre o mundo, que criem produtos e soluções inovadoras.</p>
+		<p style="text-align: justify;">Mais, a HackerSchool pretende afirmar-se como um centro de convergência multidisciplinar onde alunos e professores de cursos diferentes se juntam para experimentar e partilhar ideias diferentes mas complementares.</p>
+		-->
+	</div>
   </div>
 </section>
 

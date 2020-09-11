@@ -1,11 +1,12 @@
-baseURL = "http://hackerschool.tecnico.ulisboa.pt/"
+#baseURL = "http://hackerschool.tecnico.ulisboa.pt/"
+baseURL = "http://localhost:8000/"
 languageCode = "en-us"
 title = "HackerSchool"
 theme = "dot"
 
 [params]
 primaryColor = "#6dba83"
-secondaryColor = "#f9f9f9"
+secondaryColor = "#353535"
 textColor = "#636363"
 textColorDark = "#6dba83"
 whiteColor = "#ffffff"
@@ -72,4 +73,3 @@ carouselImagens=["images/caroussel_1_small.jpg", "images/caroussel_2_small.jpg"]
     [[Languages.en.socialIcon]]
       icon = "ti-twitter"
       URL = "https://twitter.com/hackerschoolist"
-

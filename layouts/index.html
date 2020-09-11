@@ -1,4 +1,13 @@
 {{ define "main" }}
+
+{{ "<!-- navigation -->" | safeHTML }}
+<header class="shadow-bottom sticky-top bg-gray">
+  <div class="container">
+    {{ partial "navigation.html" . }}
+  </div>
+</header>
+{{ "<!-- /navigation -->" | safeHTML }}
+
 {{ "<!-- header -->" | safeHTML }}
 <div class="col-md-12 nopadding">
 	<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -36,16 +45,9 @@
 			{{ with .Site.Params.banner.title }} <h1 id="bannerTitle" class="text-white mb-3">{{ . }}</h1> {{ end }}
       {{ with .Site.Params.banner.description | safeHTML }} <p class="text-white mb-4">{{ . }}</p> {{ end }}
       
-      <a href='{{ "recrutamento" | absURL }}' class="btn btn-primary">Recrutamento</a>
+      <a href='{{ "recrutamento" | absURL }}' class="btn btn-primary">Recrutamento 2020/2021 </a>
 
     </div>
-	</div>
-	<div class="main-text hidden-xshidden-xs">
-		<div class="container mb-100">
-			{{ "<!-- navigation -->" | safeHTML }}
-			{{ partial "navigation.html" . }}
-			{{ "<!-- /navigation -->" | safeHTML }}
-		</div>
 	</div>
 </div>
 {{ "<!-- /header -->" | safeHTML }}
@@ -71,6 +73,7 @@
           <div class="col-12 text-center">
             <h2 class="section-title">Projetos</h2>
           </div>
+          
           {{ "<!-- projeto -->" | safeHTML }}
           {{ range where .Pages "Type" "projeto" }}
           {{ if .Params.destacado }}

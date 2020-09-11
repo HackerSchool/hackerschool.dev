@@ -1,18 +1,28 @@
 <!DOCTYPE html>
-<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
+<html style="
+margin: 0;
+height: 100%;"
+lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
     {{- partial "head.html" . -}}
-    <body>
+    <body style="
+    margin: 0;
+    height: 100%;"
+    >
         {{ if .IsHome }}
         {{ else }}
         {{ "<!-- navigation -->" | safeHTML }}
-        <header class="shadow-bottom sticky-top bg-white">
+        <header class="shadow-bottom sticky-top bg-gray">
             <div class="container">
                 {{ partial "navigation.html" . }}
             </div>
         </header>
         {{ "<!-- /navigation -->" | safeHTML }}
         {{ end }}
-        <div id="content">
+        <div style="
+        min-height: 100%;
+        /* equal to footer height */
+        margin-bottom: -142px; "
+        >
         {{- block "main" . }}{{- end }}
         </div>
         {{- partial "footer.html" . -}}

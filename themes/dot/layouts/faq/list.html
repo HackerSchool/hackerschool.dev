@@ -2,8 +2,10 @@
 
 {{ $data := index .Site.Data .Site.Language.Lang }}
   {{ "<!-- faq -->" | safeHTML }}
-  <section class="section">
-    <div class="container">
+  <section 
+  
+  class="section sec-membros">
+    <div class="container bg-gray">
       <div class="row">
         <div class="col-12">
         <h2 class="section-title text-primary">{{ .Params.Title }}</h2>
