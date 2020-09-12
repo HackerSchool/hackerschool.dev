@@ -9,21 +9,20 @@
 {{ "<!-- /navigation -->" | safeHTML }}
 
 <!-- details page -->
-<section class="single pt-5 sec-membros">
-  <div class="container">
+<section class="single sec-membros">
+  <h1 class="responsiveHeaderText" style="color:white; text-align: center;height: 200px;background-color: var(--primary-color);vertical-align: middle;text-align: center;vertical-align: middle;line-height: 200px;">Projetos</h1>
+  <!--font-size: 6.5vw;-->
+  <div class="container pt-4">
     <div class="row justify-content-center">
-      <div class="col-12 text-center">
-        <h2 class="section-title">Alguns projetos</h2>
-      </div>
       {{ "<!-- projeto -->" | safeHTML }}
       {{ range (where .Pages.ByDate "Type" "projeto").Reverse }}
-      <div class="col-lg-4 col-sm-6 mb-4">
-        <a href="{{ .Permalink }}" class="px-4 py-2 bg-white shadow text-center d-block">
+      <div class="col-lg-6 col-sm-6 mb-4">
+        <div class="px-4 py-2 bg-gray dynamicThingy text-center d-block">
           <i class="{{ .Params.Icon }} icon text-dark d-block mb-4"></i>
           <h3 class="mb-3">{{ .Title }}</h3>
           <div class="projeto-foto"><img src="{{ .Params.Photo | absURL }}" /></div>
-          <p class="mb-0">{{ .Description }}</p>
-        </a>
+          <p style="color:white;" class="mb-0">{{ .Description }}</p>
+        </div>
       </div>
       {{ end }}
     </div>

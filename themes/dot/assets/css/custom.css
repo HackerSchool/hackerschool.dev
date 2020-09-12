@@ -1,0 +1,66 @@
+.dynamicThingy
+{    
+    box-shadow: 3px 3px 3px black;
+    transition: .3s ease;
+    
+    background-color:#2b2b2b; margin:30px; padding: 20px;
+}
+
+.dynamicThingy:hover
+{
+    box-shadow: 10px 10px 10px black;
+}
+
+.responsiveHeaderText
+{
+    font-size:120px;
+}
+
+.disapearWhenSmall
+{
+    
+}
+@media only screen 
+and (min-width : 0px)
+and (max-width: 380px) {
+    .responsiveHeaderText
+    {
+        font-size: 40px;
+    }
+    
+    .disapearWhenSmall
+    {
+        display: none;
+    }
+}
+
+@media only screen 
+and (min-width : 380px)
+and (max-width: 700px) {
+    .responsiveHeaderText
+    {
+        font-size: 60px;
+    }
+    .disapearWhenSmall
+    {
+        display: none;
+    }
+}
+
+@media only screen 
+and (min-width : 700px)
+and (max-width: 1000px) {
+    .responsiveHeaderText
+    {
+        font-size: 80px;
+    }
+}
+
+@media only screen 
+and (min-width : 1000px)
+and (max-width: 1200px) {
+    .responsiveHeaderText
+    {
+        font-size: 100px;
+    }
+}

@@ -1,5 +1,5 @@
-#baseURL = "http://hackerschool.tecnico.ulisboa.pt/"
-baseURL = "http://localhost:8000/"
+baseURL = "http://hackerschool.tecnico.ulisboa.pt/"
+#baseURL = "http://localhost:8000/"
 languageCode = "en-us"
 title = "HackerSchool"
 theme = "dot"
@@ -37,10 +37,10 @@ carouselImagens=["images/caroussel_1_small.jpg", "images/caroussel_2_small.jpg"]
         name = "Sobre nós"
         url = "/sobre"
         
-      [[Languages.en.menu.main]]
-        weight = 2
-        name = "FAQ"
-        url = "/faq"
+      #[[Languages.en.menu.main]]
+      #  weight = 2
+      #  name = "FAQ"
+      #  url = "/faq"
       
       [[Languages.en.menu.main]]
         weight = 2
@@ -55,7 +55,7 @@ carouselImagens=["images/caroussel_1_small.jpg", "images/caroussel_2_small.jpg"]
     # banner
     [Languages.en.params.banner]
       title = "HackerSchool"
-      description = "Break. Learn. Build.<br>Partimos o mundo em pequenos pedaços, descobrimos o que cada parte tem para dar e (re)construímo-lo. Trabalhamos juntos para partilhar o nosso conhecimento contigo."
+      description = "Break. Learn. Build."
 
     # footer social icon
     [[Languages.en.socialIcon]]

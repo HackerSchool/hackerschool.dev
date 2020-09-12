@@ -33,6 +33,9 @@
   {{ $styles := resources.Get "css/style.css" | minify}}
   <link rel="stylesheet" href="{{ $styles.Permalink }}" integrity="{{ $styles.Data.Integrity }}" media="screen">
 
+  {{ $styles := resources.Get "css/custom.css" | minify}}
+  <link rel="stylesheet" href="{{ $styles.Permalink }}">
+
   {{ "<!-- jquiry -->" | safeHTML }}
   <script src="{{ .Site.BaseURL }}plugins/jquery/jquery-1.12.4.js"></script>
 
@@ -43,5 +46,7 @@
 
   {{ "<!--Favicon-->" | safeHTML }}
   <link rel="icon" href="{{ .Site.BaseURL }}images/favicon.png" type="image/x-icon">
+
+<script src="https://kit.fontawesome.com/5e6468e47f.js" crossorigin="anonymous"></script>
 
 </head>

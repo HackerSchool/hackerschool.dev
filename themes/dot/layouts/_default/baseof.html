@@ -1,12 +1,8 @@
 <!DOCTYPE html>
-<html style="
-margin: 0;
-height: 100%;"
+<html
 lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
     {{- partial "head.html" . -}}
-    <body style="
-    margin: 0;
-    height: 100%;"
+    <body
     >
         {{ if .IsHome }}
         {{ else }}
@@ -18,10 +14,7 @@ lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
         </header>
         {{ "<!-- /navigation -->" | safeHTML }}
         {{ end }}
-        <div style="
-        min-height: 100%;
-        /* equal to footer height */
-        margin-bottom: -142px; "
+        <div
         >
         {{- block "main" . }}{{- end }}
         </div>

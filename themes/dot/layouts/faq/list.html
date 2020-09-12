@@ -1,14 +1,26 @@
-{{ define "main" }}
+{{ partial "head.html" . }}
+
+
+{{ "<!-- navigation -->" | safeHTML }}
+<header class="shadow-bottom sticky-top bg-gray">
+  <div class="container">
+    {{ partial "navigation.html" . }}
+  </div>
+</header>
+{{ "<!-- /navigation -->" | safeHTML }}
 
 {{ $data := index .Site.Data .Site.Language.Lang }}
   {{ "<!-- faq -->" | safeHTML }}
   <section 
+  style="height: 80% ;width: 100%;"
+  class="sec-membros">
   
-  class="section sec-membros">
-    <div class="container bg-gray">
+  <h1 style="color:white; text-align: center;font-size: 120px;height: 200px;background-color: var(--primary-color);vertical-align: middle;text-align: center;vertical-align: middle;line-height: 200px;">FAQ</h1>
+  
+    <div style="padding-top:25px;" class="container">
       <div class="row">
         <div class="col-12">
-        <h2 class="section-title text-primary">{{ .Params.Title }}</h2>
+        <!--<h2 class="section-title text-primary">{{ .Params.Title }}</h2>-->
           {{ "<!-- accordion -->" | safeHTML }}
           <div id="accordion">
             {{ range .Site.Data.faq.faqItem }}
@@ -31,4 +43,4 @@
   </section>
   {{ "<!-- /faq -->" | safeHTML }}
 
-{{ end }}
+  {{ partial "footer.html" . }}
