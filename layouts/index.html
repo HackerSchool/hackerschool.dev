@@ -1,4 +1,13 @@
-{{ define "main" }}
+{{ partial "head.html" . }}
+
+{{ "<!-- navigation -->" | safeHTML }}
+<header class="shadow-bottom sticky-top bg-gray">
+  <div class="container">
+    {{ partial "navigation.html" . }}
+  </div>
+</header>
+{{ "<!-- /navigation -->" | safeHTML }}
+
 {{ "<!-- header -->" | safeHTML }}
 <div class="col-md-12 nopadding">
 	<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -30,28 +39,26 @@
 			<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
 				<span class="carousel-control-next-icon" aria-hidden="true"></span>
 				<span class="sr-only">Next</span>
-			</a>
-		<div class="col-md-6 offset-md-3 text-center vertical-center">
-			{{ with .Site.Params.banner.title }} <h1 id="bannerTitle" class="text-white mb-3">{{ . }}</h1> {{ end }}
-			{{ with .Site.Params.banner.description | safeHTML }} <p class="text-white mb-4">{{ . }}</p> {{ end }}
-		</div>
-	</div>
-	<div class="main-text hidden-xshidden-xs">
-		<div class="container mb-100">
-			{{ "<!-- navigation -->" | safeHTML }}
-			{{ partial "navigation.html" . }}
-			{{ "<!-- /navigation -->" | safeHTML }}
-		</div>
+      </a>
+      
+		<div style="position: absolute; top:25%; height: 75%; width:100%; text-align: center;">
+			{{ with .Site.Params.banner.title }} <h2 id="bannerTitle" class="disapearWhenSmall text-white mb-3">{{ . }}</h2> {{ end }}
+      {{ with .Site.Params.banner.description | safeHTML }} <p class="disapearWhenSmall text-white mb-4">{{ . }}</p> {{ end }}
+      <br>
+      <div style="position: absolute; bottom: 20%; width:100%; ">
+        <a href='{{ "recrutamento" | absURL }}' class="btn btn-primary">Recrutamento 2020/2021 </a>
+      </div>
+    </div>
 	</div>
 </div>
 {{ "<!-- /header -->" | safeHTML }}
 {{ "<!-- sobre -->" | safeHTML }}
-<section class="section sec-about fs-large">
+<section class="section sec-projetos fs-large">
   <div class="container">
       <div class="row justify-content-center">
           <div class="col-12 text-center">
             <h1 class="section-title">A HackerSchool</h1>
-            <p class="sec-about">A HackerSchool é uma associação académica, fundada em 2012, que desenvolve actividades num ambiente multidisciplinar, de learn-by-doing e de aprendizagem entre pares, inspirado nos valores da cultura hacker.
+            <p style="color:white;">A HackerSchool é uma associação académica, fundada em 2012, que desenvolve actividades num ambiente multidisciplinar, de learn-by-doing e de aprendizagem entre pares, inspirado nos valores da cultura hacker.
               <br>Aqui, independentemente da formação de base, aprende-se a criar novos produtos e serviços sobre tecnologias emergentes como a internet das coisas ou a web semântica, utilizando soluções de baixo custo assentes em open electronics, open materials, open fabrication, entre outros.
             </p>
           </div>
@@ -61,23 +68,26 @@
 {{ "<!-- /sobre -->" | safeHTML }}
 
 {{ "<!-- projetos -->" | safeHTML }}
-<section class="section sec-projetos shadow">
+<section class="section sec-about shadow">
   <div class="container">
       <div class="row justify-content-center">
           <div class="col-12 text-center">
             <h2 class="section-title">Projetos</h2>
           </div>
-          {{ "<!-- projeto -->" | safeHTML }}
-          {{ range where .Pages "Type" "projeto" }}
+          {{ range where .Pages "Type" "projetos" }}
+          {{ range .Pages}}          
           {{ if .Params.destacado }}
-          <div class="col-lg-4 col-sm-6 mb-4">
-            <a href="{{ .Permalink }}" class="px-4 py-2 bg-white shadow text-center d-block">
-              <i class="{{ .Params.Icon }} icon text-dark d-block mb-4"></i>
-              <h3 class="mb-3">{{ .Title }}</h3>
-              <div class="projeto-foto"><img src="{{ .Params.Photo  | absURL  }}" /></div>
-              <p class="mb-0">{{ .Description }}</p>
-            </a>
-          </div>
+          {{ "<!-- projeto -->" | safeHTML }}
+          <div class="col-lg-6 col-sm-6 mb-4">
+              <div class="px-4 py-2 bg-gray dynamicThingy text-center d-block">
+                <i class="{{ .Params.Icon }} icon text-dark d-block mb-4"></i>
+                <h3 class="mb-3">{{ .Title }}</h3>
+                <div class="projeto-foto"><img src="{{ .Params.Photo | absURL }}" /></div>
+                <p style="color:white;" class="mb-0">{{ .Description }}</p>
+              </div>
+            </div>
+          {{ "<!-- /projeto -->" | safeHTML }}
+          {{ end }}
           {{ end }}
           {{ end }}
       </div>
@@ -90,13 +100,14 @@
 {{ "<!-- /projetos -->" | safeHTML }}
 
 {{ "<!-- membros -->" | safeHTML }}
-  <section style="display: none;" class="section sec-membros">
+<!--
+  <section class="section sec-membros">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-12 text-center">
               <h2 class="section-title">Membros</h2>
             </div>
-            {{ "<!-- membro -->" | safeHTML }}
+            {{ "<!-- membro --><!--" | safeHTML }}
             {{ range .Site.Data.membros.membro }}
             <div class="col-lg-3 col-sm-6 col-6 mb-4">
               <a href="{{ .Permalink }}" class="px-4 bg-white shadow text-center d-block">
@@ -109,21 +120,19 @@
         </div>
     </div>
   </section>
-{{ "<!-- /membros -->" | safeHTML }}
+{{ "<!-- /membros --><!--" | safeHTML }}-->
 
 {{ "<!-- contactos -->" | safeHTML }}
-<section class="section sec-contactos fs-large">
+<section class="section fs-large sec-projetos">
   <div class="container">
       <div class="row justify-content-center">
           <div class="col-12 text-center">
             <h2 class="section-title">Contacta-nos</h2>
-            <p class="sec-contactos">Envia-nos um email para: hackerschool@tecnico.ulisboa.pt</p>
+            <p style="color:white;">Envia-nos um email para: hackerschool@tecnico.ulisboa.pt</p>
           </div>
       </div>
   </div>
 </section>
 {{ "<!-- /contactos -->" | safeHTML }}
 
-{{ end }}
-
-
+{{ partial "footer.html" . }}

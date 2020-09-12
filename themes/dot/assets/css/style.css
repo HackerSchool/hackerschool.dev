@@ -6,7 +6,8 @@ body {
   -webkit-font-smoothing: antialiased;
   font-size: 18px;
   color: var(--text-color);
-  background-color: var(--secondary-color);
+  background-color: var(--secondary-color);   
+  height: 100%;
 }
 
 p,
@@ -661,7 +662,7 @@ li.parent a {
 }
 
 .sec-projetos {
-  background-color: #353535;
+  background-color: #2a2b29;
 }
 .projeto-foto {
   margin: 0.5em;
@@ -672,7 +673,7 @@ li.parent a {
 }
 
 .sec-contactos {
-  background-color: #353535;
+  background-color: #2a2b29;
   color: #bbbbbb;
 }
 
