@@ -31,6 +31,10 @@ carouselImagens=["images/caroussel_1_small.jpg", "images/caroussel_2_small.jpg"]
 
     # navigation
     [Languages.en.menu]
+      [[Languages.en.menu.main]]
+        weight = 2
+        name = "Membros"
+        url = "/membros"
     
       [[Languages.en.menu.main]]
         weight = 2

@@ -16,7 +16,7 @@
     <div class="row justify-content-center">
       {{ "<!-- projeto -->" | safeHTML }}
       {{ range (where .Pages.ByDate "Type" "projeto").Reverse }}
-      <div class="col-lg-6 col-sm-6 mb-4">
+      <div class="col-lg-6 col-sm-6 mb-4 fader fader-fadeInUp">
         <div class="px-4 py-2 bg-gray dynamicThingy text-center d-block">
           <i class="{{ .Params.Icon }} icon text-dark d-block mb-4"></i>
           <h3 class="mb-3">{{ .Title }}</h3>

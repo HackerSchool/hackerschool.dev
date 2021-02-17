@@ -1,55 +1,56 @@
-membro:
+direcao:
   - nome:  Miguel Fazenda       
     cargo: Tesoureiro
-    imagem: 
-  - nome:  Pedro Direita        
-    cargo: Membro
-    imagem: 
+    imagem:  miguelFazenda.png
   - nome:  Filipe Varela        
     cargo: Presidente
-    imagem: 
-  - nome:  João Góis            
-    cargo: Membro
-    imagem: 
-  - nome:  Catarina Bento      
-    cargo: Membro
-    imagem: 
-  - nome:  Cármen Fonseca      
-    cargo: Membro
-    imagem: 
+    imagem:  filipeVarela.png
   - nome:  Hugo Marques        
     cargo: Vice-presidente
-    imagem: 
+    imagem:  hugoMarques.png
   - nome:  Henrique Guerra     
     cargo: Desenvolvimento
-    imagem: 
-  - nome:  Afonso Certo        
-    cargo: Membro
-    imagem: 
-  - nome:  Pedro Taborda       
-    cargo: Membro
-    imagem: 
-  - nome:  Francisco Rodrigues 
-    cargo: Membro
-    imagem: 
-  - nome:  Daniel Leitão       
-    cargo: Membro
-    imagem: 
+    imagem:  henriqueGuerra.png
   - nome:  Duarte Oliveira     
     cargo: Marketing
-    imagem: 
+    imagem: default.png
   - nome:  João Palma          
     cargo: Desenvolvimento
-    imagem: 
+    imagem:  joaoPalma.png
   - nome:  Margarida Oliveira  
     cargo: RecursosHumanos
-    imagem: 
+    imagem: default.png
   - nome:  Tiago Almeida       
     cargo: RecursosHumanos
-    imagem: 
+    imagem: default.png
+membro:
+  - nome:  Pedro Direita        
+    cargo: Membro
+    imagem:  pedroDireita.png
+  - nome:  João Góis            
+    cargo: Membro
+    imagem: default.png
+  - nome:  Catarina Bento      
+    cargo: Membro
+    imagem: default.png
+  - nome:  Cármen Fonseca      
+    cargo: Membro
+    imagem: default.png
+  - nome:  Afonso Certo        
+    cargo: Membro
+    imagem: default.png
+  - nome:  Pedro Taborda       
+    cargo: Membro
+    imagem: default.png
+  - nome:  Francisco Rodrigues 
+    cargo: Membro
+    imagem: default.png
+  - nome:  Daniel Leitão       
+    cargo: Membro
+    imagem: default.png
   - nome:  Bernardo Esteves    
     cargo: Membro
-    imagem: 
+    imagem: default.png
   - nome:  Inês Magessi        
     cargo: Membro
-    imagem: 
+    imagem: default.png
