@@ -10,7 +10,7 @@ secondaryColor = "#353535"
 textColor = "#636363"
 textColorDark = "#6dba83"
 whiteColor = "#ffffff"
-
+recruitmentTime = true
 #lista de imagens que aparecem no carousel da pagina principal
 carouselImagens=["images/caroussel_1_small.jpg", "images/caroussel_2_small.jpg"]
 

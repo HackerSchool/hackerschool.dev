@@ -28,9 +28,11 @@
                 <p class="mb-0">{{ .cargo }}</p>
               </h3>
               <img src="/images/membros/{{ .imagem }}">
+              {{ if .project }}
               <p class="hoverAppear">
-                Projeto: <br /> ShareItHelpIt
+                Projeto: <br /> {{ .project }}
               </p>
+              {{ end }}
           </div>
           {{ end }}
       </div>
@@ -48,9 +50,11 @@
                 <p class="mb-0">{{ .cargo }}</p>
               </h3>
               <img src="/images/membros/{{ .imagem }}">
+              {{ if .project }}
               <p class="hoverAppear">
-                Projeto: <br /> ShareItHelpIt
+                Projeto: <br /> {{ .project }}
               </p>
+              {{ end }}
           </div>
           {{ end }}
       </div>

@@ -864,6 +864,12 @@ li.parent a {
   color: white !important;
 }
 
+.btn-primary.disabled {
+  color: #fff;
+  background-color: rgb(99, 99, 99);
+  border-color: rgb(99, 99, 99);
+}
+
 .btn-primary:hover {
   background: #307742;
 }
