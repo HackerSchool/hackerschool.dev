@@ -13,7 +13,7 @@
   <div class="container">
     <div class="p-5 bg-white">
         <h2>{{ .Title }}</h2>
-        <img class="col-lg-4 col-xl-4 col-md-6" src="{{ .Params.Photo | absURL }}">
+        <img class="col-lg-4 col-xl-4 col-md-6 col-xs-12" src="{{ .Params.Photo | absURL }}">
         {{ range .Params.DescricaoCompleta }}
         <p style="text-align: justify;">{{ . }}</p>
         {{ end }}

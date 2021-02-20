@@ -86,6 +86,7 @@ h6,
 .btn-primary {
   background: var(--primary-color);
   color: var(--white-color);
+  white-space: inherit;
 }
 
 .btn-primary:active {
@@ -177,7 +178,36 @@ select:focus {
 }
 
 .section-title {
-  margin-bottom: 40px;
+  margin-bottom: 60px;
+  margin-top: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.pbottom-20 {
+  padding-bottom: 20px;
+}
+
+.projectWrapper {
+  padding: 0px;
+  display: flex;
+}
+
+div.projectsWrapper.row {
+  display: flex;
+  align-items: stretch;
+}
+
+div.projectsWrapper.row .dynamicThingy{
+  justify-content: space-between;
+  display: flex !important;
+  flex-direction: column;
+}
+
+.section-divider {
+  width: 100%;
+  height: 1px;
+  background-color: gray;
 }
 
 .bg-cover {
@@ -407,6 +437,10 @@ pre {
   color: var(--white-color) !important;
 }
 
+.navbar-brand {
+  width: 200px;
+}
+
 /* search */
 
 #project-icon {
@@ -438,6 +472,9 @@ pre {
 @media (min-width: 576px) {
   .ui-menu {
     max-width: 510px !important;
+  }
+  .navbar-brand{
+    width: auto;
   }
 }
 
@@ -683,4 +720,270 @@ li.parent a {
 
 .invert-logo {
   filter: invert(100%);
+}
+
+.sec-membros h3 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-weight: 700;
+}
+
+.sec-membros p {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 0px;
+}
+.sec-membros img {
+  height: 128px;
+  width: 128px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.sec-membros .row {
+  align-items: end;
+}
+
+.sec-membros .member-card {
+  margin: 0px;
+  margin-bottom: 20px;
+  cursor: auto;
+  padding: 11px;
+  margin-top: 10px;
+  height: 303px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  display: flex;
+  /*
+  padding: 5px;
+  */
+}
+
+.sec-membros .member-card:hover {
+  height: 313px;
+  border: 1px solid;
+  padding: 10px;
+  margin-top: 0px;
+  z-index: 100;
+}
+
+
+.sec-membros .member-card .hoverAppear{
+  display: none;
+  line-height: 26px;
+  margin-top: 10px;
+}
+
+.sec-membros .member-card:hover .hoverAppear{
+  display: none;
+}
+
+
+@media (min-width: 992px) {
+  .sec-membros .member-card {
+    height: 290px;
+  }
+  .sec-membros .member-card:hover {
+    height: 300px;
+  }
+}
+
+@media (min-width: 450px) {
+  .sec-membros .member-card:hover .hoverAppear{
+    display: block;
+  }
+}
+
+
+
+@keyframes fadeInVisibility {
+  from {
+      visibility: hidden;
+  }
+
+  to {
+      visibility: visible;
+  }
+}
+
+  @keyframes fadeInUp {
+      from {
+          /*transform: translateY(40px);/*translate3d(0,40px,0);*/
+          bottom: -100px;
+          opacity: 0;
+      }
+
+      to {
+          bottom: 0px;
+          opacity: 1;
+      }
+  }
+
+@keyframes fadeInDown {
+  from {
+      transform: translate3d(0,-80px,0);
+      opacity: 0;
+  }
+
+  to {
+      transform: translate3d(0,0,0);
+      opacity: 1;
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+      transform: translate3d(140px,0px,0);
+      opacity: 0;
+  }
+
+  to {
+      transform: translate3d(0,0,0);
+      opacity: 1;
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+      transform: translate3d(-140px,0px,0);
+      opacity: 0;
+  }
+
+  to {
+      transform: translate3d(0px,0,0);
+      opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+
+      to {
+          opacity: 1;
+      }
+  }
+
+@keyframes fadeOut {
+  from {
+      opacity: 1;
+  }
+
+  to {
+      opacity: 0;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+      opacity: 1;
+  }
+
+  to {
+      opacity: 0;
+  }
+}
+
+@keyframes fadeOutTransform {
+  from {
+      opacity: 1;
+      transform: translate3d(0,0,0);
+  }
+
+  to {
+      opacity: 0;
+      transform: translate3d(0,0px,0);
+  }
+}
+
+.navbar .nav-item .nav-link:hover { 
+  color: white !important;
+}
+
+.btn-primary.disabled {
+  color: #fff;
+  background-color: rgb(99, 99, 99);
+  border-color: rgb(99, 99, 99);
+}
+
+.btn-primary:hover {
+  background: #307742;
+}
+
+.fader {
+  opacity: 0;
+}
+
+.fader-fadeInUp.fader-animated {
+  animation-name: fadeInUp;
+  animation-duration: 0.8s;
+}
+
+.fader-fadeInDown.fader-animated {
+  animation-name: fadeInDown;
+  animation-duration: 0.6s;
+}
+
+.fader-fadeIn.fader-animated {
+  animation-name: fadeIn;
+  animation-duration: 1s;
+}
+
+.fader-fadeInVisibility.fader-animated {
+  animation-name: fadeInVisibility;
+  animation-duration: 1s;
+}
+
+.fader-fadeInRight.fader-animated {
+  animation-name: fadeInRight;
+  animation-duration: 0.8s;
+}
+
+.fader-fadeInLeft.fader-animated {
+  animation-name: fadeInLeft;
+  animation-duration: 0.8s;
+}
+
+.fader-animated {
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+
+.fader-fadeOut.fader-animated {
+  animation-name: fadeOut;
+  animation-duration: 0.5s;
+  animation-delay: 0s !important;
+  animation-fill-mode: backwards;
+}
+.fader-fadeInDown.fader-fadeOut.fader-animated {
+  animation-name: fadeOutTransform;
+}
+
+.helperCard {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+.helperCard div {
+  margin-top: 10px;
+}
+
+img.projectMembersPhoto {    
+  width: 100px;
+  height: 100px;
+  /*  margin-right: 10px; */
+  padding: 10px;
+}
+
+img.projectMembersPhoto:hover {
+  padding: 0px;
+  border: 1px solid;
+}
+
+.projectMembersContainer {
+  margin-top: 20px;
+  margin-bottom: 10px;
 }

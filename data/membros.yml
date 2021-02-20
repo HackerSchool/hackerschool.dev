@@ -1,55 +1,101 @@
-membro:
-  - nome:  Miguel Fazenda       
-    cargo: Tesoureiro
-    imagem: 
-  - nome:  Pedro Direita        
-    cargo: Membro
-    imagem: 
+direcao:
   - nome:  Filipe Varela        
     cargo: Presidente
-    imagem: 
-  - nome:  João Góis            
-    cargo: Membro
-    imagem: 
-  - nome:  Catarina Bento      
-    cargo: Membro
-    imagem: 
-  - nome:  Cármen Fonseca      
-    cargo: Membro
-    imagem: 
+    imagem: filipeVarela.png
   - nome:  Hugo Marques        
     cargo: Vice-presidente
-    imagem: 
-  - nome:  Henrique Guerra     
-    cargo: Desenvolvimento
-    imagem: 
-  - nome:  Afonso Certo        
-    cargo: Membro
-    imagem: 
-  - nome:  Pedro Taborda       
-    cargo: Membro
-    imagem: 
-  - nome:  Francisco Rodrigues 
-    cargo: Membro
-    imagem: 
-  - nome:  Daniel Leitão       
-    cargo: Membro
-    imagem: 
+    imagem: hugoMarques.jpg
   - nome:  Duarte Oliveira     
     cargo: Marketing
-    imagem: 
+    imagem: duarteOliveira.png
   - nome:  João Palma          
     cargo: Desenvolvimento
-    imagem: 
+    imagem: joaoPalma.jpeg
   - nome:  Margarida Oliveira  
-    cargo: RecursosHumanos
-    imagem: 
+    cargo: Recursos Humanos
+    imagem: margaridaOliveira2.png
   - nome:  Tiago Almeida       
-    cargo: RecursosHumanos
-    imagem: 
-  - nome:  Bernardo Esteves    
+    cargo: Recursos Humanos
+    imagem: tiagoAlmeida.jpg
+  - nome:  Miguel Fazenda       
+    cargo: Tesoureiro
+    imagem: miguelFazenda.png
+membro:
+  - nome:  Afonso Fernandes 
     cargo: Membro
-    imagem: 
+    imagem: afonsoFernandes.png
+  - nome: Ana Ajuda
+    cargo: Membro
+    imagem: anaAjuda.png
+  - nome:  André Teodósio 
+    cargo: Membro
+    imagem: andreTeodosio.jpg
+  - nome:  Diogo Correia	
+    cargo: Membro
+    imagem: diogoCorreia.jpg
+  - nome: Diogo Matos
+    cargo: Membro
+    imagem: diogoMatos.png
+  - nome:  Francisco Cruz	
+    cargo: Membro
+    imagem: franciscoCruz.png
+  - nome:  Francisco Fonseca 
+    cargo: Membro
+    imagem: franciscoFonseca.png
+  - nome:  Guilherme Soares 
+    cargo: Membro
+    imagem: guilhermeSoares.png
+  - nome: Henrique Pocinho
+    cargo: Membro
+    imagem: henriquePocinho.png
+  - nome:  Inês Carvalho 
+    cargo: Membro
+    imagem: inesCarvalho.png
+  - nome:  Isabel Portugal  
+    cargo: Membro
+    imagem: mariaPortugal.png
+  - nome:  José Pereira  
+    cargo: Membro
+    imagem: josePereira.png
+  - nome:  Mafalda Serafim  
+    cargo: Membro
+    imagem: mafaldaSerafim.jpg
+  - nome:  Manuel Gomes 
+    cargo: Membro
+    imagem: manuelGomes.png
+  - nome: Max Supelnic
+    cargo: Membro
+    imagem: maxSupelnic.png
+  - nome:  Pablo Alejandro
+    cargo: Membro
+    imagem: pabloGarcia.png
+  - nome:  Pedro Ventura 
+    cargo: Membro
+    imagem: pedroVentura.jpg
+  - nome:  Renato Sebastião 
+    cargo: Membro
+    imagem: renatoSebastiao.png
+  - nome: Ricardo Antunes
+    cargo: Membro
+    imagem: ricardoAntunes.png
+  - nome:  Tshepo Thajane 
+    cargo: Membro
+    imagem: tshepoThajane.png
+  - nome:  Pedro Direita        
+    cargo: Membro
+    imagem: pedroDireita.png
+  - nome:  Afonso Certo        
+    cargo: Membro
+    imagem: afonsoCerto.jpg
+  - nome:  Pedro Taborda       
+    cargo: Membro
+    imagem: pedroTaborda.png
+  - nome:  Francisco Rodrigues 
+    cargo: Membro
+    imagem: franciscoRodrigues.png
+  - nome:  Daniel Leitão       
+    cargo: Membro
+    imagem: danielLeitao.png
   - nome:  Inês Magessi        
     cargo: Membro
-    imagem: 
+    imagem: inesMagessi.png

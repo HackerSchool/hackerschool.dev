@@ -1,0 +1,70 @@
+{{ partial "head.html" . }}
+
+{{ "<!-- navigation -->" | safeHTML }}
+<header class="shadow-bottom sticky-top bg-gray">
+  <div class="container">
+    {{ partial "navigation.html" . }}
+  </div>
+</header>
+{{ "<!-- /navigation -->" | safeHTML }}
+
+<!-- details page -->
+<section style="padding-bottom: 48px;" class="single sec-membros">
+  <h1 class="responsiveHeaderText" style="color:white; text-align: center;height: 200px;background-color: var(--primary-color);vertical-align: middle;text-align: center;vertical-align: middle;line-height: 200px;"> Membros </h1> 
+  
+  <div class="container pt-4">
+        
+{{ "<!-- membros -->" | safeHTML }}
+  <section class="section sec-membros">
+    <div class="container">
+      <div class="col-12 text-center">
+        <h2 class="section-title">Direção</h2>
+      </div>
+      <div class="row justify-content-center">
+          {{ "<!-- membro -->" | safeHTML }}
+          {{ range .Site.Data.membros.direcao }}
+          <div class="fader member-card col-xl-3 col-lg-4 col-sm-6 col-6 dynamicThingy text-center fader-fadeInUp" style="background-color: var(--secondary-color);">
+              <h3 style="padding-top: 15px;">{{ .nome }}
+                <p class="mb-0">{{ .cargo }}</p>
+              </h3>
+              <img src="/images/membros/{{ .imagem }}">
+              {{ if .project }}
+              <p class="hoverAppear">
+                Projeto: <br /> {{ .project }}
+              </p>
+              {{ end }}
+          </div>
+          {{ end }}
+      </div>
+
+
+      
+      <div class="col-12 text-center">
+        <h2 class="section-title">Membros</h2>
+      </div>
+      <div class="row justify-content-center">
+          {{ "<!-- membro -->" | safeHTML }}
+          {{ range .Site.Data.membros.membro }}
+          <div class="fader member-card col-xl-3 col-lg-4 col-sm-6 col-6 dynamicThingy text-center fader-fadeInUp" style="background-color: var(--secondary-color);">
+              <h3 style="padding-top: 15px;">{{ .nome }}
+                <p class="mb-0">{{ .cargo }}</p>
+              </h3>
+              <img src="/images/membros/{{ .imagem }}">
+              {{ if .project }}
+              <p class="hoverAppear">
+                Projeto: <br /> {{ .project }}
+              </p>
+              {{ end }}
+          </div>
+          {{ end }}
+      </div>
+    </div>
+  </section>
+{{ "<!-- /membros -->" | safeHTML }}
+
+
+    <!-- </div> -->
+  </div>
+</section>
+
+{{ partial "footer.html" . }}

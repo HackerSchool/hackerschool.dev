@@ -1,47 +1,174 @@
 import codecs
 
+class HackerMember:
+  def __init__(self, hackerId, name, image):
+    self.hackerId = hackerId.strip()
+    
+    nameArray = name.strip().split(" ")
+    
+    if(len(nameArray) > 2):
+      name = nameArray[0] + " " + nameArray[len(nameArray) - 1]
+
+    if not image:
+      image = "default.png"
+
+    self.name = name
+    self.image = image.strip()
+    self.position = "Membro"
+  
+  def toString(self):
+    return "  - nome: " + self.name + "\n    cargo: " + self.position + "\n    imagem: " + self.image  + "\n"
+  
+  def str(self):
+    return self.hackerId + " " + self.name
+
+class HackerDirectionMember(HackerMember):
+  def __init__(self, hackerId, name, image, position):
+    super().__init__(hackerId, name, image)
+    self.position = position.strip()
+
+class Project:
+  def __init__(self, name, image, highlighted, members, description):
+    self.name = name
+    self.image = image
+    self.members = members
+    self.description = description
+    self.highlighted = highlighted
+
+newPeopleContactInfoJson = "\
+  126 | Afonso Fernandes | 919133622 | afonso110@gmail.com	| ist93679 | LEIC-T | 20/21 1s | afonsoFernandes.png \n\
+127| Ana Margarida Pina da Ajuda	| 911856616 | ana.margarida.ajuda@tecnico.ulisboa.pt	| ist98501 | MEMec | 20/21 1s | anaAjuda.png \n\
+128 | André Teodósio | 916508645 |	andrefteo@gmail.com |	ist99889 |	MEEC | 20/21 1s | andreTeodosio.jpg \n\
+129 | Diogo Correia	| 917560028 |	me@diogotc.com	| ist199211	| LEIC-A | 20/21 1s | diogoCorreia.jpg \n\
+130 | Diogo Sousa Matos |	911585053 |	diogo.s.matos@tecnico.ulisboa.pt |	ist95778 |	MEAer | 20/21 1s | diogoMatos.png \n\
+132 | Francisco Cruz	| 969306145	| fcruz170@gmail.com	| 96208	| LEIC | 20/21 1s | franciscoCruz.png \n\
+133 | Francisco Fonseca |	936039753 | francisco.parreira.fonseca@gmail.com |	ist95789 | MEAer | 20/21 1s | franciscoFonseca.png \n\
+134 | Guilherme Soares | 913024984 | guilherme.monteiro696@gmail.com |	ist95873 | MEBiom | 20/21 1s | guilhermeSoares.png \n\
+135 | Henrique Alves Pocinho |	912821447	| hapocinho@gmail.com |	ist99952	| MEEC | 20/21 1s | henriquePocinho.png \n\
+136 | Inês Carvalho | 960297874 | ines.n.carvalho@tecnico.ulisboa.pt	| ist92812	| MEBiom | 20/21 1s | inesCarvalho.png \n\
+137 | Isabel Portugal  | 960129842 | portugalisabelm@gmail.com | ist1100227 | MEMEC | 20/21 1s | mariaPortugal.png \n\
+138 | José Pereira  | 965626011| jose.h.pereira@tecnico.ulisboa.pt | ist92405| MEAER| 20/21 1s | josePereira.png \n\
+139 | Mafalda Serafim  | 939079700 | mafalda.dmserafim@gmail.com | ist92512| LEIC | 20/21 1s | mafaldaSerafim.jpg \n\
+140 | Manuel Gomes | 915163675| manuel.luiz.gomes@tecnico.ulisboa.pt | ist96268| MEEC | 20/21 1s | manuelGomes.png  \n\
+141 | Max Nobre Supelnic| 915419954 | maxsupelnic@tecnico.ulisboa.pt | ist95960| MEBIOM| 20/21 1s | maxSupelnic.png \n\
+142 | Pablo Alejandro| 912832562 | pabloportugalgarcia@gmail.com | ist98422| MEMEC | 20/21 1s | pabloGarcia.png \n\
+143 | Pedro Ventura | 910710449 | pedrocasventura@gmail.com | ist93155| MEEC| 20/21 1s | pedroVentura.jpg \n\
+144 | Renato Sebastião | 968 230 829 | renato.sebastiao@tecnico.ulisboa.pt | ist96475| MEMEC | 20/21 1s | renatoSebastiao.png \n\
+145 | Ricardo Gomes de Oliveira Caeiro Antunes | 961302451 | riscado.antunes@gmail.com | ist99316| LEIC-A| 20/21 1s | ricardoAntunes.png \n\
+146 | Tshepo Thajane | 926 851 251 | tshepothajane03@gmail.com | ist91164| MEAER | 20/21 1s | tshepoThajane.png \
+"
+
+projetos = " { 'Share It Help It', '}"
+
 contactInfoJson = "\
-80 | Miguel Fazenda       | 936768525 | miguelsfazenda@gmail.com                | ist190146 | Tesoureiro | MEEC | 17/18 2s |\n\
-81 | Pedro Direita        | 916888988 | pedro.direita@gmail.com                 | ist181305 || MEEC | 17/18 2s |\n\
-85 | Filipe Varela        | 915241625 | bfagdsv250@gmail.com                    | ist192459 | Presidente | MEMEC | 18/19 1s |\n\
-90 | João Góis            | 961379368 | joao.luis.gois@tecnico.ulisboa.pt       | ist190284 | | MEMEC | 18/19 1s |\n\
-102 | Catarina Bento      | 911710980 | catarina.c.bento@tecnico.ulisboa.pt     | ist193230 | | MEMEC | 18/19 2s |\n\
-103 | Cármen Fonseca      | 961546295 | carmenfonseca@tecnico.ulisboa.pt        | ist192671 | | MEAER | 18/19 2s |\n\
-106 | Hugo Marques        | 927831895 | hugofmarques@tecnico.ulisboa.pt         | ist189460 | Vice-presidente | LEIC | 19/20 1s |\n\
-107 | Henrique Guerra     | 933998487 | henrique.b.guerra@tecnico.ulisboa.pt    | ist189456 | Desenvolvimento | LEIC | 19/20 1s |\n\
-108 | Afonso Certo        | 939605952 | certafonso@gmail.com                    | ist196134 | | MEEC | 19/20 1s |\n\
-109 | Pedro Taborda       | 925896230 | pedrotaborda04@gmail.com                | ist193152 | | MEEC | 19/20 1s |\n\
-112 | Francisco Rodrigues | 918869225 | francisco.rodrigues0908@gmail.com       | ist196210 | | MEEC | 19/20 1s |\n\
-115 | Daniel Leitão       | 927862314 | daniel.g.leitao@gmail.com               | ist190042 | | MEEC | 19/20 1s |\n\
-120 | Duarte Oliveira     | 916855882 | duarte.g.de.oliveira@tecnico.ulisboa.pt | ist194192 | Marketing | MEEC | 19/20 2s |\n\
-121 | João Palma          | 914849423 | joaocarlospalma.io@gmail.com         | ist181212 | Desenvolvimento |LEIC | 19/20 2s |\n\
-122 | Margarida Oliveira  | 912128143 | maggy.oliveira23@gmail.com           | ist196125 | Recursos Humanos |MEM | 19/20 2s |\n\
-123 | Tiago Almeida       | 918757363 | tiagoalmeida5@tecnico.ulisboa.pt     | ist196328 | Recursos Humanos |MEEC | 19/20 2s |\n\
-124 | Bernardo Esteves    | 924161865 | bernardo.esteves@tecnico.ulisboa.pt  | ist187633 | |MEIC | 19/20 2s |\n\
-125 | Inês Magessi        | 927332017 | inesmagessi1011@gmail.com            | ist195593 | |LEIC | 19/20 2s |\
+85 | Filipe Varela        | 915241625 | bfagdsv250@gmail.com                    | ist192459 | Presidente | MEMEC | 18/19 1s | filipeVarela.png\n\
+106 | Hugo Marques        | 927831895 | hugofmarques@tecnico.ulisboa.pt         | ist189460 | Vice-presidente | LEIC | 19/20 1s | hugoMarques.jpg\n\
+80 | Miguel Fazenda       | 936768525 | miguelsfazenda@gmail.com                | ist190146 | Tesoureiro | MEEC | 17/18 2s | miguelFazenda.png\n\
+81 | Pedro Direita        | 916888988 | pedro.direita@gmail.com                 | ist181305 || MEEC | 17/18 2s | pedroDireita.png\n\
+108 | Afonso Certo        | 939605952 | certafonso@gmail.com                    | ist196134 | | MEEC | 19/20 1s | afonsoCerto.jpg\n\
+109 | Pedro Taborda       | 925896230 | pedrotaborda04@gmail.com                | ist193152 | | MEEC | 19/20 1s | pedroTaborda.png\n\
+112 | Francisco Rodrigues | 918869225 | francisco.rodrigues0908@gmail.com       | ist196210 | | MEEC | 19/20 1s | franciscoRodrigues.png\n\
+115 | Daniel Leitão       | 927862314 | daniel.g.leitao@gmail.com               | ist190042 | | MEEC | 19/20 1s | danielLeitao.png\n\
+120 | Duarte Oliveira     | 916855882 | duarte.g.de.oliveira@tecnico.ulisboa.pt | ist194192 | Marketing | MEEC | 19/20 2s | duarteOliveira.png\n\
+121 | João Palma          | 914849423 | joaocarlospalma.io@gmail.com         | ist181212 | Desenvolvimento |LEIC | 19/20 2s | joaoPalma.jpeg \n\
+122 | Margarida Oliveira  | 912128143 | maggy.oliveira23@gmail.com           | ist196125 | Recursos Humanos |MEM | 19/20 2s | margaridaOliveira2.png\n\
+123 | Tiago Almeida       | 918757363 | tiagoalmeida5@tecnico.ulisboa.pt     | ist196328 | Recursos Humanos |MEEC | 19/20 2s | tiagoAlmeida.jpg\n\
+125 | Inês Magessi        | 927332017 | inesmagessi1011@gmail.com            | ist195593 | |LEIC | 19/20 2s | inesMagessi.png\
 "
 
 
-allMembersInfos = contactInfoJson.split("\n")
+newMemberInfos = newPeopleContactInfoJson.split("\n")
+dirMembersInfos = contactInfoJson.split("\n")
 #singleMemberInfos = memberInfos.split("|")
 columnInfo = "Nº | Nome | Telemóvel | E-Mail | IST ID | Cargo | Curso | Entrada | Imagem " #not needed
 
 finalString = "membro:\n"
-print(allMembersInfos)
-for singleMemberInfosString in allMembersInfos:
+finalDirString = "direcao:\n"
+print(dirMembersInfos)
+memberArray = dict()
+
+for singleMemberInfosString in newMemberInfos:
   singleMemberInfos = singleMemberInfosString.split("|")
-  position = singleMemberInfos[5].replace(" ", "")
+  member = HackerMember(singleMemberInfos[0], singleMemberInfos[1], singleMemberInfos[7])
+  memberArray[member.hackerId] = member
+
+  finalString += member.toString()
+
+for singleMemberInfosString in dirMembersInfos:
+  singleMemberInfos = singleMemberInfosString.split("|")
+  position = singleMemberInfos[5]
+  if len(position.replace(" ", "")) == 0:
+    member = HackerMember(singleMemberInfos[0], singleMemberInfos[1], singleMemberInfos[8])
+    finalString += member.toString()
+  else:
+    member = HackerDirectionMember(singleMemberInfos[0], singleMemberInfos[1], singleMemberInfos[8], position)
+    
+    if(member.position == "Tesoureiro"):
+      tesourer = member
+    else:
+      finalDirString += member.toString()
   
-  if len(position) == 0:
-    position = "Membro"
+  memberArray[member.hackerId] = member
 
-  finalString += "  - nome: " + singleMemberInfos[1] + "\n    cargo: " + position + "\n    imagem: " + singleMemberInfos[8] + "\n" 
-
+finalDirString += tesourer.toString()
+finalString = finalDirString + finalString
 
 file = codecs.open("data/membros.yml", "w", "utf-8")
 print(finalString)
 file.write(finalString)
 file.close()
+
+print(memberArray)
+#Projects
+#Projects
+#Projects
+#Projects
+#Projects
+#Projects
+#Projects
+#Projects
+#Projects
+#Projects
+#Projects
+#Projects
+#Projects
+
+projects = [
+  Project("HSApp", "hsApp.png", False, [memberArray["139"],memberArray["140"],memberArray["143"],memberArray["146"]], "A aplicação central da HS onde os membros podem encontrar novidades, anúncios, contactos e informação sobre os projetos, tudo exclusivamente do núcleo. A ideia é para ser um centro auxiliar de informação do núcleo."),
+  Project("HSInventory", "hsInventory.jpeg", False, [memberArray["129"],memberArray["130"],memberArray["135"],memberArray["115"]], "Criação de uma base dados do núcleo gerida a partir do website criado para o mesmo efeito e onde serão guardada informação relativamente aos estados de material ou ferramentas do núcleo."),
+  Project("HSTable", "hsTable.jpeg", False, [memberArray["127"],memberArray["137"],memberArray["108"]], "Uma mesa tátil criada a partir de raíz usando scanners e raspberry pi como controlador."),
+  Project("HSRobot", "hugoMarques.png", False, [memberArray["126"],memberArray["133"],memberArray["136"],memberArray["138"],memberArray["144"],memberArray["145"],memberArray["123"]], " Um robô capaz de andar por um labirinto com paredes coloridas a fim de ir buscar uma lata de Coca-Cola para o utilizador. Ao mesmo tempo, tem uma aplicação android atribuída a fim de ser controlável, interagir e muito mais com o utilizador."),
+  Project("ShareItHelpIt", "shareItHelpIt2.png", True, [memberArray["132"],memberArray["134"],memberArray["141"],memberArray["122"],memberArray["125"]], "Uma plataforma que conecte todas as drives do Técnico num único lugar, facilitando angariação de apontamentos, livros e muito mais, bem como partilha de apontamentos entre alunos num sistema de raking."),
+  Project("Smart Irrigation System", "smartIrrigationSystem.jpeg", True, [memberArray["128"],memberArray["142"],memberArray["80"],memberArray["120"]], "Um projeto focado na criação de um sistema de rega inteligente e autónomo, capaz de controlar a água suficiente para cada tipo de planta bem como a que hora as deve regar."),
+  Project("Under Pressure", "underPressure.jpeg", False, [memberArray["109"],memberArray["112"]], "O projeto consiste num conjunto de sensores de baixo-custo, resistentes à erosão do mar, recebendo dados relativamente à pressão do mar, sedimentação e outro tipo de informação a fim de ajudar na limpeza das praias Portuguesas."),
+  Project("HSWatch", "hswatch.png", True, [memberArray["81"],memberArray["85"]], "Um smartwatch feito de raiz, que tem como capacidades, com a ajuda de uma app Android própria, de mostrar as notificações das redes sociais mais usadas, indicar quando é recebida ou perdida uma chamada, cronometrar o tempo, criar alarmes e mostrar a meteorologia dos 6 dias seguintes."),
+]
+
+for project in projects:
+  memberPhotoString = ""
+  for member in project.members:
+    memberPhotoString += "\"" + member.image + "\","
+
+  memberPhotoString = memberPhotoString[:len(memberPhotoString) - 1] + " "
+
+  file = codecs.open("content/projetos/current/" + project.name + ".md", "w", "utf-8")
+  fileContent = ("+++\n\
+title = \"" + project.name + "\"\n\
+description= \"" + project.description + "\" \n\
+\n\
+date = \"2020-10-14\" \n\
+Destacado=" + ("true" if project.highlighted else "false") + " \n\
+\n\
+photo = \"" + project.image + "\" \n\
+\n\
+type = \"currentProject\" \n\
+layout = \"projeto\" \n\
+\n\
+teamPhotos = [" + memberPhotoString + "] \n\
++++")
+  print(fileContent)
+  file.write(fileContent)
+  file.close()
 
 
 """

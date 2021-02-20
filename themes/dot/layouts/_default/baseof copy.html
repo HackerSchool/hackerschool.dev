@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html
+lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
+    {{- partial "head.html" . -}}
+    <body
+    >
+        {{ if .IsHome }}
+        {{ else }}
+        {{ "<!-- navigation -->" | safeHTML }}
+        <header class="shadow-bottom sticky-top bg-gray">
+            <div class="container">
+                {{ partial "navigation.html" . }}
+            </div>
+        </header>
+        {{ "<!-- /navigation -->" | safeHTML }}
+        {{ end }}
+        <div
+        >
+        {{- block "main" . }}{{- end }}
+        </div>
+        {{- partial "footer.html" . -}}
+    </body>
+</html>
