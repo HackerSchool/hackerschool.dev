@@ -86,6 +86,7 @@ h6,
 .btn-primary {
   background: var(--primary-color);
   color: var(--white-color);
+  white-space: inherit;
 }
 
 .btn-primary:active {
@@ -177,7 +178,36 @@ select:focus {
 }
 
 .section-title {
-  margin-bottom: 40px;
+  margin-bottom: 60px;
+  margin-top: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.pbottom-20 {
+  padding-bottom: 20px;
+}
+
+.projectWrapper {
+  padding: 0px;
+  display: flex;
+}
+
+div.projectsWrapper.row {
+  display: flex;
+  align-items: stretch;
+}
+
+div.projectsWrapper.row .dynamicThingy{
+  justify-content: space-between;
+  display: flex !important;
+  flex-direction: column;
+}
+
+.section-divider {
+  width: 100%;
+  height: 1px;
+  background-color: gray;
 }
 
 .bg-cover {
@@ -407,6 +437,10 @@ pre {
   color: var(--white-color) !important;
 }
 
+.navbar-brand {
+  width: 200px;
+}
+
 /* search */
 
 #project-icon {
@@ -438,6 +472,9 @@ pre {
 @media (min-width: 576px) {
   .ui-menu {
     max-width: 510px !important;
+  }
+  .navbar-brand{
+    width: auto;
   }
 }
 
@@ -728,6 +765,7 @@ li.parent a {
   border: 1px solid;
   padding: 10px;
   margin-top: 0px;
+  z-index: 100;
 }
 
 
@@ -921,4 +959,31 @@ li.parent a {
 }
 .fader-fadeInDown.fader-fadeOut.fader-animated {
   animation-name: fadeOutTransform;
+}
+
+.helperCard {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+.helperCard div {
+  margin-top: 10px;
+}
+
+img.projectMembersPhoto {    
+  width: 100px;
+  height: 100px;
+  /*  margin-right: 10px; */
+  padding: 10px;
+}
+
+img.projectMembersPhoto:hover {
+  padding: 0px;
+  border: 1px solid;
+}
+
+.projectMembersContainer {
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
