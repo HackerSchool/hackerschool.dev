@@ -5,10 +5,10 @@ description= " Um robô capaz de andar por um labirinto com paredes coloridas a 
 date = "2020-10-14" 
 Destacado=false 
 
-photo = "hugoMarques.png" 
+photo = "hsRobot.gif" 
 
 type = "currentProject" 
 layout = "projeto" 
 
-teamPhotos = ["afonsoFernandes.png","franciscoFonseca.png","inesCarvalho.png","josePereira.png","renatoSebastiao.png","ricardoAntunes.png","tiagoAlmeida.jpg" ] 
+teamPhotos = ["afonsoFernandes.png","franciscoFonseca.png","inesCarvalho.png","josePereira.jpg","renatoSebastiao.png","ricardoAntunes.png","tiagoAlmeida.jpg" ] 
 +++

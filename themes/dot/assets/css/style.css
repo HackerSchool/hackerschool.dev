@@ -976,11 +976,11 @@ img.projectMembersPhoto {
   height: 100px;
   /*  margin-right: 10px; */
   padding: 10px;
+  transition: all 0.2s; 
 }
 
 img.projectMembersPhoto:hover {
   padding: 0px;
-  border: 1px solid;
 }
 
 .projectMembersContainer {

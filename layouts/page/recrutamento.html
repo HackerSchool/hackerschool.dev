@@ -105,10 +105,11 @@ min-height: 100%;
 		
 		<section class="section shadow fader">
 		<!-- fix url -->
-		<a href="https://maggyoliveira23.typeform.com/to/aOzGO5XL" class="btn btn-primary {{ if .Site.Params.recruitmentTime }} disabled {{ end }}" 
+		<a href="https://maggyoliveira23.typeform.com/to/OcUeYIXM" class="btn btn-primary {{ if .Site.Params.recruitmentTime }} {{ else }} disabled {{ end }}" 
 			style="text-align: center;vertical-align: middle;line-height: 40px;
 				width: 100%;font-size: 30;"> 
-			Inscreve-te no proximo semestre!
+				
+			{{ if .Site.Params.recruitmentTime }} Inscreve-te Agora! {{ else }} Inscreve-te no proximo semestre! {{ end }}
 		</a>	
 		</section>
 		<!--
