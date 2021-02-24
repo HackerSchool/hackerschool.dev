@@ -987,3 +987,59 @@ img.projectMembersPhoto:hover {
   margin-top: 20px;
   margin-bottom: 10px;
 }
+
+.carouselContainer {
+  padding: 0px;
+  height: 700px;
+  max-width: auto;
+  position: relative;
+}
+
+.carouselContainer div {
+  height: 100%;
+}
+
+.carouselContainer img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel-inner-home {
+  filter: brightness(100%);
+}
+
+.carousel-control-next {
+  z-index: 999;
+  opacity: 1;
+  width: 10%;
+}
+
+.carousel-control-prev {
+  z-index: 999;
+  opacity: 1;
+  width: 10%;
+}
+
+.carousel-control-next:hover {
+  background-color: #2f2f2f8c;
+}
+
+.carousel-control-prev:hover {
+  background-color: #2f2f2f8c;
+}
+
+html {
+  height: 100% !important;
+  min-height: 100% !important;
+  overflow: hidden;
+  overflow-x:hidden;
+}
+
+body {
+  overflow-y: auto;
+}
+
+header {
+  
+  z-index: 1000000;
+}

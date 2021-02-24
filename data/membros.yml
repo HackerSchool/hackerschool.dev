@@ -23,7 +23,7 @@ direcao:
 membro:
   - nome:  Afonso Fernandes 
     cargo: Membro
-    imagem: afonsoFernandes.png
+    imagem: afonsoFernandes.jpg
   - nome: Ana Ajuda
     cargo: Membro
     imagem: anaAjuda.png
@@ -47,7 +47,7 @@ membro:
     imagem: guilhermeSoares.png
   - nome: Henrique Pocinho
     cargo: Membro
-    imagem: henriquePocinho.png
+    imagem: henriquePocinho.jpeg
   - nome:  Inês Carvalho 
     cargo: Membro
     imagem: inesCarvalho.png
@@ -68,7 +68,7 @@ membro:
     imagem: maxSupelnic.png
   - nome:  Pablo Alejandro
     cargo: Membro
-    imagem: pabloGarcia.png
+    imagem: pabloGarcia.jpeg
   - nome:  Pedro Ventura 
     cargo: Membro
     imagem: pedroVentura.jpg
@@ -92,7 +92,7 @@ membro:
     imagem: pedroTaborda.png
   - nome:  Francisco Rodrigues 
     cargo: Membro
-    imagem: franciscoRodrigues.png
+    imagem: franciscoRodrigues.jpg
   - nome:  Daniel Leitão       
     cargo: Membro
     imagem: danielLeitao.png

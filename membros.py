@@ -36,7 +36,7 @@ class Project:
     self.highlighted = highlighted
 
 newPeopleContactInfoJson = "\
-  126 | Afonso Fernandes | 919133622 | afonso110@gmail.com	| ist93679 | LEIC-T | 20/21 1s | afonsoFernandes.png \n\
+  126 | Afonso Fernandes | 919133622 | afonso110@gmail.com	| ist93679 | LEIC-T | 20/21 1s | afonsoFernandes.jpg \n\
 127| Ana Margarida Pina da Ajuda	| 911856616 | ana.margarida.ajuda@tecnico.ulisboa.pt	| ist98501 | MEMec | 20/21 1s | anaAjuda.png \n\
 128 | André Teodósio | 916508645 |	andrefteo@gmail.com |	ist99889 |	MEEC | 20/21 1s | andreTeodosio.jpg \n\
 129 | Diogo Correia	| 917560028 |	me@diogotc.com	| ist199211	| LEIC-A | 20/21 1s | diogoCorreia.jpg \n\
@@ -44,14 +44,14 @@ newPeopleContactInfoJson = "\
 132 | Francisco Cruz	| 969306145	| fcruz170@gmail.com	| 96208	| LEIC | 20/21 1s | franciscoCruz.png \n\
 133 | Francisco Fonseca |	936039753 | francisco.parreira.fonseca@gmail.com |	ist95789 | MEAer | 20/21 1s | franciscoFonseca.png \n\
 134 | Guilherme Soares | 913024984 | guilherme.monteiro696@gmail.com |	ist95873 | MEBiom | 20/21 1s | guilhermeSoares.png \n\
-135 | Henrique Alves Pocinho |	912821447	| hapocinho@gmail.com |	ist99952	| MEEC | 20/21 1s | henriquePocinho.png \n\
+135 | Henrique Alves Pocinho |	912821447	| hapocinho@gmail.com |	ist99952	| MEEC | 20/21 1s | henriquePocinho.jpeg \n\
 136 | Inês Carvalho | 960297874 | ines.n.carvalho@tecnico.ulisboa.pt	| ist92812	| MEBiom | 20/21 1s | inesCarvalho.png \n\
 137 | Isabel Portugal  | 960129842 | portugalisabelm@gmail.com | ist1100227 | MEMEC | 20/21 1s | mariaPortugal.png \n\
 138 | José Pereira  | 965626011| jose.h.pereira@tecnico.ulisboa.pt | ist92405| MEAER| 20/21 1s | josePereira.jpg \n\
 139 | Mafalda Serafim  | 939079700 | mafalda.dmserafim@gmail.com | ist92512| LEIC | 20/21 1s | mafaldaSerafim.jpg \n\
 140 | Manuel Gomes | 915163675| manuel.luiz.gomes@tecnico.ulisboa.pt | ist96268| MEEC | 20/21 1s | manuelGomes.png  \n\
 141 | Max Nobre Supelnic| 915419954 | maxsupelnic@tecnico.ulisboa.pt | ist95960| MEBIOM| 20/21 1s | maxSupelnic.png \n\
-142 | Pablo Alejandro| 912832562 | pabloportugalgarcia@gmail.com | ist98422| MEMEC | 20/21 1s | pabloGarcia.png \n\
+142 | Pablo Alejandro| 912832562 | pabloportugalgarcia@gmail.com | ist98422| MEMEC | 20/21 1s | pabloGarcia.jpeg \n\
 143 | Pedro Ventura | 910710449 | pedrocasventura@gmail.com | ist93155| MEEC| 20/21 1s | pedroVentura.jpg \n\
 144 | Renato Sebastião | 968 230 829 | renato.sebastiao@tecnico.ulisboa.pt | ist96475| MEMEC | 20/21 1s | renatoSebastiao.png \n\
 145 | Ricardo Gomes de Oliveira Caeiro Antunes | 961302451 | riscado.antunes@gmail.com | ist99316| LEIC-A| 20/21 1s | ricardoAntunes.png \n\
@@ -67,7 +67,7 @@ contactInfoJson = "\
 81 | Pedro Direita        | 916888988 | pedro.direita@gmail.com                 | ist181305 || MEEC | 17/18 2s | pedroDireita.png\n\
 108 | Afonso Certo        | 939605952 | certafonso@gmail.com                    | ist196134 | | MEEC | 19/20 1s | afonsoCerto.jpg\n\
 109 | Pedro Taborda       | 925896230 | pedrotaborda04@gmail.com                | ist193152 | | MEEC | 19/20 1s | pedroTaborda.png\n\
-112 | Francisco Rodrigues | 918869225 | francisco.rodrigues0908@gmail.com       | ist196210 | | MEEC | 19/20 1s | franciscoRodrigues.png\n\
+112 | Francisco Rodrigues | 918869225 | francisco.rodrigues0908@gmail.com       | ist196210 | | MEEC | 19/20 1s | franciscoRodrigues.jpg\n\
 115 | Daniel Leitão       | 927862314 | daniel.g.leitao@gmail.com               | ist190042 | | MEEC | 19/20 1s | danielLeitao.png\n\
 120 | Duarte Oliveira     | 916855882 | duarte.g.de.oliveira@tecnico.ulisboa.pt | ist194192 | Marketing | MEEC | 19/20 2s | duarteOliveira.png\n\
 121 | João Palma          | 914849423 | joaocarlospalma.io@gmail.com         | ist181212 | Desenvolvimento |LEIC | 19/20 2s | joaoPalma.jpeg \n\
@@ -135,7 +135,7 @@ print(memberArray)
 
 projects = [
   Project("HSApp", "hsApp.png", False, [memberArray["139"],memberArray["140"],memberArray["143"],memberArray["146"]], "A aplicação central da HS onde os membros podem encontrar novidades, anúncios, contactos e informação sobre os projetos, tudo exclusivamente do núcleo. A ideia é para ser um centro auxiliar de informação do núcleo."),
-  Project("HSInventory", "hsInventory.jpeg", False, [memberArray["129"],memberArray["130"],memberArray["135"],memberArray["115"]], "Criação de uma base dados do núcleo gerida a partir do website criado para o mesmo efeito e onde serão guardada informação relativamente aos estados de material ou ferramentas do núcleo."),
+  Project("HSInventory", "hsInventory.png", False, [memberArray["129"],memberArray["130"],memberArray["135"],memberArray["115"]], "Criação de uma base dados do núcleo gerida a partir do website criado para o mesmo efeito e onde serão guardada informação relativamente aos estados de material ou ferramentas do núcleo."),
   Project("HSTable", "hsTable.jpg", False, [memberArray["127"],memberArray["137"],memberArray["108"]], "Uma mesa smart tátil que funciona com base na tecnologia de “light triangulation” e concebida de modo a facilitar a gestão de tarefas do utilizador através de aplicações desenvolvidas para esse fim (e.g. verificar o calendário, tirar notas, etc..), e garantindo ao mesmo tempo uma interface natural, adaptável e fácil de usar."),
   Project("HSRobot", "hsRobot.gif", False, [memberArray["126"],memberArray["133"],memberArray["136"],memberArray["138"],memberArray["144"],memberArray["145"],memberArray["123"]], " Um robô capaz de andar por um labirinto com paredes coloridas a fim de ir buscar uma lata de Coca-Cola para o utilizador. Ao mesmo tempo, tem uma aplicação android atribuída a fim de ser controlável, interagir e muito mais com o utilizador."),
   Project("ShareItHelpIt", "shareItHelpIt2.png", True, [memberArray["132"],memberArray["134"],memberArray["141"],memberArray["122"],memberArray["125"]], "Uma plataforma que conecte todas as drives do Técnico num único lugar, facilitando angariação de apontamentos, livros e muito mais, bem como partilha de apontamentos entre alunos num sistema de raking."),
