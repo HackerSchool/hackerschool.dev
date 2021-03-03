@@ -76,6 +76,14 @@ echo "Connected successfully";
 </div>
 {{ "<!-- /header -->" | safeHTML }}
 
+<section class="section sec-membros fs-large pb-4">
+  <div style="display: flex; margin: auto">
+    {{ if .Site.Params.recruitmentTime }}
+      <a href='{{ "recrutamento" | absURL }}' class="btn btn-primary m-auto"> Vê a nossa página de recrutamento aqui! </a>
+    {{ end }}
+  </div>
+</section>
+
 {{ "<!-- sobre -->" | safeHTML }}
 <section class="section sec-projetos fs-large">
   <div class="container">

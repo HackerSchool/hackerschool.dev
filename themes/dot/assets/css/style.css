@@ -196,6 +196,8 @@ select:focus {
 div.projectsWrapper.row {
   display: flex;
   align-items: stretch;
+  width: 100%;
+  margin:auto;
 }
 
 div.projectsWrapper.row .dynamicThingy{
@@ -447,6 +449,21 @@ pre {
   float: left;
   height: 32px;
   width: 32px;
+}
+
+h1 {
+  margin-bottom: 0px;
+}
+
+h3 p{
+  line-height: 24px;
+}
+
+.aboutUsContainer strong {
+  font-size: 130%;
+}
+.aboutUsContainer strong.sub {
+  font-size: 105%;
 }
 
 #project-description {
@@ -779,7 +796,40 @@ li.parent a {
   display: none;
 }
 
+.dynamicThingy
+{    
+    box-shadow: 3px 3px 3px black;
+    transition: .3s ease;
+    
+    background-color:#2b2b2b;
+    margin:30px; 
+    margin-left: 10px;
+    margin-right: 10px;
 
+    padding: 20px;
+}
+
+.dynamicThingy:hover
+{
+    box-shadow: 10px 10px 10px black;
+}
+
+.dynamicThingy.helperCard {
+  margin-left :0px;
+  margin-right :0px;
+}
+
+@media (min-width: 768px) {
+  .dynamicThingy.helperCard {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  
+  .dynamicThingy {
+    margin-left :30px;
+    margin-right :30px;
+  }
+}
 @media (min-width: 992px) {
   .sec-membros .member-card {
     height: 290px;

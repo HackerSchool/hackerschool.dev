@@ -1,25 +1,8 @@
-.dynamicThingy
-{    
-    box-shadow: 3px 3px 3px black;
-    transition: .3s ease;
-    
-    background-color:#2b2b2b; margin:30px; padding: 20px;
-}
-
-.dynamicThingy:hover
-{
-    box-shadow: 10px 10px 10px black;
-}
-
 .responsiveHeaderText
 {
     font-size:120px;
 }
 
-.disapearWhenSmall
-{
-    
-}
 @media only screen 
 and (min-width : 0px)
 and (max-width: 380px) {

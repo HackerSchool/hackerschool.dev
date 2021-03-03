@@ -20,6 +20,16 @@ direcao:
   - nome:  Miguel Fazenda       
     cargo: Tesoureiro
     imagem: miguelFazenda.png
+subDirecao:
+  - nome:  Francisco Fonseca 
+    cargo: Assistente de Desenvolvimento
+    imagem: franciscoFonseca.png
+  - nome: Henrique Pocinho
+    cargo: Assistente de Desenvolvimento
+    imagem: henriquePocinho.jpeg
+  - nome:  Afonso Certo        
+    cargo: Assistente de Marketing
+    imagem: afonsoCerto.jpg
 membro:
   - nome:  Afonso Fernandes 
     cargo: Membro
@@ -39,15 +49,9 @@ membro:
   - nome:  Francisco Cruz	
     cargo: Membro
     imagem: franciscoCruz.png
-  - nome:  Francisco Fonseca 
-    cargo: Membro
-    imagem: franciscoFonseca.png
   - nome:  Guilherme Soares 
     cargo: Membro
     imagem: guilhermeSoares.png
-  - nome: Henrique Pocinho
-    cargo: Membro
-    imagem: henriquePocinho.jpeg
   - nome:  Inês Carvalho 
     cargo: Membro
     imagem: inesCarvalho.png
@@ -84,9 +88,6 @@ membro:
   - nome:  Pedro Direita        
     cargo: Membro
     imagem: pedroDireita.png
-  - nome:  Afonso Certo        
-    cargo: Membro
-    imagem: afonsoCerto.jpg
   - nome:  Pedro Taborda       
     cargo: Membro
     imagem: pedroTaborda.png

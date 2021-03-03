@@ -84,11 +84,22 @@ columnInfo = "Nº | Nome | Telemóvel | E-Mail | IST ID | Cargo | Curso | Entrad
 
 finalString = "membro:\n"
 finalDirString = "direcao:\n"
+finalSubDirString = "subDirecao:\n"
+subDirPeople = ["108", "133", "135"]
+subDirPositions = ["Assistente de Marketing" , "Assistente de Desenvolvimento", "Assistente de Desenvolvimento"]
 print(dirMembersInfos)
 memberArray = dict()
 
 for singleMemberInfosString in newMemberInfos:
   singleMemberInfos = singleMemberInfosString.split("|")
+  if singleMemberInfos[0].strip() in subDirPeople: 
+    index = subDirPeople.index(singleMemberInfos[0].strip())
+    position = subDirPositions[index]
+    member = HackerDirectionMember(singleMemberInfos[0], singleMemberInfos[1], singleMemberInfos[7], position)
+    finalSubDirString += member.toString()
+    memberArray[member.hackerId] = member
+    continue
+
   member = HackerMember(singleMemberInfos[0], singleMemberInfos[1], singleMemberInfos[7])
   memberArray[member.hackerId] = member
 
@@ -96,6 +107,13 @@ for singleMemberInfosString in newMemberInfos:
 
 for singleMemberInfosString in dirMembersInfos:
   singleMemberInfos = singleMemberInfosString.split("|")
+  if singleMemberInfos[0].strip() in subDirPeople: 
+    index = subDirPeople.index(singleMemberInfos[0].strip())
+    position = subDirPositions[index]
+    member = HackerDirectionMember(singleMemberInfos[0], singleMemberInfos[1], singleMemberInfos[8], position)
+    finalSubDirString += member.toString()
+    memberArray[member.hackerId] = member
+    continue
   position = singleMemberInfos[5]
   if len(position.replace(" ", "")) == 0:
     member = HackerMember(singleMemberInfos[0], singleMemberInfos[1], singleMemberInfos[8])
@@ -111,7 +129,7 @@ for singleMemberInfosString in dirMembersInfos:
   memberArray[member.hackerId] = member
 
 finalDirString += tesourer.toString()
-finalString = finalDirString + finalString
+finalString = finalDirString + finalSubDirString + finalString
 
 file = codecs.open("data/membros.yml", "w", "utf-8")
 print(finalString)
@@ -134,14 +152,15 @@ print(memberArray)
 #Projects
 
 projects = [
-  Project("HSApp", "hsApp.png", False, [memberArray["139"],memberArray["140"],memberArray["143"],memberArray["146"]], "A aplicação central da HS onde os membros podem encontrar novidades, anúncios, contactos e informação sobre os projetos, tudo exclusivamente do núcleo. A ideia é para ser um centro auxiliar de informação do núcleo."),
-  Project("HSInventory", "hsInventory.png", False, [memberArray["129"],memberArray["130"],memberArray["135"],memberArray["115"]], "Criação de uma base dados do núcleo gerida a partir do website criado para o mesmo efeito e onde serão guardada informação relativamente aos estados de material ou ferramentas do núcleo."),
-  Project("HSTable", "hsTable.jpg", False, [memberArray["127"],memberArray["137"],memberArray["108"]], "Uma mesa smart tátil que funciona com base na tecnologia de “light triangulation” e concebida de modo a facilitar a gestão de tarefas do utilizador através de aplicações desenvolvidas para esse fim (e.g. verificar o calendário, tirar notas, etc..), e garantindo ao mesmo tempo uma interface natural, adaptável e fácil de usar."),
-  Project("HSRobot", "hsRobot.gif", False, [memberArray["126"],memberArray["133"],memberArray["136"],memberArray["138"],memberArray["144"],memberArray["145"],memberArray["123"]], " Um robô capaz de andar por um labirinto com paredes coloridas a fim de ir buscar uma lata de Coca-Cola para o utilizador. Ao mesmo tempo, tem uma aplicação android atribuída a fim de ser controlável, interagir e muito mais com o utilizador."),
-  Project("ShareItHelpIt", "shareItHelpIt2.png", True, [memberArray["132"],memberArray["134"],memberArray["141"],memberArray["122"],memberArray["125"]], "Uma plataforma que conecte todas as drives do Técnico num único lugar, facilitando angariação de apontamentos, livros e muito mais, bem como partilha de apontamentos entre alunos num sistema de raking."),
-  Project("Smart Irrigation System", "smartIrrigationSystem.jpeg", True, [memberArray["128"],memberArray["142"],memberArray["80"],memberArray["120"]], "Um projeto focado na criação de um sistema de rega inteligente e autónomo, capaz de controlar a água suficiente para cada tipo de planta bem como a que hora as deve regar."),
+  Project("HSApp", "HSApp-1.png", False, [memberArray["139"],memberArray["140"],memberArray["143"],memberArray["146"]], "A aplicação central da HS onde os membros podem encontrar novidades, anúncios, contactos e informação sobre os projetos, tudo exclusivamente do núcleo. A ideia é para ser um centro auxiliar de informação do núcleo."),
+  Project("HSInventory", "hsInventory.png", True, [memberArray["129"],memberArray["130"],memberArray["135"],memberArray["115"]], "Criação de uma base dados do núcleo gerida a partir do website criado para o mesmo efeito e onde serão guardada informação relativamente aos estados de material ou ferramentas do núcleo."),
+  Project("HSTable", "hsTable.jpg", True, [memberArray["127"],memberArray["137"],memberArray["108"]], "Uma mesa smart tátil que funciona com base na tecnologia de “light triangulation” e concebida de modo a facilitar a gestão de tarefas do utilizador através de aplicações desenvolvidas para esse fim (e.g. verificar o calendário, tirar notas, etc..), e garantindo ao mesmo tempo uma interface natural, adaptável e fácil de usar."),
+  Project("HSRobot", "hsRobot.gif", True, [memberArray["126"],memberArray["133"],memberArray["136"],memberArray["138"],memberArray["144"],memberArray["145"],memberArray["123"]], " Um robô capaz de andar por um labirinto com paredes coloridas a fim de ir buscar uma lata de Coca-Cola para o utilizador. Ao mesmo tempo, tem uma aplicação android atribuída a fim de ser controlável, interagir e muito mais com o utilizador."),
+  Project("ShareItHelpIt", "shareItHelpIt2.png", False, [memberArray["132"],memberArray["134"],memberArray["141"],memberArray["122"],memberArray["125"]], "Uma plataforma que conecte todas as drives do Técnico num único lugar, facilitando angariação de apontamentos, livros e muito mais, bem como partilha de apontamentos entre alunos num sistema de raking."),
+  Project("Smart Irrigation System", "smartIrrigationSystem.jpeg", False, [memberArray["128"],memberArray["142"],memberArray["80"],memberArray["120"]], "Um projeto focado na criação de um sistema de rega inteligente e autónomo, capaz de controlar a água suficiente para cada tipo de planta bem como a que hora as deve regar."),
   Project("Under Pressure", "underPressure.jpeg", False, [memberArray["109"],memberArray["112"]], "O projeto consiste num conjunto de sensores de baixo-custo, resistentes à erosão do mar, recebendo dados relativamente à pressão do mar, sedimentação e outro tipo de informação a fim de ajudar na limpeza das praias Portuguesas."),
-  Project("HSWatch", "hswatch.png", True, [memberArray["81"],memberArray["85"]], "Um smartwatch feito de raiz, que tem como capacidades, com a ajuda de uma app Android própria, de mostrar as notificações das redes sociais mais usadas, indicar quando é recebida ou perdida uma chamada, cronometrar o tempo, criar alarmes e mostrar a meteorologia dos 6 dias seguintes."),
+  Project("HSWatch", "hswatch.png", False, [memberArray["81"],memberArray["85"]], "Um smartwatch feito de raiz, que tem como capacidades, com a ajuda de uma app Android própria, de mostrar as notificações das redes sociais mais usadas, indicar quando é recebida ou perdida uma chamada, cronometrar o tempo, criar alarmes e mostrar a meteorologia dos 6 dias seguintes."),
+  Project("HSSite", "logoProject.png", False, [memberArray["106"]], "Reestruturação e melhoramento geral do website que vês perante ti! O objetivo é tornar o website mais dinâmico e agradável visualmente, adicionando ao mesmo tempo capacidade móvel e capacidade adaptativa, sendo que deverá interagir com o HSInventory e HSApp."),
 ]
 
 for project in projects:

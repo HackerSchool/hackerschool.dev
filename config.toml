@@ -67,13 +67,5 @@ carouselImagens=["images/carousel/carouselMembersHugo.jpg", "images/carousel/car
       URL = "https://www.facebook.com/hackerschoolist"
       
     [[Languages.en.socialIcon]]
-      icon = "ti-vimeo-alt"
-      URL = "/#"
-      
-    [[Languages.en.socialIcon]]
       icon = "ti-instagram"
       URL = "https://www.instagram.com/hackerschool_ist/"
-
-    [[Languages.en.socialIcon]]
-      icon = "ti-twitter"
-      URL = "https://twitter.com/hackerschoolist"

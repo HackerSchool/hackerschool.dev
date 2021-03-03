@@ -5,7 +5,7 @@ description= "A aplicação central da HS onde os membros podem encontrar novida
 date = "2020-10-14" 
 Destacado=false 
 
-photo = "hsApp.png" 
+photo = "HSApp-1.png" 
 
 type = "currentProject" 
 layout = "projeto" 
