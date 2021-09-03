@@ -49,9 +49,6 @@ membro:
   - nome:  Francisco Cruz	
     cargo: Membro
     imagem: franciscoCruz.png
-  - nome:  Guilherme Soares 
-    cargo: Membro
-    imagem: guilhermeSoares.png
   - nome:  Inês Carvalho 
     cargo: Membro
     imagem: inesCarvalho.png
@@ -82,9 +79,6 @@ membro:
   - nome: Ricardo Antunes
     cargo: Membro
     imagem: ricardoAntunes.png
-  - nome:  Tshepo Thajane 
-    cargo: Membro
-    imagem: tshepoThajane.png
   - nome:  Pedro Direita        
     cargo: Membro
     imagem: pedroDireita.png

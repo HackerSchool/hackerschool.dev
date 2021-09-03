@@ -43,7 +43,6 @@ newPeopleContactInfoJson = "\
 130 | Diogo Sousa Matos |	911585053 |	diogo.s.matos@tecnico.ulisboa.pt |	ist95778 |	MEAer | 20/21 1s | diogoMatos.png \n\
 132 | Francisco Cruz	| 969306145	| fcruz170@gmail.com	| 96208	| LEIC | 20/21 1s | franciscoCruz.png \n\
 133 | Francisco Fonseca |	936039753 | francisco.parreira.fonseca@gmail.com |	ist95789 | MEAer | 20/21 1s | franciscoFonseca.png \n\
-134 | Guilherme Soares | 913024984 | guilherme.monteiro696@gmail.com |	ist95873 | MEBiom | 20/21 1s | guilhermeSoares.png \n\
 135 | Henrique Alves Pocinho |	912821447	| hapocinho@gmail.com |	ist99952	| MEEC | 20/21 1s | henriquePocinho.jpeg \n\
 136 | Inês Carvalho | 960297874 | ines.n.carvalho@tecnico.ulisboa.pt	| ist92812	| MEBiom | 20/21 1s | inesCarvalho.png \n\
 137 | Isabel Portugal  | 960129842 | portugalisabelm@gmail.com | ist1100227 | MEMEC | 20/21 1s | mariaPortugal.png \n\
@@ -55,7 +54,6 @@ newPeopleContactInfoJson = "\
 143 | Pedro Ventura | 910710449 | pedrocasventura@gmail.com | ist93155| MEEC| 20/21 1s | pedroVentura.jpg \n\
 144 | Renato Sebastião | 968 230 829 | renato.sebastiao@tecnico.ulisboa.pt | ist96475| MEMEC | 20/21 1s | renatoSebastiao.png \n\
 145 | Ricardo Gomes de Oliveira Caeiro Antunes | 961302451 | riscado.antunes@gmail.com | ist99316| LEIC-A| 20/21 1s | ricardoAntunes.png \n\
-146 | Tshepo Thajane | 926 851 251 | tshepothajane03@gmail.com | ist91164| MEAER | 20/21 1s | tshepoThajane.png \
 "
 
 projetos = " { 'Share It Help It', '}"

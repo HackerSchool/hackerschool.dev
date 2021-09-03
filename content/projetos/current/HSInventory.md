@@ -9,6 +9,7 @@ photo = "hsInventory.png"
 
 type = "currentProject" 
 layout = "projeto" 
+projectOfTheMonth =true
 
 teamPhotos = ["diogoCorreia.jpg","diogoMatos.png","henriquePocinho.jpeg","danielLeitao.png" ] 
 +++

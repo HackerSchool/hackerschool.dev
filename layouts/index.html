@@ -102,11 +102,13 @@ echo "Connected successfully";
 </section>
 {{ "<!-- /sobre -->" | safeHTML }}
 
+
 {{ "<!-- projetos -->" | safeHTML }}
 <section class="section sec-about sec-membros shadow">
   <div class="container">
     <div class="col-12 text-center">
-      <h2 class="section-title">Projetos</h2>
+      <h2 class="section-title">Projeto do mês</h2>
+      <h3> O projeto com mais progresso e com melhores resultados deste mês</h3>
     </div>
     <div class="row justify-content-center">
         <!--
@@ -129,7 +131,62 @@ echo "Connected successfully";
         -->
       <div class="row justify-content-center pbottom-20 projectsWrapper">{{ range where .Pages "Type" "projetos" }}
         {{ range where .Pages "Type" "currentProject" }}          
+        {{ if .Params.projectOfTheMonth }}
+        {{ "<!-- projeto -->" | safeHTML }}
+        <div class="col-lg-6 col-sm-12 col-xs-12 mb-4 fader fader-fadeInUp projectWrapper">
+          <div class="px-4 py-2 bg-gray dynamicThingy text-center d-block">
+            <div>
+              <i class="{{ .Params.Icon }} icon text-dark d-block mb-4"></i>
+              <h3 class="mb-3">{{ .Title }}</h3>
+              <div class="projeto-foto"><img src="/images/projetos/{{ .Params.Photo }}" /></div>
+            </div>
+            <p style="color:white;" class="mb-0">{{ .Description }}</p>
+            <div class="col-xs-12 projectMembersContainer">
+              {{ range .Params.teamPhotos }}
+                  <img class="projectMembersPhoto" src="/images/membros/{{.}}">
+              {{ end }}
+            </div>
+          </div>
+        </div>
+        {{ "<!-- /projeto -->" | safeHTML }}
+        {{ end }}
+        {{ end }}
+        {{ end }}
+      </div>
+      <br>
+  </div>
+</section>
+{{ "<!-- /projetos -->" | safeHTML }}
+
+
+{{ "<!-- projetos -->" | safeHTML }}
+<section class="section sec-about sec-membros shadow">
+  <div class="container">
+    <div class="col-12 text-center">
+      <h2 class="section-title">Outros Projetos</h2>
+    </div>
+    <div class="row justify-content-center">
+        <!--
+        {{ range where .Pages "Type" "projetos" }}
+        {{ range .Pages}}          
         {{ if .Params.destacado }}
+        {{ "<!-- projeto --><!--" | safeHTML }}
+        <div class="col-lg-6 col-sm-6 mb-4">
+            <div class="px-4 py-2 bg-gray dynamicThingy text-center d-block">
+              <i class="{{ .Params.Icon }} icon text-dark d-block mb-4"></i>
+              <h3 class="mb-3">{{ .Title }}</h3>
+              <div class="projeto-foto"><img src="{{ .Params.Photo | absURL }}" /></div>
+              <p style="color:white;" class="mb-0">{{ .Description }}</p>
+            </div>
+          </div>
+        {{ "<!-- /projeto --><!--" | safeHTML }}
+        {{ end }}
+        {{ end }}
+        {{ end }}
+        -->
+      <div class="row justify-content-center pbottom-20 projectsWrapper">{{ range where .Pages "Type" "projetos" }}
+        {{ range where .Pages "Type" "currentProject" }}          
+        {{ if and (.Params.destacado) (not .Params.projectOfTheMonth)}}
         {{ "<!-- projeto -->" | safeHTML }}
         <div class="col-lg-6 col-sm-12 col-xs-12 mb-4 fader fader-fadeInUp projectWrapper">
           <div class="px-4 py-2 bg-gray dynamicThingy text-center d-block">
