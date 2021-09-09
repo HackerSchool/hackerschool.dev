@@ -1,96 +1,167 @@
-direcao:
-  - nome:  Filipe Varela        
+presidencia:
+  - nome:  Margarida Oliveira
     cargo: Presidente
-    imagem: filipeVarela.png
-  - nome:  Hugo Marques        
-    cargo: Vice-presidente
-    imagem: hugoMarques.jpg
-  - nome:  Duarte Oliveira     
-    cargo: Marketing
-    imagem: duarteOliveira.png
-  - nome:  João Palma          
-    cargo: Desenvolvimento
-    imagem: joaoPalma.jpeg
-  - nome:  Margarida Oliveira  
-    cargo: Recursos Humanos
+    curso: 3ºano,LEMat
     imagem: margaridaOliveira2.png
-  - nome:  Tiago Almeida       
-    cargo: Recursos Humanos
+  - nome:  Tiago Almeida
+    cargo: Vice-presidente
+    curso: 3ºano, LEEC
     imagem: tiagoAlmeida.jpg
-  - nome:  Miguel Fazenda       
-    cargo: Tesoureiro
-    imagem: miguelFazenda.png
-subDirecao:
-  - nome:  Francisco Fonseca 
-    cargo: Assistente de Desenvolvimento
+desenvolvimento:
+  - nome:  Filipe Varela
+    cargo: 4ºano, MEMec
+    imagem: filipeVarela.png
+  - nome:  Francisco Cruz
+    cargo: 3ºano, LEIC
+    imagem: franciscoCruz.png
+  - nome:  Francisco Fonseca
+    cargo: 3ºano, LEAer
     imagem: franciscoFonseca.png
-  - nome: Henrique Pocinho
-    cargo: Assistente de Desenvolvimento
+  - nome:  Henrique Pocinho
+    cargo: 2ºano, LEEC
     imagem: henriquePocinho.jpeg
-  - nome:  Afonso Certo        
-    cargo: Assistente de Marketing
+  - nome:  João Palma
+    cargo: 4ºano, MEIC
+    imagem: joaoPalma.jpeg
+  - nome:  Max Supelnic  
+    cargo: 3ºano, LEBiom
+    imagem: maxSupelnic.png
+recursoshumanos:
+  - nome: Ana Martins
+    cargo: 3ºano, LEFT
+    imagem: anaMartins.png
+  - nome: Diogo Matos
+    cargo: 3ºano, LEAer
+    imagem: diogoMatos.png
+Marketing:
+  - nome:  Afonso Certo
+    cargo: 3ºano, LEEC
     imagem: afonsoCerto.jpg
+  - nome: Duarte Henriques
+    cargo: 2ºano, LETI
+    imagem: duarteHenriques.jpg
+  - nome: Duarte Pais
+    cargo: 3ºano, LEIC
+    imagem: duartePais.png
+  - nome: João Andrade
+    cargo: 2ºano, LETI
+    imagem: joaoAndrade.jpeg
+  - nome: João Rodrigues
+    cargo: 2ºano, LEEC
+    imagem: joaoRodrigues.png
+  - nome: Manuel Graça
+    cargo: 3ºano, LEEC
+    imagem: manuelGraca.PNG
+  - nome: Mariana Rato
+    cargo: 3ºano, LEEC
+    imagem: marianaRato.png
+hackexperts:
+  - nome:  Diogo Correia
+    cargo: WebDev
+    curso: 2ºano, LEIC
+    imagem: diogoCorreia.jpg
+  - nome:  Tiago Carneiro
+    cargo: Modelação 3D
+    curso: 3ºano, LEAer
+    imagem: tiagoCabrita.png
+  - nome:  Henrique Pocinho
+    cargo: Eletrónica
+    curso: 2ºano, LEEC
+    imagem: henriquePocinho.jpeg
+  - nome:  Filipe Varela
+    cargo: AppDev
+    curso: 4ºano, LEMec
+    imagem: filipeVarela.jpg
+  - nome:  Francisco Fonseca
+    cargo: CTF
+    curso: 3ºano, LEAer
+    imagem: franciscoFonseca.png
+  - nome:  Ricardo Antunes
+    cargo: Programação
+    curso: 2ºano, LEIC
+    imagem: ricardoAntunes.png
 membro:
   - nome:  Afonso Fernandes 
-    cargo: Membro
+    cargo: 4ºano, LEIC
     imagem: afonsoFernandes.jpg
   - nome: Ana Ajuda
-    cargo: Membro
+    cargo: 5ºano, MEMec
     imagem: anaAjuda.png
+  - nome: Ana Brígido
+    cargo: 4ºano, MEBiom 
+    imagem: anaBrigido.png
+  - nome: Ana Mourão
+    cargo: 3ºano, LEMat
+    imagem: anaMourao.png
   - nome:  André Teodósio 
-    cargo: Membro
+    cargo: 2ºano, LEEC
     imagem: andreTeodosio.jpg
-  - nome:  Diogo Correia	
-    cargo: Membro
-    imagem: diogoCorreia.jpg
-  - nome: Diogo Matos
-    cargo: Membro
-    imagem: diogoMatos.png
-  - nome:  Francisco Cruz	
-    cargo: Membro
-    imagem: franciscoCruz.png
+  - nome: Daniel Leitão       
+    cargo: 5ºano, MEEC
+    imagem: danielLeitao.png
+  - nome: Dinis Almeida       
+    cargo: 2ºano, LEMec 
+    imagem: dinisAlmeida.png
+  - nome: Duarte Oliveira       
+    cargo: 5ºano, MEEC 
+    imagem: duarteOliveira.png
+  - nome: Francisco Rodrigues 
+    cargo: 3ºano, LEEC
+    imagem: franciscoRodrigues.jpg
+  - nome:  Hugo Marques 
+    cargo: 5ºano, MEIC
+    imagem: hugoMarques.jpg
   - nome:  Inês Carvalho 
-    cargo: Membro
+    cargo: 4ºano, MEBiom
     imagem: inesCarvalho.png
   - nome:  Isabel Portugal  
-    cargo: Membro
+    cargo: 2ºano, LEMec
     imagem: mariaPortugal.png
-  - nome:  José Pereira  
-    cargo: Membro
-    imagem: josePereira.jpg
+  - nome:  Jerónimo Mendes  
+    cargo: 2ºano, LEIC
+    imagem: jeronimoMendes.png
   - nome:  Mafalda Serafim  
-    cargo: Membro
+    cargo: 4ºano, LEIC
     imagem: mafaldaSerafim.jpg
   - nome:  Manuel Gomes 
-    cargo: Membro
+    cargo: 3ºano, LEEC
     imagem: manuelGomes.png
-  - nome: Max Supelnic
-    cargo: Membro
-    imagem: maxSupelnic.png
+  - nome:  Miguel Dinis  
+    cargo: 4ºano, MEBiom
+    imagem: miguelDinis.png
   - nome:  Pablo Alejandro
-    cargo: Membro
+    cargo: 2ºano, LEMec
     imagem: pabloGarcia.jpeg
-  - nome:  Pedro Ventura 
-    cargo: Membro
-    imagem: pedroVentura.jpg
-  - nome:  Renato Sebastião 
-    cargo: Membro
-    imagem: renatoSebastiao.png
-  - nome: Ricardo Antunes
-    cargo: Membro
-    imagem: ricardoAntunes.png
   - nome:  Pedro Direita        
-    cargo: Membro
+    cargo: MEEC
     imagem: pedroDireita.png
   - nome:  Pedro Taborda       
-    cargo: Membro
+    cargo: 4ºano, MEEC
     imagem: pedroTaborda.png
-  - nome:  Francisco Rodrigues 
-    cargo: Membro
-    imagem: franciscoRodrigues.jpg
-  - nome:  Daniel Leitão       
-    cargo: Membro
-    imagem: danielLeitao.png
-  - nome:  Inês Magessi        
-    cargo: Membro
-    imagem: inesMagessi.png
+  - nome:  Pedro Ventura
+    cargo: 4ºano, MEEC
+    imagem: pedroVentura.jpg
+  - nome:  Rafael Rodrigues       
+    cargo: 2ºano, LEIC 
+    imagem: rafaelRodrigues.png
+  - nome:  Renato Sebastião 
+    cargo: 3ºano, LEMec
+    imagem: renatoSebastiao.png
+  - nome:  Rita Mendes        
+    cargo: 2ºano, LEEC
+    imagem: ritaMendes.png
+  - nome:  Rodolfo Amorim        
+    cargo: 2ºano, LEMec
+    imagem: rodolfoAmorim.png
+  - nome:  Rodrigo Amorim        
+    cargo: 2ºano, LEMec
+    imagem: rodrigoAmorim.jpeg
+  - nome:  Rodrigo Pereira        
+    cargo: 2ºano, LEEC
+    imagem: rodrigoPereira.png
+  - nome:  Sebastião Caldas        
+    cargo: 3ºano, LEEC
+    imagem: sebastiãoCaldas.png
+  - nome:  Tiago Freitas        
+    cargo: 3ºano, LEBiom
+    imagem: tiagoFreitas.png

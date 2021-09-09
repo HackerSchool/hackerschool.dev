@@ -10,5 +10,5 @@ photo = "hsRobot.gif"
 type = "currentProject" 
 layout = "projeto" 
 
-teamPhotos = ["afonsoFernandes.jpg","franciscoFonseca.png","inesCarvalho.png","josePereira.jpg","renatoSebastiao.png","ricardoAntunes.png","tiagoAlmeida.jpg" ] 
+teamPhotos = ["afonsoFernandes.jpg","franciscoFonseca.png","inesCarvalho.png","renatoSebastiao.png","ricardoAntunes.png","tiagoAlmeida.jpg" ] 
 +++

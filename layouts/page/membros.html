@@ -16,11 +16,84 @@
   <section class="section sec-membros">
     <div class="container">
       <div class="col-12 text-center">
-        <h2 class="section-title">Direção</h2>
+        <h2 class="section-title">Presidência</h2>
       </div>
       <div class="row justify-content-center">
           {{ "<!-- membro -->" | safeHTML }}
-          {{ range .Site.Data.membros.direcao }}
+          {{ range .Site.Data.membros.presidencia }}
+          <div class="fader member-card col-xl-3 col-lg-4 col-sm-6 col-6 dynamicThingy text-center fader-fadeInUp" style="background-color: var(--secondary-color);">
+              <h3 style="padding-top: 15px;">{{ .nome }}
+                <p class="mb-0">{{ .cargo }}</p>
+                <p class="mb-0">{{ .curso }}</p>
+              </h3>
+              <img src="/images/membros/{{ .imagem }}">
+              {{ if .project }}
+              <p class="hoverAppear">
+                Projeto: <br /> {{ .project }}
+              </p>
+              {{ end }}
+          </div>
+          {{ end }}
+      </div>
+    </div>
+  </section>
+
+  <section class="section sec-membros">
+    <div class="container">
+      <div class="col-12 text-center">
+        <h2 class="section-title">Desenvolvimento</h2>
+      </div>
+      <div class="row justify-content-center">
+          {{ "<!-- membro -->" | safeHTML }}
+          {{ range .Site.Data.membros.desenvolvimento }}
+          <div class="fader member-card col-xl-3 col-lg-4 col-sm-6 col-6 dynamicThingy text-center fader-fadeInUp" style="background-color: var(--secondary-color);">
+              <h3 style="padding-top: 15px;">{{ .nome }}
+                <p class="mb-0">{{ .cargo }}</p>
+              </h3>
+              <img src="/images/membros/{{ .imagem }}">
+              {{ if .project }}
+              <p class="hoverAppear">
+                Projeto: <br /> {{ .project }}
+              </p>
+              {{ end }}
+          </div>
+          {{ end }}
+      </div>
+    </div>
+  </section>
+
+  <section class="section sec-membros">
+    <div class="container">
+      <div class="col-12 text-center">
+        <h2 class="section-title">Recursos Humanos</h2>
+      </div>
+      <div class="row justify-content-center">
+          {{ "<!-- membro -->" | safeHTML }}
+          {{ range .Site.Data.membros.recursoshumanos }}
+          <div class="fader member-card col-xl-3 col-lg-4 col-sm-6 col-6 dynamicThingy text-center fader-fadeInUp" style="background-color: var(--secondary-color);">
+              <h3 style="padding-top: 15px;">{{ .nome }}
+                <p class="mb-0">{{ .cargo }}</p>
+              </h3>
+              <img src="/images/membros/{{ .imagem }}">
+              {{ if .project }}
+              <p class="hoverAppear">
+                Projeto: <br /> {{ .project }}
+              </p>
+              {{ end }}
+          </div>
+          {{ end }}
+      </div>
+    </div>
+  </section>
+
+  <section class="section sec-membros">
+    <div class="container">
+      <div class="col-12 text-center">
+        <h2 class="section-title">Marketing</h2>
+      </div>
+      <div class="row justify-content-center">
+          {{ "<!-- membro -->" | safeHTML }}
+          {{ range .Site.Data.membros.marketing }}
           <div class="fader member-card col-xl-3 col-lg-4 col-sm-6 col-6 dynamicThingy text-center fader-fadeInUp" style="background-color: var(--secondary-color);">
               <h3 style="padding-top: 15px;">{{ .nome }}
                 <p class="mb-0">{{ .cargo }}</p>
@@ -40,14 +113,15 @@
   <section class="section sec-projetos">
     <div class="container">      
       <div class="col-12 text-center">
-        <h2 class="section-title"> Assistentes de direção </h2>
+        <h2 class="section-title"> HackExperts </h2>
       </div>
       <div class="row justify-content-center">
           {{ "<!-- membro -->" | safeHTML }}
-          {{ range .Site.Data.membros.subDirecao }}
+          {{ range .Site.Data.membros.hackexperts }}
           <div class="fader member-card col-xl-3 col-lg-4 col-sm-6 col-6 dynamicThingy text-center fader-fadeInUp" style="background-color: var(--secondary-color);">
               <h3 style="padding-top: 15px;">{{ .nome }}
                 <p class="mb-0">{{ .cargo }}</p>
+                <p class="mb-0">{{ .curso }}</p>
               </h3>
               <img src="/images/membros/{{ .imagem }}">
               {{ if .project }}
