@@ -1,11 +1,11 @@
 +++
 title = "Battle Bots"
-description= " " 
+description= "O Projecto Battle Bots foca-se na concepção e manufactura from scratch de um robô radiocontrolado para combate competitivo e respectivo controlador" 
 
 date = "2020-10-14" 
 Destacado=true 
 
-photo = "" 
+photo = "battlebots.jpg" 
 
 type = "currentProject" 
 layout = "projeto" 

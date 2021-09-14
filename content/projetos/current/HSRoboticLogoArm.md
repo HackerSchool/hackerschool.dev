@@ -1,11 +1,11 @@
 +++
 title = "HS Robotic Logo Arm"
-description= " " 
+description= "Braço robótico capaz de reproduzir desenhos feitos no momento quer por um tablet ou pela câmara!" 
 
 date = "2020-10-14" 
 Destacado=true 
 
-photo = "" 
+photo = "hsroboticarm.jpg" 
 
 type = "currentProject" 
 layout = "projeto" 

@@ -5,7 +5,7 @@ description= "Criação de uma base dados do núcleo gerida a partir do website 
 date = "2020-10-14" 
 Destacado=true 
 
-photo = "hsInventory.png" 
+photo = "hsInventory.jpg" 
 
 type = "currentProject" 
 layout = "projeto" 

@@ -5,7 +5,7 @@ description= "Dispositivo para proceder à separação e contagem de moedas. A c
 date = "2020-10-14" 
 Destacado=true 
 
-photo = "" 
+photo = "coinsorter.png" 
 
 type = "currentProject" 
 layout = "projeto" 
