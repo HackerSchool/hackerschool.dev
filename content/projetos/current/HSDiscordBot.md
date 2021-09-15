@@ -5,7 +5,7 @@ description= "Um bot de Discord. Tenciona facilitar alguns aspetos de gestão da
 date = "2020-10-14" 
 Destacado=true 
 
-photo = "" 
+photo = "discordbot.png" 
 
 type = "currentProject" 
 layout = "projeto" 
