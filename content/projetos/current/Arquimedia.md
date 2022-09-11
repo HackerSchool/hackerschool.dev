@@ -11,5 +11,5 @@ type = "currentProject"
 layout = "projeto" 
 projectOfTheMonth = true
 
-teamPhotos = ["miguelDinis.png", "anaBrigido.png", "anaMourao.png", "jeronimoMendes.png" ] 
+teamPhotos = ["99086.png", "97101.png", "103246.png", "99166.png", "103204.png", "96506.png" ] 
 +++
