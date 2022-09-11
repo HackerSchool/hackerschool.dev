@@ -10,6 +10,5 @@ photo = "lemac.jpg"
 type = "currentProject" 
 layout = "projeto" 
 
-<!-- membros: Ana Martins, Diogo Matos, João Oliveira, Duarte Pais -->
 teamPhotos = ["anaMartins.png", "diogoMatos.png", "joaoAndrade.jpeg", "duartePais" ] 
 +++

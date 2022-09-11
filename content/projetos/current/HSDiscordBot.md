@@ -10,6 +10,5 @@ photo = "discordbot.png"
 type = "currentProject" 
 layout = "projeto" 
 
-<!-- membros: Pedro Taborda, Francisco Rodrigues -->
 teamPhotos = ["pedroTaborda.png ,franciscoRodrigues.jpg " ] 
 +++

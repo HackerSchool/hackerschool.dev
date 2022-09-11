@@ -10,6 +10,5 @@ photo = "holographicfans.png"
 type = "currentProject" 
 layout = "projeto" 
 
-<!-- membros: Pedro Direita, Rodolfo Amorim, Rafael Rodrigues, Duarte Henriques -->
 teamPhotos = ["pedroDireita.png", "rodolfoAmorim.png", "rafaelRodrigues.png", "duarteHenriques.jpg" ] 
 +++

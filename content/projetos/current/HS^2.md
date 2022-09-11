@@ -10,6 +10,5 @@ photo = "hsaoquadrado.jpeg"
 type = "currentProject" 
 layout = "projeto" 
 
-<!-- membros: Miguel Dinis, Ana Brigido, Ana Mourao, Jeronimo Mendes -->
 teamPhotos = ["miguelDinis.png", "anaBrigido.png", "anaMourao.png", "jeronimoMendes.png" ] 
 +++

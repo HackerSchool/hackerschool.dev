@@ -10,6 +10,6 @@ photo = "hsroboticarm.jpg"
 type = "currentProject" 
 layout = "projeto" 
 
-<!-- membros: Francisco Fonseca, Mariana Rato, Sebastião Caldas, Tiago Carneiro, Tiago Freitas -->
+
 teamPhotos = ["franciscoFonseca.png", "marianaRato.png", "sebastiãoCaldas.png", "tiagoCabrita.png", "tiagoFreitas.png" ] 
 +++

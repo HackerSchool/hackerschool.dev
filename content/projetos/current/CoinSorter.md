@@ -10,6 +10,5 @@ photo = "coinsorter.png"
 type = "currentProject" 
 layout = "projeto" 
 
-<!-- membros: Daniel Leitão, Dinis Almeida -->
 teamPhotos = ["danielLeitao.png", "dinisAlmeida.png" ] 
 +++

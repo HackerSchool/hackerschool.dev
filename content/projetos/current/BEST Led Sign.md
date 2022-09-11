@@ -10,6 +10,5 @@ photo = "lst.png"
 type = "currentProject" 
 layout = "projeto" 
 
-<!-- membros: Margarida Oliveira, Tiago Almeida, Palma -->
 teamPhotos = ["joaoPalma.jpeg", "margaridaOliveira2.png" , "tiagoAlmeida.jpg" ] 
 +++
