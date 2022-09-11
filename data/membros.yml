@@ -10,7 +10,7 @@ presidencia:
   - nome:  Filipe Varela
     cargo: Tesoureiro
     curso: 5ºano, MEMec
-    imagem: 92459.png
+    imagem: filipeVarela.png
 desenvolvimento:
   - nome:  Ricardo Antunes
     cargo: 3ºano, LEIC
@@ -30,7 +30,7 @@ desenvolvimento:
 recursoshumanos:
   - nome: Le Le Wang
     cargo: 2ºano, LEMec
-    imagem: 100213.png
+    imagem: 100213.jpg
   - nome: Carolina Realinho
     cargo: 2ºano, LEFT
     imagem: 102574.png
@@ -39,7 +39,7 @@ marketing:
     cargo: 3ºano, LEFT
     imagem: 100290.png
   - nome:  Henrique Pocinho
-    curso: 3ºano, LEEC
+    cargo: 3ºano, LEEC
     imagem: 99952.png
   - nome: Bianca Fonseca
     cargo: 2ºano, LEIC
@@ -256,7 +256,7 @@ membro:
     imagem: 103252.png
   - nome: Le Le Wang
     cargo: 
-    imagem: 100213.png
+    imagem: 100213.jpg
   - nome: Lúcia Gomes
     cargo: 
     imagem: 102183.png
@@ -304,7 +304,7 @@ membro:
     imagem: 99316.png
   - nome: Rita Gama
     cargo: 
-    imagem: 99166.png
+    imagem: 99166.jpg
   - nome: Rodrigo Francisco
     cargo: 
     imagem: 100073.png
@@ -320,4 +320,7 @@ membro:
   - nome: Tiago Carneiro
     cargo:
     imagem: 95849.png
+  - nome: Vasco Almeida
+    cargo:
+    imagem: 100373.png
             
