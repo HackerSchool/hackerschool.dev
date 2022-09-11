@@ -3,6 +3,8 @@ Website da HackerSchool
 
 Este site foi criado com a framework Hugo(https://github.com/gohugoio/hugo). Este permite por exemplo, reutilizar partes do código HTML entre páginas.
 
+NESTE MOMENTO O SITE USA FEATURES REMOVIDOS DAS VERSÕES MODERNAS, RECOMENDA-SE A UTILIZAÇÃO DA VERSÃO 84.4.
+
 ### Para gerar o site final para fazer upload
 Correr o comando ```hugo``` e o site ficará pronto na pasta ./public
 
@@ -35,3 +37,8 @@ layout: "nomeDaPagina"
 ---
 ```
 E criar um ficheiro HTML com o nome layouts/page/nomeDaPagina.html  (seguir exemplo de outras páginas lá)
+
+### Modificar o Carrousel
+
+colocar as imagens novas na pasta `static/images/carouisel`
+adicionar o nome da imagem á lista que esta no `config.toml`

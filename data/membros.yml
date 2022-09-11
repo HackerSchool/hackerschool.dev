@@ -1,60 +1,53 @@
 presidencia:
-  - nome:  Margarida Oliveira
+  - nome:  João Rodrigues
     cargo: Presidente
-    curso: 3ºano,LEMat
-    imagem: margaridaOliveira2.png
-  - nome:  Tiago Almeida
+    curso: 3ºano,LEEC
+    imagem: 99968.png
+  - nome:  Nuno Abreu
     cargo: Vice-presidente
-    curso: 3ºano, LEEC
-    imagem: tiagoAlmeida.jpg
-desenvolvimento:
+    curso: 2ºano, LEEC
+    imagem: 103416.png
   - nome:  Filipe Varela
-    cargo: 4ºano, MEMec
-    imagem: filipeVarela.png
-  - nome:  Francisco Cruz
+    cargo: Tesoureiro
+    curso: 5ºano, MEMec
+    imagem: 92459.png
+desenvolvimento:
+  - nome:  Ricardo Antunes
     cargo: 3ºano, LEIC
-    imagem: franciscoCruz.png
-  - nome:  Francisco Fonseca
-    cargo: 3ºano, LEAer
-    imagem: franciscoFonseca.png
-  - nome:  Henrique Pocinho
-    cargo: 2ºano, LEEC
-    imagem: henriquePocinho.jpeg
-  - nome:  João Palma
-    cargo: 4ºano, MEIC
-    imagem: joaoPalma.jpeg
-  - nome:  Max Supelnic  
-    cargo: 3ºano, LEBiom
-    imagem: maxSupelnic.png
+    imagem: 99316.png
+  - nome:  José Pereira
+    cargo: 2ºano, LEIC
+    imagem: 103252.png
+  - nome:  Diogo Correia
+    cargo: 3ºano, LEIC
+    imagem: 99211.jpg
+  - nome:  Rafaela Rodrigues  
+    cargo: 3ºano, LEIC
+    imagem: 99312.png
+  - nome:  Manuel Soares
+    cargo: 3ºano, LEEC
+    imagem: 96267.png
 recursoshumanos:
-  - nome: Ana Martins
+  - nome: Le Le Wang
+    cargo: 2ºano, LEMec
+    imagem: 100213.png
+  - nome: Carolina Realinho
+    cargo: 2ºano, LEFT
+    imagem: 102574.png
+marketing:
+  - nome:  Armando Gonçalves
     cargo: 3ºano, LEFT
-    imagem: anaMartins.png
-  - nome: Diogo Matos
-    cargo: 3ºano, LEAer
-    imagem: diogoMatos.png
-Marketing:
-  - nome:  Afonso Certo
-    cargo: 3ºano, LEEC
-    imagem: afonsoCerto.jpg
-  - nome: Duarte Henriques
-    cargo: 2ºano, LETI
-    imagem: duarteHenriques.jpg
-  - nome: Duarte Pais
-    cargo: 3ºano, LEIC
-    imagem: duartePais.png
-  - nome: João Andrade
-    cargo: 2ºano, LETI
-    imagem: joaoAndrade.jpeg
-  - nome: João Rodrigues
-    cargo: 2ºano, LEEC
-    imagem: joaoRodrigues.png
-  - nome: Manuel Graça
-    cargo: 3ºano, LEEC
-    imagem: manuelGraca.PNG
-  - nome: Mariana Rato
-    cargo: 3ºano, LEEC
-    imagem: marianaRato.png
+    imagem: 100290.png
+  - nome:  Henrique Pocinho
+    curso: 3ºano, LEEC
+    imagem: 99952.png
+  - nome: Bianca Fonseca
+    cargo: 2ºano, LEIC
+    imagem: 103501.png
+comunicacao:
+  - nome:  José Duarte Lopes
+    cargo: 3ºano, LEFT
+    imagem: 100336.png
 hackexperts:
   - nome:  Diogo Correia
     cargo: WebDev
@@ -81,87 +74,250 @@ hackexperts:
     curso: 2ºano, LEIC
     imagem: ricardoAntunes.png
 membro:
-  - nome:  Afonso Fernandes 
-    cargo: 4ºano, LEIC
-    imagem: afonsoFernandes.jpg
+  # - nome:  Afonso Fernandes 
+  #   cargo: 4ºano, LEIC
+  #   imagem: afonsoFernandes.jpg
+  # - nome: Ana Ajuda
+  #   cargo: 5ºano, MEMec
+  #   imagem: anaAjuda.png
+  # - nome: Ana Brígido
+  #   cargo: 4ºano, MEBiom 
+  #   imagem: anaBrigido.png
+  # - nome: Ana Mourão
+  #   cargo: 3ºano, LEMat
+  #   imagem: anaMourao.png
+  # - nome:  André Teodósio 
+  #   cargo: 2ºano, LEEC
+  #   imagem: andreTeodosio.jpg
+  # - nome: Daniel Leitão       
+  #   cargo: 5ºano, MEEC
+  #   imagem: danielLeitao.png
+  # - nome: Dinis Almeida       
+  #   cargo: 2ºano, LEMec 
+  #   imagem: dinisAlmeida.png
+  # - nome: Duarte Oliveira       
+  #   cargo: 5ºano, MEEC 
+  #   imagem: duarteOliveira.png
+  # - nome: Francisco Rodrigues 
+  #   cargo: 3ºano, LEEC
+  #   imagem: franciscoRodrigues.jpg
+  # - nome:  Hugo Marques 
+  #   cargo: 5ºano, MEIC
+  #   imagem: hugoMarques.jpg
+  # - nome:  Inês Carvalho 
+  #   cargo: 4ºano, MEBiom
+  #   imagem: inesCarvalho.png
+  # - nome:  Isabel Portugal  
+  #   cargo: 2ºano, LEMec
+  #   imagem: mariaPortugal.png
+  # - nome:  Jerónimo Mendes  
+  #   cargo: 2ºano, LEIC
+  #   imagem: jeronimoMendes.png
+  # - nome:  Mafalda Serafim  
+  #   cargo: 4ºano, LEIC
+  #   imagem: mafaldaSerafim.jpg
+  # - nome:  Manuel Gomes 
+  #   cargo: 3ºano, LEEC
+  #   imagem: manuelGomes.png
+  # - nome:  Miguel Dinis  
+  #   cargo: 4ºano, MEBiom
+  #   imagem: miguelDinis.png
+  # - nome:  Pablo Alejandro
+  #   cargo: 2ºano, LEMec
+  #   imagem: pabloGarcia.jpeg
+  # - nome:  Pedro Direita        
+  #   cargo: MEEC
+  #   imagem: pedroDireita.png
+  # - nome:  Pedro Taborda       
+  #   cargo: 4ºano, MEEC
+  #   imagem: pedroTaborda.png
+  # - nome:  Pedro Ventura
+  #   cargo: 4ºano, MEEC
+  #   imagem: pedroVentura.jpg
+  # - nome:  Rafael Rodrigues       
+  #   cargo: 2ºano, LEIC 
+  #   imagem: rafaelRodrigues.png
+  # - nome:  Renato Sebastião 
+  #   cargo: 3ºano, LEMec
+  #   imagem: renatoSebastiao.png
+  # - nome:  Rita Mendes        
+  #   cargo: 2ºano, LEEC
+  #   imagem: ritaMendes.png
+  # - nome:  Rodolfo Amorim        
+  #   cargo: 2ºano, LEMec
+  #   imagem: rodolfoAmorim.png
+  # - nome:  Rodrigo Amorim        
+  #   cargo: 2ºano, LEMec
+  #   imagem: rodrigoAmorim.jpeg
+  # - nome:  Rodrigo Pereira        
+  #   cargo: 2ºano, LEEC
+  #   imagem: rodrigoPereira.png
+  # - nome:  Sebastião Caldas        
+  #   cargo: 3ºano, LEEC
+  #   imagem: sebastiãoCaldas.png
+  # - nome:  Tiago Freitas        
+  #   cargo: 3ºano, LEBiom
+  #   imagem: tiagoFreitas.png
+  - nome: Afonso Certo
+    cargo:
+    imagem: 96134.jpg
+  - nome: Afonso Domingues
+    cargo: 
+    imagem: 103246.png
   - nome: Ana Ajuda
-    cargo: 5ºano, MEMec
-    imagem: anaAjuda.png
-  - nome: Ana Brígido
-    cargo: 4ºano, MEBiom 
-    imagem: anaBrigido.png
-  - nome: Ana Mourão
-    cargo: 3ºano, LEMat
-    imagem: anaMourao.png
-  - nome:  André Teodósio 
-    cargo: 2ºano, LEEC
-    imagem: andreTeodosio.jpg
-  - nome: Daniel Leitão       
-    cargo: 5ºano, MEEC
-    imagem: danielLeitao.png
-  - nome: Dinis Almeida       
-    cargo: 2ºano, LEMec 
-    imagem: dinisAlmeida.png
-  - nome: Duarte Oliveira       
-    cargo: 5ºano, MEEC 
-    imagem: duarteOliveira.png
-  - nome: Francisco Rodrigues 
-    cargo: 3ºano, LEEC
-    imagem: franciscoRodrigues.jpg
-  - nome:  Hugo Marques 
-    cargo: 5ºano, MEIC
-    imagem: hugoMarques.jpg
-  - nome:  Inês Carvalho 
-    cargo: 4ºano, MEBiom
-    imagem: inesCarvalho.png
-  - nome:  Isabel Portugal  
-    cargo: 2ºano, LEMec
-    imagem: mariaPortugal.png
-  - nome:  Jerónimo Mendes  
-    cargo: 2ºano, LEIC
-    imagem: jeronimoMendes.png
-  - nome:  Mafalda Serafim  
-    cargo: 4ºano, LEIC
-    imagem: mafaldaSerafim.jpg
-  - nome:  Manuel Gomes 
-    cargo: 3ºano, LEEC
-    imagem: manuelGomes.png
-  - nome:  Miguel Dinis  
-    cargo: 4ºano, MEBiom
-    imagem: miguelDinis.png
-  - nome:  Pablo Alejandro
-    cargo: 2ºano, LEMec
-    imagem: pabloGarcia.jpeg
-  - nome:  Pedro Direita        
-    cargo: MEEC
-    imagem: pedroDireita.png
-  - nome:  Pedro Taborda       
-    cargo: 4ºano, MEEC
-    imagem: pedroTaborda.png
-  - nome:  Pedro Ventura
-    cargo: 4ºano, MEEC
-    imagem: pedroVentura.jpg
-  - nome:  Rafael Rodrigues       
-    cargo: 2ºano, LEIC 
-    imagem: rafaelRodrigues.png
-  - nome:  Renato Sebastião 
-    cargo: 3ºano, LEMec
-    imagem: renatoSebastiao.png
-  - nome:  Rita Mendes        
-    cargo: 2ºano, LEEC
-    imagem: ritaMendes.png
-  - nome:  Rodolfo Amorim        
-    cargo: 2ºano, LEMec
-    imagem: rodolfoAmorim.png
-  - nome:  Rodrigo Amorim        
-    cargo: 2ºano, LEMec
-    imagem: rodrigoAmorim.jpeg
-  - nome:  Rodrigo Pereira        
-    cargo: 2ºano, LEEC
-    imagem: rodrigoPereira.png
-  - nome:  Sebastião Caldas        
-    cargo: 3ºano, LEEC
-    imagem: sebastiãoCaldas.png
-  - nome:  Tiago Freitas        
-    cargo: 3ºano, LEBiom
-    imagem: tiagoFreitas.png
+    imagem: 98501.png
+    cargo: 
+  - nome: Ana Martins
+    cargo: 
+    imagem: 96506.png
+  - nome: André Santos
+    cargo: 
+    imagem: 103597.jpeg
+  - nome: Armando Gonçalves
+    imagem: 100290.png
+    cargo: 
+  - nome: Beatriz Mateus
+    imagem: 95922.png
+    cargo: 
+  - nome: Bianca Fonseca
+    imagem: 103501.png
+    cargo: 
+  - nome: Carolina Realinho
+    cargo: 
+    imagem: 102574.png
+  - nome: Daniel Leitão
+    cargo: 
+    imagem: 90042.png
+  - nome: Daniela Cardoso
+    cargo: 
+    imagem: 96517.png
+  - nome: Dinis Almeida
+    imagem: 100148.png
+    cargo: 
+  - nome: Diogo Castelo Branco
+    imagem: 96183.png
+    cargo: 
+  - nome: Diogo Correia
+    cargo: 
+    imagem: 99211.jpg
+  - nome: Diogo Ferreira
+    cargo: 
+    imagem: 92806.jpeg
+  - nome: Diogo Matos
+    cargo: 
+    imagem: 95778.png
+  - nome: Eduardo Faustino
+    cargo: 
+    imagem: 102298.jpg
+  - nome: Eduardo Silva
+    cargo: 
+    imagem: 103240.png
+  - nome: Filipe Varela
+    cargo: 
+    imagem: 92459.png
+  - nome: Francisco Carvalho
+    cargo: 
+    imagem: 99219.png
+  - nome: Francisco Cruz
+    cargo: 
+    imagem: 96208.png
+  - nome: Guilherme Freitas
+    cargo: 
+    imagem: 99949.png
+  - nome: Henrique Pocinho
+    cargo: 
+    imagem: 99952.png
+  - nome: Hugo Marques
+    cargo: 
+    imagem: 89460.png
+  - nome: Isabel Portugal
+    cargo: 
+    imagem: 100227.png
+  - nome: Jerónimo Mendes
+    cargo: 
+    imagem: 99086.png
+  - nome: João Palma
+    cargo: 
+    imagem: 81212.png
+  - nome: João Mendes
+    cargo: 
+    imagem: 95804.png
+  - nome: João Rodrigues
+    cargo: 
+    imagem: 99968.png
+  - nome: João Silva
+    cargo: 
+    imagem: 92488.png
+  - nome: José Lopes
+    cargo: 
+    imagem: 100336.png
+  - nome: José Pereira
+    cargo: 
+    imagem: 103252.png
+  - nome: Le Le Wang
+    cargo: 
+    imagem: 100213.png
+  - nome: Lúcia Gomes
+    cargo: 
+    imagem: 102183.png
+  - nome: Luís Barbosa
+    cargo: 
+    imagem: 102253.png
+  - nome: Manuel Palo
+    cargo: 
+    imagem: 93120.png
+  - nome: Manuel Soares
+    cargo: 
+    imagem: 96267.png
+  - nome: Margarida Oliveira
+    cargo: 
+    imagem: 96125.png
+  - nome: Mariana Rato
+    cargo: 
+    imagem: 96278.png
+  - nome: Matilde Augusto
+    cargo:
+    imagem: 103204.png
+  - nome: Miguel Dinis
+    imagem: 97101.png
+    cargo: 
+  - nome: Miguel Lameiras
+    cargo: 
+    imagem: 100354.png
+  - nome: Nuno Abreu
+    cargo: 
+    imagem: 103416.png
+  - nome: Nuno Marques
+    cargo: 
+    imagem: 95758.png
+  - nome: Pedro Baptista
+    imagem: 96298.png
+    cargo: 
+  - nome: Pedro Direita
+    cargo: 
+    imagem: 81305.png
+  - nome: Rafaela Rodrigues
+    cargo: 
+    imagem: 99312.png
+  - nome: Ricardo Antunes
+    cargo: 
+    imagem: 99316.png
+  - nome: Rita Gama
+    cargo: 
+    imagem: 99166.png
+  - nome: Rodrigo Francisco
+    cargo: 
+    imagem: 100073.png
+  - nome: Rui Abrantes
+    cargo: 
+    imagem:  93176.jpg
+  - nome: Sebastião Caldas
+    cargo:
+    imagem: 96321.png
+  - nome:  Tiago Almeida
+    cargo:
+    imagem: 96328.jpg
+  - nome: Tiago Carneiro
+    cargo:
+    imagem: 95849.png
+            

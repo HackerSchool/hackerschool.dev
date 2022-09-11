@@ -9,6 +9,7 @@ photo = "coinsorter.png"
 
 type = "currentProject" 
 layout = "projeto" 
+projectOfTheMonth = false
 
 teamPhotos = ["danielLeitao.png", "dinisAlmeida.png" ] 
 +++
