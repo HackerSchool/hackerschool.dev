@@ -1,4 +1,4 @@
-baseURL = "http://hackerschool.tecnico.ulisboa.pt/"
+baseURL = "https://hackerschool.tecnico.ulisboa.pt/"
 #baseURL = "http://localhost:8000/"
 languageCode = "en-us"
 title = "HackerSchool"
