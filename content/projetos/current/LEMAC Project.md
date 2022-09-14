@@ -10,5 +10,5 @@ photo = "lemac.jpg"
 type = "currentProject" 
 layout = "projeto" 
 
-teamPhotos = ["96506.png", "95778.png" ] 
+teamPhotos = ["96506.png", "95778.png", "99219.png", "92806.jpeg","103597.jpeg" ] 
 +++
