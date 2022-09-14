@@ -63,7 +63,7 @@ hackexperts:
     imagem: henriquePocinho.jpeg
   - nome:  Filipe Varela
     cargo: AppDev
-    curso: 4ºano, LEMec
+    curso: 5ºano, LEMec
     imagem: filipeVarela.jpg
   - nome:  Francisco Fonseca
     cargo: CTF
@@ -214,7 +214,7 @@ membro:
     imagem: 103240.png
   - nome: Filipe Varela
     cargo: 
-    imagem: 92459.png
+    imagem: filipeVarela.png
   - nome: Francisco Carvalho
     cargo: 
     imagem: 99219.png
