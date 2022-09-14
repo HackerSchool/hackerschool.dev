@@ -5,7 +5,7 @@ description= "O projeto Free Libre and Open Source 3D Printer tem como objectivo
 date = "2022-09-11" 
 Destacado=true
 
-photo = "flos3dprinter.png" 
+photo = "flos3dprinter.jpg" 
 
 type = "currentProject" 
 layout = "projeto" 

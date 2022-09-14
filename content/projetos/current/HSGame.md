@@ -1,11 +1,11 @@
 +++
 title = "HSGame"
-description= "O HSGame é um projeto com vários jogos onde são sempre bem vindas novas ideias, sejam para novos jogos ou inovações de jogos já existentes. Consiste da junção de programação desktop em C#, Webdev com JavaScript, HTML e CSS e PixelArt!" 
+description="Consiste no desenvolvimento de uma coletânea de jogos desenvolvidos em Unity que permita expansões futuras. Atualmente programamos em C# e utilizamos o programa Aseprite para criar pixel art. A nossa primeira criação encontra-se em fase final de desenvolvimento: 'Floppy Disk', uma adaptação do famoso jogo 'Flappy Bird'." 
 
 date = "2020-10-14" 
 Destacado=false 
 
-photo = "HSGame.png" 
+photo = "hsgame.png" 
 
 type = "currentProject" 
 layout = "projeto"
