@@ -1,7 +1,7 @@
 presidencia:
   - nome:  João Rodrigues
     cargo: Presidente
-    curso: 3ºano,LEEC
+    curso: 3ºano, LEEC
     imagem: 99968.png
   - nome:  Nuno Abreu
     cargo: Vice-presidente
@@ -29,7 +29,7 @@ desenvolvimento:
     imagem: 96267.png
 recursoshumanos:
   - nome: Le Le Wang
-    cargo: 2ºano, LEMec
+    cargo: 3ºano, LEMec
     imagem: 100213.jpg
   - nome: Carolina Realinho
     cargo: 2ºano, LEFT

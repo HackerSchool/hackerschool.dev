@@ -1,4 +1,8 @@
 {{ "<!-- footer -->" | safeHTML }}
+
+<!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 <footer class="section sec-membros pb-0">
   <div class="container">
     <div class="row" style="display: flex; align-items: center;">
@@ -11,7 +15,8 @@
           {{ range .Site.Params.socialIcon }}
           <li class="list-inline-item mb-0"><a class="text-color d-inline-block p-2" href="{{ .URL | absURL}}"><i class="{{ .icon }}"></i></a></li>
           {{ end }}
-        </ul>
+	  <a href="https://github.com/HackerSchool" class="fa fa-github"></a>
+	</ul>
       </div>
     </div>
   </div>
