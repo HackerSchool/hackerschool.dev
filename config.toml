@@ -12,7 +12,7 @@ textColorDark = "#6dba83"
 whiteColor = "#ffffff"
 recruitmentTime = true
 #lista de imagens que aparecem no carousel da pagina principal
-carouselImagens=["images/carousel/carousellMembers.png", "images/carousel/carousellProjects.png", "images/carousel/carousellAnniversary.jpg", "images/carousel/carousellFaire.jpg"]
+carouselImagens=["images/carousel/carousellProjects.png", "images/carousel/carousellAnniversary.jpg", "images/carousel/carousellFaire.jpg"]
 
 
 [Languages]
