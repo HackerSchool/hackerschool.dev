@@ -1,0 +1,135 @@
+{{ partial "head.html" . }}
+
+{{ "<!-- navigation -->" | safeHTML }}
+<header class="shadow-bottom sticky-top bg-gray">
+  <div class="container">
+    {{ partial "navigation.html" . }}
+  </div>
+</header>
+{{ "<!-- /navigation -->" | safeHTML }}
+pages 
+<!-- details page -->
+<section style="text-align: left;
+min-height: 100%;
+/* equal to footer height */ " class="single sec-membros fader-alternate">
+
+	<div style="background-color: 0xfff">
+	<h1 class="responsiveHeaderText" style="color:white; text-align: center; height: 200px;background-color: var(--primary-color);vertical-align: middle;text-align: center;vertical-align: middle;line-height: 200px;">Junta-te a nós</h1>
+	
+	<!--padding 100px-->
+	<div class="container pt-4" style="background-color: 0xfff">
+		<!-- fix url -->
+		<!-- <a href='{{ "recrutamento" | absURL }}' class="btn btn-primary"> Clica aqui se quiseres saltar já á ação </a> -->
+
+		<section  class="dynamicThingy fader">
+		<h4> Apresentação do recrutamento </h4>
+		<p style="color:white; "> 
+			Se estás a começar o teu curso de engenharia e gostavas 
+			de colocar as mãos na massa para ganhares experiência num certo ramo da
+			tecnologia, este é o sítio certo para ti. Somos um grupo de alunos de várias
+			áreas da engenharia, entusiasmados por conceber as nossas ideias e projectos,
+			e transmitir os nossos conhecimentos promovendo a entreajuda e inovação! 
+			A HackerSchool está a recrutar novos membros
+			até 7 de Outubro!
+		</p>
+		</section>
+
+		<section class="dynamicThingy fader">
+		<h4> O que valorizamos (não é cibersegurança) </h4>
+		<p style="color:white; "> 
+			Como membro da HackerSchool, para além de te poderes chamar
+			Hacker e meter respeito a qualquer utilizador de computador
+			ou smartphone, terás sempre perto de ti: 
+		</p>
+
+		<ul style="color:white; font-size:16px; text-align: left">
+			<li>
+				&nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-terminal"></i> Uma equipa exploradora e interessada em aprender e ajudar; 
+			</li>
+			<li>
+				&nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-terminal"></i> Atividades e apoio para te manter no caminho certo e motivado; 
+			</li>
+			<li>
+				&nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-terminal"></i> Várias oportunidades para aprender matéria nova ou até mesmo melhorar 
+				a que já souberes - novo ou velho Hacker, aprender não tem idade; 
+			</li>
+			<li>
+				&nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-terminal"></i> Um mundo de ideias e inovações que podem mudar a maneira como 
+				vias as tecnologias à tua volta - podes começar a
+				questionar como o microondas funciona.
+			</li>
+		</ul>
+
+		<p style="color:white; ">
+			Ao mesmo tempo, como membro esperamos que tenhas imensa vontade e iniciativa 
+			para todos estes desafios e eventos (mesmo com ou sem COVID-19). 
+			Achas que aguentas?
+		</p>
+		</section>
+		
+		<section  class="dynamicThingy fader">
+				<h4>Tens uma grande ideia mas não sabes como executá-la? A HackerSchool é o núcleo para ti!</h4>
+		<div style="color:white; display: flex; 
+        flex-wrap: wrap; flex-direction: row; justify-content: center; margin:auto;">
+			<div style="background-color: var(--secondary-color); width: 250px; " class="dynamicThingy text-left helperCard">
+				Terás uma reunião inicial que serve para debater ideias e para formar grupos,
+				desenvolvendo a tua parte social e trabalho em equipa.
+
+				<br>
+				<div class="d-flex align-items-center justify-content-center">
+					<i class="fas fa-users fa-3x pt-2"></i>
+				</div>
+			</div >
+			<div style="background-color: var(--secondary-color); width: 250px" class="dynamicThingy text-left helperCard">
+				Para além disso, todos os semestres são planeados vários workshops em
+				várias áreas que consideramos importantes para desenvolver a tua cultura hacker.
+
+				<br>
+				<div class="d-flex align-items-center justify-content-center">
+					<i class="fas fa-cogs fa-3x pt-2"></i>
+				</div>
+			</div>
+			<div style="background-color: var(--secondary-color); width: 250px" class="dynamicThingy text-left helperCard">
+				Para o caso de te sentires sozinho nesta jornada de fazer o teu
+				projeto acontecer, não te preocupes! Temos uma equipa de HackExperts e uma inteira comunidade sempre disposta a ajudar!
+
+				<br>
+				<div class="d-flex align-items-center justify-content-center">
+					<i class="fas fa-robot fa-3x pt-2"></i>
+				</div>
+			</div>
+		</div>
+
+		<!-- insert clipart here -->
+		</section>
+		
+		<section class="section shadow fader">
+		<!-- fix url -->
+		<a href=" https://forms.gle/BFTtmE27VMwKhj2A6" class="btn btn-primary {{ if .Site.Params.recruitmentTime }} {{ else }} disabled {{ end }}" 
+			style="text-align: center;vertical-align: middle;line-height: 40px;
+				width: 100%;font-size: 30;"> 
+				
+			{{ if .Site.Params.recruitmentTime }} Inscreve-te Agora! {{ else }} Inscreve-te no proximo semestre! {{ end }}
+		</a>	
+		</section>
+		<!--
+		<p style="text-align: justify;">Somos um grupo de alunos de várias áreas da engenharia, entusiasmados por conceber as nossas ideias e projectos, e transmitir os nossos conhecimentos!</p>
+		<h4 style="text-align: justify;">O que é a HackerSchool?</h4>
+		<p style="text-align: justify;">A HackerSchool é uma associação académica, fundada em 2012, que desenvolve actividades num ambiente multidisciplinar, de <em>learn-by-doing</em> e de aprendizagem entre pares, inspirado nos valores da cultura <a href="http://stallman.org/articles/on-hacking.html" title="What is Hacking?" target="_blank"><em>hacker</em></a>.</p>
+		<p style="text-align: justify;">Aqui, independentemente da formação de base, aprende-se a criar novos produtos e serviços sobre tecnologias emergentes como a internet das coisas ou a web semântica, utilizando soluções de baixo custo assentes em <em>open electronics</em>, <em>open materials</em>, <em>open fabrication</em>, entre outros.</p>
+		<h4 style="text-align: justify;">Como funciona?</h4>
+		<p style="text-align: justify;">A HackerSchool funciona em ciclos semestrais com Workshops, HackDays e o maior evento do semestre, o LX Reactor.</p>
+		<ul>
+		<li style="text-align: justify;"><strong>HackDay</strong>: Um dia de convívio entre os participantes, no qual se concebem projectos temáticos de curta duração.</li>
+		<li style="text-align: justify;"><strong>Workshop</strong>: Um evento em que é dada&nbsp;formação base acerca de um determinado tema, sendo dado acesso aos participantes ferramentas que podem utilizar para aplicarem os conhecimentos adquiridos na concretização das suas ideias.</li>
+		</ul>
+		<h4 style="text-align: justify;">Objectivos</h4>
+		<p style="text-align: justify;">O objectivo prioritário da HackerSchool é criar um espaço de colaboração que estimule alunos apaixonados por tecnologia a realizar os seus projectos e, dessa forma, ajudá-los a encontrar a sua vocação e atingir o seu potencial máximo, tanto como indivíduos como empreendedores, através de uma interacção hands-on com tecnologia, engenharia e ciência.</p>
+		<p style="text-align: justify;">Pretende-se ter uma geração de alunos com ideias novas e um modo diferente de pensar sobre o mundo, que criem produtos e soluções inovadoras.</p>
+		<p style="text-align: justify;">Mais, a HackerSchool pretende afirmar-se como um centro de convergência multidisciplinar onde alunos e professores de cursos diferentes se juntam para experimentar e partilhar ideias diferentes mas complementares.</p>
+		-->
+	</div>
+  </div>
+</section>
+
+{{ partial "footer.html" . }}
