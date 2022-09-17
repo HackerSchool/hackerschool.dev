@@ -51,6 +51,11 @@ carouselImagens=["images/carousel/carousellMembers.png", "images/carousel/carous
         name = "Projetos"
         url = "/projetos"
 
+#	[[Languages.en.menu.main]]
+#       weight = 2
+#       name = "HackerCultura"
+#       url = "/HackerCultura"
+
       [[Languages.en.menu.main]]
         weight = 2
         name = "recrutamento"
