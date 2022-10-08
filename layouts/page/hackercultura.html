@@ -8,21 +8,15 @@
 </header>
 {{ "<!-- /navigation -->" | safeHTML }}
 <!-- details page -->
-<section style="text-align: left;
-min-height: 100%;
-/* equal to footer height */ " class="single sec-membros fader-alternate">
-
-	<div style="background-color: 0xfff">
-		<!--padding 100px-->
-		<div class="container pt-4" style="background-color: 0xfff">
-			<a href="textos/">
-				<section  class="dynamicThingy fader">
-					<h1>Textos</h1>
-				</section>
-			</a>
-		</div>
-
-  </div>
+<section style="padding-bottom: 48px;" class="single sec-membros fader-alternate">
+	
+	<div class="container pt-4 aboutUsContainer">
+	  <!-- <div style="color: white;" class="p-5 bg-gray"> -->
+		<a href="textos/"> 
+		  <div class="dynamicThingy fader">
+		  <h1>Textos</h1>
+		  </div>
+		</a>
+	</div>
 </section>
-
 {{ partial "footer.html" . }}
