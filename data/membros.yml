@@ -21,9 +21,9 @@ desenvolvimento:
   - nome:  Diogo Correia
     cargo: 3ºano, LEIC
     imagem: 99211.jpg
-  - nome:  Rafaela Rodrigues  
+  - nome:  Francisco Carvalho
     cargo: 3ºano, LEIC
-    imagem: 99312.png
+    imagem: 99219.png
   - nome:  Manuel Soares
     cargo: 3ºano, LEEC
     imagem: 96267.png
@@ -38,9 +38,9 @@ marketing:
   - nome:  Armando Gonçalves
     cargo: 3ºano, LEFT
     imagem: 100290.png
-  - nome:  Henrique Pocinho
-    cargo: 3ºano, LEEC
-    imagem: 99952.png
+  - nome:  Miguel Lameiras
+    cargo: 3ºano, LEFT
+    imagem: 100354.png
   - nome: Bianca Fonseca
     cargo: 2ºano, LEIC
     imagem: 103501.png
@@ -57,10 +57,6 @@ hackexperts:
     cargo: Modelação 3D
     curso: 3ºano, LEAer
     imagem: tiagoCabrita.png
-  - nome:  Henrique Pocinho
-    cargo: Eletrónica
-    curso: 2ºano, LEEC
-    imagem: henriquePocinho.jpeg
   - nome:  Filipe Varela
     cargo: AppDev
     curso: 5ºano, LEMec
@@ -224,9 +220,6 @@ membro:
   - nome: Guilherme Freitas
     cargo: 
     imagem: 99949.png
-  - nome: Henrique Pocinho
-    cargo: 
-    imagem: 99952.png
   - nome: Hugo Marques
     cargo: 
     imagem: 89460.png
