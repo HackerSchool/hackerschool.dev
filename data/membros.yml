@@ -15,13 +15,13 @@ desenvolvimento:
   - nome:  Ricardo Antunes
     cargo: 3ºano, LEIC
     imagem: 99316.png
-  - nome:  José Pereira
-    cargo: 2ºano, LEIC
-    imagem: 103252.png
+  - nome:  Rita Gama
+    cargo: 3ºano, LEIC
+    imagem: 99166.png
   - nome:  Diogo Correia
     cargo: 3ºano, LEIC
     imagem: 99211.jpg
-  - nome:  Francisco Carvalho
+  - nome:  Francisco Carvalho  
     cargo: 3ºano, LEIC
     imagem: 99219.png
   - nome:  Manuel Soares
@@ -163,9 +163,6 @@ membro:
   - nome: Ana Ajuda
     imagem: 98501.png
     cargo: 
-  - nome: Ana Martins
-    cargo: 
-    imagem: 96506.png
   - nome: André Santos
     cargo: 
     imagem: 103597.jpeg
@@ -199,9 +196,6 @@ membro:
   - nome: Diogo Ferreira
     cargo: 
     imagem: 92806.jpeg
-  - nome: Diogo Matos
-    cargo: 
-    imagem: 95778.png
   - nome: Eduardo Faustino
     cargo: 
     imagem: 102298.jpg
@@ -214,15 +208,9 @@ membro:
   - nome: Francisco Carvalho
     cargo: 
     imagem: 99219.png
-  - nome: Francisco Cruz
-    cargo: 
-    imagem: 96208.png
   - nome: Guilherme Freitas
     cargo: 
     imagem: 99949.png
-  - nome: Hugo Marques
-    cargo: 
-    imagem: 89460.png
   - nome: Isabel Portugal
     cargo: 
     imagem: 100227.png
@@ -287,7 +275,7 @@ membro:
     imagem: 96298.png
     cargo: 
   - nome: Pedro Direita
-    cargo: 
+    cargo: Honorable Alumni
     imagem: 81305.png
   - nome: Rafaela Rodrigues
     cargo: 
