@@ -51,15 +51,15 @@ carouselImagens=["images/carousel/carousellProjects.png", "images/carousel/carou
         name = "Projetos"
         url = "/projetos"
 
-	[[Languages.en.menu.main]]
-        weight = 2
-        name = "HackerCultura"
-        url = "/HackerCultura"
+	#[[Languages.en.menu.main]]
+  #      weight = 2
+  #      name = "HackerCultura"
+  #      url = "/HackerCultura"
 
-      [[Languages.en.menu.main]]
-        weight = 2
-        name = "HackerCultura"
-	url = "/HackerCultura"
+  #    [[Languages.en.menu.main]]
+  #      weight = 2
+  #      name = "HackerCultura"
+	#url = "/HackerCultura"
 
       [[Languages.en.menu.main]]
         weight = 2
