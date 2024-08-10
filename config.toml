@@ -24,9 +24,9 @@ carouselImagens=["images/carousel/carousellProjects.png", "images/carousel/carou
   languageCode = "en-us"
 
   title = "HackerSchool - IST"
-  dateFormat = "2 January 2006"
-  home = "Home"
-  logo = "HackerSchool"
+  #dateFormat = "2 January 2006"
+  #home = "Home"
+  #logo = "HackerSchool"
   copyright = "Site baseado em https://themes.gohugo.io/dot-hugo-documentation-theme/"
 
     # navigation
@@ -66,16 +66,22 @@ carouselImagens=["images/carousel/carousellProjects.png", "images/carousel/carou
         name = "recrutamento"
         url = "/recrutamento"
 
+
+    [Languages.en.params]
+      home = "Home"
+      logo = "HackerSchool"
+      dateFormat = "2 January 2006"
+      
     # banner
     [Languages.en.params.banner]
       title = "HackerSchool"
       description = "Break. Learn. Build."
-
+      
     # footer social icon
-    [[Languages.en.socialIcon]]
+    [[Languages.en.params.socialIcon]]
       icon = "ti-facebook"
       URL = "https://www.facebook.com/hackerschoolist"
       
-    [[Languages.en.socialIcon]]
+    [[Languages.en.params.socialIcon]]
       icon = "ti-instagram"
       URL = "https://www.instagram.com/hackerschool_ist/"

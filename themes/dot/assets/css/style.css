@@ -736,7 +736,9 @@ li.parent a {
 }
 
 .invert-logo {
-  filter: invert(100%);
+  position: relative;
+  margin-top: 3px;
+  margin-bottom: 3px;
 }
 
 .sec-membros h3 {
