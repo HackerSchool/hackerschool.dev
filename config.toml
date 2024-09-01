@@ -6,7 +6,7 @@ theme = "dot"
 
 [params]
 primaryColor = "#6dba83"
-secondaryColor = "#353535"
+secondaryColor = "#1B1B1B"
 textColor = "#636363"
 textColorDark = "#6dba83"
 whiteColor = "#ffffff"

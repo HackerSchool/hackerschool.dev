@@ -6,7 +6,7 @@ body {
   -webkit-font-smoothing: antialiased;
   font-size: 18px;
   color: var(--text-color);
-  background-color: var(--secondary-color);   
+  background-color: black;   
   height: 100%;
 }
 
@@ -106,7 +106,7 @@ h6,
 }
 
 body {
-  background-color: var(--white-color);
+  background-color: black;
   overflow-x: hidden;
 }
 
@@ -706,10 +706,6 @@ li.parent a {
 
 /*# sourceMappingURL=maps/style.css.map */
 
-.sec-about {
-  background-color: #2f2f2f;
-  color: #bbbbbb;
-}
 
 .fs-large {
   font-size: 1.222em;
@@ -722,9 +718,6 @@ li.parent a {
   margin: 0.5em;
 }
 
-.sec-membros {
-  background-color: #2f2f2f;
-}
 
 .sec-contactos {
   background-color: #2a2b29;
@@ -1094,4 +1087,23 @@ body {
 header {
   
   z-index: 1000000;
+}
+
+
+#overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  top:50px;
+  width: 100vw;
+  height: 100vh;
+  background: radial-gradient(ellipse, rgba(77, 77, 77, 1) 0%, rgba(27, 27, 27, 0.5) 70%);
+  z-index: -1;
+}
+
+#matrixCanvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -2;
 }

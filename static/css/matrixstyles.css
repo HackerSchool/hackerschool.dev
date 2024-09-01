@@ -1,0 +1,15 @@
+body {
+    background-color: black;
+}
+
+#type-js {  
+    color: white;
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align:center;
+    z-index: 3;
+    position: relative;
+    line-height: normal;
+    top: 150px;
+  }
+
