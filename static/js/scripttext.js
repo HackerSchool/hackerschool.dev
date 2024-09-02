@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     let letter = 0;
-    const text = "Saudações. Bem vindo à HackerSchool.\n\nMais texto mimimimi\nmimimimimimimimimimimimimimimimimimi\n\nmimimimimimimimimimimimimimimimimimimimimimimi";
-    
+    const text = "HackerSaudações. Estávamos à tua espera.\n\
+Damos-te as boas vindas ao site da HackerSchool";
     function typeText() {
         if (letter < text.length) {
             let currentChar = text.charAt(letter);
