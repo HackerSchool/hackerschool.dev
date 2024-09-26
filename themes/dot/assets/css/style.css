@@ -8,6 +8,8 @@ body {
   color: var(--text-color);
   background-color: black;   
   height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 p,
@@ -231,6 +233,7 @@ pre {
 /* overlay */
 .overlay {
   position: relative;
+
 }
 
 .overlay::before {
@@ -1098,7 +1101,10 @@ header {
   width: 100vw;
   height: 100vh;
   background: radial-gradient(ellipse, rgba(77, 77, 77, 1) 0%, rgba(27, 27, 27, 0.5) 70%);
-  z-index: -1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
 }
 
 #matrixCanvas {

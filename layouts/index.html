@@ -12,16 +12,16 @@ $conn = new mysqli($servername, $username, $password);
 
 // Check connection
 if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
+die("Connection failed: " . $conn->connect_error);
 }
 echo "Connected successfully";
 ?>
 -->
 {{ "<!-- navigation -->" | safeHTML }}
 <header class="shadow-bottom sticky-top bg-gray">
-  <div class="container">
-    {{ partial "navigation.html" . }}
-  </div>
+    <div class="container">
+        {{ partial "navigation.html" . }}
+    </div>
 </header>
 {{ "<!-- /navigation -->" | safeHTML }}
 
@@ -30,9 +30,10 @@ echo "Connected successfully";
 
 <link rel="stylesheet" href="{{ "css/matrixstyles.css" | relURL }}">
 
-<p id="type-js"></p> 
-<div id="overlay"></div>
-<canvas id="matrixCanvas"></canvas>
+<div id="overlay">
+    <p id="type-js"></p> 
+    <canvas id="matrixCanvas"></canvas>
+</div>
 
 <script src="{{ "js/scripttext.js" | relURL }}"></script>
 <script src="{{ "js/scriptmatrix.js" | relURL }}"></script>
@@ -40,14 +41,14 @@ echo "Connected successfully";
 
 {{ "<!-- contactos -->" | safeHTML }}
 <!-- <section class="section fs-large sec-projetos">
-  <div class="container">
-      <div class="row justify-content-center">
-          <div class="col-12 text-center">
-            <h2 class="section-title">Contacta-nos</h2>
-            <p style="color:white;">Envia-nos um email para: hackerschool@tecnico.ulisboa.pt</p>
-          </div>
-      </div>
-  </div>
+<div class="container">
+<div class="row justify-content-center">
+<div class="col-12 text-center">
+<h2 class="section-title">Contacta-nos</h2>
+<p style="color:white;">Envia-nos um email para: hackerschool@tecnico.ulisboa.pt</p>
+</div>
+</div>
+</div>
 </section> -->
 {{ "<!-- /contactos -->" | safeHTML }}
 
