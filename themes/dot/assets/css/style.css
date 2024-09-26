@@ -172,6 +172,7 @@ select:focus {
 
 .section {
   padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .section-sm {
@@ -1104,6 +1105,7 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  z-index: -1;
 
 }
 
