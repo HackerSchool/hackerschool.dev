@@ -13,6 +13,7 @@ whiteColor = "#ffffff"
 recruitmentTime = true
 #lista de imagens que aparecem no carousel da pagina principal
 carouselImagens=["images/carousel/carousellProjects.png", "images/carousel/carousellAnniversary.jpg", "images/carousel/carousellFaire.jpg", "images/carousel/carousellKTANE.jpg"]
+themify_css = "/css/themify-icons.css"
 
 
 [Languages]
@@ -78,10 +79,18 @@ carouselImagens=["images/carousel/carousellProjects.png", "images/carousel/carou
       description = "Break. Learn. Build."
       
     # footer social icon
-    [[Languages.en.params.socialIcon]]
-      icon = "ti-facebook"
-      URL = "https://www.facebook.com/hackerschoolist"
+    # [[Languages.en.params.socialIcon]]
+    #   icon = "ti-facebook"
+    #   URL = "https://www.facebook.com/hackerschoolist"
       
     [[Languages.en.params.socialIcon]]
       icon = "ti-instagram"
       URL = "https://www.instagram.com/hackerschool_ist/"
+
+    [[Languages.en.params.socialIcon]]
+      icon = "ti-youtube"
+      URL = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+    
+    [[Languages.en.params.socialIcon]]
+      icon = "ti-github"
+      URL = "https://https:/github.com/HackerSchool"
