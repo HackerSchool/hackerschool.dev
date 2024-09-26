@@ -3,23 +3,44 @@
 <!-- Add icon library -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<footer class="section sec-membros">
-  <div class="container">
-    <div class="row" style="display: flex; align-items: center;">
+<footer class="pb-0" style="background-color: var(--secondary-color); display: block;">
+  <div class="container" style="background-color: var(--secondary-color)">
+      <div style="display: flex; align-items: center; width: 100%">
+        <div style="display: flex; align-items: center;">
+          <img style="width: 3em !important" src="/HS_NOVO.svg">
+          <div style="margin-left: 30px; margin-right: 0; border: 1px solid white; height: 90px;"></div>
+          <img style="width: 10em !important" src="/IST_A_RGB_NEG.png">
+        </div>
+        <div style="margin-left: auto; align-items: center;">
+          <ul class="list-inline mb-0">
+            {{ range .Site.Params.socialIcon }}
+              <li class="list-inline-item mb-0"><a class="text-color d-inline-block p-2" href="{{ .URL | absURL}}"><i style="font-size: 1.5em;" class="{{ .icon }}"></i></a></li>
+            {{ end }}
+            <a href="https://github.com/HackerSchool" class="fa fa-github"></a>
+          </ul>
+        </div>
+      </div>
+      
+    </div>
+    <!-- <div style="width: 100%; background-color: #2f2f2f; padding-bottom: 5px;"> -->
+    <!--   <div class="container"> -->
+    <!--     <a>Site based on hugo dot theme</a> -->
+    <!--   </div> -->
+    </div>
+    <!--<div class="row" style="display: flex; align-items: center;">
       <div class="col-md-4 text-md-left text-center">
        {{ with .Site.Params.copyright }} <p>{{ .}}</p> {{ end }}
       </div>
-      <a class="col-md-4 logo-ist" href="https://tecnico.ulisboa.pt"></a>
-      <div class="col-md-4 text-md-right text-center">
+      <img style="background-size: contain;background-position: 50%;background-repeat: no-repeat;min-height: 72px;" src="/IST_A_RGB_NEG.png">
+      <div style="float: right;" class="col-md-4 text-md-right text-center">
         <ul class="list-inline mb-0">
           {{ range .Site.Params.socialIcon }}
-          <li class="list-inline-item mb-0"><a class="text-color d-inline-block p-2" href="{{ .URL | absURL}}"><i class="{{ .icon }}"></i></a></li>
+            <li class="list-inline-item mb-0"><a class="text-color d-inline-block p-2" href="{{ .URL | absURL}}"><i class="{{ .icon }}"></i></a></li>
           {{ end }}
-	  <a href="https://github.com/HackerSchool" class="fa fa-github"></a>
-	</ul>
+          <a href="https://github.com/HackerSchool" class="fa fa-github"></a>
+        </ul>
       </div>
-    </div>
-  </div>
+    </div>-->
 </footer>
 </div>
 {{ "<!-- /footer -->" | safeHTML }}
