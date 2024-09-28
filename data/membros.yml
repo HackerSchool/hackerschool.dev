@@ -96,7 +96,7 @@ marketing:
   - nome: Gonçalo Fecha
     cargo: Coornedador Marketing
     #curso: 
-    imagem: GonçaloMartins.jpg
+    imagem: GoncaloMartins.jpg
   - nome: Sara Pereira
     cargo: Marketing
     #curso: 
@@ -107,7 +107,7 @@ marketing:
     imagem: DianaAlbuquerque.jpg
   - nome: Pedro Nantes
     cargo: Marketing
-    curso:
+    #curso:
     imagem: PedroNantes.jpg
 laboratorio:
   - nome: João Rodrigues
@@ -117,26 +117,26 @@ laboratorio:
   - nome: Filipe Piçarra
     cargo: Subcoorneador Dev
     #curso: 
-    imagem: FilipePiçarra.jpg
+    imagem: FilipePicarra.jpg
   - nome: Eduardo Faustino
     cargo:  Laboratório
     #curso: 
     imagem: EduardoFaustino.jpg
 membros:
 - nome: Afonso Freitas
-  cargo: Membro
+  cargo: 
   #curso:
   imagem: placeholder.png
 - nome: Alexandre Delgado
-  cargo: Membro
+  cargo: 
   #curso:
   imagem: placeholder.png
 - nome: André Cardoso
-  cargo: Membro
+  cargo: 
   #curso:
   imagem: AndreCardoso.jpg
 - nome: André Caseiro
-  cargo: Membro
+  cargo: 
   #curso:
   imagem: placeholder.png
 - nome: André Santos
@@ -160,7 +160,7 @@ membros:
   #curso:
   imagem: DanielCarvalho.jpg
 - nome: Diogo Correia
-  cargo: Membro
+  cargo: 
   #curso:
   imagem: placeholder.png
 - nome: Diogo Neves
@@ -184,11 +184,11 @@ membros:
   #curso:
   imagem: FilipePicarra.jpg
 - nome: Filipe Varela
-  cargo: Membro
+  cargo: 
   #curso:
-  imagem: placeholder.png
+  imagem: 92459.png
 - nome: Francisco Laranjo
-  cargo: Membro
+  cargo: 
   #curso:
   imagem: placeholder.png
 - nome: Gabriel Gabriel
@@ -208,7 +208,7 @@ membros:
   #curso:
   imagem: 99949.png
 - nome: Inês Martins
-  cargo: Membro
+  cargo: 
   #curso:
   imagem: InesMartins.jpeg
 - nome: João Gonçalves
@@ -224,7 +224,7 @@ membros:
   #curso:
   imagem: LopesBismuth.jpeg
 - nome: Martim Bento
-  cargo: Membro
+  cargo: 
   #curso:
   imagem: placeholder.png
 - nome: Miguel Cardoso
@@ -236,11 +236,11 @@ membros:
   #curso:
   imagem: MiguelLameiras.jpg
 - nome: Nuno Gonçalves
-  cargo: Membro
+  cargo: 
   #curso:
   imagem: placeholder.png
 - nome: Pedro Direita
-  cargo: Membro Alumni
+  cargo: 
   #curso:
   imagem: pedroDireita.png
 - nome: Pedro Nantes
@@ -248,7 +248,7 @@ membros:
   #curso:
   imagem: PedroNantes.jpg
 - nome: Rafael Garcia
-  cargo: Membro
+  cargo: 
   #curso:
   imagem: RafaelGarcia.jpg
 - nome: Ricardo Pais
@@ -260,6 +260,6 @@ membros:
   #curso:
   imagem: SaraPereira.jpg
 - nome: Tomás Fachada
-  cargo: Membro
+  cargo: 
   #curso:
   imagem: TomasFachada.jpg
