@@ -17,8 +17,9 @@ body {
     justify-content: center;
     flex-direction: column;
     flex-grow: 1;
-    min-height: 20vh;
+    /* min-height: 100vh; */
     transition: min-height 2s ease; /* Transition for min-height */
+    padding-top: 10px;
 }
 
 .paragraph {
