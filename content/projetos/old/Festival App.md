@@ -7,7 +7,7 @@ Destacado=true
 
 photo = "logo_festival1_1.png" 
 
-type = "currentProject" 
+type = "projeto" 
 layout = "projeto" 
 projectOfTheMonth = false
 

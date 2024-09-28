@@ -7,7 +7,7 @@ Destacado=false
 
 photo = "HSApp-1.png" 
 
-type = "currentProject" 
+type = "projeto" 
 layout = "projeto"
 
 teamPhotos = ["filipeVarela.png", "99211.jpg"] 

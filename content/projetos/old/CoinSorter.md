@@ -7,7 +7,7 @@ Destacado=true
 
 photo = "coinsorter.png" 
 
-type = "currentProject" 
+type = "projeto" 
 layout = "projeto" 
 projectOfTheMonth = false
 

@@ -7,7 +7,7 @@ Destacado=false
 
 photo = "hsgame.png" 
 
-type = "currentProject" 
+type = "projeto" 
 layout = "projeto"
 
 teamPhotos = ["96506.png","95778.png","92488.png","93120.png","96298.png","100073.png",] 

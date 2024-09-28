@@ -7,7 +7,7 @@ Destacado=true
 
 photo = "hsTable.jpg" 
 
-type = "currentProject" 
+type = "projeto" 
 layout = "projeto" 
 
 teamPhotos = ["anaAjuda.png","mariaPortugal.png","afonsoCerto.jpg" ] 

@@ -7,7 +7,7 @@ Destacado=true
 
 photo = "hsroboticarm.jpg" 
 
-type = "currentProject" 
+type = "projeto" 
 layout = "projeto" 
 
 
