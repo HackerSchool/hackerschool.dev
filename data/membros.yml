@@ -1,49 +1,114 @@
-presidencia:
-  - nome:  João Rodrigues
-    cargo: Presidente
-    curso: 3ºano, LEEC
-    imagem: 99968.png
-  - nome:  Nuno Abreu
-    cargo: Vice-presidente
-    curso: 2ºano, LEEC
-    imagem: 103416.png
-  - nome:  Filipe Varela
-    cargo: Tesoureiro
-    curso: 5ºano, MEMec
-    imagem: filipeVarela.png
-desenvolvimento:
-  - nome:  Ricardo Antunes
-    cargo: 3ºano, LEIC
-    imagem: 99316.png
-  - nome:  Rita Gama
-    cargo: 3ºano, LEIC
-    imagem: 99166.png
-  - nome:  Diogo Correia
-    cargo: 3ºano, LEIC
-    imagem: 99211.jpg
-  - nome:  Francisco Carvalho  
-    cargo: 3ºano, LEIC
-    imagem: 99219.png
-  - nome:  Manuel Soares
-    cargo: 3ºano, LEEC
-    imagem: 96267.png
-recursoshumanos:
-  - nome: Le Le Wang
-    cargo: 3ºano, LEMec
-    imagem: 100213.jpg
-  - nome: Carolina Realinho
-    cargo: 2ºano, LEFT
-    imagem: 102574.png
-marketing:
+direcao:
   - nome:  Armando Gonçalves
-    cargo: 3ºano, LEFT
-    imagem: 100290.png
-  - nome:  Miguel Lameiras
-    cargo: 3ºano, LEFT
-    imagem: 100354.png
-  - nome: Bianca Fonseca
-    cargo: 2ºano, LEIC
-    imagem: 103501.png
+    cargo: Presidente
+    #curso: 4º ano, MEFT
+    imagem: placeholder.png 
+  - nome: Gabriel Gabriel
+    cargo: Vice-Presidente
+    imagem: GabrielGabriel.jpeg
+  - nome: António Figueiras
+    cargo: Tesoureiro
+    #curso:
+    imagem: AntonioFigueiras.jpg
+  - nome: José Lopes
+    cargo: Coorneador Dev
+    #curso: 
+    imagem: LopesBismuth.jpeg
+  - nome: João Rodrigues
+    cargo: Coorneador Lab e Cultura Hacker
+    #curso:
+    imagem: JoaoRodrigues.jpg
+  - nome: Filipe Piçarra
+    cargo: Subcoorneador Dev
+    #curso: 
+    imagem: FilipePiçarra.jpg
+  - nome: Miguel Lameiras
+    cargo: Coorneador RH
+    #curso: 
+    imagem: MiguelLameiras.jpg
+  - nome: Gonçalo Fecha
+    cargo: Coorneador Marketing
+    #curso:
+    imagem: GonçaloMartins.jpg
+  - nome: Miguel Cardoso
+    cargo: RH
+    #curso:
+    imagem: MiguelCardoso.jpg
+  - nome: Guilherme Freitas
+    cargo: RH
+    #curso:
+    imagem: 99949.png
+  - nome: André Santos
+    cargo: RH
+    #curso:
+    imagem: AndreSantos.jpg
+desenvolvimento:
+  - nome: José Lopes
+    cargo: Coorneador Dev
+    #curso: 
+    imagem: LopesBismuth.jpeg
+  - nome: Daniel Carvalho
+    cargo: Dev
+    #curso: 
+    imagem: DanielCarvalho.jpg
+  - nome: Diogo Neves
+    cargo: Dev
+    #curso: 3º ano, LEEC
+    imagem: placeholder.jpg
+  - nome: Ricardo Pais
+    cargo: Dev
+    #curso: 
+    imagem: RicardoPais.jpg
+recursoshumanos:
+  - nome: Miguel Lameiras
+    cargo: Coorneador RH
+    #curso:
+    imagem: MiguelLameiras.jpg
+  - nome: Felipe Sancho
+    cargo: RH
+    #curso:
+    imagem: placeholder.jpg
+  - nome: Catarina Silva
+    cargo: RH
+    #curso:
+    imagem: CatarinaSilva.jpg
+  - nome: Miguel Cardoso
+    cargo: RH
+    #curso:
+    imagem: MiguelCardoso.jpg
+  - nome: Guilherme Freitas
+    cargo: RH
+    #curso:
+    imagem: 99949.png
+  - nome: Gonçalo Azevedo
+    cargo: RH
+    #curso:
+    imagem: placeholder.jpg
+  - nome: João Gonçalves
+    cargo: RH
+    #curso:
+    imagem: placeholder.jpg
+  - nome: André Santos
+    cargo: RH
+    #curso:
+    imagem: AndreSantos.jpg
+marketing:
+  - nome: Gonçalo Fecha
+    cargo: Coornedador Marketing
+    #curso: 
+    imagem: GonçaloMartins.jpg
+  - nome: Sara Pereira
+    cargo: Marketing
+    #curso: 
+    imagem: SaraPereira.jpg
+  - nome: Diana Albuquerque
+    cargo: Marketing
+    #curso:
+    imagem: DianaAlbuquerque.jpg
+  - nome: Pedro Nantes
+    cargo: Marketing
+    curso:
+    imagem: PedroNantes.jpg
 comunicacao:
   - nome:  José Duarte Lopes
     cargo: 3ºano, LEFT
