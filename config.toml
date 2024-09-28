@@ -93,4 +93,4 @@ themify_css = "/css/themify-icons.css"
     
     [[Languages.en.params.socialIcon]]
       icon = "ti-github"
-      URL = "https://https:/github.com/HackerSchool"
+      URL = "https://github.com/HackerSchool"

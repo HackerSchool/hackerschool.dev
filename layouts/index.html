@@ -70,25 +70,25 @@
             <h3>- HackNights</h3>
             <div class="home-content-tab">
                 <div class="home-content-tab-text">
-                    
-                <p style="color: white">
+
+                    <p style="color: white">
                         Junta-te a nós na próxima HackNight, sempre na terceira quinta-feira de todos os meses!</p>
 
-                <p style="color: white">
-                    Uma noite de convívio e jantar entre os membros da HackerSchool, aberta ao público, onde se discutem atividades e projetos que têm sido desenvolvidos, bem como planos futuros. Depois do jantar costuma haver espaço para conceção de projetos temáticos de curta duração.
-                </p>
+                    <p style="color: white">
+                        Uma noite de convívio e jantar entre os membros da HackerSchool, aberta ao público, onde se discutem atividades e projetos que têm sido desenvolvidos, bem como planos futuros. Depois do jantar costuma haver espaço para conceção de projetos temáticos de curta duração.
+                    </p>
                 </div>
                 <img src="/images/home/pizza_tecnico.jpg" alt="Hackers com pizzas junto ao logo do Técnico, na Alameda.">
             </div>
             <h3>- WorkShops</h3>
             <div class="home-content-tab">
                 <div class="home-content-tab-text">
-                    
-                <p style="color: white">
+
+                    <p style="color: white">
                         Mais informações brevemente.
 
-                <p style="color: white">
-                    Um evento em que é dada formação base acerca de um determinado tema, sendo dado acesso aos participantes ferramentas que podem utilizar para aplicarem os conhecimentos adquiridos na concretização das suas ideias. Este evento resulta sempre num protótipo final onde se aplicam os conhecimentos expostos.                 
+                    <p style="color: white">
+                        Um evento em que é dada formação base acerca de um determinado tema, sendo dado acesso aos participantes ferramentas que podem utilizar para aplicarem os conhecimentos adquiridos na concretização das suas ideias. Este evento resulta sempre num protótipo final onde se aplicam os conhecimentos expostos.                 
                     </p>
                 </div>
                 <img src="/images/home/workshops.webp" alt="WorkShop HackerSchool">
@@ -96,6 +96,32 @@
 
 
         </div>
+    </div>
+    <div class="container pt-4 aboutUsContainer">
+        <div class="dynamicThingy">
+            <h2>Contacta-nos</h2>
+            <div class="home-content-tab">
+                <div class="home-content-tab-text">
+
+                    <p style="color: white">
+                        Envia-nos um email para <a href="mailto:hackerschool@tecnico.ulisboa.pt">hackerschool@tecnico.ulisboa.pt</a>
+                    </p>
+
+                    <p style="color: white">
+                        Segue-nos também nas nossas redes socias!
+                    </p>
+                    <p>
+                        <ul class="list-inline" style="padding: 2em; display: flex; justify-content: center; list-style: none;">
+                            {{ range .Site.Params.socialIcon }}
+                            <li class="list-inline-item mb-0"><a class="text-color d-inline-block p-2" href="{{ .URL | absURL}}"><i style="font-size: 2.5em;" class="{{ .icon }}"></i></a></li>
+                            {{ end }}
+                        </ul>
+                <p>
+
+            </div>
+            <img src="/images/home/marcelo.webp" alt="Armando e Marcelo tocando no Midi">
+        </div>
+    </div>
     </div>
 
 
