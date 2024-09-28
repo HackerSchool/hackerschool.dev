@@ -17,6 +17,7 @@
 <!--   <h1 class="responsiveHeaderText" style="color:white; text-align: center;height: 200px;background-color: var(--primary-color);vertical-align: middle;text-align: center;vertical-align: middle;line-height: 200px;"> Membros </h1> 
  -->        
 {{ "<!-- membros -->" | safeHTML }}
+<!-- direcao team -->
   <section class="section sec-membros">
     <div class="container">
       <div class="col-12 text-center">
@@ -42,6 +43,7 @@
     </div>
   </section>
 
+  <!-- dev team -->
   <section class="section sec-membros">
     <div class="container">
       <div class="col-12 text-center">
@@ -65,7 +67,8 @@
       </div>
     </div>
   </section>
-
+  
+  <!-- RH team -->
   <section class="section sec-membros">
     <div class="container">
       <div class="col-12 text-center">
@@ -90,6 +93,7 @@
     </div>
   </section>
 
+  <!-- Marketing team-->
   <section class="section sec-membros">
     <div class="container">
       <div class="col-12 text-center">
@@ -114,14 +118,15 @@
     </div>
   </section>
 
+  <!-- lab team-->
   <section class="section sec-membros">
     <div class="container">
       <div class="col-12 text-center">
-        <h2 class="section-title">Comunicação</h2>
+        <h2 class="section-title">Laboratório</h2>
       </div>
       <div class="row justify-content-center">
           {{ "<!-- membro -->" | safeHTML }}
-          {{ range .Site.Data.membros.comunicacao }}
+          {{ range .Site.Data.membros.laboratorio }}
           <div class="fader member-card col-xl-3 col-lg-4 col-sm-6 col-6 dynamicThingy text-center fader-fadeInUp" style="background-color: var(--secondary-color);">
               <h3 style="padding-top: 15px;">{{ .nome }}
                 <p class="mb-0">{{ .cargo }}</p>
@@ -137,31 +142,10 @@
       </div>
     </div>
   </section>
-<!--   <section class="section sec-projetos">
-    <div class="container">      
-      <div class="col-12 text-center">
-        <h2 class="section-title"> HackExperts </h2>
-      </div>
-      <div class="row justify-content-center">
-          {{ "<!-- membro -->" | safeHTML }}
-          {{ range .Site.Data.membros.hackexperts }}
-          <div class="fader member-card col-xl-3 col-lg-4 col-sm-6 col-6 dynamicThingy text-center fader-fadeInUp" style="background-color: var(--secondary-color);">
-              <h3 style="padding-top: 15px;">{{ .nome }}
-                <p class="mb-0">{{ .cargo }}</p>
-                <p class="mb-0">{{ .curso }}</p>
-              </h3>
-              <img src="/images/membros/{{ .imagem }}">
-              {{ if .project }}
-              <p class="hoverAppear">
-                Projeto: <br /> {{ .project }}
-              </p>
-              {{ end }}
-          </div>
-          {{ end }}
-      </div>
-    </div>
-  </section>
- -->
+
+
+
+<!-- All members-->
   <section class="section sec-membros">
     <div class="container">      
       <div class="col-12 text-center">
@@ -169,7 +153,7 @@
       </div>
       <div class="row justify-content-center">
           {{ "<!-- membro -->" | safeHTML }}
-          {{ range .Site.Data.membros.membro }}
+          {{ range .Site.Data.membros.membros }}
           <div class="fader member-card col-xl-3 col-lg-4 col-sm-6 col-6 dynamicThingy text-center fader-fadeInUp" style="background-color: var(--secondary-color);">
               <h3 style="padding-top: 15px;">{{ .nome }}
                 <p class="mb-0">{{ .cargo }}</p>
