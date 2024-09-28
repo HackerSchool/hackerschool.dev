@@ -1,0 +1,14 @@
++++
+title = "HS-TMS"
+description= "Sistema de Tesouraria da HackerSchool, capaz de registar trasações e recibos/faturas feitos ao longo do ano, bem como avisar eventos fiscais importantes para completar" 
+
+date = "2024-09-28" 
+Destacado=false 
+
+photo = "hstms.jpg" 
+
+type = "currentProject" 
+layout = "projeto" 
+
+teamPhotos = [] 
++++
