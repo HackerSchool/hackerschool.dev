@@ -2,6 +2,30 @@ body {
     background-color: black;
 }
 
+.home-content-tab {
+    display: flex;             /* Use Flexbox for layout */
+    flex-wrap: wrap;           /* Allow items to wrap */
+    gap: 10px;                 /* Space between items */
+    /* align-items: center;       /* Center items vertically */ */
+}
+
+
+.home-content-tab-text {
+    flex: 1;
+}
+.home-content-tab-text p {
+    flex: 1;                   /* Allow the paragraph to take up available space */
+    margin: 0;                 /* Remove default margin */
+}
+
+.home-content-tab img {
+    max-width: 25em;          /* Limit the image's max width */
+    width: 100%;               /* Make the image responsive */
+    height: auto;              /* Maintain aspect ratio */
+    border-radius: 5%;        /* Optional: rounded corners for the image */
+    object-fit: contain;       /* Ensure image fits nicely */
+}
+
 #type-js {  
     color: white;
     font-size: 18px;
