@@ -1,11 +1,10 @@
 document.addEventListener("DOMContentLoaded", function () {
     let letter = 0;
-    const text = "HackerSaudações. Estávamos à tua espera.\n\
-        Damos-te as boas vindas ao site da HackerSchool.";
+    const text = "HackerSaudações. Estávamos à tua espera."; //Damos-te as boas vindas ao site da HackerSchool.
 
     const targetElement = document.getElementById("type-js");
     const hiddenContent = document.getElementById("hidden-content");
-    let typingSpeed = 60; // Default typing speed
+    let typingSpeed = 50; // Default typing speed
     let speedUp = false;  // Track if user is trying to speed up
     document.body.style.overflow = 'hidden';
     document.querySelector('.content').style.transition = 'min-height 0s ease';
@@ -43,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
             setTimeout(typeText, speed);
         } else {
-            targetElement.style.color = "#00ff00";
+            targetElement.style.color = "#6DBA83"; //por uma questão de coerência de cor?
             // Animation complete: make the page scrollable and show hidden content
             // Trigger the fade-out after turning green
             setTimeout(() => {

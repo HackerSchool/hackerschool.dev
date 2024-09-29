@@ -10,24 +10,24 @@ direcao:
     cargo: Tesoureiro
     #curso:
     imagem: AntonioFigueiras.jpg
+  - nome: Filipe Piçarra
+    cargo: Subcoordenação
+    #curso: 
+    imagem: FilipePicarra.jpg  
   - nome: José Lopes
-    cargo: Coorneador Dev
+    cargo: Coordenador Dev
     #curso: 
     imagem: LopesBismuth.jpeg
   - nome: João Rodrigues
-    cargo: Coorneador Lab e Cultura Hacker
+    cargo: Coordenador Lab e Cultura Hacker
     #curso:
     imagem: JoaoRodrigues.jpg
-  - nome: Filipe Piçarra
-    cargo: Subcoorneador Dev
-    #curso: 
-    imagem: FilipePicarra.jpg
   - nome: Miguel Lameiras
-    cargo: Coorneador RH
+    cargo: Coordenador RH
     #curso: 
     imagem: MiguelLameiras.jpg
   - nome: Gonçalo Fecha
-    cargo: Coorneador Marketing
+    cargo: Coordenador Marketing
     #curso:
     imagem: GoncaloMartins.jpg
   - nome: Miguel Cardoso
@@ -44,7 +44,7 @@ direcao:
     imagem: AndreSantos.jpg
 desenvolvimento:
   - nome: José Lopes
-    cargo: Coorneador Dev
+    cargo: Coordenador Dev
     #curso: 
     imagem: LopesBismuth.jpeg
   - nome: Daniel Carvalho
@@ -61,7 +61,7 @@ desenvolvimento:
     imagem: RicardoPais.jpg
 recursoshumanos:
   - nome: Miguel Lameiras
-    cargo: Coorneador RH
+    cargo: Coordenador RH
     #curso:
     imagem: MiguelLameiras.jpg
   - nome: Felipe Sancho
@@ -83,7 +83,7 @@ recursoshumanos:
   - nome: Gonçalo Azevedo
     cargo: RH
     #curso:
-    imagem: placeholder.png
+    imagem: GoncaloAzevedo.jpg
   - nome: João Gonçalves
     cargo: RH
     #curso:
@@ -111,15 +111,15 @@ marketing:
     imagem: PedroNantes.jpg
 laboratorio:
   - nome: João Rodrigues
-    cargo: Coorneador Lab e Cultura Hacker
+    cargo: Coordenador Lab e Cultura Hacker
     #curso:
     imagem: JoaoRodrigues.jpg
   - nome: Filipe Piçarra
-    cargo: Subcoorneador Dev
+    cargo: Subcoordenação
     #curso: 
     imagem: FilipePicarra.jpg
   - nome: Eduardo Faustino
-    cargo:  Laboratório
+    cargo: Gestão Lab
     #curso: 
     imagem: EduardoFaustino.jpg
 membros:
@@ -162,7 +162,7 @@ membros:
 - nome: Diogo Correia
   cargo: 
   #curso:
-  imagem: placeholder.png
+  imagem: 99211.jpg
 - nome: Diogo Neves
   cargo: Dev
   #curso:
@@ -172,7 +172,7 @@ membros:
   #curso:
   imagem: DianaAlbuquerque.jpg
 - nome: Eduardo Faustino
-  cargo: Laboratório
+  cargo: Gestão Lab
   #curso:
   imagem: EduardoFaustino.jpg
 - nome: Felipe Sancho
@@ -180,7 +180,7 @@ membros:
   #curso:
   imagem: placeholder.png
 - nome: Filipe Piçarra
-  cargo: Subcoorneador Laboratório
+  cargo: Subcoordenação
   #curso:
   imagem: FilipePicarra.jpg
 - nome: Filipe Varela
@@ -250,7 +250,7 @@ membros:
 - nome: Rafael Garcia
   cargo: 
   #curso:
-  imagem: RafaelGarcia.jpg
+  imagem: rafaelGarcia.png
 - nome: Ricardo Pais
   cargo: Dev
   #curso:
