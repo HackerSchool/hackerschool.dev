@@ -87,7 +87,7 @@ recursoshumanos:
   - nome: João Gonçalves
     cargo: RH
     #curso:
-    imagem: placeholder.png
+    imagem: JoaoGonçalves.jpg
   - nome: André Santos
     cargo: RH
     #curso:
@@ -218,7 +218,7 @@ membros:
 - nome: João Gonçalves
   cargo: RH
   #curso:
-  imagem: placeholder.png
+  imagem: JoaoGonçalves.jpg
 - nome: João Rodrigues
   cargo: Coordenador Laboratório
   #curso:

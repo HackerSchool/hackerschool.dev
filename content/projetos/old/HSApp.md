@@ -10,5 +10,5 @@ photo = "HSApp-1.png"
 type = "projeto" 
 layout = "projeto"
 
-teamPhotos = ["filipeVarela.png", "99211.jpg"] 
+teamPhotos = ["FilipeVarela.png", "99211.jpg"] 
 +++
