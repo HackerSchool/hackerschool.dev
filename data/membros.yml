@@ -94,7 +94,7 @@ recursoshumanos:
     imagem: AndreSantos.jpg
 marketing:
   - nome: Gonçalo Fecha
-    cargo: Coornedador Marketing
+    cargo: Coordenador Marketing
     #curso: 
     imagem: GoncaloMartins.jpg
   - nome: Sara Pereira
@@ -216,11 +216,11 @@ membros:
   #curso:
   imagem: placeholder.png
 - nome: João Rodrigues
-  cargo: Coordernador Laboratório
+  cargo: Coordenador Laboratório
   #curso:
   imagem: JoaoRodrigues.jpg
 - nome: José Lopes
-  cargo: Coornedador de Dev
+  cargo: Coordenador de Dev
   #curso:
   imagem: LopesBismuth.jpeg
 - nome: Martim Bento
@@ -232,7 +232,7 @@ membros:
   #curso:
   imagem: MiguelCardoso.jpg
 - nome: Miguel Lameiras
-  cargo: Coordernador RH
+  cargo: Coordenador RH
   #curso:
   imagem: MiguelLameiras.jpg
 - nome: Nuno Gonçalves
