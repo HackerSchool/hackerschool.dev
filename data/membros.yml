@@ -11,7 +11,7 @@ direcao:
     #curso:
     imagem: AntonioFigueiras.jpg
   - nome: Filipe Piçarra
-    cargo: Subcoordenação
+    cargo: Co-Coordenador Lab e Cultura Hacker
     #curso: 
     imagem: FilipePicarra.jpg  
   - nome: José Lopes
@@ -19,7 +19,7 @@ direcao:
     #curso: 
     imagem: LopesBismuth.jpeg
   - nome: João Rodrigues
-    cargo: Coordenador Lab e Cultura Hacker
+    cargo: Co-Coordenador Lab e Cultura Hacker
     #curso:
     imagem: JoaoRodrigues.jpg
   - nome: Miguel Lameiras
@@ -111,11 +111,11 @@ marketing:
     imagem: PedroNantes.jpg
 laboratorio:
   - nome: João Rodrigues
-    cargo: Coordenador Lab e Cultura Hacker
+    cargo: Co-Coordenador Lab e Cultura Hacker
     #curso:
     imagem: JoaoRodrigues.jpg
   - nome: Filipe Piçarra
-    cargo: Subcoordenação
+    cargo: Co-Coordenador Lab e Cultura Hacker
     #curso: 
     imagem: FilipePicarra.jpg
   - nome: Eduardo Faustino
@@ -184,7 +184,7 @@ membros:
   #curso:
   imagem: FelipeSancho.jpg
 - nome: Filipe Piçarra
-  cargo: Subcoordenação
+  cargo: Co-Coordenador Lab e Cultura Hacker
   #curso:
   imagem: FilipePicarra.jpg
 - nome: Filipe Varela
@@ -220,7 +220,7 @@ membros:
   #curso:
   imagem: JoaoGonçalves.jpg
 - nome: João Rodrigues
-  cargo: Coordenador Laboratório
+  cargo: Co-Coordenador Lab e Cultura Hacker
   #curso:
   imagem: JoaoRodrigues.jpg
 - nome: José Lopes
