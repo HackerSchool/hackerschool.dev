@@ -67,7 +67,7 @@ recursoshumanos:
   - nome: Felipe Sancho
     cargo: RH
     #curso:
-    imagem: placeholder.png
+    imagem: FelipeSancho.jpg
   - nome: Catarina Silva
     cargo: RH
     #curso:
@@ -163,6 +163,10 @@ membros:
   cargo: 
   #curso:
   imagem: 99211.jpg
+- nome: Daniela Cardoso
+  cargo:
+  #curso:
+  imagem: 96517.png
 - nome: Diogo Neves
   cargo: Dev
   #curso:
@@ -250,7 +254,7 @@ membros:
 - nome: Rafael Garcia
   cargo: 
   #curso:
-  imagem: rafaelGarcia.png
+  imagem: RafaelGarcia.jpg
 - nome: Ricardo Pais
   cargo: Dev
   #curso:

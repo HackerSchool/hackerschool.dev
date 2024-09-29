@@ -10,5 +10,5 @@ photo = "logoSquare.jpg"
 type = "currentProject" 
 layout = "projeto" 
 
-teamPhotos = ["99968.png"] 
+teamPhotos = ["JoaoRodrigues.jpg", "FilipePicarra.jpg", "EduardoFaustino.jpg"] 
 +++

@@ -11,5 +11,5 @@ type = "currentProject"
 layout = "projeto" 
 projectOfTheMonth = false
 
-teamPhotos = ["99968.png"] 
+teamPhotos = ["JoaoRodrigues.jpg"] 
 +++
