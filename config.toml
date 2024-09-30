@@ -1,4 +1,4 @@
-baseURL = "http://hackerschool.tecnico.ulisboa.pt/"
+baseURL = "https://hackerschool.tecnico.ulisboa.pt/"
 #baseURL = "http://localhost:8000/"
 languageCode = "en-us"
 title = "HackerSchool"
@@ -6,13 +6,14 @@ theme = "dot"
 
 [params]
 primaryColor = "#6dba83"
-secondaryColor = "#353535"
+secondaryColor = "#1B1B1B"
 textColor = "#636363"
 textColorDark = "#6dba83"
 whiteColor = "#ffffff"
 recruitmentTime = true
 #lista de imagens que aparecem no carousel da pagina principal
-carouselImagens=["images/caroussel_1_small.jpg", "images/caroussel_2_small.jpg"]
+carouselImagens=["images/carousel/carousellProjects.png", "images/carousel/carousellAnniversary.jpg", "images/carousel/carousellFaire.jpg", "images/carousel/carousellKTANE.jpg"]
+themify_css = "/css/themify-icons.css"
 
 
 [Languages]
@@ -24,9 +25,9 @@ carouselImagens=["images/caroussel_1_small.jpg", "images/caroussel_2_small.jpg"]
   languageCode = "en-us"
 
   title = "HackerSchool - IST"
-  dateFormat = "2 January 2006"
-  home = "Home"
-  logo = "HackerSchool"
+  #dateFormat = "2 January 2006"
+  #home = "Home"
+  #logo = "HackerSchool"
   copyright = "Site baseado em https://themes.gohugo.io/dot-hugo-documentation-theme/"
 
     # navigation
@@ -51,29 +52,45 @@ carouselImagens=["images/caroussel_1_small.jpg", "images/caroussel_2_small.jpg"]
         name = "Projetos"
         url = "/projetos"
 
+	#[[Languages.en.menu.main]]
+  #      weight = 2
+  #      name = "HackerCultura"
+  #      url = "/HackerCultura"
+
+  #    [[Languages.en.menu.main]]
+  #      weight = 2
+  #      name = "HackerCultura"
+	#url = "/HackerCultura"
+
       [[Languages.en.menu.main]]
         weight = 2
         name = "recrutamento"
         url = "/recrutamento"
 
+
+    [Languages.en.params]
+      home = "Home"
+      logo = "HackerSchool"
+      dateFormat = "2 January 2006"
+      
     # banner
     [Languages.en.params.banner]
       title = "HackerSchool"
       description = "Break. Learn. Build."
-
+      
     # footer social icon
-    [[Languages.en.socialIcon]]
-      icon = "ti-facebook"
-      URL = "https://www.facebook.com/hackerschoolist"
+    # [[Languages.en.params.socialIcon]]
+    #   icon = "ti-facebook"
+    #   URL = "https://www.facebook.com/hackerschoolist"
       
-    [[Languages.en.socialIcon]]
-      icon = "ti-vimeo-alt"
-      URL = "/#"
-      
-    [[Languages.en.socialIcon]]
+    [[Languages.en.params.socialIcon]]
       icon = "ti-instagram"
       URL = "https://www.instagram.com/hackerschool_ist/"
 
-    [[Languages.en.socialIcon]]
-      icon = "ti-twitter"
-      URL = "https://twitter.com/hackerschoolist"
+    [[Languages.en.params.socialIcon]]
+      icon = "ti-youtube"
+      URL = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+    
+    [[Languages.en.params.socialIcon]]
+      icon = "ti-github"
+      URL = "https://github.com/HackerSchool"

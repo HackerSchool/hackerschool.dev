@@ -6,11 +6,22 @@ body {
   -webkit-font-smoothing: antialiased;
   font-size: 18px;
   color: var(--text-color);
-  background-color: var(--secondary-color);   
-  height: 100%;
+  background-color: black;   
+  height: min(100vh);
+  display: flex;
+  flex-direction: column;
 }
 
-p,
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-grow: 1;
+    /* min-height: 100vh; */
+    transition: min-height 2s ease; /* Transition for min-height */
+    padding-top: 10px;
+}
+
 .paragraph {
   color: var(--text-color);
   font-size: 16px;
@@ -106,7 +117,7 @@ h6,
 }
 
 body {
-  background-color: var(--white-color);
+  background-color: black;
   overflow-x: hidden;
 }
 
@@ -170,6 +181,7 @@ select:focus {
 
 .section {
   padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .section-sm {
@@ -196,6 +208,8 @@ select:focus {
 div.projectsWrapper.row {
   display: flex;
   align-items: stretch;
+  width: 100%;
+  margin:auto;
 }
 
 div.projectsWrapper.row .dynamicThingy{
@@ -229,6 +243,7 @@ pre {
 /* overlay */
 .overlay {
   position: relative;
+
 }
 
 .overlay::before {
@@ -274,6 +289,9 @@ pre {
   color: var(--white-color) !important;
 }
 
+.mb-0{
+    color: var(--secondary);
+}
 .mb-10 {
   margin-bottom: 10px !important;
 }
@@ -447,6 +465,21 @@ pre {
   float: left;
   height: 32px;
   width: 32px;
+}
+
+h1 {
+  margin-bottom: 0px;
+}
+
+h3 p{
+  line-height: 24px;
+}
+
+.aboutUsContainer strong {
+  font-size: 130%;
+}
+.aboutUsContainer strong.sub {
+  font-size: 105%;
 }
 
 #project-description {
@@ -689,25 +722,18 @@ li.parent a {
 
 /*# sourceMappingURL=maps/style.css.map */
 
-.sec-about {
-  background-color: #2f2f2f;
-  color: #bbbbbb;
-}
 
 .fs-large {
   font-size: 1.222em;
 }
 
-.sec-projetos {
+/* .sec-projetos {
   background-color: #2a2b29;
-}
+} */
 .projeto-foto {
   margin: 0.5em;
 }
 
-.sec-membros {
-  background-color: #2f2f2f;
-}
 
 .sec-contactos {
   background-color: #2a2b29;
@@ -719,7 +745,9 @@ li.parent a {
 }
 
 .invert-logo {
-  filter: invert(100%);
+  position: relative;
+  margin-top: 3px;
+  margin-bottom: 3px;
 }
 
 .sec-membros h3 {
@@ -779,7 +807,40 @@ li.parent a {
   display: none;
 }
 
+.dynamicThingy
+{    
+    box-shadow: 3px 3px 3px black;
+    transition: .3s ease;
+    
+    background-color:#2b2b2b;
+    margin:30px; 
+    margin-left: 10px;
+    margin-right: 10px;
 
+    padding: 20px;
+}
+
+.dynamicThingy:hover
+{
+    box-shadow: 10px 10px 10px black;
+}
+
+.dynamicThingy.helperCard {
+  margin-left :0px;
+  margin-right :0px;
+}
+
+@media (min-width: 768px) {
+  .dynamicThingy.helperCard {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  
+  .dynamicThingy {
+    margin-left :30px;
+    margin-right :30px;
+  }
+}
 @media (min-width: 992px) {
   .sec-membros .member-card {
     height: 290px;
@@ -976,14 +1037,97 @@ img.projectMembersPhoto {
   height: 100px;
   /*  margin-right: 10px; */
   padding: 10px;
+  transition: all 0.2s; 
 }
 
 img.projectMembersPhoto:hover {
   padding: 0px;
-  border: 1px solid;
 }
 
 .projectMembersContainer {
   margin-top: 20px;
   margin-bottom: 10px;
+}
+
+.carouselContainer {
+  padding: 0px;
+  height: 700px;
+  max-width: auto;
+  position: relative;
+}
+
+.carouselContainer div {
+  height: 100%;
+}
+
+.carouselContainer img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel-inner-home {
+  filter: brightness(100%);
+}
+
+.carousel-control-next {
+  z-index: 999;
+  opacity: 1;
+  width: 10%;
+}
+
+.carousel-control-prev {
+  z-index: 999;
+  opacity: 1;
+  width: 10%;
+}
+
+.carousel-control-next:hover {
+  background-color: #2f2f2f8c;
+}
+
+.carousel-control-prev:hover {
+  background-color: #2f2f2f8c;
+}
+
+html {
+  height: 100% !important;
+  min-height: 100% !important;
+  overflow: hidden;
+  overflow-x:hidden;
+}
+
+body {
+  overflow-y: auto;
+}
+
+header {
+  
+  z-index: 1000000;
+}
+
+
+#overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  top:50px;
+  width: 100vw;
+  height: 100vh;
+  background: radial-gradient(ellipse, rgba(77, 77, 77, 1) 0%, rgba(27, 27, 27, 0.5) 70%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: -1;
+
+}
+
+#matrixCanvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -2;
+}
+
+#hidden-content {
+    display: none;
 }

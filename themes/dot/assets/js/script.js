@@ -63,7 +63,7 @@ function isOnScreen(elem) {
 }
 
 $(document).ready( function() {
-	window.addEventListener('scroll', function(e) {
+	$("body").get(0).addEventListener('scroll', function(e) {
         $(".fader:not(.fader-animated)").each(function () {
             if( isOnScreen($(this)) ) {
                 $(this).css('animation-delay', delay + "ms");
