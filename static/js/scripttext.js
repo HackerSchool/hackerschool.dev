@@ -82,20 +82,31 @@ document.addEventListener("DOMContentLoaded", function () {
     // window.addEventListener('scroll', enableSpeedUp);
     window.addEventListener('wheel', enableSpeedUp);
 
-    // Detect touch events on mobile
-    let touchStartY = 0;
+    let clientY;
 
-    window.addEventListener('touchstart', (event) => {
-        touchStartY = event.touches[0].clientY; // Record the initial Y position
-    });
+    window.addEventListener(
+        "touchstart",
+        (e) => {
+            // Cache the initial Y-coordinate
+            clientY = e.touches[0].clientY;
+        },
+        false
+    );
 
-    window.addEventListener('touchmove', (event) => {
-        const touchEndY = event.touches[0].clientY;
+    window.addEventListener(
+        "touchend",
+        (e) => {
+            let deltaY;
 
-        if (Math.abs(touchStartY - touchEndY) > 20) { // Check if a swipe movement is detected
-            enableSpeedUp();
-        }
-    });
+            // Calculate the change in Y-coordinate
+            deltaY = e.changedTouches[0].clientY - clientY;
 
+            // If there's a significant vertical movement, activate the speedup
+            if (Math.abs(deltaY) > 50) { // Adjust the threshold as needed
+                enableSpeedUp();
+            }
+        },
+        false
+    );
 });
 
