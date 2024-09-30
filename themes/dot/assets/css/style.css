@@ -6,11 +6,22 @@ body {
   -webkit-font-smoothing: antialiased;
   font-size: 18px;
   color: var(--text-color);
-  background-color: var(--secondary-color);   
-  height: 100%;
+  background-color: black;   
+  height: min(100vh);
+  display: flex;
+  flex-direction: column;
 }
 
-p,
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-grow: 1;
+    /* min-height: 100vh; */
+    transition: min-height 2s ease; /* Transition for min-height */
+    padding-top: 10px;
+}
+
 .paragraph {
   color: var(--text-color);
   font-size: 16px;
@@ -106,7 +117,7 @@ h6,
 }
 
 body {
-  background-color: var(--white-color);
+  background-color: black;
   overflow-x: hidden;
 }
 
@@ -170,6 +181,7 @@ select:focus {
 
 .section {
   padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .section-sm {
@@ -231,6 +243,7 @@ pre {
 /* overlay */
 .overlay {
   position: relative;
+
 }
 
 .overlay::before {
@@ -276,6 +289,9 @@ pre {
   color: var(--white-color) !important;
 }
 
+.mb-0{
+    color: var(--secondary);
+}
 .mb-10 {
   margin-bottom: 10px !important;
 }
@@ -706,25 +722,18 @@ li.parent a {
 
 /*# sourceMappingURL=maps/style.css.map */
 
-.sec-about {
-  background-color: #2f2f2f;
-  color: #bbbbbb;
-}
 
 .fs-large {
   font-size: 1.222em;
 }
 
-.sec-projetos {
+/* .sec-projetos {
   background-color: #2a2b29;
-}
+} */
 .projeto-foto {
   margin: 0.5em;
 }
 
-.sec-membros {
-  background-color: #2f2f2f;
-}
 
 .sec-contactos {
   background-color: #2a2b29;
@@ -736,7 +745,9 @@ li.parent a {
 }
 
 .invert-logo {
-  filter: invert(100%);
+  position: relative;
+  margin-top: 3px;
+  margin-bottom: 3px;
 }
 
 .sec-membros h3 {
@@ -1092,4 +1103,31 @@ body {
 header {
   
   z-index: 1000000;
+}
+
+
+#overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  top:50px;
+  width: 100vw;
+  height: 100vh;
+  background: radial-gradient(ellipse, rgba(77, 77, 77, 1) 0%, rgba(27, 27, 27, 0.5) 70%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: -1;
+
+}
+
+#matrixCanvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -2;
+}
+
+#hidden-content {
+    display: none;
 }

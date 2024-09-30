@@ -1,6 +1,6 @@
 +++
 title = "HackerSupply"
-description = "Este projecto pretendeu transformar uma fonte de alimentação de um PC numa fonte de alimentação de bancada"
+description = "Este projecto pretendeu transformar uma fonte de alimentação de um PC numa fonte de alimentação de bancada."
 
 date = "2017-01-01"
 Destacado=false

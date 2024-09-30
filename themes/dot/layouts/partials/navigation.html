@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-light">
-  <a class="navbar-brand text-dark" href="{{ .Site.BaseURL }}"><img class="invert-logo" src='{{ "logo.png" | absURL }}'></a>
+  <a class="navbar-brand text-dark" href="{{ .Site.BaseURL }}"><img class="invert-logo" src='{{ "logo.svg" | absURL }}'></a>
   <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation"
     aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -32,10 +32,10 @@
       {{ end }}
     </ul>
     <!-- Language List -->
-    <ul class="list-inline text-center mb-0">
+<!--     <ul class="list-inline text-center mb-0">
       {{ range $.Site.Home.AllTranslations }}
       <li class="list-inline-item"><a class="text-dark" href="{{ .Permalink }}">{{ .Language.LanguageName }}</a></li>
       {{ end }}
-    </ul>
+    </ul> -->
   </div>
 </nav>

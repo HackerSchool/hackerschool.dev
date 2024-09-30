@@ -1,307 +1,269 @@
-presidencia:
-  - nome:  João Rodrigues
-    cargo: Presidente
-    curso: 3ºano, LEEC
-    imagem: 99968.png
-  - nome:  Nuno Abreu
-    cargo: Vice-presidente
-    curso: 2ºano, LEEC
-    imagem: 103416.png
-  - nome:  Filipe Varela
-    cargo: Tesoureiro
-    curso: 5ºano, MEMec
-    imagem: filipeVarela.png
-desenvolvimento:
-  - nome:  Ricardo Antunes
-    cargo: 3ºano, LEIC
-    imagem: 99316.png
-  - nome:  Rita Gama
-    cargo: 3ºano, LEIC
-    imagem: 99166.png
-  - nome:  Diogo Correia
-    cargo: 3ºano, LEIC
-    imagem: 99211.jpg
-  - nome:  Francisco Carvalho  
-    cargo: 3ºano, LEIC
-    imagem: 99219.png
-  - nome:  Manuel Soares
-    cargo: 3ºano, LEEC
-    imagem: 96267.png
-recursoshumanos:
-  - nome: Le Le Wang
-    cargo: 3ºano, LEMec
-    imagem: 100213.jpg
-  - nome: Carolina Realinho
-    cargo: 2ºano, LEFT
-    imagem: 102574.png
-marketing:
+direcao:
   - nome:  Armando Gonçalves
-    cargo: 3ºano, LEFT
-    imagem: 100290.png
-  - nome:  Miguel Lameiras
-    cargo: 3ºano, LEFT
-    imagem: 100354.png
-  - nome: Bianca Fonseca
-    cargo: 2ºano, LEIC
-    imagem: 103501.png
-comunicacao:
-  - nome:  José Duarte Lopes
-    cargo: 3ºano, LEFT
-    imagem: 100336.png
-hackexperts:
-  - nome:  Diogo Correia
-    cargo: WebDev
-    curso: 2ºano, LEIC
-    imagem: diogoCorreia.jpg
-  - nome:  Tiago Carneiro
-    cargo: Modelação 3D
-    curso: 3ºano, LEAer
-    imagem: tiagoCabrita.png
-  - nome:  Filipe Varela
-    cargo: AppDev
-    curso: 5ºano, LEMec
-    imagem: filipeVarela.jpg
-  - nome:  Francisco Fonseca
-    cargo: CTF
-    curso: 3ºano, LEAer
-    imagem: franciscoFonseca.png
-  - nome:  Ricardo Antunes
-    cargo: Programação
-    curso: 2ºano, LEIC
-    imagem: ricardoAntunes.png
-membro:
-  # - nome:  Afonso Fernandes 
-  #   cargo: 4ºano, LEIC
-  #   imagem: afonsoFernandes.jpg
-  # - nome: Ana Ajuda
-  #   cargo: 5ºano, MEMec
-  #   imagem: anaAjuda.png
-  # - nome: Ana Brígido
-  #   cargo: 4ºano, MEBiom 
-  #   imagem: anaBrigido.png
-  # - nome: Ana Mourão
-  #   cargo: 3ºano, LEMat
-  #   imagem: anaMourao.png
-  # - nome:  André Teodósio 
-  #   cargo: 2ºano, LEEC
-  #   imagem: andreTeodosio.jpg
-  # - nome: Daniel Leitão       
-  #   cargo: 5ºano, MEEC
-  #   imagem: danielLeitao.png
-  # - nome: Dinis Almeida       
-  #   cargo: 2ºano, LEMec 
-  #   imagem: dinisAlmeida.png
-  # - nome: Duarte Oliveira       
-  #   cargo: 5ºano, MEEC 
-  #   imagem: duarteOliveira.png
-  # - nome: Francisco Rodrigues 
-  #   cargo: 3ºano, LEEC
-  #   imagem: franciscoRodrigues.jpg
-  # - nome:  Hugo Marques 
-  #   cargo: 5ºano, MEIC
-  #   imagem: hugoMarques.jpg
-  # - nome:  Inês Carvalho 
-  #   cargo: 4ºano, MEBiom
-  #   imagem: inesCarvalho.png
-  # - nome:  Isabel Portugal  
-  #   cargo: 2ºano, LEMec
-  #   imagem: mariaPortugal.png
-  # - nome:  Jerónimo Mendes  
-  #   cargo: 2ºano, LEIC
-  #   imagem: jeronimoMendes.png
-  # - nome:  Mafalda Serafim  
-  #   cargo: 4ºano, LEIC
-  #   imagem: mafaldaSerafim.jpg
-  # - nome:  Manuel Gomes 
-  #   cargo: 3ºano, LEEC
-  #   imagem: manuelGomes.png
-  # - nome:  Miguel Dinis  
-  #   cargo: 4ºano, MEBiom
-  #   imagem: miguelDinis.png
-  # - nome:  Pablo Alejandro
-  #   cargo: 2ºano, LEMec
-  #   imagem: pabloGarcia.jpeg
-  # - nome:  Pedro Direita        
-  #   cargo: MEEC
-  #   imagem: pedroDireita.png
-  # - nome:  Pedro Taborda       
-  #   cargo: 4ºano, MEEC
-  #   imagem: pedroTaborda.png
-  # - nome:  Pedro Ventura
-  #   cargo: 4ºano, MEEC
-  #   imagem: pedroVentura.jpg
-  # - nome:  Rafael Rodrigues       
-  #   cargo: 2ºano, LEIC 
-  #   imagem: rafaelRodrigues.png
-  # - nome:  Renato Sebastião 
-  #   cargo: 3ºano, LEMec
-  #   imagem: renatoSebastiao.png
-  # - nome:  Rita Mendes        
-  #   cargo: 2ºano, LEEC
-  #   imagem: ritaMendes.png
-  # - nome:  Rodolfo Amorim        
-  #   cargo: 2ºano, LEMec
-  #   imagem: rodolfoAmorim.png
-  # - nome:  Rodrigo Amorim        
-  #   cargo: 2ºano, LEMec
-  #   imagem: rodrigoAmorim.jpeg
-  # - nome:  Rodrigo Pereira        
-  #   cargo: 2ºano, LEEC
-  #   imagem: rodrigoPereira.png
-  # - nome:  Sebastião Caldas        
-  #   cargo: 3ºano, LEEC
-  #   imagem: sebastiãoCaldas.png
-  # - nome:  Tiago Freitas        
-  #   cargo: 3ºano, LEBiom
-  #   imagem: tiagoFreitas.png
-  - nome: Afonso Certo
-    cargo:
-    imagem: 96134.jpg
-  - nome: Afonso Domingues
-    cargo: 
-    imagem: 103246.png
-  - nome: Ana Ajuda
-    imagem: 98501.png
-    cargo: 
-  - nome: André Santos
-    cargo: 
-    imagem: 103597.jpeg
-  - nome: Armando Gonçalves
-    imagem: 100290.png
-    cargo: 
-  - nome: Beatriz Mateus
-    imagem: 95922.png
-    cargo: 
-  - nome: Bianca Fonseca
-    imagem: 103501.png
-    cargo: 
-  - nome: Carolina Realinho
-    cargo: 
-    imagem: 102574.png
-  - nome: Daniel Leitão
-    cargo: 
-    imagem: 90042.png
-  - nome: Daniela Cardoso
-    cargo: 
-    imagem: 96517.png
-  - nome: Dinis Almeida
-    imagem: 100148.png
-    cargo: 
-  - nome: Diogo Castelo Branco
-    imagem: 96183.png
-    cargo: 
-  - nome: Diogo Correia
-    cargo: 
-    imagem: 99211.jpg
-  - nome: Diogo Ferreira
-    cargo: 
-    imagem: 92806.jpeg
-  - nome: Eduardo Faustino
-    cargo: 
-    imagem: 102298.jpg
-  - nome: Eduardo Silva
-    cargo: 
-    imagem: 103240.png
-  - nome: Filipe Varela
-    cargo: 
-    imagem: filipeVarela.png
-  - nome: Francisco Carvalho
-    cargo: 
-    imagem: 99219.png
-  - nome: Guilherme Freitas
-    cargo: 
-    imagem: 99949.png
-  - nome: Isabel Portugal
-    cargo: 
-    imagem: 100227.png
-  - nome: Jerónimo Mendes
-    cargo: 
-    imagem: 99086.png
-  - nome: João Palma
-    cargo: 
-    imagem: 81212.png
-  - nome: João Mendes
-    cargo: 
-    imagem: 95804.png
-  - nome: João Rodrigues
-    cargo: 
-    imagem: 99968.png
-  - nome: João Silva
-    cargo: 
-    imagem: 92488.png
+    cargo: Presidente
+    #curso: 4º ano, MEFT
+    imagem: placeholder.png 
+  - nome: Gabriel Gabriel
+    cargo: Vice-Presidente
+    imagem: GabrielGabriel.jpeg
+  - nome: António Figueiras
+    cargo: Tesoureiro
+    #curso:
+    imagem: AntonioFigueiras.jpg
+  - nome: Filipe Piçarra
+    cargo: Co-Coordenador Lab e Cultura Hacker
+    #curso: 
+    imagem: FilipePicarra.jpg  
   - nome: José Lopes
-    cargo: 
-    imagem: 100336.png
-  - nome: José Pereira
-    cargo: 
-    imagem: 103252.png
-  - nome: Le Le Wang
-    cargo: 
-    imagem: 100213.jpg
-  - nome: Lúcia Gomes
-    cargo: 
-    imagem: 102183.png
-  - nome: Luís Barbosa
-    cargo: 
-    imagem: 102253.png
-  - nome: Manuel Palo
-    cargo: 
-    imagem: 93120.png
-  - nome: Manuel Soares
-    cargo: 
-    imagem: 96267.png
-  - nome: Margarida Oliveira
-    cargo: 
-    imagem: 96125.png
-  - nome: Mariana Rato
-    cargo: 
-    imagem: 96278.png
-  - nome: Matilde Augusto
-    cargo:
-    imagem: 103204.png
-  - nome: Miguel Dinis
-    imagem: 97101.png
-    cargo: 
+    cargo: Coordenador Dev
+    #curso: 
+    imagem: LopesBismuth.jpeg
+  - nome: João Rodrigues
+    cargo: Co-Coordenador Lab e Cultura Hacker
+    #curso:
+    imagem: JoaoRodrigues.jpg
   - nome: Miguel Lameiras
-    cargo: 
-    imagem: 100354.png
-  - nome: Nuno Abreu
-    cargo: 
-    imagem: 103416.png
-  - nome: Nuno Marques
-    cargo: 
-    imagem: 95758.png
-  - nome: Pedro Baptista
-    imagem: 96298.png
-    cargo: 
-  - nome: Pedro Direita
-    cargo: Honorable Alumni
-    imagem: 81305.png
-  - nome: Rafaela Rodrigues
-    cargo: 
-    imagem: 99312.png
-  - nome: Ricardo Antunes
-    cargo: 
-    imagem: 99316.png
-  - nome: Rita Gama
-    cargo: 
-    imagem: 99166.png
-  - nome: Rodrigo Francisco
-    cargo: 
-    imagem: 100073.png
-  - nome: Rui Abrantes
-    cargo: 
-    imagem:  93176.jpg
-  - nome: Sebastião Caldas
-    cargo:
-    imagem: 96321.png
-  - nome:  Tiago Almeida
-    cargo:
-    imagem: 96328.jpg
-  - nome: Tiago Carneiro
-    cargo:
-    imagem: 95849.png
-  - nome: Vasco Almeida
-    cargo:
-    imagem: 100373.png
-            
+    cargo: Coordenador RH
+    #curso: 
+    imagem: MiguelLameiras.jpg
+  - nome: Gonçalo Fecha
+    cargo: Coordenador Marketing
+    #curso:
+    imagem: GoncaloMartins.jpg
+  - nome: Miguel Cardoso
+    cargo: RH
+    #curso:
+    imagem: MiguelCardoso.jpg
+  - nome: Guilherme Freitas
+    cargo: RH
+    #curso:
+    imagem: 99949.png
+  - nome: André Santos
+    cargo: RH
+    #curso:
+    imagem: AndreSantos.jpg
+desenvolvimento:
+  - nome: José Lopes
+    cargo: Coordenador Dev
+    #curso: 
+    imagem: LopesBismuth.jpeg
+  - nome: Daniel Carvalho
+    cargo: Dev
+    #curso: 
+    imagem: DanielCarvalho.jpg
+  - nome: Diogo Neves
+    cargo: Dev
+    #curso: 3º ano, LEEC
+    imagem: DiogoNeves.jpg
+  - nome: Ricardo Pais
+    cargo: Dev
+    #curso: 
+    imagem: RicardoPais.jpg
+recursoshumanos:
+  - nome: Miguel Lameiras
+    cargo: Coordenador RH
+    #curso:
+    imagem: MiguelLameiras.jpg
+  - nome: Felipe Sancho
+    cargo: RH
+    #curso:
+    imagem: FelipeSancho.jpg
+  - nome: Catarina Silva
+    cargo: RH
+    #curso:
+    imagem: CatarinaSilva.jpg
+  - nome: Miguel Cardoso
+    cargo: RH
+    #curso:
+    imagem: MiguelCardoso.jpg
+  - nome: Guilherme Freitas
+    cargo: RH
+    #curso:
+    imagem: 99949.png
+  - nome: Gonçalo Azevedo
+    cargo: RH
+    #curso:
+    imagem: GoncaloAzevedo.jpg
+  - nome: João Gonçalves
+    cargo: RH
+    #curso:
+    imagem: JoaoGonçalves.jpg
+  - nome: André Santos
+    cargo: RH
+    #curso:
+    imagem: AndreSantos.jpg
+marketing:
+  - nome: Gonçalo Fecha
+    cargo: Coordenador Marketing
+    #curso: 
+    imagem: GoncaloMartins.jpg
+  - nome: Sara Pereira
+    cargo: Marketing
+    #curso: 
+    imagem: SaraPereira.jpg
+  - nome: Diana Albuquerque
+    cargo: Marketing
+    #curso:
+    imagem: DianaAlbuquerque.jpg
+  - nome: Pedro Nantes
+    cargo: Marketing
+    #curso:
+    imagem: PedroNantes.jpg
+laboratorio:
+  - nome: João Rodrigues
+    cargo: Co-Coordenador Lab e Cultura Hacker
+    #curso:
+    imagem: JoaoRodrigues.jpg
+  - nome: Filipe Piçarra
+    cargo: Co-Coordenador Lab e Cultura Hacker
+    #curso: 
+    imagem: FilipePicarra.jpg
+  - nome: Eduardo Faustino
+    cargo: Gestão Lab
+    #curso: 
+    imagem: EduardoFaustino.jpg
+membros:
+- nome: Afonso Freitas
+  cargo: 
+  #curso:
+  imagem: placeholder.png
+- nome: Alexandre Delgado
+  cargo: 
+  #curso:
+  imagem: placeholder.png
+- nome: André Cardoso
+  cargo: 
+  #curso:
+  imagem: AndreCardoso.jpg
+- nome: André Caseiro
+  cargo: 
+  #curso:
+  imagem: placeholder.png
+- nome: André Santos
+  cargo: RH
+  #curso:
+  imagem: AndreSantos.jpg
+- nome: António Figueiras
+  cargo: Tesoureiro
+  #curso:
+  imagem: AntonioFigueiras.jpg
+- nome: Armando Gonçalves
+  cargo: Presidente
+  #curso:
+  imagem: placeholder.png
+- nome: Catarina Silva
+  cargo: RH
+  #curso:
+  imagem: CatarinaSilva.jpg
+- nome: Daniel Carvalho
+  cargo: Dev
+  #curso:
+  imagem: DanielCarvalho.jpg
+- nome: Diogo Correia
+  cargo: 
+  #curso:
+  imagem: 99211.jpg
+- nome: Daniela Cardoso
+  cargo:
+  #curso:
+  imagem: 96517.png
+- nome: Diogo Neves
+  cargo: Dev
+  #curso:
+  imagem: DiogoNeves.jpg
+- nome: Diana Albuquerque
+  cargo: Marketing
+  #curso:
+  imagem: DianaAlbuquerque.jpg
+- nome: Eduardo Faustino
+  cargo: Gestão Lab
+  #curso:
+  imagem: EduardoFaustino.jpg
+- nome: Felipe Sancho
+  cargo: RH
+  #curso:
+  imagem: FelipeSancho.jpg
+- nome: Filipe Piçarra
+  cargo: Co-Coordenador Lab e Cultura Hacker
+  #curso:
+  imagem: FilipePicarra.jpg
+- nome: Filipe Varela
+  cargo: 
+  #curso:
+  imagem: 92459.png
+- nome: Francisco Laranjo
+  cargo: 
+  #curso:
+  imagem: placeholder.png
+- nome: Gabriel Gabriel
+  cargo: Vice-Presidente
+  #curso:
+  imagem: GabrielGabriel.jpeg
+- nome: Gonçalo Azevedo
+  cargo: RH
+  #curso:
+  imagem: GoncaloAzevedo.jpg
+- nome: Gonçalo Fecha
+  cargo: Coordenador Marketing
+  #curso:
+  imagem: GoncaloMartins.jpg
+- nome: Guilherme Freitas
+  cargo: RH
+  #curso:
+  imagem: 99949.png
+- nome: Inês Martins
+  cargo: 
+  #curso:
+  imagem: InesMartins.jpeg
+- nome: João Gonçalves
+  cargo: RH
+  #curso:
+  imagem: JoaoGonçalves.jpg
+- nome: João Rodrigues
+  cargo: Co-Coordenador Lab e Cultura Hacker
+  #curso:
+  imagem: JoaoRodrigues.jpg
+- nome: José Lopes
+  cargo: Coordenador de Dev
+  #curso:
+  imagem: LopesBismuth.jpeg
+- nome: Martim Bento
+  cargo: 
+  #curso:
+  imagem: placeholder.png
+- nome: Miguel Cardoso
+  cargo: RH
+  #curso:
+  imagem: MiguelCardoso.jpg
+- nome: Miguel Lameiras
+  cargo: Coordenador RH
+  #curso:
+  imagem: MiguelLameiras.jpg
+- nome: Nuno Gonçalves
+  cargo: 
+  #curso:
+  imagem: placeholder.png
+- nome: Pedro Direita
+  cargo: Alumni
+  #curso:
+  imagem: pedroDireita.png
+- nome: Pedro Nantes
+  cargo: Marketing
+  #curso:
+  imagem: PedroNantes.jpg
+- nome: Rafael Garcia
+  cargo: 
+  #curso:
+  imagem: RafaelGarcia.jpg
+- nome: Ricardo Pais
+  cargo: Dev
+  #curso:
+  imagem: RicardoPais.jpg
+- nome: Sara Pereira
+  cargo: Marketing
+  #curso:
+  imagem: SaraPereira.jpg
+- nome: Tomás Fachada
+  cargo: 
+  #curso:
+  imagem: TomasFachada.jpg

@@ -1,232 +1,153 @@
 {{ partial "head.html" . }}
-<!--
-<?php
-$servername = "g02076_membros";
-$username = "g02076_membros";
-$password = "hackerschool";
 
-
-echo "test"
-// Create connection
-$conn = new mysqli($servername, $username, $password);
-
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
-echo "Connected successfully";
-?>
--->
 {{ "<!-- navigation -->" | safeHTML }}
+
 <header class="shadow-bottom sticky-top bg-gray">
-  <div class="container">
-    {{ partial "navigation.html" . }}
-  </div>
+    <div class="container">
+        {{ partial "navigation.html" . }}
+    </div>
 </header>
 {{ "<!-- /navigation -->" | safeHTML }}
 
 {{ "<!-- header -->" | safeHTML }}
-<div class="carouselContainer">
-  <a id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" href='{{ "recrutamento" | absURL }}'>
-    <ol class="carousel-indicators">
-    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-    {{ range $index, $element := after 1 .Site.Params.carouselImagens }}
-    <li data-target="#carouselExampleIndicators" data-slide-to="{{ add $index 1 }}"></li>
-    {{ end }}
-    </ol>
-    <div class="carousel-inner carousel-inner-home">
-    {{ with (index $.Site.Params.carouselImagens 0) }}
-    <div class="carousel-item active">
-      <img class="d-block w-100" src="{{ . | absURL }}" alt="First slide">
+
+
+<link rel="stylesheet" href="{{ "css/matrixstyles.css" | relURL }}">
+
+<div id="overlay"></div>
+
+<div class="content" style="min-height: 100vh">
+    <p id="type-js"></p> 
+    <div id="hidden-content"> 
+        <img id="logo" style="width: 5em !important" src="/HS_NOVO.svg">
     </div>
-    {{ end }}
-    {{ range after 1 .Site.Params.carouselImagens }}
-    <div class="carousel-item">
-      <img class="d-block w-100" src="{{ . | absURL }}">
-    </div>
-    {{ end }}
-    </div>
-  </a> 
-  <!--
-	<div style="position: absolute; top:0px; width:100%; height:100%;">
-  -->
-			<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-				<span class="sr-only">Previous</span>
-			</a>
-			<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-				<span class="carousel-control-next-icon" aria-hidden="true"></span>
-				<span class="sr-only">Next</span>
-      </a>
-      <!--
-		<div style="position: absolute; top:25%; height: 75%; width:100%; text-align: center;">
-			{{ with .Site.Params.banner.title }} <h2 id="bannerTitle" class="disapearWhenSmall text-white mb-3">{{ . }}</h2> {{ end }}
-      {{ with .Site.Params.banner.description | safeHTML }} <p class="disapearWhenSmall text-white mb-4">{{ . }}</p> {{ end }}
-      <br>
-      <div style="position: absolute; bottom: 20%; width:100%; ">
-        {{ if .Site.Params.recruitmentTime }}
-          <a href='{{ "recrutamento" | absURL }}' class="btn btn-primary">Recrutamento 2020/2021 </a>
-        {{ end }}
-      </div>
-    </div>
-  -->
-  <!--
-  </div>
--->
 </div>
-{{ "<!-- /header -->" | safeHTML }}
 
-<section class="section sec-membros fs-large pb-4">
-  <div style="display: flex; margin: auto">
-    {{ if .Site.Params.recruitmentTime }}
-      <a href='{{ "recrutamento" | absURL }}' class="btn btn-primary m-auto"> Vê a nossa página de recrutamento aqui! </a>
-    {{ end }}
-  </div>
-</section>
-
-{{ "<!-- sobre -->" | safeHTML }}
-<section class="section sec-projetos fs-large">
-  <div class="container">
-      <div class="row justify-content-center">
-          <div class="col-12 text-center">
-            <h1 class="section-title">A HackerSchool</h1>
-            <p style="color:white; margin-bottom: 40px">
-              Desde 2012, a HackerSchool foca-se na criação de projetos nas mais diversas áreas da tecnologia, incentivando os seus membros a aprender e a colocar em prática o seu conhecimento em situações reais.
-              <br> Acreditamos num ambiente multidisciplinar e acessível para qualquer aluno, com ou sem bases, acompanhando o seu processo de aprendizagem, seguindo o ideal learn by doing e partilhando conhecimentos através de Workshops e dos nossos projetos já desenvolvidos ou em desenvolvimento.
-
-            </p>
-            <a  href='{{ "membros" | absURL }}' class="btn btn-primary" style="margin-bottom: 40px;">Vê aqui os nossos membros! </a>
-          </div>
-      </div>
-  </div>
-</section>
-{{ "<!-- /sobre -->" | safeHTML }}
-
-
-{{ "<!-- projetos -->" | safeHTML }}
-<section class="section sec-about sec-membros shadow">
-  <div class="container">
-    <div class="col-12 text-center">
-      <h2 class="section-title">Projeto do mês</h2>
-      <h3> O projeto com mais progresso e com melhores resultados deste mês</h3>
-    </div>
-    <div class="row justify-content-center">
-        <!--
-        {{ range where .Pages "Type" "projetos" }}
-        {{ range .Pages}}          
-        {{ if .Params.destacado }}
-        {{ "<!-- projeto --><!--" | safeHTML }}
-        <div class="col-lg-6 col-sm-6 mb-4">
-            <div class="px-4 py-2 bg-gray dynamicThingy text-center d-block">
-              <i class="{{ .Params.Icon }} icon text-dark d-block mb-4"></i>
-              <h3 class="mb-3">{{ .Title }}</h3>
-              <div class="projeto-foto"><img src="{{ .Params.Photo | absURL }}" /></div>
-              <p style="color:white;" class="mb-0">{{ .Description }}</p>
-            </div>
-          </div>
-        {{ "<!-- /projeto --><!--" | safeHTML }}
-        {{ end }}
-        {{ end }}
-        {{ end }}
-        -->
-      <div class="row justify-content-center pbottom-20 projectsWrapper">{{ range where .Pages "Type" "projetos" }}
-        {{ range where .Pages "Type" "currentProject" }}          
-        {{ if .Params.projectOfTheMonth }}
-        {{ "<!-- projeto -->" | safeHTML }}
-        <div class="col-lg-6 col-sm-12 col-xs-12 mb-4 fader fader-fadeInUp projectWrapper">
-          <div class="px-4 py-2 bg-gray dynamicThingy text-center d-block">
-            <div>
-              <i class="{{ .Params.Icon }} icon text-dark d-block mb-4"></i>
-              <h3 class="mb-3">{{ .Title }}</h3>
-              <div class="projeto-foto"><img src="/images/projetos/{{ .Params.Photo }}" /></div>
-            </div>
-            <p style="color:white;" class="mb-0">{{ .Description }}</p>
-            <div class="col-xs-12 projectMembersContainer">
-              {{ range .Params.teamPhotos }}
-                  <img class="projectMembersPhoto" src="/images/membros/{{.}}">
-              {{ end }}
-            </div>
-          </div>
+<noscript>
+    <div class="content" style="min-height: 20vh">
+        <div id="hidden-content" style="display: flex"> 
+            <img id="logo" style="width: 5em !important" src="/HS_NOVO.svg">
         </div>
-        {{ "<!-- /projeto -->" | safeHTML }}
-        {{ end }}
-        {{ end }}
-        {{ end }}
-      </div>
-      <br>
-  </div>
-</section>
-{{ "<!-- /projetos -->" | safeHTML }}
-
-
-{{ "<!-- projetos -->" | safeHTML }}
-<section class="section sec-about sec-membros shadow">
-  <div class="container">
-    <div class="col-12 text-center">
-      <h2 class="section-title">Outros Projetos</h2>
     </div>
-    <div class="row justify-content-center">
-        <!--
-        {{ range where .Pages "Type" "projetos" }}
-        {{ range .Pages}}          
-        {{ if .Params.destacado }}
-        {{ "<!-- projeto --><!--" | safeHTML }}
-        <div class="col-lg-6 col-sm-6 mb-4">
-            <div class="px-4 py-2 bg-gray dynamicThingy text-center d-block">
-              <i class="{{ .Params.Icon }} icon text-dark d-block mb-4"></i>
-              <h3 class="mb-3">{{ .Title }}</h3>
-              <div class="projeto-foto"><img src="{{ .Params.Photo | absURL }}" /></div>
-              <p style="color:white;" class="mb-0">{{ .Description }}</p>
-            </div>
-          </div>
-        {{ "<!-- /projeto --><!--" | safeHTML }}
-        {{ end }}
-        {{ end }}
-        {{ end }}
-        -->
-      <div class="row justify-content-center pbottom-20 projectsWrapper">{{ range where .Pages "Type" "projetos" }}
-        {{ range where .Pages "Type" "currentProject" }}          
-        {{ if and (.Params.destacado) (not .Params.projectOfTheMonth)}}
-        {{ "<!-- projeto -->" | safeHTML }}
-        <div class="col-lg-6 col-sm-12 col-xs-12 mb-4 fader fader-fadeInUp projectWrapper">
-          <div class="px-4 py-2 bg-gray dynamicThingy text-center d-block">
-            <div>
-              <i class="{{ .Params.Icon }} icon text-dark d-block mb-4"></i>
-              <h3 class="mb-3">{{ .Title }}</h3>
-              <div class="projeto-foto"><img src="/images/projetos/{{ .Params.Photo }}" /></div>
-            </div>
-            <p style="color:white;" class="mb-0">{{ .Description }}</p>
-            <div class="col-xs-12 projectMembersContainer">
-              {{ range .Params.teamPhotos }}
-                  <img class="projectMembersPhoto" src="/images/membros/{{.}}">
-              {{ end }}
-            </div>
-          </div>
+</noscript>
+
+
+<section id="home-content" style="padding-bottom: 48px;" class="single fader-alternate">
+    <!--   <h1 class="responsiveHeaderText" style="color:white; text-align: center;height: 200px;background-color: var(--primary-color);vertical-align: middle;text-align: center;vertical-align: middle;line-height: 200px;">Sobre nós</h1> 
+-->  
+    <div class="container pt-4 aboutUsContainer">
+        <div class="dynamicThingy">
+            <h2>A HackerSchool</h2>
+            <p style="color: white;">
+                Desde 2012, a HackerSchool foca-se na criação de projetos nas mais diversas áreas da tecnologia, incentivando os seus membros a aprender e a colocar em prática o seu conhecimento em situações reais.</p>
+            <!-- Is this really relevant in the first page? <p style="color: white;">
+                Acreditamos num ambiente multidisciplinar e acessível para qualquer aluno, com ou sem bases, 
+                acompanhando o seu processo de aprendizagem, seguindo o ideal learn by doing e partilhando conhecimentos
+                 através de Workshops e dos nossos projetos já desenvolvidos ou em desenvolvimento.     </p> -->
         </div>
-        {{ "<!-- /projeto -->" | safeHTML }}
-        {{ end }}
-        {{ end }}
-        {{ end }}
-      </div>
-      <div style="text-align: center; padding-bottom: 20px;">
-        <a href='{{ "projetos" | absURL }}' class="btn btn-primary"> Vê mais dos nossos projetos! </a>
-      </div>
-      <br>
-  </div>
+    </div>
+
+    <!--  <div class="container pt-4 aboutUsContainer"> -->
+    <!--     <div class="dynamicThingy"> -->
+    <!--         <h2>Os nossos projetos</h2> -->
+    <!--         <h3>- HackNights</h3> -->
+    <!--         <div class="home-content-tab"> -->
+    <!--             <div class="home-content-tab-text"> -->
+    <!--                  -->
+    <!--             <p style="color: white"> -->
+    <!--                     Junta-te a nós na próxima HackNight, sempre na terceira quinta-feira de todos os meses!</p> -->
+    <!---->
+    <!--             <p style="color: white"> -->
+    <!--                 Uma noite de convívio e jantar entre os membros da HackerSchool, aberta ao público, onde se discutem atividades e projetos que têm sido desenvolvidos, bem como planos futuros. Depois do jantar costuma haver espaço para conceção de projetos temáticos de curta duração. -->
+    <!--             </p> -->
+    <!--             </div> -->
+    <!--             <img src="/images/home/pizza_tecnico.jpg" alt="Hackers com pizzas junto ao logo do Técnico, na Alameda."> -->
+    <!--         </div> -->
+    <!--     </div> -->
+    <!-- </div> -->
+
+    <div class="container pt-4 aboutUsContainer">
+        <div class="dynamicThingy">
+            <h2>Próximos Eventos</h2>
+            <h3>- HackNights</h3>
+            <div class="home-content-tab">
+                <div class="home-content-tab-text">
+
+                    <p style="color: white">
+                        Junta-te a nós na próxima HackNight, sempre na terceira quinta-feira de todos os meses!</p>
+
+                    <p style="color: white">
+                        Uma noite de convívio e jantar entre os membros da HackerSchool, aberta ao público, 
+                        onde se discutem atividades e projetos que têm sido desenvolvidos, bem como planos futuros. 
+                        Depois do jantar costuma haver espaço para a conceção de projetos temáticos de curta duração.
+                    </p>
+                </div>
+                <img src="/images/home/pizza_tecnico.jpg" alt="Hackers com pizzas junto ao logo do Técnico, na Alameda.">
+            </div>
+            <h3>- Workshops</h3>
+            <div class="home-content-tab">
+                <div class="home-content-tab-text">
+
+                    <p style="color: white">
+                        [Mais informações brevemente.]
+
+                    <p style="color: white">
+                        Um evento que oferece formação básica sobre um tema específico e disponibiliza ferramentas para que os participantes apliquem os conhecimentos adquiridos na concretização das suas ideias, resultando num protótipo final que reflete o que foi aprendido.
+
+                    </p>
+                </div>
+                <img src="/images/home/workshops.webp" alt="WorkShop HackerSchool">
+            </div>
+
+
+        </div>
+    </div>
+    <div class="container pt-4 aboutUsContainer">
+        <div class="dynamicThingy">
+            <h2>Contacta-nos</h2>
+            <div class="home-content-tab">
+                <div class="home-content-tab-text">
+
+                    <p style="color: white">
+                        Envia-nos um email para <a href="mailto:hackerschool@tecnico.ulisboa.pt">hackerschool@tecnico.ulisboa.pt</a>
+                    </p>
+
+                    <p style="color: white">
+                        Segue-nos também nas nossas redes socias!
+                    </p>
+                    <p>
+                        <ul class="list-inline" style="padding: 2em; display: flex; justify-content: center; list-style: none;">
+                            {{ range .Site.Params.socialIcon }}
+                            <li class="list-inline-item mb-0"><a class="text-color d-inline-block p-2" href="{{ .URL | absURL}}"><i style="font-size: 2.5em;" class="{{ .icon }}"></i></a></li>
+                            {{ end }}
+                        </ul>
+                <p>
+
+            </div>
+            <img src="/images/home/marcelo.webp" alt="Armando e Marcelo tocando no Midi">
+        </div>
+    </div>
+    </div>
+
+
 </section>
-{{ "<!-- /projetos -->" | safeHTML }}
+
+<canvas id="matrixCanvas"></canvas>
+<script src="{{ "js/scripttext.js" | relURL }}"></script>
+<script src="{{ "js/scriptmatrix.js" | relURL }}"></script>
+
 
 {{ "<!-- contactos -->" | safeHTML }}
-<section class="section fs-large sec-projetos">
-  <div class="container">
-      <div class="row justify-content-center">
-          <div class="col-12 text-center">
-            <h2 class="section-title">Contacta-nos</h2>
-            <p style="color:white;">Envia-nos um email para: hackerschool@tecnico.ulisboa.pt</p>
-          </div>
-      </div>
-  </div>
-</section>
+<!-- <section class="section fs-large sec-projetos">
+<div class="container">
+<div class="row justify-content-center">
+<div class="col-12 text-center">
+<h2 class="section-title">Contacta-nos</h2>
+<p style="color:white;">Envia-nos um email para: hackerschool@tecnico.ulisboa.pt</p>
+</div>
+</div>
+</div>
+</section> -->
 {{ "<!-- /contactos -->" | safeHTML }}
 
 {{ partial "footer.html" . }}
