@@ -81,5 +81,21 @@ document.addEventListener("DOMContentLoaded", function () {
     // Listen for scroll and wheel events
     // window.addEventListener('scroll', enableSpeedUp);
     window.addEventListener('wheel', enableSpeedUp);
+
+    // Detect touch events on mobile
+    let touchStartY = 0;
+
+    window.addEventListener('touchstart', (event) => {
+        touchStartY = event.touches[0].clientY; // Record the initial Y position
+    });
+
+    window.addEventListener('touchmove', (event) => {
+        const touchEndY = event.touches[0].clientY;
+
+        if (Math.abs(touchStartY - touchEndY) > 20) { // Check if a swipe movement is detected
+            enableSpeedUp();
+        }
+    });
+
 });
 
