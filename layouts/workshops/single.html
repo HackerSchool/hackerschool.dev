@@ -1,0 +1,29 @@
+{{ partial "head.html" . }}
+
+{{ "<!-- navigation -->" | safeHTML }}
+<header class="shadow-bottom sticky-top bg-gray">
+  <div class="container">
+    {{ partial "navigation.html" . }}
+  </div>
+</header>
+{{ "<!-- /navigation -->" | safeHTML }}
+<!-- details page -->
+
+<div id="overlay"></div>
+<canvas id="matrixCanvas"></canvas>
+<script src="{{ "js/scriptmatrix.js" | relURL }}"></script>
+
+<section style="text-align: left;min-height: 100%;/* equal to footer height */ " class="single sec-membros fader-alternate">
+
+	<div style="background-color: 0xfff">
+		<!--padding 100px-->
+		<div class="container pt-4" style="background-color: 0xfff">
+            {{ .Content }}
+		</div>
+
+		
+  </div>
+</section>
+
+{{ partial "footer.html" . }}
+

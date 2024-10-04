@@ -1,0 +1,27 @@
+{{ partial "head.html" . }}
+
+{{ "<!-- navigation -->" | safeHTML }}
+<header class="shadow-bottom sticky-top bg-gray">
+  <div class="container">
+    {{ partial "navigation.html" . }}
+  </div>
+</header>
+{{ "<!-- /navigation -->" | safeHTML }}
+<!-- details page -->
+<section style="text-align: left;min-height: 100%;/* equal to footer height */ " class="single sec-membros fader-alternate">
+
+	<div style="background-color: 0xfff">
+		<!--padding 100px-->
+		<div class="container pt-4" style="background-color: 0xfff">
+			<a href="/hackercultura/textos">
+				<section  class="dynamicThingy fader">
+					<h1>Textos</h1>
+				</section>
+			</a>
+		</div>
+
+		
+  </div>
+</section>
+
+{{ partial "footer.html" . }}
