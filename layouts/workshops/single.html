@@ -2,9 +2,9 @@
 
 {{ "<!-- navigation -->" | safeHTML }}
 <header class="shadow-bottom sticky-top bg-gray">
-  <div class="container">
-    {{ partial "navigation.html" . }}
-  </div>
+    <div class="container">
+        {{ partial "navigation.html" . }}
+    </div>
 </header>
 {{ "<!-- /navigation -->" | safeHTML }}
 <!-- details page -->
@@ -13,17 +13,15 @@
 <canvas id="matrixCanvas"></canvas>
 <script src="{{ "js/scriptmatrix.js" | relURL }}"></script>
 
-<section style="text-align: left;min-height: 100%;/* equal to footer height */ " class="single sec-membros fader-alternate">
+    <div class="container pt-6 aboutUsContainer">
 
-	<div style="background-color: 0xfff">
-		<!--padding 100px-->
-		<div class="container pt-4" style="background-color: 0xfff">
-            {{ .Content }}
-		</div>
-
-		
-  </div>
-</section>
+        <div style="color: white">
+        <!-- {{ .TableOfContents }} -->
+            {{ $paragraphs := split .Content "<h2 " }}{{ range $index, $p := $paragraphs }}{{ $pp := trim $p " \n" }}{{ if (eq $index 0) }}{{ printf "%s\n" $pp | safeHTML }}{{ end }}{{ if and (ne $pp "") (gt $index 0) }}    <div class="dynamicThingy">
+                {{ printf "<h2 %s\n" $pp | safeHTML }}
+        </div>{{ end }}{{end}}
+</div>
+</div>
 
 {{ partial "footer.html" . }}
 

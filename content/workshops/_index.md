@@ -6,4 +6,4 @@ draft: false
 
 # Próximos Workshops
 
-Bem vindo à nossa página de Workshops! Aqui podes encontrar mais informação sobre todos os Workshops que realizamos.
+Bem vindo à nossa página de Workshops! Aqui podes encontrar mais informação sobre todos os nossos Workshops.
