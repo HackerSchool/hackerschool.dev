@@ -13,13 +13,17 @@
 <canvas id="matrixCanvas"></canvas>
 <script src="{{ "js/scriptmatrix.js" | relURL }}"></script>
 
-    <div class="container pt-6 aboutUsContainer">
+<div class="container pt-6 aboutUsContainer">
 
-        <div style="color: white">
+    <div style="color: white">
         <!-- {{ .TableOfContents }} -->
-            {{ $paragraphs := split .Content "<h2 " }}{{ range $index, $p := $paragraphs }}{{ $pp := trim $p " \n" }}{{ if (eq $index 0) }}{{ printf "%s\n" $pp | safeHTML }}{{ end }}{{ if and (ne $pp "") (gt $index 0) }}    <div class="dynamicThingy">
-                {{ printf "<h2 %s\n" $pp | safeHTML }}
-        </div>{{ end }}{{end}}
+        {{ $content := .Content }}  <!-- Get the page content -->
+
+        <!-- First, process the <h2> headings -->
+        {{ $content = partial "wrapHeading.html" (dict "content" $content "headingLevel" "h2" "divClass" "dynamicThingy") }}
+
+        <!-- Output the final processed content -->
+        {{ $content | safeHTML }}
 </div>
 </div>
 

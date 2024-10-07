@@ -1,0 +1,21 @@
+{{ $content := .content }}            <!-- The content to process -->
+{{ $headingLevel := .headingLevel }}  <!-- The heading level to search for (e.g., "h2") -->
+{{ $divClass := .divClass }}          <!-- The class to apply to the wrapping div -->
+
+{{ $splitTag := printf "<%s " $headingLevel }}  <!-- Create the opening tag based on the heading level -->
+{{ $paragraphs := split $content $splitTag }}
+
+{{ $result := "" }}  <!-- Initialize an empty string to accumulate the result -->
+
+{{ range $index, $p := $paragraphs }}
+  {{ $pp := trim $p " \n" }}
+  {{ if eq $index 0 }}
+    {{ $result = printf "%s\n%s" $result $pp }}  <!-- Append the first part as-is -->
+  {{ else if (ne $pp "") }}
+    {{ $wrapped := printf "<div class=\"%s\"><%s %s\n</div>" $divClass $headingLevel $pp }}
+    {{ $result = printf "%s\n%s" $result $wrapped }}  <!-- Append the wrapped heading -->
+  {{ end }}
+{{ end }}
+
+{{ return $result }}
+
