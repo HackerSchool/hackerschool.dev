@@ -1,37 +1,22 @@
 {{ partial "head.html" . }}
 
+{{ "<!-- navigation -->" | safeHTML }}
 <header class="shadow-bottom sticky-top bg-gray">
     <div class="container">
         {{ partial "navigation.html" . }}
     </div>
 </header>
-
-<canvas id="matrixCanvas"></canvas>
-<script src="{{ "js/scripttext.js" | relURL }}"></script>
-<script src="{{ "js/scriptmatrix.js" | relURL }}"></script>
-<link rel="stylesheet" href="{{ "css/matrixstyles.css" | relURL }}">
-<link rel="stylesheet" href="{{ "css/events.css" | relURL }}">
+{{ "<!-- /navigation -->" | safeHTML }}
+<!-- details page -->
 
 <div id="overlay"></div>
-
-<div class="content" style="min-height: 100vh">
-    <p id="type-js"></p> 
-    <div id="hidden-content"> 
-        <img id="logo" style="width: 5em !important" src="/HS_NOVO.svg">
-    </div>
-</div>
-
-<noscript>
-    <div class="content" style="min-height: 20vh">
-        <div id="hidden-content" style="display: flex"> 
-            <img id="logo" style="width: 5em !important" src="/HS_NOVO.svg">
-        </div>
-    </div>
-</noscript>
+<canvas id="matrixCanvas"></canvas>
+<script src="{{ "js/scriptmatrix.js" | relURL }}"></script>
 
 <div class="container pt-6 aboutUsContainer">
 
     <div style="color: white">
+        <!-- {{ .TableOfContents }} -->
         {{ $content := .Content }}  <!-- Get the page content -->
 
         <!-- First, process the <h2> headings -->
@@ -39,10 +24,8 @@
 
         <!-- Output the final processed content -->
         {{ $content | safeHTML }}
-
-    </div>
+</div>
 </div>
 
-
-
 {{ partial "footer.html" . }}
+

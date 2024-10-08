@@ -1,0 +1,42 @@
+.event-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  border: 1px solid var(--text-color-dark);
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+  background-color: var(--secondary-color);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10%;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+.card h3 {
+  margin-top: 10px;
+}
+
+.card p {
+  margin: 10px 0;
+  max-height: 5em;  
+  overflow-y: auto;
+}
+
+.card .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  text-decoration: none;
+  margin-top: auto;
+}
+
