@@ -1,0 +1,12 @@
+<div class="event-cards">
+  <!-- Loop through all markdown files and filter by event: true -->
+  {{ range where .Site.Pages "Params.event" true }}
+    <div class="card">
+      <img src="{{ .Params.image }}" alt="{{ .Title }}" />
+      <h3>{{ .Title }}</h3>
+      <p>{{ .Params.description }}</p>
+      <a href="{{ .Permalink }}" class="btn btn-primary">Saber Mais</a>
+    </div>
+  {{ end }}
+</div>
+

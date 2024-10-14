@@ -1,18 +1,16 @@
 {{ partial "head.html" . }}
 
-{{ "<!-- navigation -->" | safeHTML }}
-
 <header class="shadow-bottom sticky-top bg-gray">
     <div class="container">
         {{ partial "navigation.html" . }}
     </div>
 </header>
-{{ "<!-- /navigation -->" | safeHTML }}
 
-{{ "<!-- header -->" | safeHTML }}
-
-
+<canvas id="matrixCanvas"></canvas>
+<script src="{{ "js/scripttext.js" | relURL }}"></script>
+<script src="{{ "js/scriptmatrix.js" | relURL }}"></script>
 <link rel="stylesheet" href="{{ "css/matrixstyles.css" | relURL }}">
+<link rel="stylesheet" href="{{ "css/events.css" | relURL }}">
 
 <div id="overlay"></div>
 
@@ -31,123 +29,20 @@
     </div>
 </noscript>
 
+<div class="container pt-6 aboutUsContainer">
 
-<section id="home-content" style="padding-bottom: 48px;" class="single fader-alternate">
-    <!--   <h1 class="responsiveHeaderText" style="color:white; text-align: center;height: 200px;background-color: var(--primary-color);vertical-align: middle;text-align: center;vertical-align: middle;line-height: 200px;">Sobre nós</h1> 
--->  
-    <div class="container pt-4 aboutUsContainer">
-        <div class="dynamicThingy">
-            <h2>A HackerSchool</h2>
-            <p style="color: white;">
-                Desde 2012, a HackerSchool foca-se na criação de projetos nas mais diversas áreas da tecnologia, incentivando os seus membros a aprender e a colocar em prática o seu conhecimento em situações reais.</p>
-            <!-- Is this really relevant in the first page? <p style="color: white;">
-                Acreditamos num ambiente multidisciplinar e acessível para qualquer aluno, com ou sem bases, 
-                acompanhando o seu processo de aprendizagem, seguindo o ideal learn by doing e partilhando conhecimentos
-                 através de Workshops e dos nossos projetos já desenvolvidos ou em desenvolvimento.     </p> -->
-        </div>
+    <div style="color: white">
+        {{ $content := .Content }}  <!-- Get the page content -->
+
+        <!-- First, process the <h2> headings -->
+        {{ $content = partial "wrapHeading.html" (dict "content" $content "headingLevel" "h2" "divClass" "dynamicThingy") }}
+
+        <!-- Output the final processed content -->
+        {{ $content | safeHTML }}
+
     </div>
-
-    <!--  <div class="container pt-4 aboutUsContainer"> -->
-    <!--     <div class="dynamicThingy"> -->
-    <!--         <h2>Os nossos projetos</h2> -->
-    <!--         <h3>- HackNights</h3> -->
-    <!--         <div class="home-content-tab"> -->
-    <!--             <div class="home-content-tab-text"> -->
-    <!--                  -->
-    <!--             <p style="color: white"> -->
-    <!--                     Junta-te a nós na próxima HackNight, sempre na terceira quinta-feira de todos os meses!</p> -->
-    <!---->
-    <!--             <p style="color: white"> -->
-    <!--                 Uma noite de convívio e jantar entre os membros da HackerSchool, aberta ao público, onde se discutem atividades e projetos que têm sido desenvolvidos, bem como planos futuros. Depois do jantar costuma haver espaço para conceção de projetos temáticos de curta duração. -->
-    <!--             </p> -->
-    <!--             </div> -->
-    <!--             <img src="/images/home/pizza_tecnico.jpg" alt="Hackers com pizzas junto ao logo do Técnico, na Alameda."> -->
-    <!--         </div> -->
-    <!--     </div> -->
-    <!-- </div> -->
-
-    <div class="container pt-4 aboutUsContainer">
-        <div class="dynamicThingy">
-            <h2>Próximos Eventos</h2>
-            <h3>- HackNights</h3>
-            <div class="home-content-tab">
-                <div class="home-content-tab-text">
-
-                    <p style="color: white">
-                        Junta-te a nós na próxima HackNight, sempre na terceira quinta-feira de todos os meses!</p>
-
-                    <p style="color: white">
-                        Uma noite de convívio e jantar entre os membros da HackerSchool, aberta ao público, 
-                        onde se discutem atividades e projetos que têm sido desenvolvidos, bem como planos futuros. 
-                        Depois do jantar costuma haver espaço para a conceção de projetos temáticos de curta duração.
-                    </p>
-                </div>
-                <img src="/images/home/pizza_tecnico.jpg" alt="Hackers com pizzas junto ao logo do Técnico, na Alameda.">
-            </div>
-            <h3>- Workshops</h3>
-            <div class="home-content-tab">
-                <div class="home-content-tab-text">
-
-                    <p style="color: white">
-                        [Mais informações brevemente.]
-
-                    <p style="color: white">
-                        Um evento que oferece formação básica sobre um tema específico e disponibiliza ferramentas para que os participantes apliquem os conhecimentos adquiridos na concretização das suas ideias, resultando num protótipo final que reflete o que foi aprendido.
-
-                    </p>
-                </div>
-                <img src="/images/home/workshops.webp" alt="WorkShop HackerSchool">
-            </div>
-
-
-        </div>
-    </div>
-    <div class="container pt-4 aboutUsContainer">
-        <div class="dynamicThingy">
-            <h2>Contacta-nos</h2>
-            <div class="home-content-tab">
-                <div class="home-content-tab-text">
-
-                    <p style="color: white">
-                        Envia-nos um email para <a href="mailto:hackerschool@tecnico.ulisboa.pt">hackerschool@tecnico.ulisboa.pt</a>
-                    </p>
-
-                    <p style="color: white">
-                        Segue-nos também nas nossas redes socias!
-                    </p>
-                    <p>
-                        <ul class="list-inline" style="padding: 2em; display: flex; justify-content: center; list-style: none;">
-                            {{ range .Site.Params.socialIcon }}
-                            <li class="list-inline-item mb-0"><a class="text-color d-inline-block p-2" href="{{ .URL | absURL}}"><i style="font-size: 2.5em;" class="{{ .icon }}"></i></a></li>
-                            {{ end }}
-                        </ul>
-                <p>
-
-            </div>
-            <img src="/images/home/marcelo.webp" alt="Armando e Marcelo tocando no Midi">
-        </div>
-    </div>
-    </div>
-
-
-</section>
-
-<canvas id="matrixCanvas"></canvas>
-<script src="{{ "js/scripttext.js" | relURL }}"></script>
-<script src="{{ "js/scriptmatrix.js" | relURL }}"></script>
-
-
-{{ "<!-- contactos -->" | safeHTML }}
-<!-- <section class="section fs-large sec-projetos">
-<div class="container">
-<div class="row justify-content-center">
-<div class="col-12 text-center">
-<h2 class="section-title">Contacta-nos</h2>
-<p style="color:white;">Envia-nos um email para: hackerschool@tecnico.ulisboa.pt</p>
 </div>
-</div>
-</div>
-</section> -->
-{{ "<!-- /contactos -->" | safeHTML }}
+
+
 
 {{ partial "footer.html" . }}

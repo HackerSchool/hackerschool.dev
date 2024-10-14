@@ -1,0 +1,4 @@
+events:
+  - "recrutamento"
+  - "workshops/_index"
+  - "hacknights/_index"

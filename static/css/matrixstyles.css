@@ -12,16 +12,18 @@ body {
 
 .home-content-tab-text {
     flex: 1;
+    max-width: 100%;
 }
 .home-content-tab-text p {
     flex: 1;                   /* Allow the paragraph to take up available space */
     margin: 0;                 /* Remove default margin */
+    text-wrap: 
 }
 
 .home-content-tab img {
-    max-width: 25em;          /* Limit the image's max width */
-    width: 100%;               /* Make the image responsive */
-    height: auto;              /* Maintain aspect ratio */
+    max-width: 100%;          /* Limit the image's max width */
+    width: auto;               /* Make the image responsive */
+    height: 100%;              /* Maintain aspect ratio */
     border-radius: 5%;        /* Optional: rounded corners for the image */
     object-fit: contain;       /* Ensure image fits nicely */
 }
@@ -79,32 +81,3 @@ body {
         opacity: 1;
     }
 }
-
-/* .line-1{ */
-/*     position: relative; */
-/*     top: 50%;   */
-/*     width: 24em; */
-/*     margin: 0 auto; */
-/*     border-right: 2px solid rgba(255,255,255,.75); */
-/*     font-size: 180%; */
-/*     text-align: center; */
-/*     white-space: nowrap; */
-/*     overflow: wrap; */
-/*     transform: translateY(-50%);     */
-/* } */
-/**/
-/**/
-/* /* Animation */ */
-/* .anim-typewriter{ */
-/*   animation: typewriter 4s steps(44) 1s 1 normal both, */
-/*              blinkTextCursor 500ms steps(44) infinite normal; */
-/* } */
-/* @keyframes typewriter{ */
-/*   from{width: 0;} */
-/*   to{width: 24em;} */
-/* } */
-/* @keyframes blinkTextCursor{ */
-/*   from{border-right-color: rgba(255,255,255,.75);} */
-/*   to{border-right-color: transparent;} */
-/* } */
-
