@@ -1,5 +1,5 @@
 ---
-title: "Home Page"
+title: "HackerSchool"
 date: 2024-10-04
 draft: false
 description: "Home Page for the Website"
@@ -18,9 +18,12 @@ Estes são os nossos próximos eventos.
 
 ## Contacta-nos
 
+{{< contacta-nos image="/images/home/marcelo.webp" >}}
+
 Envia-nos um email para [hackerschool@tecnico.ulisboa.pt](mailto:hackerschool@tecnico.ulisboa.pt)
 
-Segue-nos também nas nossas redes socias!
+Ou vem visitar o [nosso lab](https://maps.app.goo.gl/T966C9nUFxdraC9o7) no campus da Alameda!
 
-{{< socials >}}
-<!-- ![Armando e Marcelo a vibar um somo](/images/home/marcelo.webp)  -->
+
+{{< /contacta-nos >}}
+

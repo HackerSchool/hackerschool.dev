@@ -12,16 +12,18 @@ body {
 
 .home-content-tab-text {
     flex: 1;
+    max-width: 100%;
 }
 .home-content-tab-text p {
     flex: 1;                   /* Allow the paragraph to take up available space */
     margin: 0;                 /* Remove default margin */
+    text-wrap: 
 }
 
 .home-content-tab img {
-    max-width: 25em;          /* Limit the image's max width */
-    width: 100%;               /* Make the image responsive */
-    height: auto;              /* Maintain aspect ratio */
+    max-width: 100%;          /* Limit the image's max width */
+    width: auto;               /* Make the image responsive */
+    height: 100%;              /* Maintain aspect ratio */
     border-radius: 5%;        /* Optional: rounded corners for the image */
     object-fit: contain;       /* Ensure image fits nicely */
 }
