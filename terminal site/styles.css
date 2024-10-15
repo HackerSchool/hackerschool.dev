@@ -1,0 +1,18 @@
+canvas {
+    display: block;
+}
+
+body{
+    background-color: rgb(27, 27, 27);
+    overflow: hidden;
+}
+
+.terminal {
+    --color: #ffffff;
+    --size: 1.5;
+    --background: rgb(27, 27, 27);
+    overflow-y: auto;
+    height: calc(100vh - 20px);
+    margin: 0;
+}
+
