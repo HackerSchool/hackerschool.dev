@@ -16,6 +16,6 @@ equipa = ["Francisco Mendes",
 photo = "armhack.jpg"
 
 type = "projeto"
-layout = "projeto"
+layout = "projetos"
 +++
 

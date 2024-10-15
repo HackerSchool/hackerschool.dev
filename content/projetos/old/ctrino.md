@@ -13,5 +13,5 @@ equipa = ["Rodrigo Capeleiro", "Pedro Gomes", "Pedro Roque"]
 photo = "ctrino.png"
 
 type = "projeto" 
-layout = "projeto" 
+layout = "projetos" 
 +++

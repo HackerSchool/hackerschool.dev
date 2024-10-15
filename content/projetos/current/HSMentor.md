@@ -8,7 +8,7 @@ Destacado=false
 photo = "hsmentor.jpg" 
 
 type = "currentProject" 
-layout = "projeto" 
+layout = "projetos" 
 
 teamPhotos = ["InesMartins.jpeg", "FelipeSancho.jpg", "DanielCarvalho.jpg"] 
 +++

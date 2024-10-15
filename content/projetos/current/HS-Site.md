@@ -8,7 +8,13 @@ Destacado=false
 photo = "logoProject.png" 
 
 type = "currentProject" 
-layout = "projeto" 
+layout = "projetos" 
 
 teamPhotos = ["LopesBismuth.jpeg", "DanielCarvalho.jpg", "AndreSantos.jpg", "DiogoNeves.jpg"] 
 +++
+
+# HS-Site
+
+## Estão a olhar para ele ahahaha
+
+Este é o projeto do site da HackerSchool!

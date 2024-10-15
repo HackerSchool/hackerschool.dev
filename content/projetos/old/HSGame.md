@@ -8,7 +8,7 @@ Destacado=false
 photo = "hsgame.png" 
 
 type = "projeto" 
-layout = "projeto"
+layout = "projetos" 
 
 teamPhotos = ["96506.png","95778.png","92488.png","93120.png","96298.png","100073.png",] 
 +++

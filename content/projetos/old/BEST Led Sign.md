@@ -8,7 +8,7 @@ Destacado=true
 photo = "lst.png" 
 
 type = "projeto" 
-layout = "projeto" 
+layout = "projetos" 
 
 teamPhotos = ["joaoPalma.jpeg", "margaridaOliveira2.png" , "tiagoAlmeida.jpg" ] 
 +++

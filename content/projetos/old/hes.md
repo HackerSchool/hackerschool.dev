@@ -19,5 +19,5 @@ equipa = ["João Oliveira (Design e fabrico da caixa)",
 photo = "hes/hes.jpg"
 
 type = "projeto"
-layout = "projeto"
+layout = "projetos"
 +++

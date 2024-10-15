@@ -8,7 +8,7 @@ Destacado=true
 photo = "hsroboticarm.jpg" 
 
 type = "projeto" 
-layout = "projeto" 
+layout = "projetos" 
 
 
 teamPhotos = ["franciscoFonseca.png", "96278.png", "96321.png" ] 

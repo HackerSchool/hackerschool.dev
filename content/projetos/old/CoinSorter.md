@@ -8,7 +8,7 @@ Destacado=true
 photo = "coinsorter.png" 
 
 type = "projeto" 
-layout = "projeto" 
+layout = "projetos" 
 projectOfTheMonth = false
 
 teamPhotos = ["danielLeitao.png" ] 

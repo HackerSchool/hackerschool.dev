@@ -8,7 +8,7 @@ Destacado=true
 photo = "arquimedia.png" 
 
 type = "projeto" 
-layout = "projeto" 
+layout = "projetos" 
 projectOfTheMonth = false
 
 teamPhotos = ["99086.png", "97101.png", "103246.png", "99166.png", "103204.png", "96506.png", "95758.png"] 

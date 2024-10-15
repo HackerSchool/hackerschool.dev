@@ -8,7 +8,7 @@ Destacado=true
 photo = "flos3dprinter.jpg" 
 
 type = "currentProject" 
-layout = "projeto" 
+layout = "projetos" 
 projectOfTheMonth = false
 
 teamPhotos = ["JoaoRodrigues.jpg", "FilipePicarra.jpg"] 
