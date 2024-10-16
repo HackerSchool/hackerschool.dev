@@ -18,6 +18,6 @@ equipa = ["João Oliveira (Design e fabrico da caixa)",
     "Ricardo Amendoeira (Programação da driver e do micro-controlador)"]
 photo = "hes/hes.jpg"
 
-type = "projeto"
-layout = "projetos"
+status = "old"
+
 +++

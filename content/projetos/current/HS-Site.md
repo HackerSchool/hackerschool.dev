@@ -7,10 +7,8 @@ Destacado=false
 
 photo = "logoProject.png" 
 
-type = "currentProject" 
-layout = "projetos" 
-
 teamPhotos = ["LopesBismuth.jpeg", "DanielCarvalho.jpg", "AndreSantos.jpg", "DiogoNeves.jpg"] 
+status = "current"
 +++
 
 # HS-Site

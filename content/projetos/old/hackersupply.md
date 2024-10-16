@@ -14,8 +14,8 @@ equipa = [
     ]
 photo = "HackerSupply-653x450.jpg"
 
-type = "projeto"
-layout = "projetos"
+status = "old"
+
 
 +++
 

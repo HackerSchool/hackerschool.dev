@@ -7,8 +7,8 @@ Destacado=false
 
 photo = "HSApp-1.png" 
 
-type = "projeto" 
-layout = "projetos" 
+status = "old" 
+ 
 
 teamPhotos = ["FilipeVarela.png", "99211.jpg"] 
 +++

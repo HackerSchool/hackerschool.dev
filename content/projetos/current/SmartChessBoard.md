@@ -7,8 +7,7 @@ Destacado=false
 
 photo = "smartchessboard.jpg" 
 
-type = "currentProject" 
-layout = "projetos" 
 
 teamPhotos = ["GoncaloMartins.jpg", "DiogoNeves.jpg"] 
+status = "current"
 +++

@@ -7,8 +7,8 @@ Destacado=false
 
 photo = "hsInventory.png" 
 
-type = "projeto" 
-layout = "projetos" 
+status = "old" 
+ 
 projectOfTheMonth =false
 
 teamPhotos = ["diogoCorreia.jpg","diogoMatos.png","henriquePocinho.jpeg","danielLeitao.png" ] 

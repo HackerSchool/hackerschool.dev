@@ -7,8 +7,8 @@ Destacado=false
 
 photo = "midi.jpg" 
 
-type = "projeto" 
-layout = "projetos"
+status = "old" 
+
 
 teamPhotos = ["100290.png","99949.png", "100336.png", "102183.png"] 
 +++

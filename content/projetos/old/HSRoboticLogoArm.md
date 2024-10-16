@@ -7,8 +7,8 @@ Destacado=true
 
 photo = "hsroboticarm.jpg" 
 
-type = "projeto" 
-layout = "projetos" 
+status = "old" 
+ 
 
 
 teamPhotos = ["franciscoFonseca.png", "96278.png", "96321.png" ] 

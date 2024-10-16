@@ -7,8 +7,7 @@ Destacado=true
 
 photo = "coinsorter.png" 
 
-type = "projeto" 
-layout = "projetos" 
+status = "old"
 projectOfTheMonth = false
 
 teamPhotos = ["danielLeitao.png" ] 

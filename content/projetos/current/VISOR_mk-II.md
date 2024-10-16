@@ -7,7 +7,7 @@ Destacado=false
 
 photo = "visormkII.jpg" 
 
-
 status = "current"
+
 teamPhotos = ["JoaoRodrigues.jpg", "EduardoFaustino.jpg"] 
 +++

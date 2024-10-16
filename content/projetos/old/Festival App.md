@@ -7,8 +7,8 @@ Destacado=true
 
 photo = "logo_festival1_1.png" 
 
-type = "projeto" 
-layout = "projetos" 
+status = "old" 
+ 
 projectOfTheMonth = false
 
 teamPhotos = ["102574.png","95922.png","81212.png"] 

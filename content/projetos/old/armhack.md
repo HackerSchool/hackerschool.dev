@@ -15,7 +15,7 @@ equipa = ["Francisco Mendes",
     "André Cavalheiro"]
 photo = "armhack.jpg"
 
-type = "projeto"
-layout = "projetos"
+status = "old"
+
 +++
 

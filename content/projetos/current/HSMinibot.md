@@ -7,8 +7,7 @@ Destacado=false
 
 photo = "logoSquare.jpg" 
 
-type = "currentProject" 
-layout = "projetos" 
 
+status = "current"
 teamPhotos = ["FilipeVarela.png", "96517.png"] 
 +++
