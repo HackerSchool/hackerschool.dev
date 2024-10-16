@@ -115,18 +115,26 @@ ctx.shadowColor = '#3f3';
 
 var fileSystem = {
     '~': {
-        'freesoftware.txt': 'This is the content of text.txt\nLine 1\nLine 2\nLine 3',
+        'freesoftware.txt': 'Na década de 1960, um grupo de engenheiros e programadores, conhecidos como "hackers", convergiu em torno da ideia de que o compartilhamento de conhecimento e a colaboração eram essenciais para o avanço da tecnologia. Mas pode dizer-se que tudo começou quando Richard Stallman, um dos principais proponentes dessa cultura, lançou o livro "Free Software, Free Society", onde explora a importância do software livre não apenas como uma questão técnica, mas como um princípio ético que defende a liberdade e a autonomia do usuário. Neste contexto, Stallman argumenta que o software deve ser acessível a todos para que cada indivíduo possa não apenas usar, mas também estudar, modificar e distribuir programas, promovendo assim um ambiente de inovação e criatividade. A obra destaca como a cultura hacker, ao valorizar a cooperação e a troca de ideias, pode servir como um contrapeso às práticas monopolistas da indústria, garantindo que a tecnologia esteja a serviço da sociedade e não apenas de interesses comerciais.',
 
-        'hackerschool.txt': 'Tudo começou no tagus park',
+        'hackerschool.txt': 'Tudo começou no Taguspark, em 2012, quando um grupo de estudantes apaixonados por tecnologia decidiu criar um espaço onde pudessem dar vida às suas ideias mais inovadoras. A HackerSchool nasceu com a missão de promover a colaboração, a experimentação e a aprendizagem prática, inspirando-se na cultura hacker que valoriza a partilha de conhecimento e o desenvolvimento de soluções criativas para os desafios do mundo real. Aqui, estudantes de diversas áreas unem forças para construir projetos incríveis, desde a internet das coisas até à inteligência artificial, utilizando tecnologias de código aberto e materiais acessíveis. A HackerSchool é mais do que um clube de tecnologia: aqui impulsiona-se uma nova geração de criadores e inovadores.',
 
-        'cifra_vigenere.txt': "Skibidi",
+        'cifra_vigenere.txt': "mrgohfehyssorqaupwmjfq",
 
-        'pista.txt': "Página 73",
+        'pista.txt': "Página 133",
 
-        'enigma.txt': "Onde tudo começou, encontra a chave que procuras, rodeada, e encontrarás onde tudo começará para ti",
+        'enigma.txt': "Onde tudo começou, \nEncontra a chave que procuras, rodeada, \nE tudo começará para ti.",
 
         'xad0w.b1ts': {
-            'acontecimentos_suspeitos.txt': "O social voltou a aumentar os preços. Suspeitamos que os culpados sejam os XB",
+            'acontecimentos_suspeitos.txt': "Suspeita-se que a xad0w.b1ts esteja por trás de alguns acontecimentos dos últimos tempos, como:\n\n\n\
+\t- Aumento dos preços no Social\n\
+\t- Crise da habitação em Portugal\n\
+\t- A disciplina de cálculo III\n\
+\t- A francesinha do técnico\n\
+\t- As escadas rolantes do baixa-chiado não funcionarem\n\
+\t- A app da GIRA\n\
+\t- Os pombos do Arco do Cego\n\
+\t- As cadeiras dos anfiteatros do central\n",
         
             'fotos_suspeitos': {
                 'suspeito1.txt': suspeito1
@@ -250,9 +258,11 @@ $('#terminal').terminal(function (command) {
         this.echo('Comando não reconhecido.');
     }
 }, {
-    greetings: 'Muito bem, recruta. \n\
-Bem vindo à fase 2. isto é uma simulaçao de terminal bla bla usa o comando "ls" para veres os documentos presentes.\n\
-Usa e abusa do google, chatgpt e youtube caso nao saibas comandos de terminal\n',
+    greetings: 'Muito bem, recruta! Conseguiste desbloquear a fase 1. Assim damos-te as boas vindas ao início da jornada.\n\n\
+Para passares à próxima fase, tudo que precisas está nesta página, que é um emulador de terminal UNIX (um pouco limitado!). \n\
+Lembra-te que a internet e agora o chatgpt estão sempre prontos para te ajudar. \n\n\
+O ls é um comando que serve para mostrar que ficheiros e pastas estão num certo local do computador. \n\
+Assim, a primeira pista é de borla: experimenta escrever ls e apertar enter a ver o que acontece!\n',
     prompt: getPrompt,   
     name: 'HackerSchool',
     promptExit: false
