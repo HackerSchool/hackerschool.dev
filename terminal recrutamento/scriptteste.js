@@ -241,6 +241,7 @@ $('#terminal').terminal(function (command) {
     let cmd = command.split(' ');
     let arg1 = cmd[0];
     let arg2 = cmd[1] ? cmd[1] : "";
+    parsedPath = pathParser(arg2);
     
     if (arg1 === 'ls')
         this.echo(ls(arg2));
