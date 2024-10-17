@@ -71,6 +71,7 @@ var fileSystem = {
 
 let currentDir = fileSystem['~']; // Diretoria atual
 let currentPath = '~'; // Caminho atual
+let parsedPath = '~';
 
 
 function getPrompt() {
@@ -95,7 +96,7 @@ function getDirectory(path) {
 function ls(arg) {
     output = "";
     if (arg === '-a'){
-        for (const key of Object.keys(currentDir)){
+        for (const key of Object.keys(getDirectory(parsedPath))){
             if (typeof(currentDir[key]) !== 'string')
                 output += "[[;#3465A4;#6dba83;]" + key + "]    ";            
             else
@@ -103,7 +104,7 @@ function ls(arg) {
         }
     }
     else{
-        for (const key of Object.keys(currentDir)){
+        for (const key of Object.keys(getDirectory(parsedPath))){
             if (!key.startsWith('.')){
                 if (typeof(currentDir[key]) !== 'string'){
                     output += "[[;#3465A4;#6dba83;]" + key + "]    ";   
@@ -118,25 +119,13 @@ function ls(arg) {
 
 
 function cd(path) {
-    if (path === '..') {
-        // Subir um nível
-        let parts = currentPath.split('/').filter(p => p.length > 0);
-        if (parts.length > 0) {
-            parts.pop(); // Remover o último segmento
-            currentPath = parts.join('/');
-            if (currentPath === '') currentPath = '~';
-            currentDir = getDirectory(currentPath);
-        }
-    } else if (currentDir[path] && typeof(currentDir[path]) !== 'string') {
-        // Mudar para um subdiretório
-        currentDir = currentDir[path];
-        currentPath += '/' + path;
-    } else if (getDirectory(path) && typeof(getDirectory(path)) !== 'string'){
+    if (parsedPath === null) {
+        return "Diretório não encontrado";
+    } else {
+        path = parsedPath;
         currentDir = getDirectory(path);
         let parts = path.split('/').filter(p => p.length > 0);
         currentPath = parts.join('/');
-    } else {
-        return 'Diretório não encontrado';
     }
     if (currentPath === ''){
         currentPath = '~';
@@ -156,11 +145,39 @@ function cat(fileName) {
 }
 
 
+function pathParser(path) {
+    let parts = path.split('/').filter(p => p.length > 0);
+    // deixem-me em paz com o meu nome talvez mude depois
+    let parsedPath = [];
+    let dir = fileSystem; 
+    if (parts[0] !== '~')
+        parsedPath.push("~");
+    
+    for (let part of parts) {
+        if (part === '.')
+            continue;
+        else if (part === '..')
+            parsedPath.pop();
+        else
+            parsedPath.push(part);
+    }
+
+    for (let part of parsedPath) {
+        if (dir[part]) 
+            dir = dir[part];
+        else 
+            return null;
+    }
+    return parsedPath.join('/');
+}
+
+
 // Initialize the terminal
 $('#terminal').terminal(function (command) {
     let cmd = command.split(' ');
     let arg1 = cmd[0];
     let arg2 = cmd[1] ? cmd[1] : "";
+    parsedPath = pathParser(arg2);
     
     if (arg1 === 'ls')
         this.echo(ls(arg2));
