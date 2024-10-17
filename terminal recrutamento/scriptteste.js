@@ -136,7 +136,8 @@ var fileSystem = {
 
 
 let currentDir = fileSystem['~']; // Diretoria atual
-let currentPath = '~'; // Caminho atual
+let currentPath = '~'; // Caminho atual (só se usa no cd)
+let parsedPath = '~'; // É o caminho que uso nas outras funções
 
 
 function getPrompt() {
@@ -161,7 +162,7 @@ function getDirectory(path) {
 function ls(arg) {
     output = "";
     if (arg === '-a'){
-        for (const key of Object.keys(currentDir)){
+        for (const key of Object.keys(getDirectory(parsedPath))){
             if (typeof(currentDir[key]) !== 'string')
                 output += "[[;#3465A4;#6dba83;]" + key + "]    ";            
             else
@@ -169,7 +170,7 @@ function ls(arg) {
         }
     }
     else{
-        for (const key of Object.keys(currentDir)){
+        for (const key of Object.keys(getDirectory(parsedPath))){
             if (!key.startsWith('.')){
                 if (typeof(currentDir[key]) !== 'string'){
                     output += "[[;#3465A4;#6dba83;]" + key + "]    ";   
@@ -184,41 +185,54 @@ function ls(arg) {
 
 
 function cd(path) {
-    if (path === '..') {
-        // Subir um nível
-        let parts = currentPath.split('/').filter(p => p.length > 0);
-        if (parts.length > 0) {
-            parts.pop(); // Remover o último segmento
-            currentPath = parts.join('/');
-            if (currentPath === '') currentPath = '~';
-            currentDir = getDirectory(currentPath);
-        }
-    } else if (currentDir[path] && typeof(currentDir[path]) !== 'string') {
-        // Mudar para um subdiretório
-        currentDir = currentDir[path];
-        currentPath += '/' + path;
-    } else if (getDirectory(path) && typeof(getDirectory(path)) !== 'string'){
+    if (parsedPath === null) {
+        return "Diretório não encontrado";
+    } else {
+        path = parsedPath;
         currentDir = getDirectory(path);
         let parts = path.split('/').filter(p => p.length > 0);
         currentPath = parts.join('/');
-    } else {
-        return 'Diretório não encontrado';
-    }
-    if (currentPath === ''){
-        currentPath = '~';
-        currentDir = fileSystem['~'];
     }
     return "";
 }
 
 
 function cat(fileName) {
-    if (currentDir[fileName] && typeof(currentDir[fileName]) === 'string')
+    if (typeof(fileName) === 'string' && currentDir[fileName])
         return currentDir[fileName];
     else if (!currentDir[fileName])
         return "Ficheiro não encontrado";
     else
         return "cat: '" + fileName + "': É uma pasta"
+}
+
+
+function pathParser(path) {
+    let parts = path.split('/').filter(p => p.length > 0);
+    let parsedPath = [];
+    let dir = fileSystem; 
+    if (parts[0] !== '~')
+        parsedPath.push("~");
+    
+    for (let part of parts) {
+        if (part === '.')
+            continue;
+        else if (part === '..')
+            parsedPath.pop();
+        else
+            parsedPath.push(part);
+    }
+
+    if (!parsedPath.length)
+        return "~";
+
+    for (let part of parsedPath) {
+        if (dir[part]) 
+            dir = dir[part];
+        else 
+            return null;
+    }
+    return parsedPath.join('/');
 }
 
 
