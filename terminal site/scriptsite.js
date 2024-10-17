@@ -70,8 +70,8 @@ var fileSystem = {
 
 
 let currentDir = fileSystem['~']; // Diretoria atual
-let currentPath = '~'; // Caminho atual
-let parsedPath = '~';
+let currentPath = '~'; // Caminho atual (só se usa no cd)
+let parsedPath = '~'; // É o caminho que uso nas outras funções
 
 
 function getPrompt() {
@@ -127,10 +127,6 @@ function cd(path) {
         let parts = path.split('/').filter(p => p.length > 0);
         currentPath = parts.join('/');
     }
-    if (currentPath === ''){
-        currentPath = '~';
-        currentDir = fileSystem['~'];
-    }
     return "";
 }
 
@@ -147,7 +143,6 @@ function cat(fileName) {
 
 function pathParser(path) {
     let parts = path.split('/').filter(p => p.length > 0);
-    // deixem-me em paz com o meu nome talvez mude depois
     let parsedPath = [];
     let dir = fileSystem; 
     if (parts[0] !== '~')
@@ -161,6 +156,9 @@ function pathParser(path) {
         else
             parsedPath.push(part);
     }
+
+    if (!parsedPath.length)
+        return "~";
 
     for (let part of parsedPath) {
         if (dir[part]) 
