@@ -118,15 +118,12 @@ function ls(arg) {
 }
 
 
-function cd(path) {
-    if (parsedPath === null) {
+function cd() {
+    if (parsedPath === "") {
         return "Diretório não encontrado";
-    } else {
-        path = parsedPath;
-        currentDir = getDirectory(path);
-        let parts = path.split('/').filter(p => p.length > 0);
-        currentPath = parts.join('/');
-    }
+    } 
+    currentPath = parsedPath;
+    currentDir = getDirectory(currentPath);
     return "";
 }
 
@@ -146,7 +143,7 @@ function pathParser(path) {
     let parsedPath = [];
     let dir = fileSystem; 
     if (parts[0] !== '~')
-        parsedPath.push("~");
+        parsedPath = currentPath.split('/').filter(p => p.length > 0);
     
     for (let part of parts) {
         if (part === '.')
@@ -164,7 +161,7 @@ function pathParser(path) {
         if (dir[part]) 
             dir = dir[part];
         else 
-            return null;
+            return "";
     }
     return parsedPath.join('/');
 }
