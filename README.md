@@ -4,8 +4,7 @@
 # Se alguém quiser ajudar eu fico contente
 # Se tiverem mais ideias também podem sugerir
 
-
-# Terminal Recrutamento
+## Terminal Recrutamento
 Queria adicionar uma pass para conseguir entrar na pasta da xad0w.b1ts, tipo 1337 
 
 Queria adicionar uma pasta com logs na parte dos xad0w.b1ts (vou explicar muito agora mas
@@ -23,10 +22,10 @@ através daí fosse possível chegar à identidade dos impostores, tipo número 
 ou algo que dê para chegar a eles. Também podíamos meter mensagens encriptadas e pistas aí algures
 talvez n pensei muito nisto
 
-
-
-# Terminal Site
+## Terminal Site
 Basicamente temos uma diretoria deste género
+
+```bash
     ~: {
         membros: {
             membro1.txt:            e quando davas cat aparecia a foto em ascii art e em baixo nome + cargo + descrição ou algo do género ou então um comando tipo show membro1 
@@ -51,6 +50,3 @@ Basicamente temos uma diretoria deste género
         }
         .segredo.txt:               meter alguma coisa muito secreta?
     }
-
-
-
