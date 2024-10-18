@@ -1,17 +1,18 @@
-# A branch tem duas pastas, o terminal para o recrutamento e o terminal para o site
-# Vou meter aqui as cenas que planeio implementar à medida que se for fazendo marco com um certo
-# Também ainda há umas cenas que não estão bem decididas
-# Se alguém quiser ajudar eu fico contente
-# Se tiverem mais ideias também podem sugerir
+### A branch tem duas pastas, o terminal para o recrutamento e o terminal para o site  
+### Vou meter aqui as cenas que planeio implementar à medida que se for fazendo marco com um certo  
+### Também ainda há umas cenas que não estão bem decididas  
+### Se alguém quiser ajudar eu fico contente  
+### Se tiverem mais ideias também podem sugerir  
 
-## Terminal Recrutamento
-Queria adicionar uma pass para conseguir entrar na pasta da xad0w.b1ts, tipo 1337 
+---
 
-Queria adicionar uma pasta com logs na parte dos xad0w.b1ts (vou explicar muito agora mas
+# Terminal Recrutamento
++ Queria adicionar uma pass para conseguir entrar na pasta da xad0w.b1ts, tipo 1337 
+
++ Queria adicionar uma pasta com logs na parte dos xad0w.b1ts (vou explicar muito agora mas
 esta parte não tem a ver com programação é só escrever e dar ideias)
-
 A ideia é que fosse um enigma mais difícil mas opcional. Se já jogaram obra dinn eu queria
-fazer algo desse tipo, se n vou explicar o conceito do jogo
+fazer algo desse tipo, se n vou explicar o conceito do jogo.  
 Basicamente aquilo é um mistério que envolve uma tripulação, o jogo vai-te mostrando vários
 cenários de cenas que vão acontecendo a bordo, tu tás tipo em spectator mode, e o objetivo
 é descobrir a identidade de todos os tripulantes através dos diálogos e das ações deles
@@ -22,7 +23,9 @@ através daí fosse possível chegar à identidade dos impostores, tipo número 
 ou algo que dê para chegar a eles. Também podíamos meter mensagens encriptadas e pistas aí algures
 talvez n pensei muito nisto
 
-## Terminal Site
+---
+
+# Terminal Site
 Basicamente temos uma diretoria deste género
 
 ```bash
