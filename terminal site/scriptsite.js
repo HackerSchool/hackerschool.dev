@@ -96,7 +96,7 @@ function getDirectory(path) {
 function ls(arg) {
     output = "";
     if (arg === '-a'){
-        for (const key of Object.keys(getDirectory(parsedPath))){
+        for (const key of Object.keys(currentDir)){
             if (typeof(currentDir[key]) !== 'string')
                 output += "[[;#3465A4;#6dba83;]" + key + "]    ";            
             else
