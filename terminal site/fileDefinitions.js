@@ -2,34 +2,34 @@
 
 // Se quiseres adicionar um ficheiro crias um objeto da classe File(descrição, formato) e depois
 // adicionas no fileSystem mais em baixo
-const billy_txt = new File("Skibidi", "txt");
+const billy_hs = new HsFile("Skibidi", ["RH"]);
 
-const site_txt = new File("Skibidi", "txt");
+const site_prj = new PrjFile("Skibidi", "Concluded");
 
-const hackerSchool_txt = new File("Descrição da Hacker School", "txt");
+const hackerSchool_txt = new TxtFile("Descrição da Hacker School");
 
-const cibersegurança_txt = new File("N somos hackers plot twist do século", "txt");
+const cibersegurança_txt = new TxtFile("N somos hackers plot twist do século");
 
-const socials_txt = new File("Redes Sociais", "txt");
+const socials_txt = new TxtFile("instagram\t[[;#AD7FA8;]https://www.instagram.com/hackerschool_ist/]\nfacebook\t[[;#AD7FA8;]https://www.facebook.com/hackerschoolist/?locale=pt_PT]\nyoutube\t[[;#AD7FA8;]https://www.youtube.com/watch?v=dQw4w9WgXcQ]\ngithub\t[[;#AD7FA8;]https://github.com/HackerSchool]");
 
-const recrutamento_txt = new File("Recrutamento e Link", "txt");
+const recrutamento_evnt = new EvntFile("O nosso recrutamento dura cerca de 2 semanas, e vamos pôr à prova a tua perseverança, criatividade e trabalho em equipa.\nSe estás com interesse no nosso núcleo, tenta o desafio! Terás vários puzzles e enigmas para resolver - mas cuidado! Não te deixes apanhar pelos... xad0w.b1ts.\n[[;#AD7FA8;]https://docs.google.com/forms/d/e/1FAIpQLSdIiMJOEwspbpPPrFDvi0GIiHDNE5an142jXuOAecHs5I7U7Q/closedform]");
 
-const workshops_txt = new File("Lista dos Workshops e talvez mais coisas", "txt");
+const workshops_evnt = new EvntFile("Lista dos Workshops e talvez mais coisas");
 
-const hacknights_txt = new File("Descrição das hacknights e comando timeleft para ver quanto tempo falta", "txt");
+const hacknights_evnt = new EvntFile("Descrição das hacknights e comando timeleft para ver quanto tempo falta");
 
-const _segredo_txt = new File("meter alguma coisa muito secreta?", "txt");
+const _segredo_txt = new TxtFile("meter alguma coisa muito secreta?");
 
 
 
 var fileSystem = {
     '~': {
         'membros': {
-            "billy.txt": billy_txt
+            "billy.hs": billy_hs
         },
 
         'projetos': {
-            "site.txt": site_txt
+            "site.prj": site_prj
         },
 
         'aboutUs': {
@@ -38,11 +38,11 @@ var fileSystem = {
             "socials.txt": socials_txt
         },
 
-        'recrutamento.txt': recrutamento_txt,
+        'recrutamento.evnt': recrutamento_evnt,
 
         'proximosEventos': {
-            "workshops.txt": workshops_txt,
-            "hacknights.txt": hacknights_txt
+            "workshops.evnt": workshops_evnt,
+            "hacknights.evnt": hacknights_evnt
         },
 
         '.segredo.txt': _segredo_txt

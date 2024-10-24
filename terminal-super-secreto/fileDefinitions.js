@@ -84,17 +84,17 @@ c::ccccccc:cccc::::,:;coodol:.''',,;;:;;;::;;;;;;;\
 
 // Se quiseres adicionar um ficheiro crias um objeto da classe File(descrição, formato) e depois
 // adicionas no fileSystem mais em baixo
-const freesoftware_txt = new File('Na década de 1960, um grupo de engenheiros e programadores, conhecidos como "hackers", convergiu em torno da ideia de que o compartilhamento de conhecimento e a colaboração eram essenciais para o avanço da tecnologia. Mas pode dizer-se que tudo começou quando Richard Stallman, um dos principais proponentes dessa cultura, lançou o livro "Free Software, Free Society", onde explora a importância do software livre não apenas como uma questão técnica, mas como um princípio ético que defende a liberdade e a autonomia do usuário. Neste contexto, Stallman argumenta que o software deve ser acessível a todos para que cada indivíduo possa não apenas usar, mas também estudar, modificar e distribuir programas, promovendo assim um ambiente de inovação e criatividade. A obra destaca como a cultura hacker, ao valorizar a cooperação e a troca de ideias, pode servir como um contrapeso às práticas monopolistas da indústria, garantindo que a tecnologia esteja a serviço da sociedade e não apenas de interesses comerciais.', "txt");
+const freesoftware_txt = new TxtFile('Na década de 1960, um grupo de engenheiros e programadores, conhecidos como "hackers", convergiu em torno da ideia de que o compartilhamento de conhecimento e a colaboração eram essenciais para o avanço da tecnologia. Mas pode dizer-se que tudo começou quando Richard Stallman, um dos principais proponentes dessa cultura, lançou o livro "Free Software, Free Society", onde explora a importância do software livre não apenas como uma questão técnica, mas como um princípio ético que defende a liberdade e a autonomia do usuário. Neste contexto, Stallman argumenta que o software deve ser acessível a todos para que cada indivíduo possa não apenas usar, mas também estudar, modificar e distribuir programas, promovendo assim um ambiente de inovação e criatividade. A obra destaca como a cultura hacker, ao valorizar a cooperação e a troca de ideias, pode servir como um contrapeso às práticas monopolistas da indústria, garantindo que a tecnologia esteja a serviço da sociedade e não apenas de interesses comerciais.');
 
-const hackerschool_txt = new File('Tudo começou no Taguspark, em 2012, quando um grupo de estudantes apaixonados por tecnologia decidiu criar um espaço onde pudessem dar vida às suas ideias mais inovadoras. A HackerSchool nasceu com a missão de promover a colaboração, a experimentação e a aprendizagem prática, inspirando-se na cultura hacker que valoriza a partilha de conhecimento e o desenvolvimento de soluções criativas para os desafios do mundo real. Aqui, estudantes de diversas áreas unem forças para construir projetos incríveis, desde a internet das coisas até à inteligência artificial, utilizando tecnologias de código aberto e materiais acessíveis. A HackerSchool é mais do que um clube de tecnologia: aqui impulsiona-se uma nova geração de criadores e inovadores.', "txt");
+const hackerschool_txt = new TxtFile('Tudo começou no Taguspark, em 2012, quando um grupo de estudantes apaixonados por tecnologia decidiu criar um espaço onde pudessem dar vida às suas ideias mais inovadoras. A HackerSchool nasceu com a missão de promover a colaboração, a experimentação e a aprendizagem prática, inspirando-se na cultura hacker que valoriza a partilha de conhecimento e o desenvolvimento de soluções criativas para os desafios do mundo real. Aqui, estudantes de diversas áreas unem forças para construir projetos incríveis, desde a internet das coisas até à inteligência artificial, utilizando tecnologias de código aberto e materiais acessíveis. A HackerSchool é mais do que um clube de tecnologia: aqui impulsiona-se uma nova geração de criadores e inovadores.');
 
-const cifra_vigenere_txt = new File('mrgohfehyssorqaupwmjfq', "txt");
+const cifra_vigenere_txt = new TxtFile('mrgohfehyssorqaupwmjfq');
 
-const pista_txt = new File("Página 133", "txt");
+const pista_txt = new TxtFile("Página 133");
 
-const enigma_txt = new File("Onde tudo começou, \nEncontra a chave que procuras, rodeada, \nE tudo começará para ti.", "txt");
+const enigma_txt = new TxtFile("Onde tudo começou, \nEncontra a chave que procuras, rodeada, \nE tudo começará para ti.");
 
-const acontecimentos_suspeitos_txt = new File("Suspeita-se que a xad0w.b1ts esteja por trás de alguns acontecimentos dos últimos tempos, como:\n\n\n\
+const acontecimentos_suspeitos_txt = new TxtFile("Suspeita-se que a xad0w.b1ts esteja por trás de alguns acontecimentos dos últimos tempos, como:\n\n\n\
 \t- Aumento dos preços no Social\n\
 \t- Crise da habitação em Portugal\n\
 \t- A disciplina de cálculo III\n\
@@ -105,15 +105,15 @@ const acontecimentos_suspeitos_txt = new File("Suspeita-se que a xad0w.b1ts este
 \t- Os pombos do Arco do Cego\n\
 \t- As cadeiras dos anfiteatros do central\n\
 \t- A queda do Império Romano Bizentino\n\
-\t- A ilha das cores é cancelada\n", "txt");
+\t- A ilha das cores é cancelada\n");
 
-const _cheats_txt = new File("Crazy, no técnico há sítios onde se guardam livros", "txt");
+const _cheats_txt = new TxtFile("Crazy, no técnico há sítios onde se guardam livros");
 
-const suspeito1_txt = new File(agente008, "txt");
+const suspeito1_txt = new TxtFile(agente008);
 
-const suspeito2_txt = new File(agente042, "txt");
+const suspeito2_txt = new TxtFile(agente042);
 
-const suspeito3_txt = new File(agente094, "txt");
+const suspeito3_txt = new TxtFile(agente094);
 
 
 
