@@ -26,30 +26,48 @@ talvez n pensei muito nisto
 ---
 
 # Terminal Site
-Basicamente temos uma diretoria deste género
+Vamos ter ficheiros custom. Até agora temos os seguintes tipos:  
+```bash
+- .txt          Armazena texto. Dá para dar cat.
+
+- .hs           Até agora vai armazenar nome, cargo(s), e uma foto em ascii_art.
+                A pasta dos membros vai ter todos os membros.hs. Se dermos cat nestes ficheiros, tipo cat membro1.hs,
+                ele vai imprimir tudo o que está armazenado no ficheiro (foto, nome, cargo e talvez outras coisas que nos lembremos de adicionar).
+                Comandos costumizados: show .    show RH .    show membro1.hs .    show membro1.hs -n -r . (só para mostrar o nome e a role por exemplo).
+                Também queríamos fazer um grep entre um membro e a pasta dos projetos que dizia os projetos em que esse membro estava a trabalhar mas
+                ainda estamos a pensar se não faz mais sentido armazenar isso no .hs como mais um atributo.
+
+- .prj          Até agora é igual a um txt, mas decidimos usar no o caso de querermos adicionar stats extra aos projetos, tipo progresso n sei.
+                Também queríamos fazer um grep entre um projeto e a pasta dos membros para ver os membros que stão a trabalhar neste projeto.
+
+- .evnt          Basicamente um txt mas vai ter um comando extra.
+                Comando costumizado: timeleft, diz-te quanto tempo é que falta até um determinado evento.
+```
+
+Até agora o plano para a diretoria é este:
 
 ```bash
     ~: {
         membros: {
-            membro1.txt:            e quando davas cat aparecia a foto em ascii art e em baixo nome + cargo + descrição ou algo do género ou então um comando tipo show membro1 
-            membro2.txt:            e mudavamos o tipo do arquivo para .hs e quando davas cat só aparecia o nome + cargo + descrição ainda n me decidi também gostava de criar 
-                                    uns comandos costumizados tipo show all members, show all RH (aparecia só a descrição não as fotos), e um grep entre um membro e a pasta 
-                                    dos projetos que dizia os projetos em que esse membro estava a trabalhar
+            membro1.hs:             foto + nome + cargo + talvez outras coisas        
         }
+
         projetos: {
-            site.txt:               um txt com a descrição de cada projeto (n sei se preciso de adicionar mais alguma coisa, talvez progresso e outros stats)
-                                    e queria adicionar um grep entre um projeto e a pasta dos membros para ver os membros que estão a trabalhar neste projeto
+            site.prj:               descrição do projeto
         }
+
         aboutUs: {
             HackerSchool.txt:       descrição da hacker school
             cibersegurança.txt:     n somos hackers plot twist do século
             socials.txt:            redes sociais
         }
-        recrutamento.txt:           texto e link
+
+        recrutamento.evnt:          texto e link
+
         proximosEventos: {
-            workshops.txt:          lista dos workshops e talvez mais coisas e comando timeleft ou algo desse género para 
-                                    ver quanto tempo falta
-            hacknights.txt:         descrição das hacknights e comando timeleft
+            workshops.evnt:         lista dos workshops e talvez mais coisas
+            hacknights.evnt:        descrição das hacknights
         }
+
         .segredo.txt:               meter alguma coisa muito secreta?
     }
