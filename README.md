@@ -33,7 +33,7 @@ Vamos ter ficheiros custom. Até agora temos os seguintes tipos:
 - .hs           Até agora vai armazenar nome, cargo(s), e uma foto em ascii_art.
                 A pasta dos membros vai ter todos os membros.hs. Se dermos cat nestes ficheiros, tipo cat membro1.hs,
                 ele vai imprimir tudo o que está armazenado no ficheiro (foto, nome, cargo e talvez outras coisas que nos lembremos de adicionar).
-                Comandos costumizados: show .    show RH .    show membro1.hs .    show membro1.hs -n -r . (só para mostrar o nome e a role por exemplo).
+                Comandos costumizados: show .    show RH .    show ./membro1.hs    show -n -r membro1.hs  (só para mostrar o nome e a role por exemplo).
                 Também queríamos fazer um grep entre um membro e a pasta dos projetos que dizia os projetos em que esse membro estava a trabalhar mas
                 ainda estamos a pensar se não faz mais sentido armazenar isso no .hs como mais um atributo.
 
