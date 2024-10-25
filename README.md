@@ -40,7 +40,7 @@ Vamos ter ficheiros custom. Até agora temos os seguintes tipos:
 - .prj          Até agora é igual a um txt, mas decidimos usar no o caso de querermos adicionar stats extra aos projetos, tipo progresso n sei.
                 Também queríamos fazer um grep entre um projeto e a pasta dos membros para ver os membros que stão a trabalhar neste projeto.
 
-- .evnt          Basicamente um txt mas vai ter um comando extra.
+- .evnt         Basicamente um txt mas vai ter um comando extra.
                 Comando costumizado: timeleft, diz-te quanto tempo é que falta até um determinado evento.
 ```
 
