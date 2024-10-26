@@ -94,6 +94,34 @@ function pathParser(path) {
     return parsedPath.join('/');
 }
 
+
+function parseCommandArgs(input) {
+    const args = input.trim().split(/\s+/); // Divide a string em partes pelo espaço
+    const tags = [];
+    let arg = null;
+
+    args.forEach(item => {
+        if (item.startsWith("-") && item.length > 1) {
+            // Trata item como uma série de tags, tanto em formato `-rl` quanto `-r -l`
+            item.slice(1).split("").forEach(tag => {
+                if (!tags.includes(tag)) { // Adiciona apenas tags únicas
+                    tags.push(tag);
+                }
+            });
+        } else if (arg === null) {
+            // O primeiro argumento depois das tags será o argumento principal
+            arg = item;
+        } else {
+            // O segundo argumento depois do principal será o caminho
+            parsedPath = item;
+        }
+    });
+
+    return "";
+}
+
+
+
 function show(...args) {
     const roles = ["RH", "DEV"];
     let rolesSearch = [];
