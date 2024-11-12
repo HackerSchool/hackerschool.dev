@@ -1,7 +1,10 @@
 function readArgs(command) {
+    if(!command)
+        return {cmd: "empty", argumentos: {path: "", str_to_find: "", opt: [], args: false} };
+
     let cmd_list = command.trim().split(/\s+(.*)/).filter(Boolean);
     if(cmd_list.length === 1)
-        return {cmd: cmd_list[0], argumentos: {path:"~", str_to_find: "", opt: []} };
+        return {cmd: cmd_list[0], argumentos: {path: "", str_to_find: "", opt: [], args: false} };
 
     let [comando, argumentos] = cmd_list;
     argumentos = argumentos.split(" ");
@@ -33,7 +36,8 @@ function readArgs(command) {
         argumentos: {
             path: path,
             str_to_find: str_to_find,
-            opt: options
+            opt: options,
+            args: true
         }
     };
     return input;

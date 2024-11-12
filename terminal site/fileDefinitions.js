@@ -2,11 +2,11 @@
 
 // Se quiseres adicionar um ficheiro crias um objeto da classe File(descrição, formato) e depois
 // adicionas no fileSystem mais em baixo
-const billy_hs = new HsFile("Skibidi", ["RH"]);
+const billy_hs = new HsFile("Skibidi", "Billy", ["RH"]);
 
 const site_prj = new PrjFile("Skibidi", "Concluded");
 
-const hackerSchool_txt = new TxtFile("Descrição da Hacker School");
+const hackerSchool_txt = new TxtFile("A HackerSchool é uma associação académica que se foca no desenvolvimento de actividades num ambiente\nmultidisciplinar, de learn-by-doing e de aprendizagem entre pares, inspirado nos valores da cultura hacker.\n\nAqui, independentemente da formação de base, aprende-se a criar novos produtos e serviços sobre tecnologias\nemergentes como a internet das coisas ou a web semântica, utilizando soluções de baixo custo assentes em open\nelectronics, open materials, open fabrication, entre outros.");
 
 const cibersegurança_txt = new TxtFile("N somos hackers plot twist do século");
 

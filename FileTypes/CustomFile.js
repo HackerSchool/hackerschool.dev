@@ -2,7 +2,6 @@ class CustomFile {
     constructor(content, type) {
         this.content = content;
         this.type = type;
-
     }
 
     getContent() {

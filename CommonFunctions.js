@@ -9,6 +9,7 @@ function ls(args) {
     let output = "";
     let directory = paths.parsedPath;
 
+    
     if(!args.path) {
         directory = paths.currentDir;
     }
@@ -31,9 +32,16 @@ function ls(args) {
 
 
 function cd(args) {
+    if (!args.args) {
+        paths.parsedPath = fileSystem["~"];
+        paths.currentDir = paths.parsedPath;
+        paths.currentPath = "~";
+        return;
+    }
     if (paths.parsedPath instanceof CustomFile) 
         return "Não é um diretório";
-    
+    if (!args.path)
+        return "eheheeheheh";
     paths.currentPath = args.path;
     paths.currentDir = paths.parsedPath;
     return "";
@@ -68,6 +76,10 @@ function grep_message(output, message) {
     return output;
 }
 
+function grep_directory(word, path) {
+    return "";
+}
+
 //grep -a -r "Hello" ./filename.ext
 function grep(args) {
     let output = "";
@@ -77,11 +89,11 @@ function grep(args) {
             return "Não é um ficheiro.";
         message = paths.parsedPath.content.split('\n');
         output = grep_message(output, message);
-    }   
-    if(args.opt.includes('r')) {
-        for(let key of Object.keys(paths.parsedPath))
-            key 
-            while 
     }
+    if(args.opt.includes('r'))
+        console.log(paths.parsedPath);
+        for(let [file, content] of Object.entries(paths.parsedPath)) {
+            console.log(file);
+        }
     return output.trim();
 }

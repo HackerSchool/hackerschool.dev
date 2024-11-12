@@ -38,6 +38,8 @@ $('#terminal').terminal(function (command) {
         case 'grep':
             this.echo(grep(argumentos));
             break;
+        case 'empty':
+            break;
         default:
             this.echo('Comando não reconhecido.');
 
