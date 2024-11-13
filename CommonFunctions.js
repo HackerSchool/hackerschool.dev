@@ -57,8 +57,11 @@ function cat(args) {
 }
 
 
-function show(args) {
-    return null;
+function show() {
+    if(paths.parsedPath instanceof HsFile)
+        return paths.parsedPath.show();
+    
+    return "Não é um ficheiro HS";
 }
 
 //grep

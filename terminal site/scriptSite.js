@@ -38,6 +38,9 @@ $('#terminal').terminal(function (command) {
         case 'grep':
             this.echo(grep(argumentos));
             break;
+        case 'show':
+            this.echo(show());
+            break;
         case 'empty':
             break;
         default:
