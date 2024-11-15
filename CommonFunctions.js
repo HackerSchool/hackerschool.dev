@@ -65,7 +65,16 @@ function show() {
 }
 
 //grep
-function grep_message(output, message) {
+function grep_message(args, entrie, output, spec_name=false, list_file=false, path = null) {
+    file_name = entrie[0];
+
+    message = entrie[1].content;
+    if(list_file) {
+        if(message.includes(args.str_to_find))
+            return output += "[[;#A020F0;]" + path + "]" + "\n";
+    }
+
+    message = entrie[1].content.split('\n');
     message.forEach(line => {
         if(line.includes(args.str_to_find)) {
             const start_index = line.indexOf(args.str_to_find);
@@ -73,30 +82,64 @@ function grep_message(output, message) {
             before_word = start_index === 0 ? "" : line.slice(0, start_index);
             word_itself = "[[;#EF2929;]" + line.slice(start_index, end_index + 1) + "]";
             after_word = end_index === line.length - 1 ? "" : line.slice(end_index + 1, line.length);
+            if (spec_name) {
+                header = "[[;#A020F0;]" + path + "]" + "[[;#0000FF;]" + ":" + ["]"];
+                output += header;
+            }
             output += before_word + word_itself + after_word + "\n";
         }
     });
     return output;
 }
 
-function grep_directory(word, path) {
-    return "";
+function grep_directory(args, directory, output, list_file = false, path = null) {
+    store_path = path;
+    dir_name = directory[0];
+    dir_content = directory[1];
+    list_file = args.opt.includes("l") ? true : false;
+    for ( let entrie of Object.entries(dir_content) ) {
+        tmp = store_path + "/" + entrie[0];
+        file = entrie[1];
+        if (file instanceof CustomFile)
+            output = grep_message(args, entrie, output, spec_name=true, list_file=list_file, path=tmp);
+        else {
+            output = grep_directory(args, file, output, list_file=list_file, path=tmp);
+        }
+    }
+    return output;
 }
 
 //grep -a -r "Hello" ./filename.ext
 function grep(args) {
+    let list_file = args.opt.includes("l") ? true : false;
     let output = "";
-    console.log(args);
-    if(!args.opt.length){
+    let path;
+    if(args.opt.includes('r')) {
+        if ((paths.parsedPath instanceof CustomFile)) {
+            entrie = [args.path_not_parsed, paths.parsedPath];
+            let path = args.path_not_parsed;
+            output = grep_message(args, message, output, spec_name=true, list_file=list_file, path = path);
+        }
+
+        else {
+            for(let entrie of Object.entries(paths.parsedPath)) {
+                path = args.path_not_parsed + "/" + entrie[0];
+                file = entrie[1];
+                if (file instanceof CustomFile) {
+                    output = grep_message(args, entrie, output, spec_name=true, list_file=list_file, path=path);
+                }
+
+                else {
+                    output = grep_directory(args, entrie, output, list_file=list_file, path=path);
+                }
+            }
+        }
+    }
+    else {
         if (!(paths.parsedPath instanceof CustomFile))
             return "Não é um ficheiro.";
-        message = paths.parsedPath.content.split('\n');
-        output = grep_message(output, message);
+        let entrie = [args.path_not_parsed, paths.parsedPath];
+        output = grep_message(args, entrie, output, spec_name=false, list_file=list_file, args.path_not_parsed);
     }
-    if(args.opt.includes('r'))
-        console.log(paths.parsedPath);
-        for(let [file, content] of Object.entries(paths.parsedPath)) {
-            console.log(file);
-        }
     return output.trim();
 }

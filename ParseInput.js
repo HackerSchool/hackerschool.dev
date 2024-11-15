@@ -28,8 +28,9 @@ function readArgs(command) {
     }
 
     // Process Path
-    if(!path.includes('/'))
+    if(!path.includes('/') && path !== ".")
         path = paths.currentPath + '/' + path;
+    let path_not_parsed = path;
     path = pathParser(path);
     const input = {
         cmd: comando,
@@ -37,7 +38,8 @@ function readArgs(command) {
             path: path,
             str_to_find: str_to_find,
             opt: options,
-            args: true
+            args: true,
+            path_not_parsed: path_not_parsed
         }
     };
     return input;
