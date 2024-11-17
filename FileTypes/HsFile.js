@@ -1,7 +1,7 @@
 class HsFile extends CustomFile {
-    constructor(content, name, role, github, linkedin) {
+    constructor(image, name, role, github, linkedin) {
         //content será a imagem
-        super(content, "hs");
+        super(image, "hs");
         this.name = name;
         this.role = role;
         this.github = github;
@@ -40,7 +40,7 @@ class HsFile extends CustomFile {
         this.linkedin = newLinkedin;
     }
 
-    show() {
+    show(args) {
         // Divide a imagem em linhas
         const linhasImagem = this.getContent().split('\n');
         
@@ -72,6 +72,7 @@ class HsFile extends CustomFile {
         // Encontra o número máximo de linhas entre a imagem e as informações
         const linhasMax = Math.max(linhasImagem.length, linhasInfo.length);
         
+        
         // Gera o output alinhando a imagem com as informações
         let resultado = '';
         for (let i = 0; i < linhasMax; i++) {
@@ -79,7 +80,12 @@ class HsFile extends CustomFile {
             const linhaInfo = linhasInfo[i] || '';      // Linha de info ou string vazia se não existir
     
             // Adiciona espaço entre a imagem e a info e une as duas partes
-            resultado += linhaImagem.padEnd(20) + '   ' + linhaInfo + '\n'; // 3 espaços adicionais
+            if (args.opt.includes('i'))
+                resultado += linhaImagem + "\n";
+            else if (args.opt.includes('d'))
+                resultado += linhaInfo + "\n";
+            else
+                resultado += linhaImagem.padEnd(20) + '   ' + linhaInfo + '\n'; // 3 espaços adicionais
         }
     
         return resultado.trimEnd();

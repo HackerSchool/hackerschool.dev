@@ -69,13 +69,21 @@ lc;...,'.......:llc::ccllllcccccl'.,,;;,,',,;;;;;;\n\
 "
 
 const socials = "\
-[[;#ff73cc;]instagram]    [[;#FFFFFF;]https://www.instagram.com/hackerschool_ist/]\n\
-[[;#729FCF;]facebook]     [[;#FFFFFF;]https://www.facebook.com/hackerschoolist/?locale=pt_PT]\n\
-[[;#f54949;]youtube]      [[;#FFFFFF;]https://www.youtube.com/watch?v=dQw4w9WgXcQ]\n\
-[[;#000000;]github]       [[;#FFFFFF;]https://github.com/HackerSchool]\
+instagram    [[;#FFFFFF;]https://www.instagram.com/hackerschool_ist/]\n\
+facebook     [[;#FFFFFF;]https://www.facebook.com/hackerschoolist/?locale=pt_PT]\n\
+youtube      [[;#FFFFFF;]https://www.youtube.com/watch?v=dQw4w9WgXcQ]\n\
+github       [[;#FFFFFF;]https://github.com/HackerSchool]\
 "
 
 const billy_hs = new HsFile(imagem, "André Santos", "Recursos Humanos", "https://github.com/Billybs", "");
+
+const a_hs = new HsFile(imagem, "André Santos", "Recursos Humanos", "https://github.com/Billybs", "");
+
+const b_hs = new HsFile(imagem, "André Santos", "Recursos Humanos", "https://github.com/Billybs", "");
+
+const c_hs = new HsFile(imagem, "André Santos", "Recursos Humanos", "https://github.com/Billybs", "");
+
+const d_hs = new HsFile(imagem, "André Santos", "Recursos Humanos", "https://github.com/Billybs", "");
 
 const site_prj = new PrjFile("Skibidi", "Concluded");
 
@@ -98,8 +106,12 @@ const _segredo_txt = new TxtFile("meter alguma coisa muito secreta?");
 var fileSystem = {
     '~': {
         'membros': {
-            "billy.hs": billy_hs
+            "billy.hs": billy_hs,
+            "a.hs": a_hs,
+            "b.hs": b_hs,
         },
+        "d.hs": d_hs,
+        "c.hs": c_hs,
 
         'projetos': {
             "site.prj": site_prj

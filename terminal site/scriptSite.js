@@ -19,6 +19,7 @@ var comandos = {
 
 // Initialize the terminal
 $('#terminal').terminal(function (command) {
+    
     let p_input = readArgs(command);
     let comando = p_input.cmd;
     let argumentos = p_input.argumentos;
@@ -39,15 +40,16 @@ $('#terminal').terminal(function (command) {
             this.echo(grep(argumentos));
             break;
         case 'show':
-            this.echo(show());
+            this.echo(show(argumentos).replace(/\s+$/, ''));
+            break;
+        case 'pwd':
+            this.echo(pwd());
             break;
         case 'empty':
             break;
         default:
             this.echo('Comando não reconhecido.');
-
     }
-
 },
 
 {
@@ -57,4 +59,13 @@ Usa e abusa do google, chatgpt e youtube caso nao saibas comandos de terminal\n'
     prompt: getPrompt,   
     name: 'HackerSchool',
     promptExit: false
+},
+
+{
+    completion: true, // this option can be removed in latest version
+    completion: function(command, callback) {
+        // Provide a list of completion options
+        const suggestions = ['big', 'hairy', 'gorilla'];
+        callback(suggestions.filter(item => item.startsWith(command)));
+    }
 });

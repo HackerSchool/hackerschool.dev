@@ -22,6 +22,7 @@ function readArgs(command) {
                 path = arg;                 
             else {  // Procurar qual o argumento e o path
                 str_to_find = path;
+                str_to_find = str_to_find.replace(/^"+|"+$/g, '');
                 path = arg;
             }
         } 

@@ -57,24 +57,55 @@ function cat(args) {
 }
 
 
-function show() {
-    if(paths.parsedPath instanceof HsFile)
-        return paths.parsedPath.show();
-    
-    return "Não é um ficheiro HS";
+function show(args) {
+    let output = "";
+    let path = getDirectory(args.path);
+    console.log(path);
+    if(args.opt.includes('r')) {
+        if ((path instanceof HsFile)) {
+            output = path.show() + '\n\n';
+        } 
+        else {
+            for(let entry of Object.entries(path)) {
+                entry_path = entry[0];
+                entry_file = entry[1];
+                if (entry_file instanceof HsFile) {
+                    output += entry_file.show(args) + "\n\n";
+                }
+                else if (entry_file instanceof CustomFile) {
+                    continue;
+                }
+                else {
+                    args_aux = { ...args};
+                    args_aux.path_not_parsed = args.path_not_parsed + '/' + entry_path;
+                    args_aux.path = pathParser(args_aux.path_not_parsed);
+                    console.log(entry);
+                    console.log(args_aux);
+                    output += show(args_aux);
+                }
+            }
+        }
+    }
+    else {
+        //esta parte já deve estar bem
+        if(paths.parsedPath instanceof HsFile)
+            output = paths.parsedPath.show(args);
+        else
+            return "Não é um ficheiro HS";
+    }
+    return output;
 }
 
 //grep
-function grep_message(args, entrie, output, spec_name=false, list_file=false, path = null) {
-    file_name = entrie[0];
-
-    message = entrie[1].content;
+function grep_message(args, entry, output, spec_name=false, list_file=false, path = null) {
+    file_name = entry[0];
+    message = entry[1].content;
     if(list_file) {
         if(message.includes(args.str_to_find))
             return output += "[[;#A020F0;]" + path + "]" + "\n";
     }
 
-    message = entrie[1].content.split('\n');
+    message = entry[1].content.split('\n');
     message.forEach(line => {
         if(line.includes(args.str_to_find)) {
             const start_index = line.indexOf(args.str_to_find);
@@ -97,11 +128,11 @@ function grep_directory(args, directory, output, list_file = false, path = null)
     dir_name = directory[0];
     dir_content = directory[1];
     list_file = args.opt.includes("l") ? true : false;
-    for ( let entrie of Object.entries(dir_content) ) {
-        tmp = store_path + "/" + entrie[0];
-        file = entrie[1];
+    for ( let entry of Object.entries(dir_content) ) {
+        tmp = store_path + "/" + entry[0];
+        file = entry[1];
         if (file instanceof CustomFile)
-            output = grep_message(args, entrie, output, spec_name=true, list_file=list_file, path=tmp);
+            output = grep_message(args, entry, output, spec_name=true, list_file=list_file, path=tmp);
         else {
             output = grep_directory(args, file, output, list_file=list_file, path=tmp);
         }
@@ -116,21 +147,19 @@ function grep(args) {
     let path;
     if(args.opt.includes('r')) {
         if ((paths.parsedPath instanceof CustomFile)) {
-            entrie = [args.path_not_parsed, paths.parsedPath];
-            let path = args.path_not_parsed;
-            output = grep_message(args, message, output, spec_name=true, list_file=list_file, path = path);
+            entry = [args.path_not_parsed, paths.parsedPath];
+            output = grep_message(args, entry, output, spec_name=false, list_file=list_file, path = args.path_not_parsed);
         }
-
         else {
-            for(let entrie of Object.entries(paths.parsedPath)) {
-                path = args.path_not_parsed + "/" + entrie[0];
-                file = entrie[1];
+            // (nome ficheiro, conteúdo ficheiro)
+            for(let entry of Object.entries(paths.parsedPath)) {
+                path = args.path_not_parsed + "/" + entry[0];
+                file = entry[1];
                 if (file instanceof CustomFile) {
-                    output = grep_message(args, entrie, output, spec_name=true, list_file=list_file, path=path);
+                    output = grep_message(args, entry, output, spec_name=true, list_file=list_file, path=path);
                 }
-
                 else {
-                    output = grep_directory(args, entrie, output, list_file=list_file, path=path);
+                    output = grep_directory(args, entry, output, list_file=list_file, path=path);
                 }
             }
         }
@@ -138,8 +167,16 @@ function grep(args) {
     else {
         if (!(paths.parsedPath instanceof CustomFile))
             return "Não é um ficheiro.";
-        let entrie = [args.path_not_parsed, paths.parsedPath];
-        output = grep_message(args, entrie, output, spec_name=false, list_file=list_file, args.path_not_parsed);
+        let entry = [args.path_not_parsed, paths.parsedPath];
+        output = grep_message(args, entry, output, spec_name=false, list_file=list_file, args.path_not_parsed);
     }
     return output.trim();
+}
+
+function help() {
+
+}
+
+function pwd() {
+    return paths.currentPath;
 }
