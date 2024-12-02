@@ -7,8 +7,13 @@ Destacado=false
 
 photo = "lab.png" 
 
-type = "currentProject" 
-layout = "projeto" 
 
+status = "current"
 teamPhotos = ["JoaoRodrigues.jpg", "FilipePicarra.jpg", "EduardoFaustino.jpg"] 
 +++
+
+# Omni-Lab
+
+## Página em construção
+
+Visita mais tarde para mais informações!

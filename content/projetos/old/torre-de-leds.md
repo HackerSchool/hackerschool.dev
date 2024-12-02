@@ -21,7 +21,7 @@ photo = "torre-leds.jpg"
 
     
 ExtraHTML = "<a href=\"https://github.com/HackerSchool-IST/LEDtower\">https://github.com/HackerSchool-IST/LEDtower</a>"
-type = "projeto"
-layout = "projeto"
+status = "old"
+
 +++
 

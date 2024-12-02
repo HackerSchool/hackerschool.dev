@@ -1131,3 +1131,9 @@ header {
 #hidden-content {
     display: none;
 }
+
+
+/* Hover effect for social icons */
+.social-icons a:hover {
+    color: #6dba83;
+}

@@ -7,8 +7,13 @@ Destacado=false
 
 photo = "logoSquare.jpg" 
 
-type = "currentProject" 
-layout = "projeto" 
 
+status = "current"
 teamPhotos = ["FilipeVarela.png", "96517.png"] 
 +++
+
+# HS-Minibot
+
+## Página em construção
+
+Visita mais tarde para mais informações!

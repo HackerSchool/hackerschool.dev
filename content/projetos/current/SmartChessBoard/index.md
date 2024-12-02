@@ -7,8 +7,13 @@ Destacado=false
 
 photo = "smartchessboard.jpg" 
 
-type = "currentProject" 
-layout = "projeto" 
 
 teamPhotos = ["GoncaloMartins.jpg", "DiogoNeves.jpg"] 
+status = "current"
 +++
+
+# SmartChessBoard
+
+## Página em construção
+
+Visita mais tarde para mais informações!

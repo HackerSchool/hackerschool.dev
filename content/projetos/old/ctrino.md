@@ -12,6 +12,6 @@ DescricaoCompleta = [ "O c-trino é uma placa de expansão para o Arduino, compa
 equipa = ["Rodrigo Capeleiro", "Pedro Gomes", "Pedro Roque"]
 photo = "ctrino.png"
 
-type = "projeto" 
-layout = "projeto" 
+status = "old" 
+ 
 +++

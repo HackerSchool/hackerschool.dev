@@ -7,9 +7,14 @@ Destacado=true
 
 photo = "flos3dprinter.jpg" 
 
-type = "currentProject" 
-layout = "projeto" 
 projectOfTheMonth = false
+status = "current"
 
 teamPhotos = ["JoaoRodrigues.jpg", "FilipePicarra.jpg"] 
 +++
+
+# FLOS 3D Printer
+
+## Página em construção
+
+Visita mais tarde para mais informações!

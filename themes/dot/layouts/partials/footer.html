@@ -15,20 +15,48 @@
 
             </div>
             <div style="margin-left: auto; align-items: center;">
-                <ul class="list-inline mb-0">
+                <style>
+                .social-icons {
+                    display: grid;
+                    gap: 10px; /* Space between icons */
+                    padding: 0;
+                    list-style: none;
+                    justify-content: center;
+                }
+                /* Default to 1x4 layout for larger screens */
+                @media (min-width: 600px) {
+                    .social-icons {
+                        grid-template-columns: repeat(4, auto);
+                    }
+                }
+                /* Switch to 2x2 layout for smaller screens */
+                @media (max-width: 599px) {
+                    .social-icons {
+                        grid-template-columns: repeat(2, auto);
+                    }
+                }
+
+                /* Hover effect for social icons */
+                .social-icons a:hover {
+                    color: #6dba83;
+                }
+                </style>
+                <ul class="social-icons">
                     {{ range .Site.Params.socialIcon }}
-                    <li class="list-inline-item mb-0"><a class="text-color d-inline-block p-2" href="{{ .URL | absURL}}"><i style="font-size: 1.5em;" class="{{ .icon }}"></i></a></li>
+                    <li style="display: flex; justify-content: center; align-items: center;">
+                        <a class="text-color d-inline-block p-2" href="{{ .URL | absURL}}">
+                            <i style="font-size: 1.5em;" class="{{ .icon }}"></i>
+                        </a>
+                    </li>
                     {{ end }}
-                    <!-- <a href="https://github.com/HackerSchool" class="fa fa-github"></a> -->
                 </ul>
             </div>
-        </div>
 
-    </div>
-    <!-- <div style="width: 100%; background-color: #2f2f2f; padding-bottom: 5px;"> -->
-    <!--   <div class="container"> -->
-    <!--     <a>Site based on hugo dot theme</a> -->
-    <!--   </div> -->
+        </div>
+        <!-- <div style="width: 100%; background-color: #2f2f2f; padding-bottom: 5px;"> -->
+        <!--   <div class="container"> -->
+        <!--     <a>Site based on hugo dot theme</a> -->
+        <!--   </div> -->
     </div>
     <!--<div class="row" style="display: flex; align-items: center;">
 <div class="col-md-4 text-md-left text-center">

@@ -6,9 +6,12 @@ date = "2024-09-28"
 Destacado=false 
 
 photo = "hstms.jpg" 
-
-type = "currentProject" 
-layout = "projeto" 
-
 teamPhotos = ["AntonioFigueiras.jpg", "FilipeVarela.png"] 
+status = "current"
 +++
+
+# HS-TMS
+
+## Página em construção
+
+Visita mais tarde para mais informações!

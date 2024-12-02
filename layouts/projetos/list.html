@@ -21,7 +21,7 @@
       <h2 class="section-title"> Projetos Atuais </h2>
     </div>
     <div class="row justify-content-center pbottom-20 projectsWrapper">
-      {{ range where .Pages  "Type" "currentProject" }}
+      {{ range where .Pages  "Params.status" "current" }}
       {{ "<!-- projeto -->" | safeHTML }}
       <div class="col-lg-6 col-sm-12 col-xs-12 mb-4 fader fader-fadeInUp projectWrapper">
         <div class="px-4 py-2 bg-gray dynamicThingy text-center d-block">
@@ -35,6 +35,11 @@
             {{ range .Params.teamPhotos }}
                 <img class="projectMembersPhoto" src="/images/membros/{{.}}">
             {{ end }}
+            <a href="{{ .RelPermalink }}" class="btn btn-primary"  
+                            style="text-align: center; vertical-align: middle; line-height: 40px;  
+                            width: 80%; font-size: 20px; margin: 30px; display: inline-block;">
+                            Saber mais
+                        </a>
           </div>
         </div>
       </div>
@@ -48,7 +53,7 @@
       <h2 class="section-title"> Projetos Antigos </h2>
       
       <div class="row justify-content-center pbottom-20 projectsWrapper">
-        {{ range where .Pages  "Type" "projeto" }}
+        {{ range where .Pages  "Params.status" "old" }}
         {{ "<!-- projeto -->" | safeHTML }}
         <div class="col-lg-6 col-sm-12 col-xs-12 mb-4 fader fader-fadeInUp projectWrapper">
           <div class="px-4 py-2 bg-gray dynamicThingy text-center d-block">

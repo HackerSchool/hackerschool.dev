@@ -7,8 +7,13 @@ Destacado=false
 
 photo = "hsmentor.jpg" 
 
-type = "currentProject" 
-layout = "projeto" 
 
+status = "current"
 teamPhotos = ["InesMartins.jpeg", "FelipeSancho.jpg", "DanielCarvalho.jpg"] 
 +++
+
+# HS-Mentor
+
+## Página em construção
+
+Visita mais tarde para mais informações!

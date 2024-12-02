@@ -7,8 +7,8 @@ Destacado=true
 
 photo = "hsexpressions.png" 
 
-type = "projeto" 
-layout = "projeto" 
+status = "old" 
+ 
 
 teamPhotos = ["99316.png","100213.jpg", "103501.png","103252.png", "99166.png", "93176.jpg" ] 
 +++

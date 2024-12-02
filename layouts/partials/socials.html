@@ -1,8 +1,7 @@
 <div style="margin-left: auto; align-items: center;">
-    <ul class="list-inline" style="padding: 2em; display: flex; justify-content: center; list-style: none; gap: 2em;"> 
+    <ul class="list-inline social-icons" style="padding: 2em; display: flex; justify-content: center; list-style: none; gap: 1em;"> 
         {{ range .Site.Params.socialIcon }}
         <li class="list-inline-item mb-0"><a class="text-color d-inline-block p-2" href="{{ .URL | absURL}}"><i style="font-size: 2.5em;" class="{{ .icon }}"></i></a></li>
         {{ end }}
-        <!-- <a href="https://github.com/HackerSchool" class="fa fa-github"></a> -->
     </ul>
 </div>

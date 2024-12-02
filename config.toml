@@ -42,37 +42,21 @@ themify_css = "/css/themify-icons.css"
         name = "Sobre nós"
         url = "/sobre"
         
-      #[[Languages.en.menu.main]]
-      #  weight = 2
-      #  name = "FAQ"
-      #  url = "/faq"
-      
       [[Languages.en.menu.main]]
         weight = 2
         name = "Projetos"
         url = "/projetos"
 
-	#[[Languages.en.menu.main]]
-  #      weight = 2
-  #      name = "HackerCultura"
-  #      url = "/HackerCultura"
-
-  #    [[Languages.en.menu.main]]
-  #      weight = 2
-  #      name = "HackerCultura"
-	#url = "/HackerCultura"
-
       [[Languages.en.menu.main]]
         weight = 2
-        name = "recrutamento"
+        name = "Recrutamento"
         url = "/recrutamento"
 
+      [[Languages.en.menu.main]]
+        weight = 3
+        name = "Contactos"
+        url = "/contactos"
 
-    [Languages.en.params]
-      home = "Home"
-      logo = "HackerSchool"
-      dateFormat = "2 January 2006"
-      
     # banner
     [Languages.en.params.banner]
       title = "HackerSchool"
@@ -94,3 +78,7 @@ themify_css = "/css/themify-icons.css"
     [[Languages.en.params.socialIcon]]
       icon = "ti-github"
       URL = "https://github.com/HackerSchool"
+
+    [[Languages.en.params.socialIcon]]
+      icon = "ti-facebook"
+      URL = "https://www.facebook.com/hackerschoolist/"
