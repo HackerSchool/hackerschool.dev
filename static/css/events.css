@@ -34,7 +34,7 @@
 .card .btn {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #007BFF;
+  background-color: var(--primary-color);
   color: white;
   text-decoration: none;
   margin-top: auto;

@@ -12,3 +12,9 @@ status = "current"
 
 teamPhotos = ["MiguelCardoso.jpg", "CatarinaSilva.jpg"] 
 +++
+
+# Count My Bugs
+
+## Página em construção
+
+Visita mais tarde para mais informações!

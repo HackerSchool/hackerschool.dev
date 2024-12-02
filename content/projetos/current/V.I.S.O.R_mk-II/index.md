@@ -7,7 +7,13 @@ Destacado=false
 
 photo = "visormkII.jpg" 
 
-status = "current"
 
+status = "current"
 teamPhotos = ["JoaoRodrigues.jpg", "EduardoFaustino.jpg"] 
 +++
+
+# V.I.S.O.R mk-II
+
+## Página em construção
+
+Visita mais tarde para mais informações!

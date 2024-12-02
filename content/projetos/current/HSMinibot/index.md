@@ -11,3 +11,9 @@ photo = "logoSquare.jpg"
 status = "current"
 teamPhotos = ["FilipeVarela.png", "96517.png"] 
 +++
+
+# HS-Minibot
+
+## Página em construção
+
+Visita mais tarde para mais informações!

@@ -11,3 +11,9 @@ photo = "smartchessboard.jpg"
 teamPhotos = ["GoncaloMartins.jpg", "DiogoNeves.jpg"] 
 status = "current"
 +++
+
+# SmartChessBoard
+
+## Página em construção
+
+Visita mais tarde para mais informações!

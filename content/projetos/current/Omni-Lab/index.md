@@ -11,3 +11,9 @@ photo = "lab.png"
 status = "current"
 teamPhotos = ["JoaoRodrigues.jpg", "FilipePicarra.jpg", "EduardoFaustino.jpg"] 
 +++
+
+# Omni-Lab
+
+## Página em construção
+
+Visita mais tarde para mais informações!

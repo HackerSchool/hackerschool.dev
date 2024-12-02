@@ -10,3 +10,9 @@ photo = "greenthumb.jpg"
 status = "current"
 teamPhotos = ["JoaoRodrigues.jpg", "AndreCardoso.jpg", "FilipePicarra.jpg", "EduardoFaustino.jpg"] 
 +++
+
+# GreenThumb
+
+## Página em construção
+
+Visita mais tarde para mais informações!

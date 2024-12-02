@@ -16,3 +16,12 @@ status = "current"
 ## Estão a olhar para ele ahahaha
 
 Este é o projeto do site da HackerSchool!
+
+## Devlog
+
+### 18 de outubro
+Pequeno exemplo de como podemos começar a organizar o site!
+
+## Todolist
+
+Continuar a meter o site cada vez melhor e mais bonito
