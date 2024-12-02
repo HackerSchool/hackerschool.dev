@@ -7,7 +7,6 @@ Destacado=false
 
 photo = "greenthumb.jpg" 
 
-
 status = "current"
-teamPhotos = ["JoaoRodrigues.jpg", "99949.png", "AndreCardoso.jpg"] 
+teamPhotos = ["JoaoRodrigues.jpg", "AndreCardoso.jpg", "FilipePicarra.jpg", "EduardoFaustino.jpg"] 
 +++
