@@ -22,7 +22,7 @@ Se não és membro da HackerSchool, inscreve-te **[aqui](https://docs.google.com
 
 ### Objetivo
 
-Ensinar como fazer uma página pessoal leve, portátil e (esperançosamente) bonita, mais ou menos como [esta](https://hackerschool.dev/workshops/webdev/example) (ok, seria bonita se fosse eu abençoado com ✨*graphic design skills*✨, tu farás melhor). Durante o WS muitas liberdades serão tomadas e o produto final será algo construído passo a passo, em conjunto. Foca-se maioritariamente em desenvolvimento Frontend. No final, cada participante será capaz de desenvolver a sua página web e lançá-la na plataforma de hosting do Técnico!
+Ensinar como fazer uma página pessoal leve, portátil e (esperançosamente) bonita, mais ou menos como [esta](https://hackerschool.dev/workshops/webdev/example) (ok, seria bonito fosse eu abençoado com ✨*graphic design skills*✨, tu farás melhor). Durante o WS muitas liberdades serão tomadas e o produto final será algo construído passo a passo, em conjunto. Foca-se maioritariamente em desenvolvimento Frontend. No final, cada participante será capaz de desenvolver a sua página web e lançá-la na plataforma de hosting do Técnico!
 
 ### Temas Abordados
 
