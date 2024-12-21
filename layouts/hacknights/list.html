@@ -15,7 +15,10 @@
 <section id="home-content" style="padding-bottom: 48px;" class="single fader-alternate">
     <div class="container pt-4 aboutUsContainer">
         <div class="dynamicThingy" style="color: white">
-
+            <p><a href="{{ .RelPermalink }}feed.xml">
+                <img src="/rss.svg" alt="Feed RSS" style="width: 2em !important">
+                </a></p>
+            
             {{ .Content}}
         </div>
     </div>
