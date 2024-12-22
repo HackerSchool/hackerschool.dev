@@ -6,7 +6,7 @@ Os pedais de efeitos são ferramentas criativas essenciais na música, podendo s
 
 ## Objetivos
 
-<img align="left" width="300" style="margin: 20px 20px 200px 0;" src="FUZZ_Pedal.jpg" />
+<img align="left" width="300" style="margin: 20px 20px 200px 0;" src="Photos/FUZZ_Pedal.jpg" />
 
 Neste workshop _hands-on_ cada participante irá realizar a montagem de uma pedal de FUZZ 100% analógico, que poderá levar para casa no final da sessão. Este workshop irá abranger tudo, desde a explicação de efeitos de Distorção/Overdrive e Fuzz, explicação do circuito utilizado no pedal de Fuzz, soldadura dos componentes na PCB e montagem final numa *enclosure*. Este workshop é destinado tanto a pessoas com ou sem experiência em eletrónica analógica, assim como para quem tem ou não prática em soldadura.
 
@@ -31,6 +31,18 @@ Em breve...
 A primeira edição decorreu no dia 13 de Dezembro de 2024, das 17:30 às 22h, no OpenLab da AC de Computadores (Piso 4, Pavilhão de Electricidade, Torre Norte).
 
 ### Galeria
+
+<img align="left" width="300" src="Photos/DSC_0416-min.png" />
+<img width="300" src="Photos/DSC_0429-min.png" />
+<img align="left" width="300" src="Photos/DSC_0427-min.png" />
+<img width="300" src="Photos/DSC_0439-min.png" />
+<img align="left" width="300" src="Photos/DSC_0445-min.png" />
+<img width="300" src="Photos/DSC_0483-min.png" />
+<img align="left" width="300" src="Photos/DSC_0493-min.png" />
+<img width="300" src="Photos/DSC_0503-min.png" />
+<img align="left" width="300" src="Photos/DSC_0509-min.png" />
+<img width="300" src="Photos/DSC_0529-min.png" />
+<img align="left" width="300" src="Photos/DSC_0549-min.png" />
 
 
 
