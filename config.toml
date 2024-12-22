@@ -14,11 +14,13 @@ recruitmentTime = true
 #lista de imagens que aparecem no carousel da pagina principal
 carouselImagens=["images/carousel/carousellProjects.png", "images/carousel/carousellAnniversary.jpg", "images/carousel/carousellFaire.jpg", "images/carousel/carousellKTANE.jpg"]
 themify_css = "/css/themify-icons.css"
+rssIcon = "images/rss.svg"
 
 [outputFormats]
     [outputFormats.RSS]
         mediaType = "application/rss+xml"
         baseName = "feed"
+        isPlainText = false
 
 [Languages]
 
