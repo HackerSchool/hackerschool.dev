@@ -1,4 +1,13 @@
+---
+title: "FUZZ Pedal"
+date: 2024-12-21
+draft: false
+description: " Misturar Eletrónica Analógica com Espressão Artística? O Workshop do Pedal Fuzz vem trazer isso mesmo! Neste Workshop irás construir um pedal de efeito de distorção Fuzz que poderás modificar no futuro! Ride the Smoke to the Riff filled Land"
+image: "./fuzz/fuzz.png"
+---
+
 # Workshop FUZZ Pedal
+
 
 Criado por [Miguel Lameiras](https://github.com/MiguelLameiras)
 
@@ -32,17 +41,17 @@ A primeira edição decorreu no dia 13 de Dezembro de 2024, das 17:30 às 22h, n
 
 ### Galeria
 
-<img align="left" width="300" src="Photos/DSC_0416-min.png" />
-<img width="300" src="Photos/DSC_0429-min.png" />
-<img align="left" width="300" src="Photos/DSC_0427-min.png" />
-<img width="300" src="Photos/DSC_0439-min.png" />
-<img align="left" width="300" src="Photos/DSC_0445-min.png" />
-<img width="300" src="Photos/DSC_0483-min.png" />
-<img align="left" width="300" src="Photos/DSC_0493-min.png" />
-<img width="300" src="Photos/DSC_0503-min.png" />
-<img align="left" width="300" src="Photos/DSC_0509-min.png" />
-<img width="300" src="Photos/DSC_0529-min.png" />
-<img align="left" width="300" src="Photos/DSC_0549-min.png" />
+![one](Photos/DSC_0416-min.png)
+![](Photos/DSC_0429-min.png)
+![](Photos/DSC_0427-min.png)
+![](Photos/DSC_0439-min.png)
+![](Photos/DSC_0445-min.png)
+![](Photos/DSC_0483-min.png)
+![](Photos/DSC_0493-min.png)
+![](Photos/DSC_0503-min.png)
+![](Photos/DSC_0509-min.png)
+![](Photos/DSC_0529-min.png)
+![](Photos/DSC_0549-min.png)
 
 
 
