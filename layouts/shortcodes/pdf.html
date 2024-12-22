@@ -1,0 +1,4 @@
+<object data="{{ .Get "src" }}" type="application/pdf" width="{{ .Get "width" | default "100%" }}" height="{{ .Get "height" | default "600px" }}">
+    <p>This browser does not support PDFs. Please download the PDF to view it: 
+    <a href="{{ .Get "src" }}">Download PDF</a>.</p>
+</object>

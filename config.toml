@@ -15,6 +15,10 @@ recruitmentTime = true
 carouselImagens=["images/carousel/carousellProjects.png", "images/carousel/carousellAnniversary.jpg", "images/carousel/carousellFaire.jpg", "images/carousel/carousellKTANE.jpg"]
 themify_css = "/css/themify-icons.css"
 
+[outputFormats]
+    [outputFormats.RSS]
+        mediaType = "application/rss+xml"
+        baseName = "feed"
 
 [Languages]
 
