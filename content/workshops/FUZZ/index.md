@@ -1,7 +1,3 @@
-# Guia Repositório
-Repositório para o material dos workshops de Pedais de Efeitos.
-A pasta [Workshop Fuzz](https://github.com/HackerSchool/Workshop-Guitar-Pedal/tree/main/Workshop%20Fuzz) contém a schematic do pedal. A pasta [FUZZ_PCB](https://github.com/HackerSchool/Workshop-Guitar-Pedal/tree/main/Fuzz_PCB) contém a schematic adaptada para fabrico (potenciómetros, jacks e power supply fora da PCB), bem como a PCB e Gerber Files para fabrico.
-
 # Workshop FUZZ Pedal
 
 Criado por [Miguel Lameiras](https://github.com/MiguelLameiras)
