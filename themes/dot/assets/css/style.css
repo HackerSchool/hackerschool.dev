@@ -145,11 +145,11 @@ body {
   justify-content: center;
 }
 
-ol,
-ul {
-  list-style-type: none;
-  margin: 0px;
-}
+/* ol, */
+/* ul { */
+/*   /* list-style-type: none; */ */
+/*   /* margin: 0px; */ */
+/* } */
 
 img {
   vertical-align: middle;
@@ -592,7 +592,7 @@ img {
 }
 
 ul {
-  padding-left: 0;
+  /* padding-left: 0; */
   margin-bottom: 20px;
 }
 

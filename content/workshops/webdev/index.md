@@ -166,23 +166,23 @@ document.getElementById('meuBotao').addEventListener('click', mudaCor);
 ### O que é HTTP?
 Protocolo de transferência de hipertexto, base da comunicação de dados na web. Sei como funciona? Não. Mas tu também não precisas. Só precisas de saber os diferentes tipos de requests:
 
-1. GET: Obter dados
-1. POST: Enviar dados
-1. PUT: Atualizar dados
-1. DELETE: Remover dados
+- GET: Obter dados
+- POST: Enviar dados
+- PUT: Atualizar dados
+- DELETE: Remover dados
 
 E que existem códigos de status úteis:
 
-1. 200 OK: The standard "everything is fine" response
-2. 201 Created: Successfully created a new resource
-3. 204 No Content: Successful request with no content to return
-4. 301 Moved Permanently: Page has been permanently relocated
-5. 400 Bad Request: Server couldn't understand the request
-6. 401 Unauthorized: Authentication is required
-7. 403 Forbidden: Server understands the request but refuses to authorize it
-8. 404 Not Found: The requested resource doesn't exist
-9. 500 Internal Server Error: Generic server error message
-10. 503 Service Unavailable: Server is temporarily overloaded or down
+- 200 OK: The standard "everything is fine" response
+- 201 Created: Successfully created a new resource
+- 204 No Content: Successful request with no content to return
+- 301 Moved Permanently: Page has been permanently relocated
+- 400 Bad Request: Server couldn't understand the request
+- 401 Unauthorized: Authentication is required
+- 403 Forbidden: Server understands the request but refuses to authorize it
+- 404 Not Found: The requested resource doesn't exist
+- 500 Internal Server Error: Generic server error message
+- 503 Service Unavailable: Server is temporarily overloaded or down
 
 ## 5. Deploy no Sigma
 
