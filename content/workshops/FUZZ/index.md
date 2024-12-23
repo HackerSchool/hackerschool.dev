@@ -15,13 +15,14 @@ Os pedais de efeitos são ferramentas criativas essenciais na música, podendo s
 
 ## Objetivos
 
-<img align="left" width="300" style="margin: 20px 20px 200px 0;" src="Photos/FUZZ_Pedal.jpg" />
+![](Photos/FUZZ_Pedal.jpg)
 
 Neste workshop _hands-on_ cada participante irá realizar a montagem de uma pedal de FUZZ 100% analógico, que poderá levar para casa no final da sessão. Este workshop irá abranger tudo, desde a explicação de efeitos de Distorção/Overdrive e Fuzz, explicação do circuito utilizado no pedal de Fuzz, soldadura dos componentes na PCB e montagem final numa *enclosure*. Este workshop é destinado tanto a pessoas com ou sem experiência em eletrónica analógica, assim como para quem tem ou não prática em soldadura.
 
 <br><br><br>
 
 ## Planeamento
+
 1. Noções matemáticas gerais de como produzir distorção, fuzz, etc.;
 2. Breve introdução à eletrónica, nomeadamente transístores BJT;
 3. Explicação do circuito utilizado;
