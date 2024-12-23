@@ -2,7 +2,7 @@
 title: "FUZZ Pedal"
 date: 2024-12-21
 draft: false
-description: " Misturar Eletrónica Analógica com Espressão Artística? O Workshop do Pedal Fuzz vem trazer isso mesmo! Neste Workshop irás construir um pedal de efeito de distorção Fuzz que poderás modificar no futuro! Ride the Smoke to the Riff filled Land"
+description: " Misturar Eletrónica Analógica com Expressão Artística? O Workshop do Pedal Fuzz vem trazer isso mesmo! Neste Workshop irás construir um pedal de efeito de distorção Fuzz que poderás modificar no futuro! Ride the Smoke to the Riff filled Land"
 image: "./fuzz/fuzz.png"
 ---
 
