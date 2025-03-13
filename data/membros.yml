@@ -2,7 +2,9 @@ direcao:
   - nome:  Armando Gonçalves
     cargo: Presidente
     #curso: 4º ano, MEFT
-    imagem: placeholder.png 
+    imagem: placeholder.png
+    quote: teste 
+    project: teste2
   - nome: Gabriel Gabriel
     cargo: Vice-Presidente
     imagem: GabrielGabriel.jpeg

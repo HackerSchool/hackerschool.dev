@@ -8,9 +8,28 @@
 </header>
 {{ "<!-- /navigation -->" | safeHTML }}
 
-<div id="overlay"></div>
 <canvas id="matrixCanvas"></canvas>
 <script src="{{ "js/scriptmatrix.js" | relURL }}"></script>
+
+<div id="overlay">
+  <div id="overlay-content" class="col-12 justify-content-center text-center">
+    <h3 class="overlay-name">HELLOOO</h3>
+    <img>
+    <p>Quote maravilhosa</p>
+    <div id="overlay-projects">
+      <h4 style="align-self: flex-start;">Projetos:</h4>
+      <div id="overlay-project-holder">
+        <div class="overlay-project-content">
+          <img>
+          <p>Nome do projeto</p>
+        </div>
+      </div>
+    </div>
+    <div id="overlay-socials">
+      <h4>Socials:</h4>
+    </div>
+  </div>
+</div>
 
 <!-- details page -->
 <section style="padding-bottom: 48px;" class="single sec-membros">
@@ -33,8 +52,14 @@
               </h3>
               <img src="/images/membros/{{ .imagem }}">
               {{ if .project }}
-              <p class="hoverAppear">
+              <p class="member-card-project" hidden> {{.project}} </p>
+              <!-- <p class="hoverAppear">
                 Projeto: <br /> {{ .project }}
+              </p> -->
+              {{ end }}
+              {{ if .quote }}
+              <p class="quote" hidden>
+              {{ .quote }}
               </p>
               {{ end }}
           </div>
