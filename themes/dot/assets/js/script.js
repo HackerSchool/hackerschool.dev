@@ -61,11 +61,11 @@ function isOnScreen(elem) {
 	(bottom > viewport_top && bottom <= viewport_bottom) ||
 	(height > viewport_height && top <= viewport_top && bottom >= viewport_bottom)
 }
-
+var isOverlayActive = false;
 $(document).ready( function() {
 	$("body").get(0).addEventListener('scroll', function(e) {
         $(".fader:not(.fader-animated)").each(function () {
-            if( isOnScreen($(this)) ) {
+            if( isOnScreen($(this))) {
                 $(this).css('animation-delay', delay + "ms");
                 delay += 150;
                 $(this).addClass("fader-animated");
@@ -98,3 +98,47 @@ $(document).ready( function() {
         $(this).addClass("fader-animated");
     })
 */
+
+$(document).ready(function() {
+    const memberCards = document.querySelectorAll('.member-card');
+    const overlayContent = document.getElementById('overlay-content');
+    memberCards.forEach(card => {
+        card.addEventListener('click', () => { //falta disable scroll
+            overlay.style.display = 'flex';
+            const name = card.querySelector('h3').innerText.split("\n");
+            overlayContent.querySelectorAll("h3")[0].innerText = name[0];
+            overlayContent.querySelectorAll("img")[0].src = card.querySelector("img").src;
+            var texts = card.querySelectorAll("p");
+            var quoteText = ""
+            for(let i = 0; i< texts.length; i++){
+                if (texts[i].classList.contains("quote"))
+                   quoteText = texts[i].innerText
+            }
+            overlayContent.querySelectorAll("p")[0].innerText = quoteText
+            const memberProjects = overlayContent.querySelectorAll("overlay-project-content");
+            // var projectsHolder = overlayContent.getElementById("overlay-project-holder")
+            memberProjects.forEach(project => {
+                var projDiv = document.createElement("div")
+                
+            });
+
+            isOverlayActive = true; 
+            setTimeout(() => {
+                checkClickOutside();
+            }, 50);
+        });
+    });
+
+    function checkClickOutside() {
+        if (isOverlayActive) {
+            const closeOverlay = (event) => {
+                if (event.target !== overlay && !overlay.contains(event.target)) {
+                    overlay.style.display = "none";
+                    isOverlayActive = false;
+                    document.removeEventListener('click', closeOverlay); // Remove event listener after closing
+                }
+            };
+            document.addEventListener('click', closeOverlay);
+        }
+    }
+});
