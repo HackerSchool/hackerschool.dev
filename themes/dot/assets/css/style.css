@@ -1144,18 +1144,48 @@ header {
 
 #overlay-projects {
   display: flex;
-  border: solid 2px black;
   flex-direction: column;
 }
 
-.overlay-project-holder{
+#overlay-project-holder{
   display: flex;
   flex-direction: row;
+  justify-content: space-evenly;
+  height: 40%;
+  max-height: 40%;
+}
+
+.overlay-project-content {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.overlay-project-content img {
+  max-width: 100px;
+  max-height: 100px;
 }
 
 #overlay-socials {
   display: flex;
+  flex-direction: column;
+}
+
+#overlay-social-holder{
+  display: flex;
   flex-direction: row;
+  justify-content: space-evenly;
+  height: 40%;
+  max-height: 40%;
+}
+
+.overlay-social-content {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.overlay-social-content img {
+  max-width: 100px;
+  max-height: 100px;
 }
 
 #matrixCanvas {

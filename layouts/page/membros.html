@@ -1,5 +1,7 @@
 {{ partial "head.html" . }}
 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 {{ "<!-- navigation -->" | safeHTML }}
 <header class="shadow-bottom sticky-top bg-gray">
   <div class="container">
@@ -17,16 +19,21 @@
     <img>
     <p>Quote maravilhosa</p>
     <div id="overlay-projects">
-      <h4 style="align-self: flex-start;">Projetos:</h4>
+      <h4 style="align-self: flex-start; margin-bottom: 0px;">Projetos:</h4>
       <div id="overlay-project-holder">
-        <div class="overlay-project-content">
+        <!-- <div class="overlay-project-content">
           <img>
           <p>Nome do projeto</p>
-        </div>
+        </div> -->
       </div>
     </div>
     <div id="overlay-socials">
-      <h4>Socials:</h4>
+      <h4 style="align-self: flex-start; margin-bottom: 0px;">Socials:</h4>
+      <div id="overlay-social-holder">
+        <!-- <div class="overlay-social-content">
+          <img>
+        </div> -->
+      </div>
     </div>
   </div>
 </div>
@@ -51,12 +58,16 @@
                 <p class="mb-0">{{ .curso }}</p>
               </h3>
               <img src="/images/membros/{{ .imagem }}">
-              {{ if .project }}
-              <p class="member-card-project" hidden> {{.project}} </p>
-              <!-- <p class="hoverAppear">
-                Projeto: <br /> {{ .project }}
-              </p> -->
-              {{ end }}
+              <div class="member-card-projects-div">
+                {{ range .projects }}
+                  <p hidden class="member-card-project" data-url="{{ .url }}" data-image="/images/projetos/{{ .image }}">{{ .name }}</p>
+                {{ end }}
+              </div>
+              <div class="member-card-socials-div">
+                {{ range .socials }}
+                  <p class="member-card-project" data-icon="{{ .icon }}" data-link="{{ .link }}" hidden>{{ .platform }}</p>
+                {{ end }}
+              </div>
               {{ if .quote }}
               <p class="quote" hidden>
               {{ .quote }}

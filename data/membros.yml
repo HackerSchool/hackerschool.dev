@@ -3,8 +3,18 @@ direcao:
     cargo: Presidente
     #curso: 4º ano, MEFT
     imagem: placeholder.png
-    quote: teste 
-    project: teste2
+    quote: quote top 
+    projects:
+      - name: HS-Site
+        image: "logoProject.png"
+        url: "/projetos/current/HS-Site"
+      - name: Count My Bugs
+        image: "countmybugs.jpg"
+        url: "/projetos/current/CountMyBugs"
+    socials:
+      - platform: "Github"
+        icon: fa-github
+        link: "https://github.com/johndoe"
   - nome: Gabriel Gabriel
     cargo: Vice-Presidente
     imagem: GabrielGabriel.jpeg
