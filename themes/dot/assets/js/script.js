@@ -114,12 +114,44 @@ $(document).ready(function() {
                 if (texts[i].classList.contains("quote"))
                    quoteText = texts[i].innerText
             }
+            
             overlayContent.querySelectorAll("p")[0].innerText = quoteText
-            const memberProjects = overlayContent.querySelectorAll("overlay-project-content");
-            // var projectsHolder = overlayContent.getElementById("overlay-project-holder")
-            memberProjects.forEach(project => {
+            //memberProjectDiv = overlayContent.querySelector('#overlay-project-holder');
+            let memberProjectDiv = overlayContent.querySelector('#overlay-project-holder');
+            memberProjectDiv.innerHTML = "";
+            let projectsHolder = card.getElementsByClassName("member-card-projects-div")[0];
+            Array.from(projectsHolder.children).forEach(project => {             
                 var projDiv = document.createElement("div")
-                
+                var imgElem = document.createElement('img')
+                var pElem = document.createElement('p')
+                let linkElem = document.createElement('a');
+                imgElem.src = project.dataset.image; 
+                pElem.innerText = project.innerText;
+                linkElem.href = project.dataset.url;
+
+                linkElem.appendChild(imgElem);
+                linkElem.appendChild(pElem);
+                projDiv.appendChild(linkElem);
+                projDiv.classList.add("overlay-project-content")
+                memberProjectDiv.append(projDiv)
+            });
+
+            memberSocialDiv = overlayContent.querySelector('#overlay-social-holder'); 
+            var socialsHolder = card.getElementsByClassName("member-card-socials-div");
+            Array.from(socialsHolder[0].children).forEach(social => {
+                var socialDiv = document.createElement("div")
+                var imgElem = document.createElement('img')
+                let linkElem = document.createElement('a');
+                var pElem = document.createElement('p')
+                pElem.innerText = social.innerText;
+                linkElem.href = social.dataset.link;
+                console.log(social)
+
+                linkElem.appendChild(imgElem)
+                linkElem.appendChild(pElem)
+                socialDiv.append(linkElem)
+                socialDiv.classList.add("overlay-social-content")
+                memberSocialDiv.append(socialDiv)
             });
 
             isOverlayActive = true; 
@@ -133,6 +165,7 @@ $(document).ready(function() {
         if (isOverlayActive) {
             const closeOverlay = (event) => {
                 if (event.target !== overlay && !overlay.contains(event.target)) {
+                    cleanOverlay();
                     overlay.style.display = "none";
                     isOverlayActive = false;
                     document.removeEventListener('click', closeOverlay); // Remove event listener after closing
@@ -140,5 +173,19 @@ $(document).ready(function() {
             };
             document.addEventListener('click', closeOverlay);
         }
+    }
+
+    function cleanOverlay() {
+        overlayContent.querySelectorAll("p")[0].innerText = ""
+
+        memberProjectDiv = overlayContent.querySelector('#overlay-project-holder');
+        Array.from(memberProjectDiv.children).forEach(child => {
+            child.remove();
+        });
+
+        memberSocialDiv = overlayContent.querySelector('#overlay-social-holder');
+        Array.from(memberSocialDiv.children).forEach(child => {
+            child.remove();
+        });
     }
 });
