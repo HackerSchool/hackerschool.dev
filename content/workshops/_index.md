@@ -4,7 +4,7 @@ date: 2024-10-04
 draft: false
 image: "/images/home/workshops.webp"
 event: true
-description: "Temos vários WorkShops planeados, inscreve-te já!"
+description: "Temos vários workshops planeados, inscreve-te já!"
 ---
 
 # Próximos Workshops

@@ -4,7 +4,7 @@ date: 2025-05-03
 author: Lounge IST & HackerSchool
 draft: false
 event: true
-description: "O MakerIST é um evento que celebra a cultura maker. Junta-te a nós!"
+description: "O MakerIST é um evento que celebra a cultura maker."
 image: "images/makerist/MakerIST.png"
 # layout: "contactos"
 ---
@@ -90,7 +90,7 @@ Aproveita para recarregar energias com as opções de comida e bebida gratuitas 
 | Workshop                       | Com                            | Data       | Hora | Local                    | Inscrições         |
 | ------------------------------ | ------------------------------ | ---------- | ---- | ------------------------ | ------------------ |
 | **Cria o teu Macropad**        | Gonçalo Fecha                  | 3 de junho | 18h  | Sala GA1 _(a confirmar)_ | [Brevemente](none) |
-| **Democratizando Sociologia**  | Armando Gonçalves              | 3 de junho | 18h  | Sala GA2 _(a confirmar)_ | [Brevemente](none) |
+| **Democratizando Sociologia**  | Armando Gonçalves              | 3 de junho | 18h  | Sala GA2 _(a confirmar)_ | [Clica-me](/workshops/social/) |
 | **Cria o teu MIDI Footswitch** | Filipe Vaz e Armando Gonçalves | 4 de junho | 18h  | Sala GA1 _(a confirmar)_ | [Brevemente](none) |
 
 ## Palestras
