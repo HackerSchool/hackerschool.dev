@@ -15,9 +15,9 @@ Este site foi criado com a framework [Hugo](https://github.com/gohugoio/hugo). E
 | Objetivo                  | Status   |
 |---------------------------|----------|
 | Novo site para 2024       | ✅ Concluído |
-| Templating da página inicial | ⏳ Em andamento |
-| Páginas de projetos        | ⏳ Em andamento |
-| Páginas de workshops       | ⏳ Em andamento |
+| Templating da página inicial | ✅ Concluído |
+| Páginas de projetos        | ✅ Concluído |
+| Páginas de workshops       | ✅ Concluído |
 | Popup de membros           | ⏳ Em andamento |
 
 ---
