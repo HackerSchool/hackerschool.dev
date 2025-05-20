@@ -49,6 +49,14 @@ h1,
 h2,
 .h2 {
   font-size: 32px;
+  color: #00ffaa;
+  text-shadow: 0 0 4px rgba(0, 255, 170, 0.3);
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid rgba(0, 255, 170, 0.2);
+  padding-bottom: 0.3rem;
 }
 
 h3,
@@ -816,7 +824,7 @@ li.parent a {
     box-shadow: 3px 3px 3px black;
     transition: .3s ease;
     
-    background-color:#2b2b2b;
+    background-color:#1b1b1b;
     margin:30px; 
     margin-left: 10px;
     margin-right: 10px;

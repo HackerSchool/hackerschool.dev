@@ -23,37 +23,63 @@ O **MakerIST** é um evento que celebra a cultura maker, reunindo entusiastas da
 
 ![](images/MakerIST.png)
 
-Através de uma variedade de atividades envolventes, o MakerIST visa promover a cultura maker e estimular a inovação:
+<!-- Através de uma variedade de atividades envolventes, o MakerIST visa promover a cultura maker e estimular a inovação: -->
+<!---->
+<!-- - **Workshops práticos:** Oportunidades para colocar a mão na massa e aprender novas habilidades. -->
+<!-- - **Palestras:** Apresentações sobre temas relevantes no mundo da criação e tecnologia. -->
+<!-- - **Exposições de projetos inovadores:** Demonstrações de trabalhos criativos, artísticos e tecnológicos. -->
+<!-- - **Atividades interativas:** Experiências como desmontagem eletrónica e arte generativa para despertar a curiosidade. -->
 
-- **Workshops práticos:** Oportunidades para colocar a mão na massa e aprender novas habilidades.
-- **Palestras:** Apresentações sobre temas relevantes no mundo da criação e tecnologia.
-- **Exposições de projetos inovadores:** Demonstrações de trabalhos criativos, artísticos e tecnológicos.
-- **Atividades interativas:** Experiências como desmontagem eletrónica e arte generativa para despertar a curiosidade.
+## Eventos
+
+{{< features >}}
+  {{< featurecard title="Workshops práticos" icon="🛠️" link="#workshops-confirmados">}}Oportunidades para colocar a mão na massa e aprender novas habilidades.{{< /featurecard >}}
+  {{< featurecard title="Palestras" icon="🎤" link="#palestras">}}Apresentações sobre temas relevantes no mundo da criação e tecnologia.{{< /featurecard >}}
+  {{< featurecard title="Exposições de projetos inovadores" icon="💡" link="#bancas-confirmadas" >}}Demonstrações de trabalhos criativos, artísticos e tecnológicos.{{< /featurecard >}}
+  {{< featurecard title="Atividades interativas" icon="🎨"  link="#bancas-da-hackerschool">}}Experiências como desmontagem eletrónica e arte generativa para despertar a curiosidade.{{< /featurecard >}}
+{{< /features >}}
 
 ## Os principais objetivos do MakerIST são:
 
-- Celebrar e promover a cultura maker.
-- Mostrar projetos inovadores e _open-source_.
-- Fomentar a interação e a troca de ideias entre participantes.
-- Explorar a fascinante intersecção entre arte e tecnologia.
-- Divulgar e fortalecer a "free culture" e a democracia digital.
-- Oferecer uma experiência que seja simultaneamente lúdica e educativa.
+<!-- - Celebrar e promover a cultura maker. -->
+<!-- - Mostrar projetos inovadores e _open-source_. -->
+<!-- - Fomentar a interação e a troca de ideias entre participantes. -->
+<!-- - Explorar a fascinante intersecção entre arte e tecnologia. -->
+<!-- - Divulgar e fortalecer a "free culture" e a democracia digital. -->
+<!-- - Oferecer uma experiência que seja simultaneamente lúdica e educativa. -->
+
+
+{{< manifesto title="Os principais objetivos do MakerIST são:" >}}
+  {{< manifestoitem >}}Celebrar e promover a cultura maker.{{< /manifestoitem >}}
+  {{< manifestoitem >}}Mostrar projetos inovadores e open-source.{{< /manifestoitem >}}
+  {{< manifestoitem >}}Fomentar a interação e a troca de ideias entre participantes.{{< /manifestoitem >}}
+  {{< manifestoitem >}}Explorar a fascinante intersecção entre arte e tecnologia.{{< /manifestoitem >}}
+  {{< manifestoitem >}}Divulgar e fortalecer a “free culture” e a democracia digital.{{< /manifestoitem >}}
+  {{< manifestoitem >}}Oferecer uma experiência que seja simultaneamente lúdica e educativa.{{< /manifestoitem >}}
+{{< /manifesto >}}
 
 ## Bancas Confirmadas
 
-- Comudel [https://comudel.com/](https://comudel.com/)
-- NEEC [https://neecist.org/](https://neecist.org/)
-- ISTrain [https://www.linkedin.com/company/lxtrain/?originalSubdomain=pt](https://www.linkedin.com/company/lxtrain/?originalSubdomain=pt)
-- ANSOL [https://ansol.org/](https://ansol.org/)
-- HomeIT [https://homeit.io/](https://homeit.io/)
-- FabLab Lisboa [https://www.fablabs.io/labs/fablablisboa](https://www.fablabs.io/labs/fablablisboa)
+{{< bancas >}}
+{{< banca name="Comudel" url="https://comudel.com/" >}}
+{{< banca name="NEEC" url="https://neecist.org/" >}}
+{{< banca name="ISTrain" url="https://www.linkedin.com/company/lxtrain/?originalSubdomain=pt" >}}
+{{< banca name="ANSOL" url="https://ansol.org/" >}}
+{{< banca name="HomeIT" url="https://homeit.io/" >}}
+{{< banca name="FabLab Lisboa" url="https://www.fablabs.io/labs/fablablisboa" >}}
+{{< banca name="MAUSER.PT" url="https://go.mauser.pt/hackerschool" >}}
+{{< /bancas >}}
 
-**Bancas da HackerSchool:**
+---
 
-- Junk Party
-- Arte Generativa c/ p5.js
-- Música Open Hardware
-- Mostra dos projetos atuais
+### Bancas da HackerSchool
+
+{{< bancas >}}
+{{< banca name="Junk Party" >}}
+{{< banca name="Arte Generativa c/ p5.js" >}}
+{{< banca name="Música Open Hardware" >}}
+{{< banca name="Mostra dos projetos atuais" >}}
+{{< /bancas >}}
 
 ## Comida & Bebida Grátis
 
@@ -67,11 +93,11 @@ Aproveita para recarregar energias com as opções de comida e bebida gratuitas 
 | **Democratizando Sociologia**  | Armando Gonçalves              | 3 de junho | 18h  | Sala GA2 _(a confirmar)_ | [Brevemente](none) |
 | **Cria o teu MIDI Footswitch** | Filipe Vaz e Armando Gonçalves | 4 de junho | 18h  | Sala GA1 _(a confirmar)_ | [Brevemente](none) |
 
-## Palestra
+## Palestras
 
-- **"O que é _open-source_ e porque nos devemos importar?"**
-
-ANSOL, 3 de junho às 9h30, Pavilhão Central
+| Palestra | Com | Data | Hora | Local|
+| ------------------------------ | ------------------------------ | ---------- | ---- | ------------------------ | ------------------ |
+|**"O que é _open-source_ e porque nos devemos importar?"**| ANSOL |3 de junho| 9h30| Pavilhão Central|
 
 ## Open Call
 
