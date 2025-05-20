@@ -478,6 +478,10 @@ h3 p{
 .aboutUsContainer strong {
   font-size: 130%;
 }
+
+.aboutUsContainer {
+  padding: 0;
+}
 .aboutUsContainer strong.sub {
   font-size: 105%;
 }
@@ -1136,4 +1140,53 @@ header {
 /* Hover effect for social icons */
 .social-icons a:hover {
     color: #6dba83;
+}
+
+
+table {
+  display: block;
+  overflow-x: auto;
+  max-width: 100%;
+  border-collapse: collapse;
+  font-family: "Fira Code", monospace;
+  background-color: #111;
+  color: #eee;
+  margin: 2rem 0;
+  box-shadow: 0 0 0.5rem rgba(0, 255, 170, 0.2);
+  border: 1px solid #222;
+}
+
+
+
+/* Table headers */
+thead th {
+  background-color: #1e1e1e;
+  color: #00ffaa;
+  padding: 1rem;
+  text-align: left;
+  font-size: 1.1rem;
+  border-bottom: 2px solid #00ffaa;
+}
+
+/* Table body rows */
+tbody td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #222;
+}
+
+/* Highlight on hover */
+tbody tr:hover {
+  background-color: #1a1a1a;
+}
+
+/* Links inside table */
+table a {
+  color: #00ffaa;
+  text-decoration: none;
+  border-bottom: 1px dashed #00ffaa;
+}
+
+table a:hover {
+  color: #ffffff;
+  border-bottom: 1px solid #ffffff;
 }
