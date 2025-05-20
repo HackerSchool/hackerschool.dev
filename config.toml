@@ -63,6 +63,11 @@ rssIcon = "images/rss.svg"
         name = "Contactos"
         url = "/contactos"
 
+      [[Languages.en.menu.main]]
+        weight = 4
+        name = "MakerIST"
+        url = "/makerist"
+
     # banner
     [Languages.en.params.banner]
       title = "HackerSchool"
