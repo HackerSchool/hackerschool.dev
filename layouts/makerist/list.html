@@ -1,0 +1,34 @@
+{{ partial "head.html" . }}
+
+{{ "<!-- navigation -->" | safeHTML }}
+<header class="shadow-bottom sticky-top bg-gray">
+    <div class="container">
+        {{ partial "navigation.html" . }}
+    </div>
+</header>
+
+<link rel="stylesheet" href="{{ "css/matrixstyles.css" | relURL }}">
+<div id="overlay"></div>
+<canvas id="matrixCanvas"></canvas>
+<script src="{{ "js/scriptmatrix.js" | relURL }}"></script>
+
+<section id="home-content" style="padding-bottom: 48px;" class="single fader-alternate">
+    <div class="container pt-4 aboutUsContainer">
+        <div class="dynamicThingy" style="color: white">
+            
+            <h1>
+
+            <a href="{{ .RelPermalink }}feed.xml">
+                <img src="/images/rss.svg" alt="Feed RSS" style="width: 1em !important">
+                </a>
+                {{.Title}}
+
+            </h1>
+            
+            {{ .Content}}
+        </div>
+    </div>
+</section>
+
+{{ partial "footer.html" . }}
+

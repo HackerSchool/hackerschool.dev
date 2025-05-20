@@ -4,7 +4,7 @@ date: 2025-05-20
 author: armandoski
 draft: false
 description: "O MakerIST é um evento que celebra a cultura maker, reunindo entusiastas da criação, tecnologia e DIY no Instituto Superior Técnico nos dias 3 e 4 de junho."
-layout: "page"
+# layout: "page"
 
 ---
 

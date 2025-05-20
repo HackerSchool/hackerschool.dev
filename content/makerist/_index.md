@@ -6,20 +6,20 @@ draft: false
 event: true
 description: "O MakerIST é um evento que celebra a cultura maker. Junta-te a nós!"
 image: "images/makerist/MakerIST.png"
-layout: "contactos"
+# layout: "contactos"
 ---
 
-<b><b><b>
-# MakerIST
-<b><b><b>
+<!-- <b><b><b> -->
+<!-- # MakerIST -->
+<!-- <b><b><b> -->
 
-3 e 4 de junho | Pavilhão Central do Instituto Superior Técnico
+3 e 4 de junho | [Pavilhão Central do Instituto Superior Técnico](https://maps.app.goo.gl/dLX5NzLvm9guL8Vf6)
 
 **Entrada:** Gratuita e aberta a todo o público
 
 O **MakerIST** é um evento que celebra a cultura maker, reunindo entusiastas da criação, tecnologia e *Do-It-Yourself* (DIY). Nos dias **3 e 4 de junho**, o **Pavilhão Central do Instituto Superior Técnico** transformar-se-á num espaço dinâmico de aprendizagem, partilha e experimentação criativa, aberto tanto à comunidade académica quanto ao público em geral.
 
-![](/images/makerist/MakerIST.png)
+![](images/MakerIST.png)
 
 
 Através de uma variedade de atividades envolventes, o MakerIST visa promover a cultura maker e estimular a inovação:
@@ -81,7 +81,11 @@ ANSOL, 3 de junho às 9h30, Pavilhão Central
 
 Tens um projeto interessante e gostarias de ter a tua própria banca no MakerIST? 
 
-Candidata-te até **30 de maio** através deste link: [https://docs.google.com/forms/d/e/1FAIpQLSdtcaK02c86xVoH1fX-USOvp27kvuRPOQKaLTERcKKnckKjXA/viewform](https://docs.google.com/forms/d/e/1FAIpQLSdtcaK02c86xVoH1fX-USOvp27kvuRPOQKaLTERcKKnckKjXA/viewform)
+<!-- Candidata-te até **30 de maio** através deste link: [https://docs.google.com/forms/d/e/1FAIpQLSdtcaK02c86xVoH1fX-USOvp27kvuRPOQKaLTERcKKnckKjXA/viewform](https://docs.google.com/forms/d/e/1FAIpQLSdtcaK02c86xVoH1fX-USOvp27kvuRPOQKaLTERcKKnckKjXA/viewform) -->
+
+
+Candidata-te até **30 de maio**!
+{{< button link="https://docs.google.com/forms/d/e/1FAIpQLSdtcaK02c86xVoH1fX-USOvp27kvuRPOQKaLTERcKKnckKjXA/viewform" text="Open Call" >}} 
 
 ## Para mais informações e contactos
 
@@ -90,4 +94,6 @@ Candidata-te até **30 de maio** através deste link: [https://docs.google.com/f
 
 **Equipa HackerSchool:**
 [hackerschool](https://www.instagram.com/hackerschool_ist/) // [hackerschool@tecnico.ulisboa.pt](mailto:hackerschool@tecnico.ulisboa.pt)
+
+
 
