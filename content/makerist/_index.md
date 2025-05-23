@@ -15,9 +15,9 @@ image: "images/makerist/MakerIST.png"
 
 ## MakerIST
 
-3 e 4 de junho | [Pavilhão Central do Instituto Superior Técnico](https://maps.app.goo.gl/dLX5NzLvm9guL8Vf6)
+**3 e 4 de junho** | [**Pavilhão Central do Instituto Superior Técnico**](https://maps.app.goo.gl/dLX5NzLvm9guL8Vf6)
 
-**Entrada:** Gratuita e aberta a todo o público
+**Entrada gratuita e aberta a todo o público!**
 
 O **MakerIST** é um evento que celebra a cultura maker, reunindo entusiastas da criação, tecnologia e _Do-It-Yourself_ (DIY). Nos dias **3 e 4 de junho**, o **Pavilhão Central do Instituto Superior Técnico** transformar-se-á num espaço dinâmico de aprendizagem, partilha e experimentação criativa, aberto tanto à comunidade académica quanto ao público em geral.
 
@@ -30,16 +30,17 @@ O **MakerIST** é um evento que celebra a cultura maker, reunindo entusiastas da
 <!-- - **Exposições de projetos inovadores:** Demonstrações de trabalhos criativos, artísticos e tecnológicos. -->
 <!-- - **Atividades interativas:** Experiências como desmontagem eletrónica e arte generativa para despertar a curiosidade. -->
 
-## Eventos
+## Open Call
 
-{{< features >}}
-  {{< featurecard title="Workshops práticos" icon="🛠️" link="#workshops-confirmados">}}Oportunidades para colocar a mão na massa e aprender novas habilidades.{{< /featurecard >}}
-  {{< featurecard title="Palestras" icon="🎤" link="#palestras">}}Apresentações sobre temas relevantes no mundo da criação e tecnologia.{{< /featurecard >}}
-  {{< featurecard title="Exposições de projetos inovadores" icon="💡" link="#bancas-confirmadas" >}}Demonstrações de trabalhos criativos, artísticos e tecnológicos.{{< /featurecard >}}
-  {{< featurecard title="Atividades interativas" icon="🎨"  link="#bancas-da-hackerschool">}}Experiências como desmontagem eletrónica e arte generativa para despertar a curiosidade.{{< /featurecard >}}
-{{< /features >}}
+Tens um projeto interessante e gostarias de ter a tua própria banca no MakerIST?
 
-## Os principais objetivos do MakerIST são:
+<!-- Candidata-te até **30 de maio** através deste link: [https://docs.google.com/forms/d/e/1FAIpQLSdtcaK02c86xVoH1fX-USOvp27kvuRPOQKaLTERcKKnckKjXA/viewform](https://docs.google.com/forms/d/e/1FAIpQLSdtcaK02c86xVoH1fX-USOvp27kvuRPOQKaLTERcKKnckKjXA/viewform) -->
+
+Candidata-te até **30 de maio**!
+{{< button link="https://docs.google.com/forms/d/e/1FAIpQLSdtcaK02c86xVoH1fX-USOvp27kvuRPOQKaLTERcKKnckKjXA/viewform" text="Open Call" >}}
+
+
+## Objetivos do MakerIST
 
 <!-- - Celebrar e promover a cultura maker. -->
 <!-- - Mostrar projetos inovadores e _open-source_. -->
@@ -48,15 +49,24 @@ O **MakerIST** é um evento que celebra a cultura maker, reunindo entusiastas da
 <!-- - Divulgar e fortalecer a "free culture" e a democracia digital. -->
 <!-- - Oferecer uma experiência que seja simultaneamente lúdica e educativa. -->
 
-
 {{< manifesto title="Os principais objetivos do MakerIST são:" >}}
-  {{< manifestoitem >}}Celebrar e promover a cultura maker.{{< /manifestoitem >}}
-  {{< manifestoitem >}}Mostrar projetos inovadores e open-source.{{< /manifestoitem >}}
-  {{< manifestoitem >}}Fomentar a interação e a troca de ideias entre participantes.{{< /manifestoitem >}}
-  {{< manifestoitem >}}Explorar a fascinante intersecção entre arte e tecnologia.{{< /manifestoitem >}}
-  {{< manifestoitem >}}Divulgar e fortalecer a “free culture” e a democracia digital.{{< /manifestoitem >}}
-  {{< manifestoitem >}}Oferecer uma experiência que seja simultaneamente lúdica e educativa.{{< /manifestoitem >}}
+{{< manifestoitem >}}Celebrar e promover a cultura maker.{{< /manifestoitem >}}
+{{< manifestoitem >}}Mostrar projetos inovadores e open-source.{{< /manifestoitem >}}
+{{< manifestoitem >}}Fomentar a interação e a troca de ideias entre participantes.{{< /manifestoitem >}}
+{{< manifestoitem >}}Explorar a fascinante intersecção entre arte e tecnologia.{{< /manifestoitem >}}
+{{< manifestoitem >}}Divulgar e fortalecer a “free culture” e a democracia digital.{{< /manifestoitem >}}
+{{< manifestoitem >}}Oferecer uma experiência que seja simultaneamente lúdica e educativa.{{< /manifestoitem >}}
 {{< /manifesto >}}
+
+## Eventos
+
+{{< features >}}
+{{< featurecard title="Workshops práticos" icon="🛠️" link="#workshops-confirmados">}}Oportunidades para colocar a mão na massa e aprender novas habilidades.{{< /featurecard >}}
+{{< featurecard title="Palestras" icon="🎤" link="#palestras">}}Apresentações sobre temas relevantes no mundo da criação e tecnologia.{{< /featurecard >}}
+{{< featurecard title="Exposições de projetos inovadores" icon="💡" link="#bancas-confirmadas" >}}Demonstrações de trabalhos criativos, artísticos e tecnológicos.{{< /featurecard >}}
+{{< featurecard title="Atividades interativas" icon="🎨"  link="#bancas-da-hackerschool">}}Experiências como desmontagem eletrónica e arte generativa para despertar a curiosidade.{{< /featurecard >}}
+{{< /features >}}
+
 
 ## Bancas Confirmadas
 
@@ -81,32 +91,23 @@ O **MakerIST** é um evento que celebra a cultura maker, reunindo entusiastas da
 {{< banca name="Mostra dos projetos atuais" >}}
 {{< /bancas >}}
 
-## Comida & Bebida Grátis
-
-Aproveita para recarregar energias com as opções de comida e bebida gratuitas disponíveis no evento!
-
 ## Workshops Confirmados
 
-| Workshop                       | Com                            | Data       | Hora | Local                    | Inscrições         |
-| ------------------------------ | ------------------------------ | ---------- | ---- | ------------------------ | ------------------ |
+| Workshop                       | Com                            | Data       | Hora | Local                    | Inscrições                                     |
+| ------------------------------ | ------------------------------ | ---------- | ---- | ------------------------ | ---------------------------------------------- |
 | **Cria o teu Macropad**        | Gonçalo Fecha                  | 3 de junho | 18h  | Sala GA1 _(a confirmar)_ | [Abertas](https://forms.gle/DD1xp4f3Q8iKoYY8A) |
-| **Democratizando Sociologia**  | Armando Gonçalves              | 3 de junho | 18h  | Sala GA2 _(a confirmar)_ | [Abertas](/workshops/social/) |
-| **Cria o teu MIDI Footswitch** | Filipe Vaz e Armando Gonçalves | 4 de junho | 18h  | Sala GA1 _(a confirmar)_ | [Brevemente](none) |
+| **Democratizando Sociologia**  | Armando Gonçalves              | 3 de junho | 18h  | Sala GA2 _(a confirmar)_ | [Abertas](/workshops/social/)                  |
+| **Cria o teu MIDI Footswitch** | Filipe Vaz e Armando Gonçalves | 4 de junho | 18h  | Sala GA1 _(a confirmar)_ | [Brevemente](none)                             |
 
 ## Palestras
 
-| Palestra | Com | Data | Hora | Local|
-| ------------------------------ | ------------------------------ | ---------- | ---- | ------------------------ | ------------------ |
-|**"O que é _open-source_ e porque nos devemos importar?"**| ANSOL |3 de junho| 9h30| Pavilhão Central|
+| Palestra                                                   | Com   | Data       | Hora | Local            |
+| ---------------------------------------------------------- | ----- | ---------- | ---- | ---------------- |
+| **"O que é _open-source_ e porque nos devemos importar?"** | ANSOL | 3 de junho | 9h30 | Pavilhão Central |
 
-## Open Call
+## Comida & Bebida Grátis
 
-Tens um projeto interessante e gostarias de ter a tua própria banca no MakerIST?
-
-<!-- Candidata-te até **30 de maio** através deste link: [https://docs.google.com/forms/d/e/1FAIpQLSdtcaK02c86xVoH1fX-USOvp27kvuRPOQKaLTERcKKnckKjXA/viewform](https://docs.google.com/forms/d/e/1FAIpQLSdtcaK02c86xVoH1fX-USOvp27kvuRPOQKaLTERcKKnckKjXA/viewform) -->
-
-Candidata-te até **30 de maio**!
-{{< button link="https://docs.google.com/forms/d/e/1FAIpQLSdtcaK02c86xVoH1fX-USOvp27kvuRPOQKaLTERcKKnckKjXA/viewform" text="Open Call" >}}
+Aproveita para recarregar energias com as opções de comida e bebida gratuitas disponíveis no evento!
 
 ## Para mais informações e contactos
 
