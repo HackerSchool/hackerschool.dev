@@ -89,8 +89,8 @@ Aproveita para recarregar energias com as opções de comida e bebida gratuitas 
 
 | Workshop                       | Com                            | Data       | Hora | Local                    | Inscrições         |
 | ------------------------------ | ------------------------------ | ---------- | ---- | ------------------------ | ------------------ |
-| **Cria o teu Macropad**        | Gonçalo Fecha                  | 3 de junho | 18h  | Sala GA1 _(a confirmar)_ | [Brevemente](none) |
-| **Democratizando Sociologia**  | Armando Gonçalves              | 3 de junho | 18h  | Sala GA2 _(a confirmar)_ | [Clica-me](/workshops/social/) |
+| **Cria o teu Macropad**        | Gonçalo Fecha                  | 3 de junho | 18h  | Sala GA1 _(a confirmar)_ | [Abertas](https://forms.gle/DD1xp4f3Q8iKoYY8A) |
+| **Democratizando Sociologia**  | Armando Gonçalves              | 3 de junho | 18h  | Sala GA2 _(a confirmar)_ | [Abertas](/workshops/social/) |
 | **Cria o teu MIDI Footswitch** | Filipe Vaz e Armando Gonçalves | 4 de junho | 18h  | Sala GA1 _(a confirmar)_ | [Brevemente](none) |
 
 ## Palestras
