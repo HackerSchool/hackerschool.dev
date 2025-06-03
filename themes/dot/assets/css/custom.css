@@ -47,3 +47,132 @@ and (max-width: 1200px) {
         font-size: 100px;
     }
 }
+
+
+.banca-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(320px, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.banca-card {
+  background-color: #111;
+  color: #00ffaa;
+  border: 1px solid #00ffaa30;
+  padding: 1rem;
+  text-align: center;
+  font-family: 'Fira Code', monospace;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,255,170,0.1);
+  transition: transform 0.2s ease;
+}
+
+.banca-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 15px rgba(0,255,170,0.3);
+}
+
+.banca-card a {
+  color: #00ffaa;
+  text-decoration: none;
+  border-bottom: 1px dashed #00ffaa40;
+}
+
+.banca-card a:hover {
+  border-bottom: 1px solid #ffffff;
+}
+
+
+.manifesto {
+  /* background: radial-gradient(circle at center, #0f0f0f 0%, #000000 100%); */
+  /* color: #00ffaa; */
+  padding: 1rem 1rem;
+  text-align: center;
+  font-family: "Fira Code", monospace;
+}
+
+.manifesto-title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #fff;
+  text-shadow: 0 0 5px #00ffaa80;
+}
+
+.manifesto-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  /* max-width: 800px; */
+  margin: 0 auto;
+}
+
+.manifesto-item {
+  font-size: 1.25rem;
+  background: #111;
+  padding: 1.25rem;
+  border-left: 4px solid #00ffaa;
+  border-radius: 6px;
+  box-shadow: 0 0 10px rgba(0,255,170,0.1);
+  transition: transform 0.2s ease;
+}
+
+.manifesto-item:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 20px rgba(0,255,170,0.3);
+}
+
+
+.features-container {
+  padding: 1rem 1rem;
+  max-width: 960px;
+  margin: 0 auto;
+  font-family: 'Fira Code', monospace;
+  color: #eee;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  /* max-width: 700px; */
+  margin: 0 auto;
+  gap: 2rem;
+}
+
+.feature-card {
+  background: linear-gradient(145deg, #0a0a0a, #111111);
+  border-radius: 10px;
+  padding: 1.5rem 1.25rem;
+  box-shadow: 0 5px 15px rgba(0, 255, 170, 0.2);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  text-align: center;
+  border: 1px solid #00ffaa44;
+}
+
+.feature-card:hover {
+  box-shadow: 0 10px 25px rgba(0, 255, 170, 0.6);
+  transform: translateY(-5px);
+}
+
+.feature-icon {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  color: #00ffaa;
+}
+
+.feature-title {
+  font-weight: 700;
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  color: #00ffaa;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.feature-desc {
+  font-weight: 400;
+  font-size: 1rem;
+  color: #ccc;
+}

@@ -1,0 +1,9 @@
+<div class="banca-card">
+  {{ with .Get "url" }}
+    <a href="{{ . }}" target="_blank" rel="noopener">
+      <strong>{{ $.Get "name" }}</strong>
+    </a>
+  {{ else }}
+    <strong>{{ .Get "name" }}</strong>
+  {{ end }}
+</div>

@@ -1,0 +1,31 @@
+{{ partial "head.html" . }}
+
+{{ "<!-- navigation -->" | safeHTML }}
+<header class="shadow-bottom sticky-top bg-gray">
+    <div class="container">
+        {{ partial "navigation.html" . }}
+    </div>
+</header>
+{{ "<!-- /navigation -->" | safeHTML }}
+<!-- details page -->
+
+<div id="overlay"></div>
+<canvas id="matrixCanvas"></canvas>
+<script src="{{ "js/scriptmatrix.js" | relURL }}"></script>
+
+<div class="container pt-6 aboutUsContainer">
+
+    <div style="color: white">
+        <!-- {{ .TableOfContents }} -->
+        {{ $content := .Content }}  <!-- Get the page content -->
+
+        <!-- First, process the <h2> headings -->
+        {{ $content = partial "wrapHeading.html" (dict "content" $content "headingLevel" "h2" "divClass" "dynamicThingy") }}
+
+        <!-- Output the final processed content -->
+        {{ $content | safeHTML }}
+</div>
+</div>
+
+{{ partial "footer.html" . }}
+

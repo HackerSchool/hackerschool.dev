@@ -1,0 +1,18 @@
+{{ $link := .Get "link" }}
+{{ if $link }}
+  <a href="{{ $link }}" class="feature-card" >
+{{ else }}
+  <div class="feature-card">
+{{ end }}
+
+  {{ with .Get "icon" }}
+    <div class="feature-icon">{{ . | safeHTML }}</div>
+  {{ end }}
+  <h3 class="feature-title">{{ .Get "title" }}</h3>
+  <p class="feature-desc">{{ .Inner }}</p>
+
+{{ if $link }}
+  </a>
+{{ else }}
+  </div>
+{{ end }}

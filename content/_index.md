@@ -12,7 +12,6 @@ Desde 2012, a HackerSchool foca-se na criação de projetos nas mais diversas á
 <!-- Event section here -->
 ## Próximos Eventos
 
-Estes são os nossos próximos eventos.
 
 {{< event-cards >}}
 
