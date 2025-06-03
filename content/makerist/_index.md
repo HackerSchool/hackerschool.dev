@@ -54,7 +54,7 @@ Candidata-te até **30 de maio**!
 {{< manifestoitem >}}Mostrar projetos inovadores e open-source.{{< /manifestoitem >}}
 {{< manifestoitem >}}Fomentar a interação e a troca de ideias entre participantes.{{< /manifestoitem >}}
 {{< manifestoitem >}}Explorar a fascinante intersecção entre arte e tecnologia.{{< /manifestoitem >}}
-{{< manifestoitem >}}Divulgar e fortalecer a “free culture” e a democracia digital.{{< /manifestoitem >}}
+{{< manifestoitem >}}Divulgar e fortalecer a "free culture" e a democracia digital.{{< /manifestoitem >}}
 {{< manifestoitem >}}Oferecer uma experiência que seja simultaneamente lúdica e educativa.{{< /manifestoitem >}}
 {{< /manifesto >}}
 
@@ -76,8 +76,13 @@ Candidata-te até **30 de maio**!
 {{< banca name="ISTrain" url="https://www.linkedin.com/company/lxtrain/?originalSubdomain=pt" >}}
 {{< banca name="ANSOL" url="https://ansol.org/" >}}
 {{< banca name="HomeIT" url="https://homeit.io/" >}}
-{{< banca name="FabLab Lisboa" url="https://www.fablabs.io/labs/fablablisboa" >}}
+{{< banca name="FabLab" url="https://www.fablabs.io/labs/fablablisboa" >}}
 {{< banca name="MAUSER.PT" url="https://go.mauser.pt/hackerschool" >}}
+{{< banca name="Drean Lopes" url="https://www.instagram.com/dreanlopes" >}}
+{{< banca name="Veertien Art" url="https://www.instagram.com/veertien.art" >}}
+{{< banca name="Cubos" url="https://cubosengine.org" >}}
+{{< banca name="LoKI" url="https://nprime.tecnico.ulisboa.pt/loki/" >}}
+{{< banca name="Estação Meteorológica" url="https://www.aemiraflores.edu.pt/joomla2/index.php/es-de-miraflores" >}}
 {{< /bancas >}}
 
 ---
@@ -103,7 +108,7 @@ Candidata-te até **30 de maio**!
 
 | Palestra                                                   | Com   | Data       | Hora | Local            |
 | ---------------------------------------------------------- | ----- | ---------- | ---- | ---------------- |
-| **"O que é _open-source_ e porque nos devemos importar?"** | ANSOL | 3 de junho | 9h30 | Pavilhão Central |
+| **"O que é _open-source_ e porque nos devemos importar?"** | ANSOL | 4 de junho | 12h30 | Pavilhão Central |
 
 ## Comida & Bebida Grátis
 
