@@ -19,7 +19,12 @@ Este é o projeto do site da HackerSchool!
 
 ## Devlog
 
-### 18 de outubro
+### 10/06/2025
+Adicionado GitHub cards para os repos!
+
+{{< github-card "HackerSchool/hackerschool.dev" >}}
+
+### 18/10/2024
 Pequeno exemplo de como podemos começar a organizar o site!
 
 ## Todolist

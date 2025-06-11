@@ -1,10 +1,10 @@
 ---
-title: "MakerIST 2025"
+title: "MakerIST"
 date: 2025-05-03
 author: Lounge IST & HackerSchool
 draft: false
 event: true
-description: "O MakerIST é um evento que celebra a cultura maker."
+description: "O MakerIST foi um evento que celebrou a cultura maker"
 image: "images/makerist/MakerIST.png"
 # layout: "contactos"
 ---
@@ -101,8 +101,8 @@ Candidata-te até **30 de maio**!
 | Workshop                       | Com                            | Data       | Hora | Local                    | Inscrições                                     |
 | ------------------------------ | ------------------------------ | ---------- | ---- | ------------------------ | ---------------------------------------------- |
 | **Cria o teu Macropad**        | Gonçalo Fecha                  | 3 de junho | 18h  | Sala GA1 | [Fechadas]() |
-| **Democratizando Sociologia**  | Armando Gonçalves              | 3 de junho | 18h  | Sala GA2  | [Fechadas]()                  |
-| **Modelação 3D em Blender** | Margarida Prates | 4 de junho | 18h  | Sala GA1  | [Abertas](https://docs.google.com/forms/d/e/1FAIpQLSeSHP8L7KXEOhpH_zACXsWHNGnWa5L7atKHNEdrO15DJmrJwQ/viewform)                             |
+| **Democratizando Sociologia**  | Armando Gonçalves              | 3 de junho | 18h  | Sala GA2  | [Fechadas](https://hackerschool.tecnico.ulisboa.pt/workshops/social/)                  |
+| **Modelação 3D em Blender** | Margarida Prates | 4 de junho | 18h  | Sala GA1  | [Fechadas]()                             |
 
 ## Palestras
 
@@ -121,3 +121,5 @@ Aproveita para recarregar energias com as opções de comida e bebida gratuitas 
 
 **Equipa HackerSchool:**
 [hackerschool](https://www.instagram.com/hackerschool_ist/) // [hackerschool@tecnico.ulisboa.pt](mailto:hackerschool@tecnico.ulisboa.pt)
+
+

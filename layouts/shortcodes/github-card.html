@@ -1,0 +1,29 @@
+{{ $repo := .Get 0 }}
+{{ if eq $repo "" }}
+    {{ errorf "Missing required parameter: repository name (format: owner/repo)" }}
+{{ end }}
+
+<!-- Add the script only once per page -->
+{{ if not ($.Page.Scratch.Get "github-cards-script") }}
+    {{ $.Page.Scratch.Set "github-cards-script" true }}
+    <script type="module" async src="https://esm.sh/@tsukina-7mochi/github-cards"></script>
+    <style>
+        gh-repo-card {
+            --gh-card-width: 100% !important;
+            --gh-card-color-border: #e0e0e0;
+            --gh-card-color-background-hover: rgb(0 0 0 / 2%);
+            --gh-card-color-background-active: rgb(0 0 0 / 3%);
+            display: block !important;
+            width: 100% !important;
+            background-color: white !important;
+        }
+        
+        gh-repo-card::part(card) {
+            background-color: white !important;
+            width: 100% !important;
+        }
+    </style>
+{{ end }}
+
+<!-- Render the GitHub card -->
+<gh-repo-card name="{{ $repo }}"></gh-repo-card> 
