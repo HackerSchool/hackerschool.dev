@@ -18,22 +18,36 @@ let parsedPath = '~'; // É o caminho que uso nas outras funções
 
 // Initialize the terminal
 $('#terminal').terminal(function (command) {
-    let cmd = command.split(' ');
-    let arg1 = cmd[0];
-    let arg2 = cmd[1] ? cmd[1] : "";
-    parsedPath = pathParser(arg2);
     
-    if (arg1 === 'ls')
-        this.echo(ls(arg2));
-    else if (arg1 === 'cd'){
-        let aux = cd();
-        if (aux)
-            this.echo(aux);
-    }
-    else if (arg1 === 'cat')
-        this.echo(cat(arg2));
-    else{
-        this.echo('Comando não reconhecido.');
+    let p_input = readArgs(command);
+    let comando = p_input.cmd;
+    let argumentos = p_input.argumentos;
+    paths.parsedPath = getDirectory(argumentos.path);
+    switch(comando) {
+        case 'ls':
+            this.echo(ls(argumentos));
+            break;
+        case 'cd':
+            output = cd(argumentos)
+            if(output)
+                this.echo(output);
+            break;
+        case 'cat':
+            this.echo(cat(argumentos));
+            break;
+        case 'grep':
+            this.echo(grep(argumentos));
+            break;
+        case 'show':
+            this.echo(show(argumentos).replace(/\s+$/, ''));
+            break;
+        case 'pwd':
+            this.echo(pwd());
+            break;
+        case 'empty':
+            break;
+        default:
+            this.echo('Comando não reconhecido.');
     }
 }, {
     greetings: 'Muito bem, recruta! Conseguiste desbloquear a fase 1. Assim damos-te as boas vindas ao início da jornada.\n\n\

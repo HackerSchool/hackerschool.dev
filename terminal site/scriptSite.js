@@ -53,9 +53,7 @@ $('#terminal').terminal(function (command) {
 },
 
 {
-    greetings: 'Muito bem, recruta. \n\
-Bem vindo à fase 2. isto é uma simulaçao de terminal bla bla usa o comando "ls" para veres os documentos presentes.\n\
-Usa e abusa do google, chatgpt e youtube caso nao saibas comandos de terminal\n',
+    greetings: 'HackerSaudações. Damos-te as boas vindas ao terminal da HackerSchool\n',
     prompt: getPrompt,   
     name: 'HackerSchool',
     promptExit: false

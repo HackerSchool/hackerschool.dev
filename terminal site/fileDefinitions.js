@@ -110,8 +110,6 @@ var fileSystem = {
             "a.hs": a_hs,
             "b.hs": b_hs,
         },
-        "d.hs": d_hs,
-        "c.hs": c_hs,
 
         'projetos': {
             "site.prj": site_prj
