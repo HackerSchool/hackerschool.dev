@@ -20,13 +20,13 @@
           {{ range .Children }}
 
           {{ printf "%#v" .URL }} {{ printf "%#v" .Permalink }}
-          <a class="dropdown-item" href="{{ .URL }}">{{ .Name }}</a>
+          <a class="dropdown-item" href="{{ .URL | relLangURL }}">{{ .Name }}</a>
           {{ end }}
         </div>
       </li>
       {{ else }}
       <li class="nav-item">
-          <a class="nav-link text-dark" href="{{ .URL }}">{{ .Name }}</a>
+          <a class="nav-link text-dark" href="{{ .URL | relLangURL }}">{{ .Name }}</a>
       </li>
       {{ end }}
       {{ end }}
