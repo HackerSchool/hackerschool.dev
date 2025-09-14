@@ -3,6 +3,7 @@ title: "Contactos"
 date: 2024-11-01
 draft: false
 layout: "contactos"
+lang: "pt"
 ---
 
 ## Contactos

@@ -35,5 +35,9 @@
   {
     "id": "about_events_1",
     "translation": "A HackerSchool funciona em ciclos semestrais com Workshops, HackNights e sessões de TeamBuilding. Ao longo do ano podem juntar-se à programação Hackathons, Palestras, Feiras, entre outros eventos. Os membros da HackerSchool têm sempre entrada garantida e gratuita em qualquer evento realizado pelo núcleo!"
-  }
+  },
+  {
+    "id": "contacts",
+    "translation": "Segue-nos também nas nossas redes sociais!"
+  } 
 ]

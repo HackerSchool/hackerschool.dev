@@ -6,7 +6,7 @@ draft: false
 event: true
 description: "O MakerIST foi um evento que celebrou a cultura maker"
 image: "images/makerist/MakerIST.png"
-lang: "pt"
+lang: "en"
 # layout: "contactos"
 ---
 

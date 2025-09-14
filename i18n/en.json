@@ -34,5 +34,9 @@
   {
     "id": "about_events_1",
     "translation": "HackerSchool operates in semester cycles with Workshops, HackNights, and TeamBuilding sessions. Throughout the year, members can participate in Hackathons, Lectures, Fairs, and other events. HackerSchool members always have guaranteed free entry to any event organized by the association!"
-  }
+  },
+  {
+    "id": "contacts",
+    "translation": "Also follow us on our social media!"
+  } 
 ]

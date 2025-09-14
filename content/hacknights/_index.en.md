@@ -5,7 +5,7 @@ draft: false
 image: "/images/home/pizza_tecnico.jpg"
 event: true
 description: "Sempre na terceira quinta feira do mês!"
-lang: "pt"
+lang: "en"
 ---
 
 # HackNights
