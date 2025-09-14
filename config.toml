@@ -2,6 +2,7 @@ baseURL = "https://hackerschool.tecnico.ulisboa.pt/"
 #baseURL = "http://localhost:8000/"
 languageCode = "pt-pt"
 defaultContentLanguage = "pt"
+defaultContentLanguageInSubdir = true
 title = "HackerSchool"
 theme = "dot"
 
@@ -30,7 +31,7 @@ rssIcon = "images/rss.svg"
   languageName = "Pt"
   weight = 1
   languageCode = "pt-pt"
-  contentDir = "content/pt"
+  contentDir = "content"
 
   title = "HackerSchool - IST"
   #dateFormat = "2 January 2006"
@@ -43,27 +44,27 @@ rssIcon = "images/rss.svg"
       [[Languages.pt.menu.main]]
         weight = 2
         name = "Membros"
-        url = "/membros"
+        url = "/membros/"
     
       [[Languages.pt.menu.main]]
         weight = 2
         name = "Sobre nós"
-        url = "/sobre"
+        url = "/sobre/"
         
       [[Languages.pt.menu.main]]
         weight = 2
         name = "Projetos"
-        url = "/projetos"
+        url = "/projetos/"
 
       [[Languages.pt.menu.main]]
         weight = 2
         name = "Recrutamento"
-        url = "/recrutamento"
+        url = "/recrutamento/"
 
       [[Languages.pt.menu.main]]
         weight = 3
         name = "Contactos"
-        url = "/contactos"
+        url = "/contactos/"
 
     # banner
     [Languages.pt.params.banner]
@@ -95,7 +96,7 @@ rssIcon = "images/rss.svg"
     languageName = "En"
     weight = 2
     languageCode = "en-us"
-    contentDir = "content/en"
+    contentDir = "content"
 
     title = "HackerSchool - IST"
     copyright = "Site based on https://themes.gohugo.io/dot-hugo-documentation-theme/"
@@ -105,27 +106,27 @@ rssIcon = "images/rss.svg"
       [[Languages.en.menu.main]]
         weight = 2
         name = "Members"
-        url = "/membros"
+        url = "/membros/"
 
       [[Languages.en.menu.main]]
         weight = 2
         name = "About Us"
-        url = "/sobre"
+        url = "/sobre/"
 
       [[Languages.en.menu.main]]
         weight = 2
         name = "Projects"
-        url = "/projetos"
+        url = "/projetos/"
 
       [[Languages.en.menu.main]]
         weight = 2
         name = "Recruitment"
-        url = "/recrutamento"
+        url = "/recrutamento/"
 
       [[Languages.en.menu.main]]
         weight = 3
         name = "Contacts"
-        url = "/contactos"
+        url = "/contactos/"
 
     # banner
     [Languages.en.params.banner]
