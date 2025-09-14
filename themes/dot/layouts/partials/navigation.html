@@ -30,12 +30,21 @@
       </li>
       {{ end }}
       {{ end }}
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle text-dark" href="#" id="langDropdown" role="button"
+          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          {{ .Site.Language.LanguageName }}
+        </a>
+        <div class="dropdown-menu dropdown-menu-right bg-dark" aria-labelledby="langDropdown">
+          {{ range $.Site.Home.AllTranslations }}
+            {{ if ne .Language.Lang $.Site.Language.Lang }}
+              <a class="dropdown-item" href="{{ .RelPermalink }}">
+                {{ .Language.LanguageName }}
+              </a>
+          {{ end }}
+          {{ end }}
+        </div>
+      </li>
     </ul>
-    <!-- Language List -->
-<!--     <ul class="list-inline text-center mb-0">
-      {{ range $.Site.Home.AllTranslations }}
-      <li class="list-inline-item"><a class="text-dark" href="{{ .Permalink }}">{{ .Language.LanguageName }}</a></li>
-      {{ end }}
-    </ul> -->
   </div>
 </nav>

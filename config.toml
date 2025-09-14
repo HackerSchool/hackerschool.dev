@@ -1,6 +1,7 @@
 baseURL = "https://hackerschool.tecnico.ulisboa.pt/"
 #baseURL = "http://localhost:8000/"
-languageCode = "en-us"
+languageCode = "pt-pt"
+defaultContentLanguage = "pt"
 title = "HackerSchool"
 theme = "dot"
 
@@ -24,11 +25,12 @@ rssIcon = "images/rss.svg"
 
 [Languages]
 
-  # English Language
-  [Languages.en]
-  languageName = "En"
+  # Portuguese Language
+  [Languages.pt]
+  languageName = "Pt"
   weight = 1
-  languageCode = "en-us"
+  languageCode = "pt-pt"
+  contentDir = "content/pt"
 
   title = "HackerSchool - IST"
   #dateFormat = "2 January 2006"
@@ -37,30 +39,92 @@ rssIcon = "images/rss.svg"
   copyright = "Site baseado em https://themes.gohugo.io/dot-hugo-documentation-theme/"
 
     # navigation
-    [Languages.en.menu]
-      [[Languages.en.menu.main]]
+    [Languages.pt.menu]
+      [[Languages.pt.menu.main]]
         weight = 2
         name = "Membros"
         url = "/membros"
     
-      [[Languages.en.menu.main]]
+      [[Languages.pt.menu.main]]
         weight = 2
         name = "Sobre nós"
         url = "/sobre"
         
-      [[Languages.en.menu.main]]
+      [[Languages.pt.menu.main]]
         weight = 2
         name = "Projetos"
         url = "/projetos"
 
-      [[Languages.en.menu.main]]
+      [[Languages.pt.menu.main]]
         weight = 2
         name = "Recrutamento"
         url = "/recrutamento"
 
-      [[Languages.en.menu.main]]
+      [[Languages.pt.menu.main]]
         weight = 3
         name = "Contactos"
+        url = "/contactos"
+
+    # banner
+    [Languages.pt.params.banner]
+      title = "HackerSchool"
+      description = "Break. Learn. Build."
+      
+    # footer social icon
+    # [[Languages.pt.params.socialIcon]]
+    #   icon = "ti-facebook"
+    #   URL = "https://www.facebook.com/hackerschoolist"
+      
+    [[Languages.pt.params.socialIcon]]
+      icon = "ti-instagram"
+      URL = "https://www.instagram.com/hackerschool_ist/"
+
+    [[Languages.pt.params.socialIcon]]
+      icon = "ti-youtube"
+      URL = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+    
+    [[Languages.pt.params.socialIcon]]
+      icon = "ti-github"
+      URL = "https://github.com/HackerSchool"
+
+    [[Languages.pt.params.socialIcon]]
+      icon = "ti-facebook"
+      URL = "https://www.facebook.com/hackerschoolist/"
+  
+  [Languages.en]
+    languageName = "En"
+    weight = 2
+    languageCode = "en-us"
+    contentDir = "content/en"
+
+    title = "HackerSchool - IST"
+    copyright = "Site based on https://themes.gohugo.io/dot-hugo-documentation-theme/"
+
+    # navigation
+    [Languages.en.menu]
+      [[Languages.en.menu.main]]
+        weight = 2
+        name = "Members"
+        url = "/membros"
+
+      [[Languages.en.menu.main]]
+        weight = 2
+        name = "About Us"
+        url = "/sobre"
+
+      [[Languages.en.menu.main]]
+        weight = 2
+        name = "Projects"
+        url = "/projetos"
+
+      [[Languages.en.menu.main]]
+        weight = 2
+        name = "Recruitment"
+        url = "/recrutamento"
+
+      [[Languages.en.menu.main]]
+        weight = 3
+        name = "Contacts"
         url = "/contactos"
 
     # banner
@@ -88,3 +152,4 @@ rssIcon = "images/rss.svg"
     [[Languages.en.params.socialIcon]]
       icon = "ti-facebook"
       URL = "https://www.facebook.com/hackerschoolist/"
+
