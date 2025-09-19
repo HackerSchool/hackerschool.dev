@@ -1,125 +1,125 @@
 direcao:
   - nome:  Armando Gonçalves
-    cargo: Presidente
+    cargo: presidente
     #curso: 4º ano, MEFT
     imagem: placeholder.png 
   - nome: Gabriel Gabriel
-    cargo: Vice-Presidente
+    cargo: vice_presidente
     imagem: GabrielGabriel.jpeg
   - nome: António Figueiras
-    cargo: Tesoureiro
+    cargo: tesoureiro
     #curso:
     imagem: AntonioFigueiras.jpg
   - nome: Filipe Piçarra
-    cargo: Co-Coordenador Lab e Cultura Hacker
+    cargo: co_coordenador_lab_e_cultura_hacker
     #curso: 
     imagem: FilipePicarra.jpg  
   - nome: José Lopes
-    cargo: Coordenador Dev
+    cargo: coordenador_dev
     #curso: 
     imagem: LopesBismuth.jpeg
   - nome: João Rodrigues
-    cargo: Co-Coordenador Lab e Cultura Hacker
+    cargo: co_coordenador_lab_e_cultura_hacker
     #curso:
     imagem: JoaoRodrigues.jpg
   - nome: Miguel Lameiras
-    cargo: Coordenador RH
+    cargo: coordenador_rh
     #curso: 
     imagem: MiguelLameiras.jpg
   - nome: Gonçalo Fecha
-    cargo: Coordenador Marketing
+    cargo: coordenador_marketing
     #curso:
     imagem: GoncaloMartins.jpg
   - nome: Miguel Cardoso
-    cargo: RH
+    cargo: rh
     #curso:
     imagem: MiguelCardoso.jpg
   - nome: Guilherme Freitas
-    cargo: RH
+    cargo: rh
     #curso:
     imagem: 99949.png
   - nome: André Santos
-    cargo: RH
+    cargo: rh
     #curso:
     imagem: AndreSantos.jpg
 desenvolvimento:
   - nome: José Lopes
-    cargo: Coordenador Dev
+    cargo: coordenador_dev
     #curso: 
     imagem: LopesBismuth.jpeg
   - nome: Daniel Carvalho
-    cargo: Dev
+    cargo: dev
     #curso: 
     imagem: DanielCarvalho.jpg
   - nome: Diogo Neves
-    cargo: Dev
+    cargo: dev
     #curso: 3º ano, LEEC
     imagem: DiogoNeves.jpg
   - nome: Ricardo Pais
-    cargo: Dev
+    cargo: dev
     #curso: 
     imagem: RicardoPais.jpg
 recursoshumanos:
   - nome: Miguel Lameiras
-    cargo: Coordenador RH
+    cargo: coordenador_rh
     #curso:
     imagem: MiguelLameiras.jpg
   - nome: Felipe Sancho
-    cargo: RH
+    cargo: rh
     #curso:
     imagem: FelipeSancho.jpg
   - nome: Catarina Silva
-    cargo: RH
+    cargo: rh
     #curso:
     imagem: CatarinaSilva.jpg
   - nome: Miguel Cardoso
-    cargo: RH
+    cargo: rh
     #curso:
     imagem: MiguelCardoso.jpg
   - nome: Guilherme Freitas
-    cargo: RH
+    cargo: rh
     #curso:
     imagem: 99949.png
   - nome: Gonçalo Azevedo
-    cargo: RH
+    cargo: rh
     #curso:
     imagem: GoncaloAzevedo.jpg
   - nome: João Gonçalves
-    cargo: RH
+    cargo: rh
     #curso:
     imagem: JoaoGonçalves.jpg
   - nome: André Santos
-    cargo: RH
+    cargo: rh
     #curso:
     imagem: AndreSantos.jpg
 marketing:
   - nome: Gonçalo Fecha
-    cargo: Coordenador Marketing
+    cargo: coordenador_marketing
     #curso: 
     imagem: GoncaloMartins.jpg
   - nome: Sara Pereira
-    cargo: Marketing
+    cargo: coordenador_marketing
     #curso: 
     imagem: SaraPereira.jpg
   - nome: Diana Albuquerque
-    cargo: Marketing
+    cargo: coordenador_marketing
     #curso:
     imagem: DianaAlbuquerque.jpg
   - nome: Pedro Nantes
-    cargo: Marketing
+    cargo: coordenador_marketing
     #curso:
     imagem: PedroNantes.jpg
 laboratorio:
   - nome: João Rodrigues
-    cargo: Co-Coordenador Lab e Cultura Hacker
+    cargo: co_coordenador_lab_e_cultura_hacker
     #curso:
     imagem: JoaoRodrigues.jpg
   - nome: Filipe Piçarra
-    cargo: Co-Coordenador Lab e Cultura Hacker
+    cargo: co_coordenador_lab_e_cultura_hacker
     #curso: 
     imagem: FilipePicarra.jpg
   - nome: Eduardo Faustino
-    cargo: Gestão Lab
+    cargo: gestao_lab
     #curso: 
     imagem: EduardoFaustino.jpg
 membros:
@@ -140,23 +140,23 @@ membros:
   #curso:
   imagem: placeholder.png
 - nome: André Santos
-  cargo: RH
+  cargo: rh
   #curso:
   imagem: AndreSantos.jpg
 - nome: António Figueiras
-  cargo: Tesoureiro
+  cargo: tesoureiro
   #curso:
   imagem: AntonioFigueiras.jpg
 - nome: Armando Gonçalves
-  cargo: Presidente
+  cargo: presidente
   #curso:
   imagem: placeholder.png
 - nome: Catarina Silva
-  cargo: RH
+  cargo: rh
   #curso:
   imagem: CatarinaSilva.jpg
 - nome: Daniel Carvalho
-  cargo: Dev
+  cargo: dev
   #curso:
   imagem: DanielCarvalho.jpg
 - nome: Diogo Correia
@@ -168,23 +168,23 @@ membros:
   #curso:
   imagem: 96517.png
 - nome: Diogo Neves
-  cargo: Dev
+  cargo: dev
   #curso:
   imagem: DiogoNeves.jpg
 - nome: Diana Albuquerque
-  cargo: Marketing
+  cargo: marketing
   #curso:
   imagem: DianaAlbuquerque.jpg
 - nome: Eduardo Faustino
-  cargo: Gestão Lab
+  cargo: gestao_lab
   #curso:
   imagem: EduardoFaustino.jpg
 - nome: Felipe Sancho
-  cargo: RH
+  cargo: rh
   #curso:
   imagem: FelipeSancho.jpg
 - nome: Filipe Piçarra
-  cargo: Co-Coordenador Lab e Cultura Hacker
+  cargo: co_coordenador_lab_e_cultura_hacker
   #curso:
   imagem: FilipePicarra.jpg
 - nome: Filipe Varela
@@ -196,19 +196,19 @@ membros:
   #curso:
   imagem: placeholder.png
 - nome: Gabriel Gabriel
-  cargo: Vice-Presidente
+  cargo: vice_presidente
   #curso:
   imagem: GabrielGabriel.jpeg
 - nome: Gonçalo Azevedo
-  cargo: RH
+  cargo: rh
   #curso:
   imagem: GoncaloAzevedo.jpg
 - nome: Gonçalo Fecha
-  cargo: Coordenador Marketing
+  cargo: coordenador_marketing
   #curso:
   imagem: GoncaloMartins.jpg
 - nome: Guilherme Freitas
-  cargo: RH
+  cargo: rh
   #curso:
   imagem: 99949.png
 - nome: Inês Martins
@@ -216,15 +216,15 @@ membros:
   #curso:
   imagem: InesMartins.jpeg
 - nome: João Gonçalves
-  cargo: RH
+  cargo: rh
   #curso:
   imagem: JoaoGonçalves.jpg
 - nome: João Rodrigues
-  cargo: Co-Coordenador Lab e Cultura Hacker
+  cargo: co_coordenador_lab_e_cultura_hacker
   #curso:
   imagem: JoaoRodrigues.jpg
 - nome: José Lopes
-  cargo: Coordenador de Dev
+  cargo: coordenador_dev
   #curso:
   imagem: LopesBismuth.jpeg
 - nome: Martim Bento
@@ -232,11 +232,11 @@ membros:
   #curso:
   imagem: placeholder.png
 - nome: Miguel Cardoso
-  cargo: RH
+  cargo: rh
   #curso:
   imagem: MiguelCardoso.jpg
 - nome: Miguel Lameiras
-  cargo: Coordenador RH
+  cargo: coordenador_rh
   #curso:
   imagem: MiguelLameiras.jpg
 - nome: Nuno Gonçalves
@@ -244,11 +244,11 @@ membros:
   #curso:
   imagem: placeholder.png
 - nome: Pedro Direita
-  cargo: Alumni
+  cargo: alumni
   #curso:
   imagem: pedroDireita.png
 - nome: Pedro Nantes
-  cargo: Marketing
+  cargo: marketing
   #curso:
   imagem: PedroNantes.jpg
 - nome: Rafael Garcia
@@ -256,11 +256,11 @@ membros:
   #curso:
   imagem: RafaelGarcia.jpg
 - nome: Ricardo Pais
-  cargo: Dev
+  cargo: dev
   #curso:
   imagem: RicardoPais.jpg
 - nome: Sara Pereira
-  cargo: Marketing
+  cargo: marketing
   #curso:
   imagem: SaraPereira.jpg
 - nome: Tomás Fachada
