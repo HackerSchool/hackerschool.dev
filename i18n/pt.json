@@ -115,5 +115,53 @@
   {
     "id": "projetos_antigos",
     "translation": "Projetos Antigos"
+  },
+  {
+    "id": "presidente",
+    "translation": "Presidente"
+  },
+  {
+    "id": "vice_presidente",
+    "translation": "Vice-Presidente"
+  },
+  {
+    "id": "tesoureiro",
+    "translation": "Tesoureiro"
+  },
+  {
+    "id": "co_coordenador_lab_e_cultura_hacker",
+    "translation": "Co-Coordenador Lab e Cultura Hacker"
+  },
+  {
+    "id": "coordenador_dev",
+    "translation": "Coordenador Dev"
+  },
+  {
+    "id": "coordenador_rh",
+    "translation": "Coordenador RH"
+  },
+  {
+    "id": "coordenador_marketing",
+    "translation": "Coordenador Marketing"
+  },
+  {
+    "id": "rh",
+    "translation": "RH"
+  },
+  {
+    "id": "dev",
+    "translation": "Dev"
+  },
+  {
+    "id": "marketing",
+    "translation": "Marketing"
+  },
+  {
+    "id": "gestao_lab",
+    "translation": "Gestão Lab"
+  },
+  {
+    "id": "alumni",
+    "translation": "Alumni"
   }
 ]
