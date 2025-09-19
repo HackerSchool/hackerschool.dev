@@ -67,5 +67,41 @@
   {
     "id": "projeto",
     "translation": "Projeto"
+  },
+  {
+    "id": "recrutamento",
+    "translation": "Recrutamento"
+  },
+  {
+    "id": "recrutamento_1",
+    "translation": "O nosso recrutamento dura cerca de 2 semanas, e vamos pôr à prova a tua perseverança, criatividade e trabalho em equipa."
+  },
+  {
+    "id": "recrutamento_2",
+    "translation": "Se estás com interesse no nosso núcleo, tenta o desafio! Terás vários puzzles e enigmas para resolver - mas cuidado! Não te deixes apanhar pelos..."
+  },
+  {
+    "id": "recrutamento_agora",
+    "translation": "Inscreve-te Agora!"
+  },
+  {
+    "id": "recrutamento_semestre",
+    "translation": "Inscreve-te no próximo semestre!"
+  },
+  {
+    "id": "depois_recrutamento",
+    "translation": "Depois do Recrutamento"
+  },
+  {
+    "id": "depois_recrutamento_1",
+    "translation": "Vais estagiar num projeto da HackerSchool, ao mesmo tempo em que participas em workshops para desenvolver a tua cultura hacker."
+  },
+  {
+    "id": "depois_recrutamento_2",
+    "translation": "Terás uma reunião inicial para debater ideias e para formar grupos, desenvolvendo a tua parte social e trabalho em equipa."
+  },
+  {
+    "id": "depois_recrutamento_3",
+    "translation": "E se precisares de ajuda nesta jornada de fazer o teu projeto acontecer, terás uma comunidade inteira sempre disposta para te apoiar!"
   }
 ]

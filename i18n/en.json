@@ -66,5 +66,41 @@
   {
     "id": "projeto",
     "translation": "Project"
+  },
+  {
+    "id": "recrutamento",
+    "translation": "Recruitment"
+  },
+  {
+    "id": "recrutamento_1",
+    "translation": "Our recruitment lasts about 2 weeks, and we’ll put your perseverance, creativity, and teamwork to the test."
+  },
+  {
+    "id": "recrutamento_2",
+    "translation": "If you’re interested in our group, try the challenge! You’ll have several puzzles and riddles to solve — but be careful! Don’t get caught by the..."
+  },
+  {
+    "id": "recrutamento_agora",
+    "translation": "Subscribe Now!"
+  },
+  {
+    "id": "recrutamento_semestre",
+    "translation": "Subscribe for the next semester!"
+  },
+  {
+    "id": "depois_recrutamento",
+    "translation": "After Recruitment"
+  },
+  {
+    "id": "depois_recrutamento_1",
+    "translation": "You will intern on a HackerSchool project while participating in workshops to develop your hacker culture."
+  },
+  {
+    "id": "depois_recrutamento_2",
+    "translation": "You will have an initial meeting to discuss ideas and form groups, developing your social skills and teamwork."
+  },
+  {
+    "id": "depois_recrutamento_3",
+    "translation": "And if you need help on this journey to make your project happen, you will have a whole community always willing to support you!"
   }
 ]

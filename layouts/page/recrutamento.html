@@ -24,15 +24,12 @@
 		<!-- fix url -->
 		<!-- <a href='{{ "recrutamento" | absURL }}' class="btn btn-primary"> Clica aqui se quiseres saltar já á ação </a> -->
 		<div class="col-12 text-center">
-			<h2 class="section-title">Recrutamento</h2>
+			<h2 class="section-title">{{ i18n "recrutamento" }}</h2>
 		</div>		
 		<div class="row justify-content-center">
 			<div class="col-12 text-center">
 				<p style="color:white; margin-bottom: 40px; font-size:20px">
-					O nosso recrutamento dura cerca de 2 semanas, e vamos pôr à prova a tua perseverança, criatividade 
-					e trabalho em equipa. <br> Se estás com interesse no nosso núcleo, tenta o desafio!
-					Terás vários puzzles e enigmas
-					para resolver - mas cuidado! Não te deixes apanhar pelos...  <span style="font-family: 'Courier New', monospace;">xad0w.b1ts</span>.
+					{{ i18n "recrutamento_1" }} <br> {{ i18n "recrutamento_2" }}  <span style="font-family: 'Courier New', monospace;">xad0w.b1ts</span>.
 			</div>
 		</div>
 		
@@ -41,20 +38,19 @@
 		<a href=" https://forms.gle/ZHPToWjq5mDMpXqS6" class="btn btn-primary {{ if .Site.Params.recruitmentTime }} {{ else }} disabled {{ end }}" 
 			style="text-align: center;vertical-align: middle;line-height: 40px;
 				width: 100%;font-size: 30;"> 
-				
-			{{ if .Site.Params.recruitmentTime }} Inscreve-te Agora! {{ else }} Inscreve-te no próximo semestre! {{ end }}
+
+			{{ if .Site.Params.recruitmentTime }} {{i18n "recrutamento_agora"}} {{ else }} {{i18n "recrutamento_semestre"}} {{ end }}
 		</a>	
 		</section>
 		
 		<div style="padding-top:50px;" class="col-12 text-center">
-			<h2 class="section-title">Depois do Recrutamento</h2>
+			<h2 class="section-title">{{ i18n "depois_recrutamento" }}</h2>
 		</div>		
 
 	<div style="color:white; display: flex; 
 	flex-wrap: wrap; flex-direction: row; justify-content: center; margin:auto;">
 		<div style="background-color: var(--secondary-color); width: 250px; " class="dynamicThingy text-left helperCard">
-			Vais estagiar num projeto da HackerSchool, ao mesmo tempo em que participas 
-			em workshops para desenvolver a tua cultura hacker.			
+			{{ i18n "depois_recrutamento_1" }}
 
 			<br>
 			<div class="d-flex align-items-center justify-content-center">
@@ -62,8 +58,7 @@
 			</div>
 		</div >
 		<div style="background-color: var(--secondary-color); width: 250px" class="dynamicThingy text-left helperCard">
-			Terás uma reunião inicial para debater ideias e para formar grupos,
-			desenvolvendo a tua parte social e trabalho em equipa.
+			{{ i18n "depois_recrutamento_2" }}
 
 			<br>
 			<div class="d-flex align-items-center justify-content-center">
@@ -71,8 +66,7 @@
 			</div>
 		</div>
 		<div style="background-color: var(--secondary-color); width: 250px" class="dynamicThingy text-left helperCard">
-			E se precisares de ajuda nesta jornada de fazer o teu
-			projeto acontecer, terás uma comunidade inteira sempre disposta para te apoiar!
+			{{ i18n "depois_recrutamento_3" }}
 
 			<br>
 			<div class="d-flex align-items-center justify-content-center">
