@@ -5,7 +5,7 @@
       <img src="{{ .Params.image }}" alt="{{ .Title }}" />
       <h3>{{ .Title }}</h3>
       <p>{{ .Params.description }}</p>
-      <a href="{{ .Permalink }}" class="btn btn-primary">Saber Mais</a>
+      <a href="{{ .Permalink }}" class="btn btn-primary">{{ i18n "saber_mais" }}</a>
     </div>
   {{ end }}
 </div>
