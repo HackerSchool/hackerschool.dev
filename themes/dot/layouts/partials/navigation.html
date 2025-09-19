@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-light">
-  <a class="navbar-brand text-dark" href="{{ .Site.BaseURL }}"><img class="invert-logo" src='{{ "logo.svg" | absURL }}'></a>
+  <a class="navbar-brand text-dark" href="{{ "/" | relLangURL }}"><img class="invert-logo" src='{{ "logo.svg" | relURL }}'></a>
   <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation"
     aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -7,7 +7,7 @@
   <div class="collapse navbar-collapse text-center" id="navigation">
     <ul class="navbar-nav ml-auto">
       <li class="nav-item">
-        <a class="nav-link text-dark" href="{{ .Site.BaseURL }}">{{ .Site.Params.home }}</a>
+        <a class="nav-link text-dark" href="{{ "/" | relLangURL }}">{{ .Site.Params.home }}</a>
       </li>
       {{ range .Site.Menus.main }}
       {{ if .HasChildren }}
