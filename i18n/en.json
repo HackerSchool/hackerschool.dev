@@ -38,5 +38,33 @@
   {
     "id": "contacts",
     "translation": "Also follow us on our social media!"
-  } 
+  },
+  {
+    "id": "direcao",
+    "translation": "Board"
+  },
+  {
+    "id": "desenvolvimento",
+    "translation": "Development"
+  },
+  {
+    "id": "recursos_humanos",
+    "translation": "Human Resources"
+  },
+  {
+    "id": "marketing",
+    "translation": "Marketing"
+  },
+  {
+    "id": "laboratorio",
+    "translation": "Laboratory Management"
+  },
+  {
+    "id": "membros",
+    "translation": "Members"
+  },
+  {
+    "id": "projeto",
+    "translation": "Project"
+  }
 ]
