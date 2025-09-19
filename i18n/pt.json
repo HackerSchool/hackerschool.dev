@@ -103,5 +103,17 @@
   {
     "id": "depois_recrutamento_3",
     "translation": "E se precisares de ajuda nesta jornada de fazer o teu projeto acontecer, terás uma comunidade inteira sempre disposta para te apoiar!"
+  },
+  {
+    "id": "projetos_atuais",
+    "translation": "Projetos Atuais"
+  },
+  {
+    "id": "saber_mais",
+    "translation": "Saber Mais"
+  },
+  {
+    "id": "projetos_antigos",
+    "translation": "Projetos Antigos"
   }
 ]

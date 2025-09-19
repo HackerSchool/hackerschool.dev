@@ -102,5 +102,17 @@
   {
     "id": "depois_recrutamento_3",
     "translation": "And if you need help on this journey to make your project happen, you will have a whole community always willing to support you!"
+  },
+  {
+    "id": "projetos_atuais",
+    "translation": "Current Projects"
+  },
+  {
+    "id": "saber_mais",
+    "translation": "Learn More"
+  },
+  {
+    "id": "projetos_antigos",
+    "translation": "Old Projects"
   }
 ]

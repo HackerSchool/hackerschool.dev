@@ -18,7 +18,7 @@
  -->  <!--font-size: 6.5vw;-->
   <div class="container pt-4">
     <div class="col-12 text-center">
-      <h2 class="section-title"> Projetos Atuais </h2>
+      <h2 class="section-title"> {{ i18n "projetos_atuais" }} </h2>
     </div>
     <div class="row justify-content-center pbottom-20 projectsWrapper">
       {{ range where .Pages  "Params.status" "current" }}
@@ -38,7 +38,7 @@
             <a href="{{ .RelPermalink }}" class="btn btn-primary"  
                             style="text-align: center; vertical-align: middle; line-height: 40px;  
                             width: 80%; font-size: 20px; margin: 30px; display: inline-block;">
-                            Saber mais
+                            {{ i18n "saber_mais" }}
                         </a>
           </div>
         </div>
@@ -50,7 +50,7 @@
   <div class="sec-projetos">
     <div class="container pt-4">
     <div class="col-12 text-center">
-      <h2 class="section-title"> Projetos Antigos </h2>
+      <h2 class="section-title"> {{ i18n "projetos_antigos" }} </h2>
       
       <div class="row justify-content-center pbottom-20 projectsWrapper">
         {{ range where .Pages  "Params.status" "old" }}
