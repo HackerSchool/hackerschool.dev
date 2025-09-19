@@ -10,7 +10,7 @@ Este site foi criado com a framework [Hugo](https://github.com/gohugoio/hugo). E
 
 ---
 
-## 🎯 Objetivos do Projeto 2024
+## 🎯 Objetivos do Projeto 2025
 
 | Objetivo                  | Status   |
 |---------------------------|----------|
@@ -19,6 +19,9 @@ Este site foi criado com a framework [Hugo](https://github.com/gohugoio/hugo). E
 | Páginas de projetos        | ✅ Concluído |
 | Páginas de workshops       | ✅ Concluído |
 | Popup de membros           | ⏳ Em andamento |
+| Tradução de páginas           | ⏳ Em andamento |
+| Página de impressão 3D           | ⏳ Em andamento |
+| Inclusão do vídeo           | ⏳ Em andamento |
 
 ---
 
