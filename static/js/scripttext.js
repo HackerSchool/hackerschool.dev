@@ -1,6 +1,16 @@
 document.addEventListener("DOMContentLoaded", function () {
     let letter = 0;
-    const text = "HackerSaudações. Estávamos à tua espera."; //Damos-te as boas vindas ao site da HackerSchool.
+
+    const translations = {
+        pt: "HackerSaudações. Estávamos à tua espera.",
+        en: "HackerGreetings. We were expecting you."
+    };
+
+    const path = window.location.pathname;
+    console.log("Current path:", path); // Debugging line to check the path
+    const userLang = path.includes("/pt/") ? "pt" : "en";
+
+    const text = translations[userLang] || translations.en; //Damos-te as boas vindas ao site da HackerSchool.
 
     const targetElement = document.getElementById("type-js");
     const hiddenContent = document.getElementById("hidden-content");
