@@ -5,6 +5,8 @@ draft: false
 description: "Home Page for the Website"
 ---
 
+{{< youtube Q9vj2rpyKEw >}}
+
 ## A HackerSchool
 
 Desde 2012, a HackerSchool foca-se na criação de projetos nas mais diversas áreas da tecnologia, incentivando os seus membros a aprender e a colocar em prática o seu conhecimento em situações reais.

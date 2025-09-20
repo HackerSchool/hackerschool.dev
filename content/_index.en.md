@@ -5,6 +5,8 @@ draft: false
 description: "Home Page for the Website"
 ---
 
+{{< youtube Q9vj2rpyKEw >}}
+
 ## HackerSchool
 
 Since 2012, HackerSchool has focused on creating projects across various areas of technology, encouraging its members to learn and put their knowledge into practice in real-world situations.
