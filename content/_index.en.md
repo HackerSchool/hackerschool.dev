@@ -18,9 +18,9 @@ Since 2012, HackerSchool has focused on creating projects across various areas o
 
 {{< contacta-nos image="/images/home/marcelo.webp" >}}
 
-Envia-nos um email para [hackerschool@tecnico.ulisboa.pt](mailto:hackerschool@tecnico.ulisboa.pt)
+Send us an e-mail to [hackerschool@tecnico.ulisboa.pt](mailto:hackerschool@tecnico.ulisboa.pt)
 
-Ou vem visitar o [nosso lab](https://maps.app.goo.gl/T966C9nUFxdraC9o7) no campus da Alameda!
+Or visit us in [our lab](https://maps.app.goo.gl/T966C9nUFxdraC9o7) in Alameda campus!
 
 
 {{< /contacta-nos >}}

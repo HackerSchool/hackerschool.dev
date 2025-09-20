@@ -4,7 +4,7 @@ date: 2025-05-03
 author: Lounge IST & HackerSchool
 draft: false
 event: true
-description: "O MakerIST foi um evento que celebrou a cultura maker"
+description: "MakerIST was an event that celebrated maker culture"
 image: "images/makerist/MakerIST.png"
 lang: "en"
 # layout: "contactos"
@@ -16,11 +16,11 @@ lang: "en"
 
 ## MakerIST
 
-**3 e 4 de junho** | [**Pavilhão Central do Instituto Superior Técnico**](https://maps.app.goo.gl/dLX5NzLvm9guL8Vf6)
+**June 3rd and 4th** | [**Central Pavilion of Instituto Superior Técnico**](https://maps.app.goo.gl/dLX5NzLvm9guL8Vf6)
 
-**Entrada gratuita e aberta a todo o público!**
+**Free entry and open to the public!**
 
-O **MakerIST** é um evento que celebra a cultura maker, reunindo entusiastas da criação, tecnologia e _Do-It-Yourself_ (DIY). Nos dias **3 e 4 de junho**, o **Pavilhão Central do Instituto Superior Técnico** transformar-se-á num espaço dinâmico de aprendizagem, partilha e experimentação criativa, aberto tanto à comunidade académica quanto ao público em geral.
+**MakerIST** is an event that celebrates maker culture, bringing together enthusiasts of creation, technology, and _Do-It-Yourself_ (DIY). On **June 3rd and 4th**, the **Central Pavilion of Instituto Superior Técnico** will be transformed into a dynamic space for learning, sharing, and creative experimentation, open to both the academic community and the general public.
 
 ![](images/MakerIST.png)
 
@@ -33,15 +33,15 @@ O **MakerIST** é um evento que celebra a cultura maker, reunindo entusiastas da
 
 ## Open Call
 
-Tens um projeto interessante e gostarias de ter a tua própria banca no MakerIST?
+Do you have an interesting project and would like to have your own booth at MakerIST?
 
 <!-- Candidata-te até **30 de maio** através deste link: [https://docs.google.com/forms/d/e/1FAIpQLSdtcaK02c86xVoH1fX-USOvp27kvuRPOQKaLTERcKKnckKjXA/viewform](https://docs.google.com/forms/d/e/1FAIpQLSdtcaK02c86xVoH1fX-USOvp27kvuRPOQKaLTERcKKnckKjXA/viewform) -->
 
-Candidata-te até **30 de maio**!
+Apply by **May 30th**!
 {{< button link="https://docs.google.com/forms/d/e/1FAIpQLSdtcaK02c86xVoH1fX-USOvp27kvuRPOQKaLTERcKKnckKjXA/viewform" text="Open Call" >}}
 
 
-## Objetivos do MakerIST
+## Objectives of MakerIST
 
 <!-- - Celebrar e promover a cultura maker. -->
 <!-- - Mostrar projetos inovadores e _open-source_. -->
@@ -50,26 +50,26 @@ Candidata-te até **30 de maio**!
 <!-- - Divulgar e fortalecer a "free culture" e a democracia digital. -->
 <!-- - Oferecer uma experiência que seja simultaneamente lúdica e educativa. -->
 
-{{< manifesto title="Os principais objetivos do MakerIST são:" >}}
-{{< manifestoitem >}}Celebrar e promover a cultura maker.{{< /manifestoitem >}}
-{{< manifestoitem >}}Mostrar projetos inovadores e open-source.{{< /manifestoitem >}}
-{{< manifestoitem >}}Fomentar a interação e a troca de ideias entre participantes.{{< /manifestoitem >}}
-{{< manifestoitem >}}Explorar a fascinante intersecção entre arte e tecnologia.{{< /manifestoitem >}}
-{{< manifestoitem >}}Divulgar e fortalecer a "free culture" e a democracia digital.{{< /manifestoitem >}}
-{{< manifestoitem >}}Oferecer uma experiência que seja simultaneamente lúdica e educativa.{{< /manifestoitem >}}
+{{< manifesto title="The main objectives of MakerIST are:" >}}
+{{< manifestoitem >}}Celebrate and promote maker culture.{{< /manifestoitem >}}
+{{< manifestoitem >}}Showcase innovative and open-source projects.{{< /manifestoitem >}}
+{{< manifestoitem >}}Encourage interaction and the exchange of ideas among participants.{{< /manifestoitem >}}
+{{< manifestoitem >}}Explore the fascinating intersection between art and technology.{{< /manifestoitem >}}
+{{< manifestoitem >}}Promote and strengthen "free culture" and digital democracy.{{< /manifestoitem >}}
+{{< manifestoitem >}}Provide an experience that is both fun and educational.{{< /manifestoitem >}}
 {{< /manifesto >}}
 
-## Eventos
+## Events
 
 {{< features >}}
-{{< featurecard title="Workshops práticos" icon="🛠️" link="#workshops-confirmados">}}Oportunidades para colocar a mão na massa e aprender novas habilidades.{{< /featurecard >}}
-{{< featurecard title="Palestras" icon="🎤" link="#palestras">}}Apresentações sobre temas relevantes no mundo da criação e tecnologia.{{< /featurecard >}}
-{{< featurecard title="Exposições de projetos inovadores" icon="💡" link="#bancas-confirmadas" >}}Demonstrações de trabalhos criativos, artísticos e tecnológicos.{{< /featurecard >}}
-{{< featurecard title="Atividades interativas" icon="🎨"  link="#bancas-da-hackerschool">}}Experiências como desmontagem eletrónica e arte generativa para despertar a curiosidade.{{< /featurecard >}}
+{{< featurecard title="Practical Workshops" icon="🛠️" link="#confirmed-workshops">}}Opportunities to get hands-on and learn new skills.{{< /featurecard >}}
+{{< featurecard title="Lectures" icon="🎤" link="#lectures">}}Presentations on topics relevant to the world of creation and technology.{{< /featurecard >}}
+{{< featurecard title="Exhibitions of innovative projects" icon="💡" link="#confirmed-booths" >}}Demonstrations of creative, artistic, and technological work.{{< /featurecard >}}
+{{< featurecard title="Interactive activities" icon="🎨"  link="#hackerschool-booths">}}Experiences such as electronic disassembly and generative art to spark curiosity.{{< /featurecard >}}
 {{< /features >}}
 
 
-## Bancas Confirmadas
+## Confirmed Booths
 
 {{< bancas >}}
 {{< banca name="Comudel" url="https://comudel.com/" >}}
@@ -88,39 +88,39 @@ Candidata-te até **30 de maio**!
 
 ---
 
-### Bancas da HackerSchool
+### HackerSchool Booths
 
 {{< bancas >}}
 {{< banca name="Junk Party" >}}
-{{< banca name="Arte Generativa c/ p5.js" >}}
-{{< banca name="Música Open Hardware" >}}
-{{< banca name="Mostra dos projetos atuais" >}}
+{{< banca name="Generative Art c/ p5.js" >}}
+{{< banca name="Open Hardware Music" >}}
+{{< banca name="Showcase of current projects" >}}
 {{< /bancas >}}
 
-## Workshops Confirmados
+## Confirmed Workshops
 
-| Workshop                       | Com                            | Data       | Hora | Local                    | Inscrições                                     |
+| Workshop                       | With                            | Date       | Hour | Local                    | Registrations                                     |
 | ------------------------------ | ------------------------------ | ---------- | ---- | ------------------------ | ---------------------------------------------- |
-| **Cria o teu Macropad**        | Gonçalo Fecha                  | 3 de junho | 18h  | Sala GA1 | [Fechadas]() |
-| **Democratizando Sociologia**  | Armando Gonçalves              | 3 de junho | 18h  | Sala GA2  | [Fechadas](https://hackerschool.tecnico.ulisboa.pt/workshops/social/)                  |
-| **Modelação 3D em Blender** | Margarida Prates | 4 de junho | 18h  | Sala GA1  | [Fechadas]()                             |
+| **Create your own Macropad**        | Gonçalo Fecha                  | June 3rd | 18h  | Room GA1 | [Closed]() |
+| **Democratizing Sociology**  | Armando Gonçalves              | June 3rd | 18h  | Room GA2  | [Closed](https://hackerschool.tecnico.ulisboa.pt/workshops/social/)                  |
+| **3D Modeling in Blender** | Margarida Prates | 4 de junho | 18h  | Sala GA1  | [Closed]()                             |
 
-## Palestras
+## Lectures
 
-| Palestra                                                   | Com   | Data       | Hora | Local            |
+| Lecture                                                   | With   | Date       | Hour | Local            |
 | ---------------------------------------------------------- | ----- | ---------- | ---- | ---------------- |
-| **"O que é _open-source_ e porque nos devemos importar?"** | ANSOL | 4 de junho | 12h30 | Pavilhão Central |
+| **"What is _open-source_ and why should we care?"** | ANSOL | June 4th | 12h30 | Central Pavilion |
 
-## Comida & Bebida Grátis
+## Free Food & Drinks
 
-Aproveita para recarregar energias com as opções de comida e bebida gratuitas disponíveis no evento!
+Take the opportunity to recharge with the free food and drink options available at the event!
 
-## Para mais informações e contactos
+## For more information and contacts
 
-**Equipa Lounge IST:**
+**Team Lounge IST:**
 [lounge](https://www.instagram.com/lounge.ist/) // [lounge.ist.sa@gmail.com](mailto:lounge.ist.sa@gmail.com)
 
-**Equipa HackerSchool:**
+**Team HackerSchool:**
 [hackerschool](https://www.instagram.com/hackerschool_ist/) // [hackerschool@tecnico.ulisboa.pt](mailto:hackerschool@tecnico.ulisboa.pt)
 
 

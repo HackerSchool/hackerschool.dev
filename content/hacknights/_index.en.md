@@ -4,14 +4,14 @@ date: 2024-10-04
 draft: false
 image: "/images/home/pizza_tecnico.jpg"
 event: true
-description: "Sempre na terceira quinta feira do mês!"
+description: "Always on the third Thursday of the month!"
 lang: "en"
 ---
 
 # HackNights
 
-Junta-te a nós na próxima HackNight, sempre na terceira quinta-feira de todos os meses!
+Join us at the next HackNight, always on the third Thursday of every month!
 
-Uma noite de convívio e jantar entre os membros da HackerSchool, aberta ao público, onde se discutem atividades e projetos que têm sido desenvolvidos, bem como planos futuros. Depois do jantar costuma haver espaço para a conceção de projetos temáticos de curta duração.
+An evening of socializing and dinner among HackerSchool members, open to the public, where activities and projects that have been developed are discussed, as well as future plans. After dinner, there is usually time for the creation of short-term themed projects.
 
 <!-- ![Hackers com pizzas junto ao logo do Técnico, na Alameda.](/images/home/pizza_tecnico.jpg)  -->
