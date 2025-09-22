@@ -1,269 +1,226 @@
 direcao:
-  - nome:  Armando Gonçalves
-    cargo: presidente
-    #curso: 4º ano, MEFT
-    imagem: placeholder.png 
-  - nome: Gabriel Gabriel
-    cargo: vice_presidente
-    imagem: GabrielGabriel.jpeg
-  - nome: António Figueiras
-    cargo: tesoureiro
-    #curso:
-    imagem: AntonioFigueiras.jpg
-  - nome: Filipe Piçarra
-    cargo: co_coordenador_lab_e_cultura_hacker
-    #curso: 
-    imagem: FilipePicarra.jpg  
-  - nome: José Lopes
-    cargo: coordenador_dev
-    #curso: 
-    imagem: LopesBismuth.jpeg
-  - nome: João Rodrigues
-    cargo: co_coordenador_lab_e_cultura_hacker
-    #curso:
-    imagem: JoaoRodrigues.jpg
-  - nome: Miguel Lameiras
-    cargo: coordenador_rh
-    #curso: 
-    imagem: MiguelLameiras.jpg
   - nome: Gonçalo Fecha
     cargo: coordenador_marketing
-    #curso:
     imagem: GoncaloMartins.jpg
-  - nome: Miguel Cardoso
-    cargo: rh
-    #curso:
-    imagem: MiguelCardoso.jpg
-  - nome: Guilherme Freitas
-    cargo: rh
-    #curso:
-    imagem: 99949.png
-  - nome: André Santos
-    cargo: rh
-    #curso:
-    imagem: AndreSantos.jpg
-desenvolvimento:
-  - nome: José Lopes
-    cargo: coordenador_dev
-    #curso: 
-    imagem: LopesBismuth.jpeg
+  - nome: Filipe Vaz
+    cargo: vice_presidente
+    imagem: placeholder.png
+  - nome: Diogo Rebelo
+    cargo: tesoureiro
+    imagem: placeholder.png
+  - nome: Filipe Piçarra
+    cargo: co_coordenador_lab_e_cultura_hacker
+    imagem: FilipePicarra.jpg  
   - nome: Daniel Carvalho
-    cargo: dev
-    #curso: 
+    cargo: coordenador_dev
     imagem: DanielCarvalho.jpg
+  - nome: André Santos
+    cargo: coordenador_rh
+    imagem: AndreSantos.jpg
+  - nome: Filipe Vaz
+    cargo: coordenador_marketing
+    imagem: placeholder.png
   - nome: Diogo Neves
     cargo: dev
-    #curso: 3º ano, LEEC
     imagem: DiogoNeves.jpg
-  - nome: Ricardo Pais
+  - nome: Francisco Gonçalves
+    cargo: laboratorio  
+    imagem: placeholder.png
+desenvolvimento:
+  - nome: Daniel Carvalho
+    cargo: coordenador_dev
+    imagem: DanielCarvalho.jpg
+  - nome: Filipe Piçarra
+    cargo: dev 
+    imagem: FilipePicarra.jpg  
+  - nome: Diogo Neves
     cargo: dev
-    #curso: 
-    imagem: RicardoPais.jpg
+    imagem: DiogoNeves.jpg
+  - nome: Carlos Felgueiras
+    cargo: dev
+    imagem: placeholder.png
+  - nome: Duarte Sousa
+    cargo: dev
+    imagem: placeholder.png
+  - nome: Gonçalo Azevedo
+    cargo: dev
+    imagem: GoncaloAzevedo.jpg
 recursoshumanos:
-  - nome: Miguel Lameiras
+  - nome: André Santos
     cargo: coordenador_rh
-    #curso:
-    imagem: MiguelLameiras.jpg
+    imagem: AndreSantos.jpg
+  - nome: Armando Gonçalves
+    cargo: rh 
+    imagem: placeholder.png 
+  - nome: Ilyan Amad
+    cargo: rh 
+    imagem: placeholder.png 
+  - nome: Tomás Ribeiro 
+    cargo: rh 
+    imagem: placeholder.png 
   - nome: Felipe Sancho
     cargo: rh
-    #curso:
     imagem: FelipeSancho.jpg
-  - nome: Catarina Silva
-    cargo: rh
-    #curso:
-    imagem: CatarinaSilva.jpg
-  - nome: Miguel Cardoso
-    cargo: rh
-    #curso:
-    imagem: MiguelCardoso.jpg
-  - nome: Guilherme Freitas
-    cargo: rh
-    #curso:
-    imagem: 99949.png
-  - nome: Gonçalo Azevedo
-    cargo: rh
-    #curso:
-    imagem: GoncaloAzevedo.jpg
   - nome: João Gonçalves
     cargo: rh
-    #curso:
     imagem: JoaoGonçalves.jpg
-  - nome: André Santos
-    cargo: rh
-    #curso:
-    imagem: AndreSantos.jpg
 marketing:
-  - nome: Gonçalo Fecha
+  - nome: Filipe Vaz
     cargo: coordenador_marketing
-    #curso: 
-    imagem: GoncaloMartins.jpg
-  - nome: Sara Pereira
-    cargo: coordenador_marketing
-    #curso: 
-    imagem: SaraPereira.jpg
-  - nome: Diana Albuquerque
-    cargo: coordenador_marketing
-    #curso:
-    imagem: DianaAlbuquerque.jpg
-  - nome: Pedro Nantes
-    cargo: coordenador_marketing
-    #curso:
-    imagem: PedroNantes.jpg
+    imagem: placeholder.png 
+  - nome: Catarina Costa
+    cargo: marketing 
+    imagem: placeholder.png
+  - nome: Diogo Folião
+    cargo: marketing 
+    imagem: placeholder.png
+  - nome: Tiago Carvalho
+    cargo: marketing 
+    imagem: placeholder.png
 laboratorio:
-  - nome: João Rodrigues
-    cargo: co_coordenador_lab_e_cultura_hacker
-    #curso:
-    imagem: JoaoRodrigues.jpg
   - nome: Filipe Piçarra
     cargo: co_coordenador_lab_e_cultura_hacker
-    #curso: 
     imagem: FilipePicarra.jpg
+  - nome: João Rodrigues
+    cargo: gestao_lab 
+    imagem: JoaoRodrigues.jpg
   - nome: Eduardo Faustino
     cargo: gestao_lab
-    #curso: 
     imagem: EduardoFaustino.jpg
+  - nome: Francisco Gonçalves
+    cargo: gestao_lab
+    imagem: placeholder.png
 membros:
 - nome: Afonso Freitas
   cargo: 
-  #curso:
   imagem: placeholder.png
 - nome: Alexandre Delgado
   cargo: 
-  #curso:
   imagem: placeholder.png
 - nome: André Cardoso
   cargo: 
-  #curso:
   imagem: AndreCardoso.jpg
 - nome: André Caseiro
   cargo: 
-  #curso:
   imagem: placeholder.png
 - nome: André Santos
-  cargo: rh
-  #curso:
+  cargo: coordenador_rh
   imagem: AndreSantos.jpg
 - nome: António Figueiras
-  cargo: tesoureiro
-  #curso:
+  cargo: alumni
   imagem: AntonioFigueiras.jpg
 - nome: Armando Gonçalves
-  cargo: presidente
-  #curso:
+  cargo: rh
   imagem: placeholder.png
 - nome: Catarina Silva
-  cargo: rh
-  #curso:
+  cargo: alumni
   imagem: CatarinaSilva.jpg
 - nome: Daniel Carvalho
-  cargo: dev
-  #curso:
+  cargo: coordenador_dev
   imagem: DanielCarvalho.jpg
 - nome: Diogo Correia
   cargo: 
-  #curso:
   imagem: 99211.jpg
 - nome: Daniela Cardoso
   cargo:
-  #curso:
   imagem: 96517.png
 - nome: Diogo Neves
   cargo: dev
-  #curso:
   imagem: DiogoNeves.jpg
 - nome: Diana Albuquerque
-  cargo: marketing
-  #curso:
+  cargo: 
   imagem: DianaAlbuquerque.jpg
 - nome: Eduardo Faustino
   cargo: gestao_lab
-  #curso:
   imagem: EduardoFaustino.jpg
 - nome: Felipe Sancho
   cargo: rh
-  #curso:
   imagem: FelipeSancho.jpg
 - nome: Filipe Piçarra
   cargo: co_coordenador_lab_e_cultura_hacker
-  #curso:
   imagem: FilipePicarra.jpg
 - nome: Filipe Varela
   cargo: 
-  #curso:
   imagem: 92459.png
 - nome: Francisco Laranjo
   cargo: 
-  #curso:
   imagem: placeholder.png
 - nome: Gabriel Gabriel
-  cargo: vice_presidente
-  #curso:
+  cargo: alumni
   imagem: GabrielGabriel.jpeg
 - nome: Gonçalo Azevedo
-  cargo: rh
-  #curso:
+  cargo: dev
   imagem: GoncaloAzevedo.jpg
 - nome: Gonçalo Fecha
-  cargo: coordenador_marketing
-  #curso:
+  cargo: presidente
   imagem: GoncaloMartins.jpg
 - nome: Guilherme Freitas
-  cargo: rh
-  #curso:
+  cargo: alumni
   imagem: 99949.png
 - nome: Inês Martins
   cargo: 
-  #curso:
   imagem: InesMartins.jpeg
 - nome: João Gonçalves
   cargo: rh
-  #curso:
   imagem: JoaoGonçalves.jpg
 - nome: João Rodrigues
-  cargo: co_coordenador_lab_e_cultura_hacker
-  #curso:
+  cargo: gestao_lab
   imagem: JoaoRodrigues.jpg
 - nome: José Lopes
-  cargo: coordenador_dev
-  #curso:
+  cargo: alumni
   imagem: LopesBismuth.jpeg
 - nome: Martim Bento
   cargo: 
-  #curso:
   imagem: placeholder.png
 - nome: Miguel Cardoso
-  cargo: rh
-  #curso:
+  cargo: alumni
   imagem: MiguelCardoso.jpg
 - nome: Miguel Lameiras
-  cargo: coordenador_rh
-  #curso:
+  cargo: alumni
   imagem: MiguelLameiras.jpg
 - nome: Nuno Gonçalves
   cargo: 
-  #curso:
   imagem: placeholder.png
 - nome: Pedro Direita
   cargo: alumni
-  #curso:
   imagem: pedroDireita.png
 - nome: Pedro Nantes
-  cargo: marketing
-  #curso:
+  cargo: 
   imagem: PedroNantes.jpg
 - nome: Rafael Garcia
   cargo: 
-  #curso:
   imagem: RafaelGarcia.jpg
 - nome: Ricardo Pais
   cargo: dev
-  #curso:
   imagem: RicardoPais.jpg
 - nome: Sara Pereira
-  cargo: marketing
-  #curso:
+  cargo: 
   imagem: SaraPereira.jpg
 - nome: Tomás Fachada
   cargo: 
-  #curso:
   imagem: TomasFachada.jpg
+## membros 24_25
+- nome: Filipe Vaz
+  cargo: vice_presidente
+  imagem: placeholder.png
+- nome: Diogo Rebelo
+  cargo: tesoureiro
+  imagem: placeholder.png
+- nome: Catarina Costa
+  cargo: marketing
+  imagem: placeholder.png
+- nome: Tiago Carvalho
+  cargo: marketing
+  imagem: placeholder.png
+- nome: Francisco Gonçalves
+  cargo: gestao_lab
+  imagem: placeholder.png
+- nome: Ilyan Amad
+  cargo: rh
+  imagem: placeholder.png
+- nome: Carlos Felgueiras
+  cargo: dev
+  imagem: placeholder.png
+- nome: Duarte Sousa
+  cargo: dev
+  imagem: placeholder.png

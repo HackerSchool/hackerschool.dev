@@ -153,7 +153,7 @@
       </div>
       <div class="row justify-content-center">
           {{ "<!-- membro -->" | safeHTML }}
-          {{ range .Site.Data.membros.membros }}
+          {{ range sort .Site.Data.membros.membros "nome" }}
           <div class="fader member-card col-xl-3 col-lg-4 col-sm-6 col-6 dynamicThingy text-center fader-fadeInUp" style="background-color: var(--secondary-color);">
               <h3 style="padding-top: 15px;">{{ .nome }}
                 <p class="mb-0">{{ i18n .cargo }}</p>
