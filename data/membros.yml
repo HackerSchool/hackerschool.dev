@@ -1,15 +1,15 @@
 direcao:
   - nome: Gonçalo Fecha
-    cargo: coordenador_marketing
+    cargo: presidente
     imagem: GoncaloMartins.jpg
   - nome: Filipe Vaz
-    cargo: vice_presidente
+    cargo: filipe
     imagem: placeholder.png
   - nome: Diogo Rebelo
     cargo: tesoureiro
     imagem: placeholder.png
   - nome: Filipe Piçarra
-    cargo: co_coordenador_lab_e_cultura_hacker
+    cargo: coordenador_lab_e_cultura_hacker
     imagem: FilipePicarra.jpg  
   - nome: Daniel Carvalho
     cargo: coordenador_dev
@@ -17,9 +17,6 @@ direcao:
   - nome: André Santos
     cargo: coordenador_rh
     imagem: AndreSantos.jpg
-  - nome: Filipe Vaz
-    cargo: coordenador_marketing
-    imagem: placeholder.png
   - nome: Diogo Neves
     cargo: dev
     imagem: DiogoNeves.jpg
@@ -79,7 +76,7 @@ marketing:
     imagem: placeholder.png
 laboratorio:
   - nome: Filipe Piçarra
-    cargo: co_coordenador_lab_e_cultura_hacker
+    cargo: coordenador_lab_e_cultura_hacker
     imagem: FilipePicarra.jpg
   - nome: João Rodrigues
     cargo: gestao_lab 

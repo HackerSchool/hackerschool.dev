@@ -14,7 +14,7 @@ lang: "pt"
 <!-- # MakerIST -->
 <!-- <b><b><b> -->
 
-## MakerIST
+## MakerIST 2025
 
 **3 e 4 de junho** | [**Pavilhão Central do Instituto Superior Técnico**](https://maps.app.goo.gl/dLX5NzLvm9guL8Vf6)
 
@@ -31,15 +31,15 @@ O **MakerIST** é um evento que celebra a cultura maker, reunindo entusiastas da
 <!-- - **Exposições de projetos inovadores:** Demonstrações de trabalhos criativos, artísticos e tecnológicos. -->
 <!-- - **Atividades interativas:** Experiências como desmontagem eletrónica e arte generativa para despertar a curiosidade. -->
 
-## Open Call
-
-Tens um projeto interessante e gostarias de ter a tua própria banca no MakerIST?
-
-<!-- Candidata-te até **30 de maio** através deste link: [https://docs.google.com/forms/d/e/1FAIpQLSdtcaK02c86xVoH1fX-USOvp27kvuRPOQKaLTERcKKnckKjXA/viewform](https://docs.google.com/forms/d/e/1FAIpQLSdtcaK02c86xVoH1fX-USOvp27kvuRPOQKaLTERcKKnckKjXA/viewform) -->
-
-Candidata-te até **30 de maio**!
-{{< button link="https://docs.google.com/forms/d/e/1FAIpQLSdtcaK02c86xVoH1fX-USOvp27kvuRPOQKaLTERcKKnckKjXA/viewform" text="Open Call" >}}
-
+<!-- ## Open Call -->
+<!---->
+<!-- Tens um projeto interessante e gostarias de ter a tua própria banca no MakerIST? -->
+<!---->
+<!-- <!-- Candidata-te até **30 de maio** através deste link: [https://docs.google.com/forms/d/e/1FAIpQLSdtcaK02c86xVoH1fX-USOvp27kvuRPOQKaLTERcKKnckKjXA/viewform](https://docs.google.com/forms/d/e/1FAIpQLSdtcaK02c86xVoH1fX-USOvp27kvuRPOQKaLTERcKKnckKjXA/viewform) --> -->
+<!---->
+<!-- Candidata-te até **30 de maio**! -->
+<!-- {{< button link="https://docs.google.com/forms/d/e/1FAIpQLSdtcaK02c86xVoH1fX-USOvp27kvuRPOQKaLTERcKKnckKjXA/viewform" text="Open Call" >}} -->
+<!---->
 
 ## Objetivos do MakerIST
 

@@ -128,8 +128,8 @@
     "translation": "Treasurer"
   },
   {
-    "id": "co_coordenador_lab_e_cultura_hacker",
-    "translation": "Co-Coordinator Lab and Hacker Culture"
+    "id": "coordenador_lab",
+    "translation": "Lab Coordinator and Hacker Culture"
   },
   {
     "id": "coordenador_dev",
@@ -162,5 +162,9 @@
   {
     "id": "alumni",
     "translation": "Alumni"
+  },
+  {
+    "id": "filipe",
+    "translation": "Vice-President  \nMarketing Coordenator"
   }
 ]
