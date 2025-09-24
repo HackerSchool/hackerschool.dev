@@ -5,7 +5,7 @@ author: Lounge IST & HackerSchool
 draft: false
 event: true
 description: "O MakerIST foi um evento que celebrou a cultura maker"
-image: "images/makerist/MakerIST.png"
+image: "/images/makerist/MakerIST.png"
 lang: "pt"
 # layout: "contactos"
 ---
@@ -22,7 +22,7 @@ lang: "pt"
 
 O **MakerIST** é um evento que celebra a cultura maker, reunindo entusiastas da criação, tecnologia e _Do-It-Yourself_ (DIY). Nos dias **3 e 4 de junho**, o **Pavilhão Central do Instituto Superior Técnico** transformar-se-á num espaço dinâmico de aprendizagem, partilha e experimentação criativa, aberto tanto à comunidade académica quanto ao público em geral.
 
-![](images/MakerIST.png)
+![](/images/makerist/MakerIST.png)
 
 <!-- Através de uma variedade de atividades envolventes, o MakerIST visa promover a cultura maker e estimular a inovação: -->
 <!---->
