@@ -14,6 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const targetElement = document.getElementById("type-js");
     const hiddenContent = document.getElementById("hidden-content");
+    const logo = document.getElementById("logo");
     let typingSpeed = 50; // Default typing speed
     let speedUp = false;  // Track if user is trying to speed up
     document.body.style.overflow = 'hidden';
@@ -52,29 +53,28 @@ document.addEventListener("DOMContentLoaded", function () {
 
             setTimeout(typeText, speed);
         } else {
-            targetElement.style.color = "#6DBA83"; //por uma questão de coerência de cor?
-            // Animation complete: make the page scrollable and show hidden content
-            // Trigger the fade-out after turning green
+            targetElement.style.color = "#6DBA83";
             setTimeout(() => {
                 targetElement.classList.add('fade-out');
                 setTimeout(() => {
-                    targetElement.style.display = 'none'; // Hide the text after fade-out
-                    document.getElementById('logo').classList.add('fade-in'); // Display the logo
+                    targetElement.style.display = 'none';
+                    hiddenContent.style.display = 'flex';
+                    hiddenContent.style.flexDirection = 'column';
+                    logo.classList.add('fade-in');
 
-                    hiddenContent.style.display = 'flex'; // Reveal hidden content
-                    hiddenContent.style.flexDirection = 'column'; // Reveal hidden content
-                    document.body.style.overflow = '';
+                    // Add fade-out for the logo after a delay
                     setTimeout(() => {
-                        document.querySelector('.content').style.transition = 'min-height 2s ease';
-                        document.querySelector('.content').style.minHeight = '20vh';
-
-                    }, speedUp? 0: 3000);
-
-
-                }, speedUp? 0:1000); // Wait for 1 second before starting the fade-out
-            }, speedUp? 500 :1000); // Wait for 1 second of green color before fading out
-            // document.body.style.height = 'auto'; // Remove temporary height
-
+                        logo.classList.remove('fade-in'); // Remove fade-in to avoid conflicts
+                        logo.classList.add('fade-out');
+                        setTimeout(() => {
+                            logo.style.display = 'none'; // Hide logo after fade-out
+                            document.body.style.overflow = '';
+                            document.querySelector('.content').style.transition = 'min-height 2s ease';
+                            document.querySelector('.content').style.minHeight = '20vh';
+                        }, speedUp ? 0 : 1000); // Duration of logo fade-out
+                    }, speedUp ? 500 : 2000); // Delay before logo starts fading out
+                }, speedUp ? 0 : 1000);
+            }, speedUp ? 500 : 1000);
         }
     }
 
