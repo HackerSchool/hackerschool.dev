@@ -1,0 +1,12 @@
+{{ $id := .Get 0 }}
+<div class="hacker-youtube" style="max-width:1080px; margin:0 auto;">
+  <div style="position:relative; padding-bottom:56.25%; height:0; overflow:hidden;">
+    <iframe
+      src="https://www.youtube-nocookie.com/embed/{{ $id }}"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+      style="position:absolute; top:0; left:0; width:100% !important; height:100% !important; border:0;">
+    </iframe>
+  </div>
+</div>
