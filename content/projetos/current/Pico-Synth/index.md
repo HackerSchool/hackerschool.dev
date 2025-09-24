@@ -19,7 +19,7 @@ teamPhotos = ["MiguelLameiras.jpg", "LopesBismuth.jpeg" , "JoaoGonçalves.jpg"]
 
 O Pico-Synth é uma plataforma _open-source_ para o desenvolvimento/aprendizagem de processamento digital de sinal aplicado à música. O objetivo final é que funcione como um sintetizador/controlador MIDI portátil e de baixo custo.
 
-Mais informação disponível no github: https://github.com/HackerSchool/pico-synth
+{{< github-card "HackerSchool/pico-synth" >}}
 
 ## Devlog
 
@@ -29,8 +29,8 @@ A Pico-Synth Board v0.1 é a primeira versão do sintetizador. Para a saída de 
 
 Devido ao limite de 300mA do regulador de tensão 3.3V do Raspberry Pi Pico, foi adicionado um regulador de tensão extra (AMS1117-3.3) para alimentação dos LEDs e dos expansores de GPIO (PCF8574). O Ecrã OLED é alimentado diretamento pelos 5V do USB.
 
-![Synth PCB Render Front](Photos/v0.1_Render_Front-min.png)
+![Synth PCB Render Front](/images/projetos/v0.1_Render_Front-min.png)
 
 <br><br>
 
-![Synth PCB Render Back](Photos/V0.1_Render_Back-min.png)
+![Synth PCB Render Back](/images/projetos/V0.1_Render_Back-min.png)
