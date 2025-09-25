@@ -13,7 +13,7 @@ status = "current"
 
 # HS-Site
 
-## Estão a olhar para ele ahahaha
+## Estão a olhar para ele!
 
 Este é o projeto do site da HackerSchool!
 
@@ -24,9 +24,9 @@ Adicionado GitHub cards para os repos!
 
 {{< github-card "HackerSchool/hackerschool.dev" >}}
 
-### 18/10/2024
-Pequeno exemplo de como podemos começar a organizar o site!
+### 25/09/2025
+Com o começo de um novo ano escolar, estamos a actualizar o site com os novos dados e a fazer uma restruturação.
 
 ## Todolist
 
-Continuar a meter o site cada vez melhor e mais bonito
+Estamos ativamente a procurar a manter o site mais funcional e intuitivo com o objectivo de o tornar um hub central para pessoas externas!

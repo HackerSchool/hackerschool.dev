@@ -28,7 +28,7 @@ rssIcon = "images/rss.svg"
 
   # Portuguese Language
   [Languages.pt]
-  languageName = "Pt"
+  languageName = "PT"
   weight = 1
   languageCode = "pt-pt"
   contentDir = "content"
@@ -42,7 +42,7 @@ rssIcon = "images/rss.svg"
     # navigation
     [Languages.pt.menu]
       [[Languages.pt.menu.main]]
-        weight = 2
+        weight = 1
         name = "Membros"
         url = "/membros/"
     
@@ -52,17 +52,17 @@ rssIcon = "images/rss.svg"
         url = "/sobre/"
         
       [[Languages.pt.menu.main]]
-        weight = 2
+        weight = 3
         name = "Projetos"
         url = "/projetos/"
 
       [[Languages.pt.menu.main]]
-        weight = 2
+        weight = 4
         name = "Recrutamento"
         url = "/recrutamento/"
 
       [[Languages.pt.menu.main]]
-        weight = 3
+        weight = 5
         name = "Contactos"
         url = "/contactos/"
 
@@ -93,7 +93,7 @@ rssIcon = "images/rss.svg"
       URL = "https://www.facebook.com/hackerschoolist/"
   
   [Languages.en]
-    languageName = "En"
+    languageName = "EN"
     weight = 2
     languageCode = "en-us"
     contentDir = "content"
@@ -104,7 +104,7 @@ rssIcon = "images/rss.svg"
     # navigation
     [Languages.en.menu]
       [[Languages.en.menu.main]]
-        weight = 2
+        weight = 1
         name = "Members"
         url = "/membros/"
 
@@ -114,17 +114,17 @@ rssIcon = "images/rss.svg"
         url = "/sobre/"
 
       [[Languages.en.menu.main]]
-        weight = 2
+        weight = 3
         name = "Projects"
         url = "/projetos/"
 
       [[Languages.en.menu.main]]
-        weight = 2
+        weight = 4
         name = "Recruitment"
         url = "/recrutamento/"
 
       [[Languages.en.menu.main]]
-        weight = 3
+        weight = 5
         name = "Contacts"
         url = "/contactos/"
 

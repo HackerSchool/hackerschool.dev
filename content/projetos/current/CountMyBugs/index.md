@@ -10,7 +10,7 @@ photo = "countmybugs.jpg"
 status = "current"
 
 
-teamPhotos = ["MiguelCardoso.jpg", "CatarinaSilva.jpg"] 
+teamPhotos = ["MiguelCardoso.png", "CatarinaSilva.png"] 
 +++
 
 # Count My Bugs

@@ -1,38 +1,38 @@
 direcao:
   - nome: Gonçalo Fecha
     cargo: presidente
-    imagem: GoncaloMartins.jpg
+    imagem: GoncaloMartins.png
   - nome: Filipe Vaz
     cargo: filipe
-    imagem: placeholder.png
+    imagem: FilipeVaz.png
   - nome: Diogo Rebelo
     cargo: tesoureiro
-    imagem: placeholder.png
+    imagem: DiogoRebelo.png
   - nome: Filipe Piçarra
     cargo: coordenador_lab_e_cultura_hacker
-    imagem: FilipePicarra.jpg  
+    imagem: FilipePicarra.png  
   - nome: Daniel Carvalho
     cargo: coordenador_dev
-    imagem: DanielCarvalho.jpg
+    imagem: DanielCarvalho.png
   - nome: André Santos
     cargo: coordenador_rh
-    imagem: AndreSantos.jpg
+    imagem: AndreSantos.png
   - nome: Diogo Neves
     cargo: dev
-    imagem: DiogoNeves.jpg
+    imagem: DiogoNeves.png
   - nome: Francisco Gonçalves
     cargo: laboratorio  
     imagem: placeholder.png
 desenvolvimento:
   - nome: Daniel Carvalho
     cargo: coordenador_dev
-    imagem: DanielCarvalho.jpg
+    imagem: DanielCarvalho.png
   - nome: Filipe Piçarra
     cargo: dev 
-    imagem: FilipePicarra.jpg  
+    imagem: FilipePicarra.png  
   - nome: Diogo Neves
     cargo: dev
-    imagem: DiogoNeves.jpg
+    imagem: DiogoNeves.png
   - nome: Carlos Felgueiras
     cargo: dev
     imagem: placeholder.png
@@ -41,49 +41,49 @@ desenvolvimento:
     imagem: placeholder.png
   - nome: Gonçalo Azevedo
     cargo: dev
-    imagem: GoncaloAzevedo.jpg
+    imagem: GoncaloAzevedo.png
 recursoshumanos:
   - nome: André Santos
     cargo: coordenador_rh
-    imagem: AndreSantos.jpg
+    imagem: AndreSantos.png
   - nome: Armando Gonçalves
     cargo: rh 
     imagem: placeholder.png 
   - nome: Ilyan Amad
     cargo: rh 
-    imagem: placeholder.png 
+    imagem: IlyanAmad.png 
   - nome: Tomás Ribeiro 
     cargo: rh 
     imagem: placeholder.png 
   - nome: Felipe Sancho
     cargo: rh
-    imagem: FelipeSancho.jpg
+    imagem: FelipeSancho.png
   - nome: João Gonçalves
     cargo: rh
-    imagem: JoaoGonçalves.jpg
+    imagem: JoaoGonçalves.png
 marketing:
   - nome: Filipe Vaz
     cargo: coordenador_marketing
-    imagem: placeholder.png 
+    imagem: FilipeVaz.png 
   - nome: Catarina Costa
     cargo: marketing 
     imagem: placeholder.png
   - nome: Diogo Folião
     cargo: marketing 
-    imagem: placeholder.png
+    imagem: DiogoFoliao.png
   - nome: Tiago Carvalho
     cargo: marketing 
     imagem: placeholder.png
 laboratorio:
   - nome: Filipe Piçarra
     cargo: coordenador_lab_e_cultura_hacker
-    imagem: FilipePicarra.jpg
+    imagem: FilipePicarra.png
   - nome: João Rodrigues
     cargo: gestao_lab 
-    imagem: JoaoRodrigues.jpg
+    imagem: JoaoRodrigues.png
   - nome: Eduardo Faustino
     cargo: gestao_lab
-    imagem: EduardoFaustino.jpg
+    imagem: EduardoFaustino.png
   - nome: Francisco Gonçalves
     cargo: gestao_lab
     imagem: placeholder.png
@@ -96,46 +96,46 @@ membros:
   imagem: placeholder.png
 - nome: André Cardoso
   cargo: 
-  imagem: AndreCardoso.jpg
+  imagem: AndreCardoso.png
 - nome: André Caseiro
   cargo: 
   imagem: placeholder.png
 - nome: André Santos
   cargo: coordenador_rh
-  imagem: AndreSantos.jpg
+  imagem: AndreSantos.png
 - nome: António Figueiras
   cargo: alumni
-  imagem: AntonioFigueiras.jpg
+  imagem: AntonioFigueiras.png
 - nome: Armando Gonçalves
   cargo: rh
   imagem: placeholder.png
 - nome: Catarina Silva
   cargo: alumni
-  imagem: CatarinaSilva.jpg
+  imagem: CatarinaSilva.png
 - nome: Daniel Carvalho
   cargo: coordenador_dev
-  imagem: DanielCarvalho.jpg
+  imagem: DanielCarvalho.png
 - nome: Diogo Correia
   cargo: 
-  imagem: 99211.jpg
+  imagem: 99211.png
 - nome: Daniela Cardoso
   cargo:
   imagem: 96517.png
 - nome: Diogo Neves
   cargo: dev
-  imagem: DiogoNeves.jpg
+  imagem: DiogoNeves.png
 - nome: Diana Albuquerque
   cargo: 
-  imagem: DianaAlbuquerque.jpg
+  imagem: DianaAlbuquerque.png
 - nome: Eduardo Faustino
   cargo: gestao_lab
-  imagem: EduardoFaustino.jpg
+  imagem: EduardoFaustino.png
 - nome: Felipe Sancho
   cargo: rh
-  imagem: FelipeSancho.jpg
+  imagem: FelipeSancho.png
 - nome: Filipe Piçarra
   cargo: co_coordenador_lab_e_cultura_hacker
-  imagem: FilipePicarra.jpg
+  imagem: FilipePicarra.png
 - nome: Filipe Varela
   cargo: 
   imagem: 92459.png
@@ -144,37 +144,37 @@ membros:
   imagem: placeholder.png
 - nome: Gabriel Gabriel
   cargo: alumni
-  imagem: GabrielGabriel.jpeg
+  imagem: GabrielGabriel.png
 - nome: Gonçalo Azevedo
   cargo: dev
-  imagem: GoncaloAzevedo.jpg
+  imagem: GoncaloAzevedo.png
 - nome: Gonçalo Fecha
   cargo: presidente
-  imagem: GoncaloMartins.jpg
+  imagem: GoncaloMartins.png
 - nome: Guilherme Freitas
   cargo: alumni
   imagem: 99949.png
 - nome: Inês Martins
   cargo: 
-  imagem: InesMartins.jpeg
+  imagem: InesMartins.png
 - nome: João Gonçalves
   cargo: rh
-  imagem: JoaoGonçalves.jpg
+  imagem: JoaoGonçalves.png
 - nome: João Rodrigues
   cargo: gestao_lab
-  imagem: JoaoRodrigues.jpg
+  imagem: JoaoRodrigues.png
 - nome: José Lopes
   cargo: alumni
-  imagem: LopesBismuth.jpeg
+  imagem: LopesBismuth.png
 - nome: Martim Bento
   cargo: 
   imagem: placeholder.png
 - nome: Miguel Cardoso
   cargo: alumni
-  imagem: MiguelCardoso.jpg
+  imagem: MiguelCardoso.png
 - nome: Miguel Lameiras
   cargo: alumni
-  imagem: MiguelLameiras.jpg
+  imagem: MiguelLameiras.png
 - nome: Nuno Gonçalves
   cargo: 
   imagem: placeholder.png
@@ -183,26 +183,26 @@ membros:
   imagem: pedroDireita.png
 - nome: Pedro Nantes
   cargo: 
-  imagem: PedroNantes.jpg
+  imagem: PedroNantes.png
 - nome: Rafael Garcia
   cargo: 
-  imagem: RafaelGarcia.jpg
+  imagem: RafaelGarcia.png
 - nome: Ricardo Pais
   cargo: dev
-  imagem: RicardoPais.jpg
+  imagem: RicardoPais.png
 - nome: Sara Pereira
   cargo: 
-  imagem: SaraPereira.jpg
+  imagem: SaraPereira.png
 - nome: Tomás Fachada
   cargo: 
-  imagem: TomasFachada.jpg
+  imagem: TomasFachada.png
 ## membros 24_25
 - nome: Filipe Vaz
   cargo: vice_presidente
-  imagem: placeholder.png
+  imagem: FilipeVaz.png
 - nome: Diogo Rebelo
   cargo: tesoureiro
-  imagem: placeholder.png
+  imagem: DiogoRebelo.png
 - nome: Catarina Costa
   cargo: marketing
   imagem: placeholder.png
@@ -214,10 +214,13 @@ membros:
   imagem: placeholder.png
 - nome: Ilyan Amad
   cargo: rh
-  imagem: placeholder.png
+  imagem: IlyanAmad.png
 - nome: Carlos Felgueiras
   cargo: dev
   imagem: placeholder.png
 - nome: Duarte Sousa
   cargo: dev
   imagem: placeholder.png
+- nome: Diogo Folião
+  cargo: marketing
+  imagem: DiogoFoliao.png

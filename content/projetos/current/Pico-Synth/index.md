@@ -4,6 +4,7 @@ description= "Uma plataforma open-source para o desenvolvimento de processamento
 
 date = "2025-05-05" 
 Destacado=false 
+lang="pt"
 
 photo = "v0.1_Render_Front-min.png" 
 
