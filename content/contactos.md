@@ -1,5 +1,6 @@
 ---
 title: "Contactos"
+type: "page"
 date: 2024-11-01
 draft: false
 layout: "contactos"
