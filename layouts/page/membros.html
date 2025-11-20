@@ -60,7 +60,7 @@
               <img src="/images/membros/{{ .imagem }}">
               <div class="member-card-projects-div">
                 {{ range .projects }}
-                  <p hidden class="member-card-project" data-url="{{ .url }}" data-image="/images/projetos/{{ .image }}">{{ .name }}</p>
+                  <p hidden class="member-card-project" data-url="{{ relref $.Page .url }}" data-image="/images/projetos/{{ .image }}">{{ .name }}</p>
                 {{ end }}
               </div>
               <div class="member-card-socials-div">
@@ -90,13 +90,24 @@
           {{ range .Site.Data.membros.desenvolvimento }}
           <div class="fader member-card col-xl-3 col-lg-4 col-sm-6 col-6 dynamicThingy text-center fader-fadeInUp" style="background-color: var(--secondary-color);">
               <h3 style="padding-top: 15px;">{{ .nome }}
-                <p class="mb-0">{{ i18n .cargo }}</p>
+                <p class="mb-0">{{ i18n .cargo | markdownify }}</p>
+                <p class="mb-0">{{ .curso }}</p>
               </h3>
               <img src="/images/membros/{{ .imagem }}">
-              {{ if .project }}
-              <p class="hoverAppear">
-                {{ i18n "projeto" }}: <br /> {{ .project }}
-              </p>
+              <div class="member-card-projects-div">
+                {{ range .projects }}
+                  <p hidden class="member-card-project" data-url="{{ relref $.Page .url }}" data-image="/images/projetos/{{ .image }}">{{ .name }}</p>
+                {{ end }}
+              </div>
+              <div class="member-card-socials-div">
+                {{ range .socials }}
+                  <p class="member-card-project" data-icon="{{ .icon }}" data-link="{{ .link }}" hidden>{{ .platform }}</p>
+                {{ end }}
+              </div>
+              {{ if .quote }}
+                <p class="quote" hidden>
+                {{ .quote }}
+                </p>
               {{ end }}
           </div>
           {{ end }}
@@ -115,13 +126,24 @@
           {{ range .Site.Data.membros.recursoshumanos }}
           <div class="fader member-card col-xl-3 col-lg-4 col-sm-6 col-6 dynamicThingy text-center fader-fadeInUp" style="background-color: var(--secondary-color);">
               <h3 style="padding-top: 15px;">{{ .nome }}
-                <p class="mb-0">{{ i18n .cargo }}</p>
+                <p class="mb-0">{{ i18n .cargo | markdownify }}</p>
+                <p class="mb-0">{{ .curso }}</p>
               </h3>
               <img src="/images/membros/{{ .imagem }}">
-              {{ if .project }}
-              <p class="hoverAppear">
-                {{ i18n "projeto" }}: <br /> {{ .project }}
-              </p>
+              <div class="member-card-projects-div">
+                {{ range .projects }}
+                  <p hidden class="member-card-project" data-url="{{ relref $.Page .url }}" data-image="/images/projetos/{{ .image }}">{{ .name }}</p>
+                {{ end }}
+              </div>
+              <div class="member-card-socials-div">
+                {{ range .socials }}
+                  <p class="member-card-project" data-icon="{{ .icon }}" data-link="{{ .link }}" hidden>{{ .platform }}</p>
+                {{ end }}
+              </div>
+              {{ if .quote }}
+                <p class="quote" hidden>
+                {{ .quote }}
+                </p>
               {{ end }}
           </div>
           {{ end }}
@@ -140,13 +162,24 @@
           {{ range .Site.Data.membros.marketing }}
           <div class="fader member-card col-xl-3 col-lg-4 col-sm-6 col-6 dynamicThingy text-center fader-fadeInUp" style="background-color: var(--secondary-color);">
               <h3 style="padding-top: 15px;">{{ .nome }}
-                <p class="mb-0">{{ i18n .cargo }}</p>
+                <p class="mb-0">{{ i18n .cargo | markdownify }}</p>
+                <p class="mb-0">{{ .curso }}</p>
               </h3>
               <img src="/images/membros/{{ .imagem }}">
-              {{ if .project }}
-              <p class="hoverAppear">
-                {{ i18n "projeto" }}: <br /> {{ .project }}
-              </p>
+              <div class="member-card-projects-div">
+                {{ range .projects }}
+                  <p hidden class="member-card-project" data-url="{{ relref $.Page .url }}" data-image="/images/projetos/{{ .image }}">{{ .name }}</p>
+                {{ end }}
+              </div>
+              <div class="member-card-socials-div">
+                {{ range .socials }}
+                  <p class="member-card-project" data-icon="{{ .icon }}" data-link="{{ .link }}" hidden>{{ .platform }}</p>
+                {{ end }}
+              </div>
+              {{ if .quote }}
+                <p class="quote" hidden>
+                {{ .quote }}
+                </p>
               {{ end }}
           </div>
           {{ end }}
@@ -165,13 +198,24 @@
           {{ range .Site.Data.membros.laboratorio }}
           <div class="fader member-card col-xl-3 col-lg-4 col-sm-6 col-6 dynamicThingy text-center fader-fadeInUp" style="background-color: var(--secondary-color);">
               <h3 style="padding-top: 15px;">{{ .nome }}
-                <p class="mb-0">{{ i18n .cargo }}</p>
+                <p class="mb-0">{{ i18n .cargo | markdownify }}</p>
+                <p class="mb-0">{{ .curso }}</p>
               </h3>
               <img src="/images/membros/{{ .imagem }}">
-              {{ if .project }}
-              <p class="hoverAppear">
-                {{ i18n "projeto" }}: <br /> {{ .project }}
-              </p>
+              <div class="member-card-projects-div">
+                {{ range .projects }}
+                  <p hidden class="member-card-project" data-url="{{ relref $.Page .url }}" data-image="/images/projetos/{{ .image }}">{{ .name }}</p>
+                {{ end }}
+              </div>
+              <div class="member-card-socials-div">
+                {{ range .socials }}
+                  <p class="member-card-project" data-icon="{{ .icon }}" data-link="{{ .link }}" hidden>{{ .platform }}</p>
+                {{ end }}
+              </div>
+              {{ if .quote }}
+                <p class="quote" hidden>
+                {{ .quote }}
+                </p>
               {{ end }}
           </div>
           {{ end }}
@@ -192,13 +236,24 @@
           {{ range sort .Site.Data.membros.membros "nome" }}
           <div class="fader member-card col-xl-3 col-lg-4 col-sm-6 col-6 dynamicThingy text-center fader-fadeInUp" style="background-color: var(--secondary-color);">
               <h3 style="padding-top: 15px;">{{ .nome }}
-                <p class="mb-0">{{ i18n .cargo }}</p>
+                <p class="mb-0">{{ i18n .cargo | markdownify }}</p>
+                <p class="mb-0">{{ .curso }}</p>
               </h3>
               <img src="/images/membros/{{ .imagem }}">
-              {{ if .project }}
-              <p class="hoverAppear">
-                {{ i18n "projeto" }}: <br /> {{ .project }}
-              </p>
+              <div class="member-card-projects-div">
+                {{ range .projects }}
+                  <p hidden class="member-card-project" data-url="{{ relref $.Page .url }}" data-image="/images/projetos/{{ .image }}">{{ .name }}</p>
+                {{ end }}
+              </div>
+              <div class="member-card-socials-div">
+                {{ range .socials }}
+                  <p class="member-card-project" data-icon="{{ .icon }}" data-link="{{ .link }}" hidden>{{ .platform }}</p>
+                {{ end }}
+              </div>
+              {{ if .quote }}
+                <p class="quote" hidden>
+                {{ .quote }}
+                </p>
               {{ end }}
           </div>
           {{ end }}
