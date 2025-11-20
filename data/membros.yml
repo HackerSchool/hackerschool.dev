@@ -2,6 +2,18 @@ direcao:
   - nome: Gonçalo Fecha
     cargo: presidente
     imagem: GoncaloMartins.png
+    quote: quote top 
+    projects:
+        - name: HS-Site
+          image: "logoProject.png"
+          url: "projetos/current/HS-Site"
+        - name: Count My Bugs
+          image: "countmybugs.jpg"
+          url: "projetos/current/CountMyBugs"
+    socials:
+        - platform: "Github"
+          icon: fa-github
+          link: "https://github.com/johndoe"
   - nome: Filipe Vaz
     cargo: filipe
     imagem: FilipeVaz.png

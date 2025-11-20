@@ -1,6 +1,6 @@
 +++
 title = "Pico-Synth"
-description= "Uma plataforma open-source para o desenvolvimento de processamento digital de sinal aplicado à música. O objetivo final é que funcione como um sintetizador/controlador MIDI portátil e de baixo custo." 
+description= "An open-source platform for the development of digital signal processing applied to music. The ultimate goal is for it to function as a portable, low-cost MIDI synthesizer/controller." 
 
 date = "2025-05-05" 
 Destacado=false 
