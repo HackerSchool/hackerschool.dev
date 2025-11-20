@@ -103,11 +103,13 @@ $(document).ready(function() {
     const memberCards = document.querySelectorAll('.member-card');
     const overlayContent = document.getElementById('overlay-content');
     memberCards.forEach(card => {
-        card.addEventListener('click', () => { //falta disable scroll
+        card.addEventListener('click', () => {
             overlay.style.display = 'flex';
             const name = card.querySelector('h3').innerText.split("\n");
             overlayContent.querySelectorAll("h3")[0].innerText = name[0];
             overlayContent.querySelectorAll("img")[0].src = card.querySelector("img").src;
+            
+            // Handle quote
             var texts = card.querySelectorAll("p");
             var quoteText = ""
             for(let i = 0; i< texts.length; i++){
@@ -115,44 +117,67 @@ $(document).ready(function() {
                    quoteText = texts[i].innerText
             }
             
-            overlayContent.querySelectorAll("p")[0].innerText = quoteText
-            //memberProjectDiv = overlayContent.querySelector('#overlay-project-holder');
+            let quoteElement = overlayContent.querySelectorAll("p")[0];
+            let quoteParent = quoteElement.parentElement; // If quote has a wrapper div
+            if (quoteText.trim()) {
+                quoteElement.innerText = quoteText;
+                quoteElement.style.display = 'block';
+            } else {
+                quoteElement.style.display = 'none';
+            }
+            
+            // Handle projects
             let memberProjectDiv = overlayContent.querySelector('#overlay-project-holder');
+            let projectSection = overlayContent.querySelector('#overlay-projects');
             memberProjectDiv.innerHTML = "";
             let projectsHolder = card.getElementsByClassName("member-card-projects-div")[0];
-            Array.from(projectsHolder.children).forEach(project => {             
-                var projDiv = document.createElement("div")
-                var imgElem = document.createElement('img')
-                var pElem = document.createElement('p')
-                let linkElem = document.createElement('a');
-                imgElem.src = project.dataset.image; 
-                pElem.innerText = project.innerText;
-                linkElem.href = project.dataset.url;
+            
+            if (projectsHolder.children.length > 0) {
+                projectSection.style.display = 'flex';
+                Array.from(projectsHolder.children).forEach(project => {             
+                    var projDiv = document.createElement("div")
+                    var imgElem = document.createElement('img')
+                    var pElem = document.createElement('p')
+                    let linkElem = document.createElement('a');
+                    imgElem.src = project.dataset.image; 
+                    pElem.innerText = project.innerText;
+                    linkElem.href = project.dataset.url;
 
-                linkElem.appendChild(imgElem);
-                linkElem.appendChild(pElem);
-                projDiv.appendChild(linkElem);
-                projDiv.classList.add("overlay-project-content")
-                memberProjectDiv.append(projDiv)
-            });
+                    linkElem.appendChild(imgElem);
+                    linkElem.appendChild(pElem);
+                    projDiv.appendChild(linkElem);
+                    projDiv.classList.add("overlay-project-content")
+                    memberProjectDiv.append(projDiv)
+                });
+            } else {
+                projectSection.style.display = 'none';
+            }
 
-            memberSocialDiv = overlayContent.querySelector('#overlay-social-holder'); 
+            // Handle socials
+            let memberSocialDiv = overlayContent.querySelector('#overlay-social-holder');
+            let socialSection = overlayContent.querySelector('#overlay-socials');
+            memberSocialDiv.innerHTML = ""; // Clear previous content
             var socialsHolder = card.getElementsByClassName("member-card-socials-div");
-            Array.from(socialsHolder[0].children).forEach(social => {
-                var socialDiv = document.createElement("div")
-                var imgElem = document.createElement('img')
-                let linkElem = document.createElement('a');
-                var pElem = document.createElement('p')
-                pElem.innerText = social.innerText;
-                linkElem.href = social.dataset.link;
-                console.log(social)
+            
+            if (socialsHolder[0].children.length > 0) {
+                socialSection.style.display = 'flex';
+                Array.from(socialsHolder[0].children).forEach(social => {
+                    var socialDiv = document.createElement("div")
+                    var imgElem = document.createElement('img')
+                    let linkElem = document.createElement('a');
+                    var pElem = document.createElement('p')
+                    pElem.innerText = social.innerText;
+                    linkElem.href = social.dataset.link;
 
-                linkElem.appendChild(imgElem)
-                linkElem.appendChild(pElem)
-                socialDiv.append(linkElem)
-                socialDiv.classList.add("overlay-social-content")
-                memberSocialDiv.append(socialDiv)
-            });
+                    linkElem.appendChild(imgElem)
+                    linkElem.appendChild(pElem)
+                    socialDiv.append(linkElem)
+                    socialDiv.classList.add("overlay-social-content")
+                    memberSocialDiv.append(socialDiv)
+                });
+            } else {
+                socialSection.style.display = 'none';
+            }
 
             isOverlayActive = true; 
             setTimeout(() => {
@@ -168,7 +193,7 @@ $(document).ready(function() {
                     cleanOverlay();
                     overlay.style.display = "none";
                     isOverlayActive = false;
-                    document.removeEventListener('click', closeOverlay); // Remove event listener after closing
+                    document.removeEventListener('click', closeOverlay);
                 }
             };
             document.addEventListener('click', closeOverlay);
