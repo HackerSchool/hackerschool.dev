@@ -1134,11 +1134,15 @@ header {
   border-radius: 3%;
   border: solid;
   border-color: var(--text-color-dark);
+  max-height: 90vh;
+  overflow: hidden;
 }
 
 #overlay-content {
   height: 100%;
   width: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 #overlay-content img {
@@ -1163,8 +1167,8 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  height: 40%;
-  max-height: 40%;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .overlay-project-content {
@@ -1186,8 +1190,8 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  height: 40%;
-  max-height: 40%;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .overlay-social-content {
@@ -1198,6 +1202,17 @@ header {
 .overlay-social-content img {
   max-width: 100px;
   max-height: 100px;
+}
+
+@media (max-width: 768px) {
+  #overlay {
+    width: 95%;
+    height: 90%;
+  }
+  
+  #overlay-content {
+    padding: 15px;
+  }
 }
 
 #matrixCanvas {
