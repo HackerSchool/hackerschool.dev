@@ -9,7 +9,7 @@ direcao:
     cargo: tesoureiro
     imagem: DiogoRebelo.png
   - nome: Filipe Piçarra
-    cargo: coordenador_lab_e_cultura_hacker
+    cargo: coordenador_lab
     imagem: FilipePicarra.png  
   - nome: Daniel Carvalho
     cargo: coordenador_dev
@@ -76,7 +76,7 @@ marketing:
     imagem: placeholder.png
 laboratorio:
   - nome: Filipe Piçarra
-    cargo: coordenador_lab_e_cultura_hacker
+    cargo: coordenador_lab
     imagem: FilipePicarra.png
   - nome: João Rodrigues
     cargo: gestao_lab 
